@@ -19,6 +19,8 @@ services:
       PGADMIN_DEFAULT_PASSWORD: VIGAdmin
     depends_on:
       - db
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
 
   backend:
     build:
@@ -30,6 +32,9 @@ services:
       - db
     volumes:
       - ./backend:/app
+    env_file:
+      - .env
 
 volumes:
   pgdata:
+  pgadmin_data:
