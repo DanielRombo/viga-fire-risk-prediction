@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from config.database import get_db
 from services.fwi import calcular_risco_regiao
+from services.modelo_ml import prever_risco
 from models.dado_meteorologico import DadoMeteorologico
 
 router = APIRouter()
@@ -24,8 +25,14 @@ def get_risco_regiao(id_regiao: int, db: Session = Depends(get_db)):
         "precipitacao": ultimo_dado.precipitacao
     }
 
-    resultado = calcular_risco_regiao(dados)
-    resultado["id_regiao"] = id_regiao
-    resultado["data_hora"] = ultimo_dado.data_hora
+    resultado_fwi = calcular_risco_regiao(dados)
 
-    return resultado
+    resultado_ml = prever_risco(dados)
+
+    return {
+        "id_regiao": id_regiao,
+        "data_hora": ultimo_dado.data_hora,
+        "dados_meteorologicos": dados,
+        "fwi": resultado_fwi,
+        "ml": resultado_ml
+    }
