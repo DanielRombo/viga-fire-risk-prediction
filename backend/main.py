@@ -6,6 +6,7 @@ from routes.meteorologia import router as meteorologia_router
 from routes.incendios import router as incendios_router
 from routes.regioes import router as regioes_router
 from routes.ipma import router as ipma_router
+from routes.risco import router as risco_router
 from services.scheduler import iniciar_scheduler
 
 
@@ -23,6 +24,7 @@ app.include_router(meteorologia_router, prefix="/api")
 app.include_router(incendios_router, prefix="/api")
 app.include_router(regioes_router, prefix="/api")
 app.include_router(ipma_router, prefix="/api")
+app.include_router(risco_router, prefix="/api")
 
 
 @app.get("/health")
