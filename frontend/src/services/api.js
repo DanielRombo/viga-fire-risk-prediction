@@ -26,4 +26,9 @@ export const getFocosIncendio = async () => {
     return response.data
 }
 
+export const getAlertas = async () => {
+    const response = await api.get('/alertas')
+    return response.data
+}
+
 export default api
