@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, CircleMarker } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import { getFocosIncendio } from '../services/api'
@@ -98,28 +98,24 @@ function MapaInterativo({ camadasAtivas, onToggleCamada }) {
                         </Popup>
                     </Marker>
                 ))}
-
-                {camadasAtivas.includes('focos') && focos.length === 0 && (
-                    <></>
-                )}
             </MapContainer>
 
             <div style={{
                 position: 'absolute', top: '12px', right: '12px',
-                background: 'white', border: '0.5px solid rgba(0,0,0,0.1)',
+                background: 'var(--cinza-card)', border: '0.5px solid var(--cinza-borda)',
                 borderRadius: '8px', padding: '10px', zIndex: 1000,
                 display: 'flex', flexDirection: 'column', gap: '6px', minWidth: '140px'
             }}>
-                <div style={{ fontSize: '10px', fontWeight: '500', color: '#999', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '2px' }}>
+                <div style={{ fontSize: '10px', fontWeight: '500', color: 'var(--texto-tertiary)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '2px' }}>
                     Camadas
                 </div>
                 {camadas.map(c => (
-                    <div key={c.id} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', color: '#666' }}>
+                    <div key={c.id} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', color: 'var(--texto-secondary)' }}>
                         <div
                             onClick={() => onToggleCamada(c.id)}
                             style={{
                                 width: '28px', height: '16px', borderRadius: '99px',
-                                background: camadasAtivas.includes(c.id) ? '#639922' : '#ddd',
+                                background: camadasAtivas.includes(c.id) ? '#639922' : 'var(--cinza-borda)',
                                 position: 'relative', cursor: 'pointer', flexShrink: 0
                             }}
                         >
@@ -146,14 +142,14 @@ function MapaInterativo({ camadasAtivas, onToggleCamada }) {
 
             <div style={{
                 position: 'absolute', bottom: '12px', left: '12px',
-                background: 'white', border: '0.5px solid rgba(0,0,0,0.1)',
+                background: 'var(--cinza-card)', border: '0.5px solid var(--cinza-borda)',
                 borderRadius: '8px', padding: '8px 10px', zIndex: 1000
             }}>
-                <div style={{ fontSize: '10px', color: '#999', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '6px' }}>
+                <div style={{ fontSize: '10px', color: 'var(--texto-tertiary)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '6px' }}>
                     Nível de risco
                 </div>
                 {legendaRisco.map(item => (
-                    <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', color: '#666', marginBottom: '4px' }}>
+                    <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', color: 'var(--texto-secondary)', marginBottom: '4px' }}>
                         <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: item.cor, flexShrink: 0 }} />
                         {item.label}
                     </div>

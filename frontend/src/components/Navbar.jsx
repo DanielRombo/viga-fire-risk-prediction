@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Sun, Moon } from 'lucide-react'
 
-function Navbar({ risco, localidade }) {
+function Navbar({ risco, localidade, darkMode, onToggleDark }) {
     const [hora, setHora] = useState('')
-    const [darkMode, setDarkMode] = useState(false)
 
     useEffect(() => {
         const atualizar = () => {
@@ -17,12 +16,6 @@ function Navbar({ risco, localidade }) {
         const interval = setInterval(atualizar, 1000)
         return () => clearInterval(interval)
     }, [])
-
-    const toggleDark = () => {
-        const novoModo = !darkMode
-        setDarkMode(novoModo)
-        document.documentElement.setAttribute('data-theme', novoModo ? 'dark' : 'light')
-    }
 
     const corRisco = () => {
         switch (risco) {
@@ -65,12 +58,9 @@ function Navbar({ risco, localidade }) {
 
             {risco && (
                 <span style={{
-                    padding: '4px 10px',
-                    borderRadius: '99px',
-                    fontSize: '11px',
-                    fontWeight: '500',
-                    background: bg,
-                    color: color
+                    padding: '4px 10px', borderRadius: '99px',
+                    fontSize: '11px', fontWeight: '500',
+                    background: bg, color: color
                 }}>
                     Risco {risco}
                 </span>
@@ -86,16 +76,12 @@ function Navbar({ risco, localidade }) {
                     Sistema ativo
                 </span>
 
-                <button onClick={toggleDark} style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    padding: '4px 10px',
-                    borderRadius: '99px',
+                <button onClick={onToggleDark} style={{
+                    display: 'flex', alignItems: 'center', gap: '6px',
+                    padding: '4px 10px', borderRadius: '99px',
                     border: '0.5px solid var(--cinza-borda)',
                     background: 'var(--cinza-fundo)',
-                    cursor: 'pointer',
-                    fontSize: '11px',
+                    cursor: 'pointer', fontSize: '11px',
                     color: 'var(--texto-secondary)'
                 }}>
                     {darkMode ? <Moon size={13} /> : <Sun size={13} />}

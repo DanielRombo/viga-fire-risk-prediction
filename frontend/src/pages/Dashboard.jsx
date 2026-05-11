@@ -6,7 +6,7 @@ import PainelAlertas from '../components/PainelAlertas'
 import PainelML from '../components/PainelML'
 import { getRiscoRegiao } from '../services/api'
 
-function Dashboard() {
+function Dashboard({ darkMode, onToggleDark }) {
     const [risco, setRisco] = useState(null)
     const [loading, setLoading] = useState(true)
     const [camadasAtivas, setCamadasAtivas] = useState(['focos', 'fwi'])
@@ -49,20 +49,13 @@ function Dashboard() {
             <Navbar
                 risco={risco?.fwi?.nivel_risco}
                 localidade="Lisboa"
+                darkMode={darkMode}
+                onToggleDark={onToggleDark}
             />
-
             <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
-                <Sidebar
-                    risco={risco}
-                    dados={risco?.dados_meteorologicos}
-                />
-
+                <Sidebar risco={risco} dados={risco?.dados_meteorologicos} />
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-                    <MapaInterativo
-                        camadasAtivas={camadasAtivas}
-                        onToggleCamada={toggleCamada}
-                    />
-
+                    <MapaInterativo camadasAtivas={camadasAtivas} onToggleCamada={toggleCamada} />
                     <div style={{
                         background: 'var(--cinza-card)',
                         borderTop: '0.5px solid var(--cinza-borda)',
