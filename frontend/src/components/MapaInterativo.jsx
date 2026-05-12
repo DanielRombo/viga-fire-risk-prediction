@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import { getFocosIncendio } from '../services/api'
@@ -45,7 +45,21 @@ const legendaRisco = [
     { cor: '#791F1F', label: 'Muito Alto' },
 ]
 
-function MapaInterativo({ camadasAtivas, onToggleCamada }) {
+function CentrarMapa({ regiao }) {
+    const map = useMap()
+
+    useEffect(() => {
+        if (regiao?.latitude && regiao?.longitude) {
+            map.flyTo([regiao.latitude, regiao.longitude], 12, {
+                duration: 1.5
+            })
+        }
+    }, [regiao, map])
+
+    return null
+}
+
+function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada }) {
     const [focos, setFocos] = useState([])
 
     useEffect(() => {
@@ -75,6 +89,8 @@ function MapaInterativo({ camadasAtivas, onToggleCamada }) {
                     attribution='&copy; OpenStreetMap contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
+
+                <CentrarMapa regiao={regiaoSelecionada} />
 
                 <Marker position={[38.72, -9.14]} icon={iconeRegiao}>
                     <Popup>

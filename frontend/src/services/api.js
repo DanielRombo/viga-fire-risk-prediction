@@ -31,4 +31,14 @@ export const getAlertas = async () => {
     return response.data
 }
 
+export const pesquisarRegioes = async (q) => {
+    const response = await api.get('/regioes/pesquisa', { params: { q } })
+    return response.data
+}
+
+export const getDistritos = async () => {
+    const response = await api.get('/regioes/distritos')
+    return response.data
+}
+
 export default api

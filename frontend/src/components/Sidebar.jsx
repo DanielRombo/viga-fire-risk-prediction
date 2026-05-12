@@ -1,4 +1,52 @@
-function Sidebar({ risco, dados }) {
+import { useState, useEffect } from 'react'
+import { pesquisarRegioes, getDistritos } from '../services/api'
+
+function Sidebar({ risco, dados, onRegiaoSelecionada }) {
+    const [pesquisa, setPesquisa] = useState('')
+    const [resultados, setResultados] = useState([])
+    const [distritos, setDistritos] = useState([])
+    const [distritoSelecionado, setDistritoSelecionado] = useState('')
+    const [mostrarResultados, setMostrarResultados] = useState(false)
+
+    useEffect(() => {
+        carregarDistritos()
+    }, [])
+
+    useEffect(() => {
+        if (pesquisa.length >= 2) {
+            const timer = setTimeout(() => pesquisar(), 300)
+            return () => clearTimeout(timer)
+        } else {
+            setResultados([])
+            setMostrarResultados(false)
+        }
+    }, [pesquisa])
+
+    const carregarDistritos = async () => {
+        try {
+            const dados = await getDistritos()
+            setDistritos(dados.distritos || [])
+        } catch (err) {
+            console.error('Erro ao carregar distritos:', err)
+        }
+    }
+
+    const pesquisar = async () => {
+        try {
+            const dados = await pesquisarRegioes(pesquisa)
+            setResultados(dados.resultados || [])
+            setMostrarResultados(true)
+        } catch (err) {
+            console.error('Erro na pesquisa:', err)
+        }
+    }
+
+    const selecionarRegiao = (regiao) => {
+        setPesquisa(regiao.nome)
+        setMostrarResultados(false)
+        if (onRegiaoSelecionada) onRegiaoSelecionada(regiao)
+    }
+
     const corRiscoNacional = () => {
         switch (risco?.fwi?.nivel_risco) {
             case 'Muito Alto': return { bg: '#FCEBEB', border: '#F09595', label: '#A32D2D', value: '#501313' }
@@ -44,28 +92,59 @@ function Sidebar({ risco, dados }) {
                 Pesquisa
             </div>
 
-            <input
-                type="text"
-                placeholder="Pesquisar localidade..."
+            <div style={{ position: 'relative' }}>
+                <input
+                    type="text"
+                    placeholder="Pesquisar localidade..."
+                    value={pesquisa}
+                    onChange={e => setPesquisa(e.target.value)}
+                    style={{
+                        width: '100%', padding: '7px 10px',
+                        borderRadius: '8px', border: '0.5px solid var(--cinza-borda)',
+                        background: 'var(--cinza-fundo)', fontSize: '12px',
+                        color: 'var(--texto-primary)', outline: 'none'
+                    }}
+                />
+                {mostrarResultados && resultados.length > 0 && (
+                    <div style={{
+                        position: 'absolute', top: '100%', left: 0, right: 0,
+                        background: 'var(--cinza-card)', border: '0.5px solid var(--cinza-borda)',
+                        borderRadius: '8px', marginTop: '4px', zIndex: 100,
+                        maxHeight: '200px', overflowY: 'auto'
+                    }}>
+                        {resultados.map(r => (
+                            <div
+                                key={r.id_regiao}
+                                onClick={() => selecionarRegiao(r)}
+                                style={{
+                                    padding: '8px 10px', cursor: 'pointer', fontSize: '12px',
+                                    color: 'var(--texto-primary)', borderBottom: '0.5px solid var(--cinza-borda)'
+                                }}
+                                onMouseEnter={e => e.target.style.background = 'var(--cinza-fundo)'}
+                                onMouseLeave={e => e.target.style.background = 'transparent'}
+                            >
+                                <div>{r.nome}</div>
+                                <div style={{ fontSize: '10px', color: 'var(--texto-tertiary)' }}>{r.distrito}</div>
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </div>
+
+            <select
+                value={distritoSelecionado}
+                onChange={e => setDistritoSelecionado(e.target.value)}
                 style={{
                     width: '100%', padding: '7px 10px',
                     borderRadius: '8px', border: '0.5px solid var(--cinza-borda)',
                     background: 'var(--cinza-fundo)', fontSize: '12px',
-                    color: 'var(--texto-primary)', outline: 'none'
+                    color: 'var(--texto-primary)'
                 }}
-            />
-
-            <select style={{
-                width: '100%', padding: '7px 10px',
-                borderRadius: '8px', border: '0.5px solid var(--cinza-borda)',
-                background: 'var(--cinza-fundo)', fontSize: '12px',
-                color: 'var(--texto-primary)'
-            }}>
-                <option>Todos os distritos</option>
-                <option>Lisboa</option>
-                <option>Porto</option>
-                <option>Faro</option>
-                <option>Castelo Branco</option>
+            >
+                <option value="">Todos os distritos</option>
+                {distritos.map(d => (
+                    <option key={d} value={d}>{d}</option>
+                ))}
             </select>
 
             <div style={{ fontSize: '11px', fontWeight: '500', color: 'var(--texto-tertiary)', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '4px' }}>
@@ -80,11 +159,8 @@ function Sidebar({ risco, dados }) {
             ].map((item, i) => (
                 <div key={i} style={{
                     background: 'var(--cinza-fundo)',
-                    borderRadius: '8px',
-                    padding: '10px 12px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '10px'
+                    borderRadius: '8px', padding: '10px 12px',
+                    display: 'flex', alignItems: 'center', gap: '10px'
                 }}>
                     <div style={{
                         width: '32px', height: '32px', borderRadius: '8px',

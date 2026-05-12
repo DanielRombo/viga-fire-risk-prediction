@@ -10,6 +10,7 @@ function Dashboard({ darkMode, onToggleDark }) {
     const [risco, setRisco] = useState(null)
     const [loading, setLoading] = useState(true)
     const [camadasAtivas, setCamadasAtivas] = useState(['focos', 'fwi'])
+    const [regiaoSelecionada, setRegiaoSelecionada] = useState(null)
 
     useEffect(() => {
         carregarDados()
@@ -48,14 +49,22 @@ function Dashboard({ darkMode, onToggleDark }) {
         <div className="app">
             <Navbar
                 risco={risco?.fwi?.nivel_risco}
-                localidade="Lisboa"
+                localidade={regiaoSelecionada?.nome || 'Portugal'}
                 darkMode={darkMode}
                 onToggleDark={onToggleDark}
             />
             <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
-                <Sidebar risco={risco} dados={risco?.dados_meteorologicos} />
+                <Sidebar
+                    risco={risco}
+                    dados={risco?.dados_meteorologicos}
+                    onRegiaoSelecionada={setRegiaoSelecionada}
+                />
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-                    <MapaInterativo camadasAtivas={camadasAtivas} onToggleCamada={toggleCamada} />
+                    <MapaInterativo
+                        camadasAtivas={camadasAtivas}
+                        onToggleCamada={toggleCamada}
+                        regiaoSelecionada={regiaoSelecionada}
+                    />
                     <div style={{
                         background: 'var(--cinza-card)',
                         borderTop: '0.5px solid var(--cinza-borda)',
