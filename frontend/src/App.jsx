@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
+import DetalheRegiao from './pages/DetalheRegiao.jsx'
 import './App.css'
 
 function App() {
@@ -11,7 +13,12 @@ function App() {
     document.documentElement.setAttribute('data-theme', novo ? 'dark' : 'light')
   }
 
-  return <Dashboard darkMode={darkMode} onToggleDark={toggleDark} />
+  return (
+    <Routes>
+      <Route path="/" element={<Dashboard darkMode={darkMode} onToggleDark={toggleDark} />} />
+      <Route path="/regiao/:id" element={<DetalheRegiao darkMode={darkMode} onToggleDark={toggleDark} />} />
+    </Routes>
+  )
 }
 
 export default App

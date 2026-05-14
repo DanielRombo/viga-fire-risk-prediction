@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import { pesquisarRegioes, getDistritos } from '../services/api'
+import { useNavigate } from 'react-router-dom'
 
 function Sidebar({ risco, dados, onRegiaoSelecionada }) {
+    const navigate = useNavigate()
     const [pesquisa, setPesquisa] = useState('')
     const [resultados, setResultados] = useState([])
     const [distritos, setDistritos] = useState([])
@@ -115,16 +117,30 @@ function Sidebar({ risco, dados, onRegiaoSelecionada }) {
                         {resultados.map(r => (
                             <div
                                 key={r.id_regiao}
-                                onClick={() => selecionarRegiao(r)}
                                 style={{
                                     padding: '8px 10px', cursor: 'pointer', fontSize: '12px',
-                                    color: 'var(--texto-primary)', borderBottom: '0.5px solid var(--cinza-borda)'
+                                    color: 'var(--texto-primary)', borderBottom: '0.5px solid var(--cinza-borda)',
+                                    display: 'flex', justifyContent: 'space-between', alignItems: 'center'
                                 }}
-                                onMouseEnter={e => e.target.style.background = 'var(--cinza-fundo)'}
-                                onMouseLeave={e => e.target.style.background = 'transparent'}
+                                onMouseEnter={e => e.currentTarget.style.background = 'var(--cinza-fundo)'}
+                                onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
                             >
-                                <div>{r.nome}</div>
-                                <div style={{ fontSize: '10px', color: 'var(--texto-tertiary)' }}>{r.distrito}</div>
+                                <div onClick={() => selecionarRegiao(r)} style={{ flex: 1, cursor: 'pointer' }}>
+                                    <div>{r.nome}</div>
+                                    {r.distrito && r.distrito !== 'Desconhecido' && (
+                                        <div style={{ fontSize: '10px', color: 'var(--texto-tertiary)' }}>{r.distrito}</div>
+                                    )}
+                                </div>
+                                <span
+                                    onClick={() => navigate(`/regiao/${r.id_regiao}`)}
+                                    style={{
+                                        fontSize: '10px', color: '#639922', cursor: 'pointer',
+                                        padding: '2px 6px', borderRadius: '4px',
+                                        border: '0.5px solid #639922', flexShrink: 0
+                                    }}
+                                >
+                                    Detalhes
+                                </span>
                             </div>
                         ))}
                     </div>

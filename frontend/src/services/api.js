@@ -36,6 +36,11 @@ export const pesquisarRegioes = async (q) => {
     return response.data
 }
 
+export const getDetalhesRegiao = async (idRegiao) => {
+    const response = await api.get(`/regioes/${idRegiao}/detalhes`)
+    return response.data
+}
+
 export const getDistritos = async () => {
     const response = await api.get('/regioes/distritos')
     return response.data
