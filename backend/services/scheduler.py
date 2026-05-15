@@ -10,7 +10,18 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 REGIOES = [
-    {"id": 1, "nome": "Lisboa", "latitude": 38.72, "longitude": -9.14},
+    {"id": 1,    "nome": "Lisboa",         "latitude": 38.7169, "longitude": -9.1399},
+    {"id": 3265, "nome": "Aveiro",         "latitude": 40.6405, "longitude": -8.6538},
+    {"id": 3262, "nome": "Braga",          "latitude": 41.5503, "longitude": -8.42},
+    {"id": 3270, "nome": "Castelo Branco",
+        "latitude": 39.8194, "longitude": -7.4906},
+    {"id": 3263, "nome": "Coimbra",        "latitude": 40.2033, "longitude": -8.4103},
+    {"id": 3269, "nome": "Evora",          "latitude": 38.5714, "longitude": -7.9101},
+    {"id": 3264, "nome": "Faro",           "latitude": 37.0194, "longitude": -9.3322},
+    {"id": 3268, "nome": "Leiria",         "latitude": 39.7436, "longitude": -8.8071},
+    {"id": 3261, "nome": "Porto",          "latitude": 41.1579, "longitude": -8.6291},
+    {"id": 3280, "nome": "Sintra",         "latitude": 38.8029, "longitude": -9.3817},
+    {"id": 3267, "nome": "Viseu",          "latitude": 40.6566, "longitude": -7.9122},
 ]
 
 scheduler = AsyncIOScheduler()
