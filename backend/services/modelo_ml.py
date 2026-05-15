@@ -2,14 +2,15 @@ import joblib
 import numpy as np
 import logging
 import os
+import traceback
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
 MODELO_PATH = os.path.join(os.path.dirname(
-    __file__), "../ml_models/modelo_risco.joblib")
+    __file__), "../ml_models/modelo_kaggle.joblib")
 SCALER_PATH = os.path.join(os.path.dirname(
-    __file__), "../ml_models/scaler.joblib")
+    __file__), "../ml_models/scaler_kaggle.joblib")
 MODELO_ANPC_PATH = os.path.join(os.path.dirname(
     __file__), "../ml_models/modelo_anpc.joblib")
 SCALER_ANPC_PATH = os.path.join(os.path.dirname(
@@ -67,6 +68,7 @@ def prever_risco(dados: dict) -> dict:
             resultados['prob_meteorologico'] = round(prob_meteo, 3)
         except Exception as e:
             logger.error(f"Erro modelo meteorologico: {e}")
+            logger.error(traceback.format_exc())
 
     # Modelo ANPC (historico Portugal)
     if modelo_anpc and scaler_anpc and encoder_distrito:
@@ -91,6 +93,7 @@ def prever_risco(dados: dict) -> dict:
             resultados['prob_historico_portugal'] = round(prob_anpc, 3)
         except Exception as e:
             logger.error(f"Erro modelo ANPC: {e}")
+            logger.error(traceback.format_exc())
 
     # Ensemble — media ponderada
     probs = []
