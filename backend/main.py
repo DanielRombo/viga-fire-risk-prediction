@@ -1,43 +1,36 @@
-from contextlib import asynccontextmanager
+import asyncio
 from fastapi import FastAPI
-from config.database import engine, Base
-from models import Regiao, Ocorrencia, DadoMeteorologico
-from routes.meteorologia import router as meteorologia_router
-from routes.incendios import router as incendios_router
-from routes.regioes import router as regioes_router
-from routes.ipma import router as ipma_router
-from routes.risco import router as risco_router
-from routes.alertas import router as alertas_router
-from services.scheduler import iniciar_scheduler
 from fastapi.middleware.cors import CORSMiddleware
+from config.database import engine, Base
+from routes import meteorologia, incendios, regioes, risco, alertas, ipma
 
+Base.metadata.create_all(bind=engine)
 
-@asynccontextmanager
-async def lifespan(app):
-    iniciar_scheduler()
-    yield
-
-
-app = FastAPI(title="VIGA API", lifespan=lifespan)
+app = FastAPI(title="VIGA API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-Base.metadata.create_all(bind=engine)
-
-app.include_router(meteorologia_router, prefix="/api")
-app.include_router(incendios_router, prefix="/api")
-app.include_router(regioes_router, prefix="/api")
-app.include_router(ipma_router, prefix="/api")
-app.include_router(risco_router, prefix="/api")
-app.include_router(alertas_router, prefix="/api")
+app.include_router(meteorologia.router, prefix="/api")
+app.include_router(incendios.router, prefix="/api")
+app.include_router(regioes.router, prefix="/api")
+app.include_router(risco.router, prefix="/api")
+app.include_router(alertas.router, prefix="/api")
+app.include_router(ipma.router, prefix="/api")
 
 
-@app.get("/health")
-def health():
-    return {"status": "ok", "service": "VIGA"}
+@app.on_event("startup")
+async def startup_event():
+    from services.scheduler import iniciar_scheduler, atualizar_dados_meteorologicos
+    iniciar_scheduler()
+    asyncio.create_task(atualizar_dados_meteorologicos())
+
+
+@app.get("/")
+def root():
+    return {"status": "VIGA API online"}

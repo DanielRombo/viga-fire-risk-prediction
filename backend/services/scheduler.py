@@ -1,12 +1,13 @@
-import os
+import asyncio
 import logging
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from apscheduler.triggers.interval import IntervalTrigger
 from config.database import SessionLocal
-from services.open_meteo import guardar_dados_meteorologicos
-from services.nasa_firms import guardar_focos_incendio
+from services.open_meteo import obter_dados_meteorologicos
+from services.nasa_firms import obter_focos_incendio
+from models.dado_meteorologico import DadoMeteorologico
+from models.ocorrencia import Ocorrencia
+from datetime import datetime
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 REGIOES = [
@@ -69,44 +70,67 @@ REGIOES = [
 scheduler = AsyncIOScheduler()
 
 
-async def tarefa_meteorologia():
+async def atualizar_dados_meteorologicos():
+    logger.info(
+        f"A recolher dados meteorológicos para {len(REGIOES)} regiões...")
     db = SessionLocal()
     try:
         for regiao in REGIOES:
-            await guardar_dados_meteorologicos(
-                regiao["latitude"],
-                regiao["longitude"],
-                regiao["id"],
-                db
-            )
-            logger.info(f"Meteorologia atualizada: {regiao['nome']}")
+            try:
+                dados = await obter_dados_meteorologicos(regiao["latitude"], regiao["longitude"])
+                current = dados.get("current", {})
+                if current:
+                    dado = DadoMeteorologico(
+                        id_regiao=regiao["id"],
+                        data_hora=datetime.utcnow(),
+                        temperatura=current.get("temperature_2m"),
+                        humidade=current.get("relative_humidity_2m"),
+                        velocidade_vento=current.get("wind_speed_10m"),
+                        precipitacao=current.get("precipitation", 0),
+                    )
+                    db.add(dado)
+                    logger.info(
+                        f"  ✓ {regiao['nome']}: {current.get('temperature_2m')}°C")
+            except Exception as e:
+                logger.error(f"  ✗ Erro em {regiao['nome']}: {e}")
+        db.commit()
+        logger.info("Dados meteorológicos guardados com sucesso!")
+    except Exception as e:
+        logger.error(f"Erro ao guardar dados: {e}")
+        db.rollback()
     finally:
         db.close()
 
 
-async def tarefa_incendios():
+async def atualizar_focos_incendio():
+    logger.info("A recolher focos de incêndio NASA FIRMS...")
     db = SessionLocal()
     try:
-        resultado = await guardar_focos_incendio(db)
-        logger.info(f"Focos atualizados: {resultado}")
+        focos = await obter_focos_incendio()
+        for foco in focos:
+            ocorrencia = Ocorrencia(
+                id_regiao=1,
+                data_hora=datetime.utcnow(),
+                latitude=foco.get("latitude"),
+                longitude=foco.get("longitude"),
+                tipo="foco_ativo",
+                fonte="NASA FIRMS",
+                descricao=f"Foco detetado por satélite"
+            )
+            db.add(ocorrencia)
+        db.commit()
+        logger.info(f"  ✓ {len(focos)} focos guardados")
+    except Exception as e:
+        logger.error(f"Erro focos: {e}")
+        db.rollback()
     finally:
         db.close()
 
 
 def iniciar_scheduler():
-    scheduler.add_job(
-        tarefa_meteorologia,
-        trigger=IntervalTrigger(hours=1),
-        id="meteorologia",
-        name="Atualizar dados meteorologicos",
-        replace_existing=True
-    )
-    scheduler.add_job(
-        tarefa_incendios,
-        trigger=IntervalTrigger(hours=6),
-        id="incendios",
-        name="Atualizar focos de incendio",
-        replace_existing=True
-    )
+    scheduler.add_job(atualizar_dados_meteorologicos, 'interval',
+                      hours=1, id="Atualizar dados meteorologicos")
+    scheduler.add_job(atualizar_focos_incendio, 'interval',
+                      hours=6, id="Atualizar focos de incendio")
     scheduler.start()
     logger.info("Scheduler iniciado!")

@@ -16,3 +16,10 @@ async def get_meteorologia(latitude: float, longitude: float):
 async def guardar_meteorologia(latitude: float, longitude: float, id_regiao: int, db: Session = Depends(get_db)):
     registo = await guardar_dados_meteorologicos(latitude, longitude, id_regiao, db)
     return {"mensagem": "Dados guardados com sucesso!", "id": registo.id_dado}
+
+
+@router.post("/meteorologia/forcar-atualizacao")
+async def forcar_atualizacao():
+    from services.scheduler import atualizar_dados_meteorologicos
+    await atualizar_dados_meteorologicos()
+    return {"status": "ok", "mensagem": "Atualização forçada iniciada"}

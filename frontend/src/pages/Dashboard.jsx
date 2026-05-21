@@ -68,10 +68,12 @@ function Dashboard({ darkMode, onToggleDark }) {
                     <div style={{
                         background: 'var(--cinza-card)',
                         borderTop: '0.5px solid var(--cinza-borda)',
-                        padding: '12px 16px',
+                        padding: '10px 16px',
                         display: 'grid',
                         gridTemplateColumns: '1fr 1fr',
-                        gap: '12px'
+                        gap: '12px',
+                        maxHeight: '180px',
+                        flexShrink: 0
                     }}>
                         <PainelAlertas />
                         <PainelML risco={risco} />
