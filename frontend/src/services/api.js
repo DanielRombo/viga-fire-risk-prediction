@@ -46,4 +46,9 @@ export const getDistritos = async () => {
     return response.data
 }
 
+export const forcarAtualizacao = async () => {
+    const response = await api.post('/meteorologia/atualizar-agora')
+    return response.data
+}
+
 export default api

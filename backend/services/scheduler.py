@@ -1,6 +1,6 @@
 import asyncio
 import logging
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from apscheduler.schedulers.background import BackgroundScheduler
 from config.database import SessionLocal
 from services.open_meteo import obter_dados_meteorologicos
 from services.nasa_firms import obter_focos_incendio
@@ -67,12 +67,20 @@ REGIOES = [
         "latitude": 41.1006, "longitude": -7.7457},
 ]
 
-scheduler = AsyncIOScheduler()
+scheduler = BackgroundScheduler()
 
 
-async def atualizar_dados_meteorologicos():
-    logger.info(
-        f"A recolher dados meteorológicos para {len(REGIOES)} regiões...")
+def atualizar_dados_meteorologicos_sync():
+    logger.info(f"Scheduler: A recolher dados para {len(REGIOES)} regiões...")
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    try:
+        loop.run_until_complete(_atualizar_dados())
+    finally:
+        loop.close()
+
+
+async def _atualizar_dados():
     db = SessionLocal()
     try:
         for regiao in REGIOES:
@@ -94,16 +102,28 @@ async def atualizar_dados_meteorologicos():
             except Exception as e:
                 logger.error(f"  ✗ Erro em {regiao['nome']}: {e}")
         db.commit()
-        logger.info("Dados meteorológicos guardados com sucesso!")
+        logger.info("Dados meteorológicos guardados!")
     except Exception as e:
-        logger.error(f"Erro ao guardar dados: {e}")
         db.rollback()
+        logger.error(f"Erro: {e}")
     finally:
         db.close()
 
 
-async def atualizar_focos_incendio():
-    logger.info("A recolher focos de incêndio NASA FIRMS...")
+async def atualizar_dados_meteorologicos():
+    await _atualizar_dados()
+
+
+def atualizar_focos_sync():
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    try:
+        loop.run_until_complete(_atualizar_focos())
+    finally:
+        loop.close()
+
+
+async def _atualizar_focos():
     db = SessionLocal()
     try:
         focos = await obter_focos_incendio()
@@ -115,22 +135,32 @@ async def atualizar_focos_incendio():
                 longitude=foco.get("longitude"),
                 tipo="foco_ativo",
                 fonte="NASA FIRMS",
-                descricao=f"Foco detetado por satélite"
+                descricao="Foco detetado por satélite"
             )
             db.add(ocorrencia)
         db.commit()
         logger.info(f"  ✓ {len(focos)} focos guardados")
     except Exception as e:
-        logger.error(f"Erro focos: {e}")
         db.rollback()
+        logger.error(f"Erro focos: {e}")
     finally:
         db.close()
 
 
 def iniciar_scheduler():
-    scheduler.add_job(atualizar_dados_meteorologicos, 'interval',
-                      hours=1, id="Atualizar dados meteorologicos")
-    scheduler.add_job(atualizar_focos_incendio, 'interval',
-                      hours=6, id="Atualizar focos de incendio")
+    scheduler.add_job(
+        atualizar_dados_meteorologicos_sync,
+        'interval',
+        hours=1,
+        id="meteorologia",
+        replace_existing=True
+    )
+    scheduler.add_job(
+        atualizar_focos_sync,
+        'interval',
+        hours=6,
+        id="focos",
+        replace_existing=True
+    )
     scheduler.start()
-    logger.info("Scheduler iniciado!")
+    logger.info("Scheduler BackgroundScheduler iniciado!")

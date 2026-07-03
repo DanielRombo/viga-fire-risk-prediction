@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Sun, Moon } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { logout, getUtilizadorAtual } from '../services/auth'
 
 function Navbar({ risco, localidade, darkMode, onToggleDark }) {
     const [hora, setHora] = useState('')
@@ -28,6 +30,14 @@ function Navbar({ risco, localidade, darkMode, onToggleDark }) {
     }
 
     const { bg, color } = corRisco()
+
+    const navigate = useNavigate()
+    const utilizador = getUtilizadorAtual()
+
+    const handleLogout = () => {
+        logout()
+        navigate('/login')
+    }
 
     return (
         <nav style={{
@@ -75,6 +85,23 @@ function Navbar({ risco, localidade, darkMode, onToggleDark }) {
                     <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#639922', display: 'inline-block', marginRight: '4px' }} />
                     Sistema ativo
                 </span>
+
+                {utilizador && (
+                    <span style={{ fontSize: '12px', color: 'var(--texto-secondary)' }}>
+                        {utilizador.nome}
+                    </span>
+                )}
+
+                <button onClick={handleLogout} style={{
+                    display: 'flex', alignItems: 'center', gap: '6px',
+                    padding: '4px 10px', borderRadius: '99px',
+                    border: '0.5px solid var(--cinza-borda)',
+                    background: 'var(--cinza-fundo)',
+                    cursor: 'pointer', fontSize: '11px',
+                    color: 'var(--texto-secondary)'
+                }}>
+                    Sair
+                </button>
 
                 <button onClick={onToggleDark} style={{
                     display: 'flex', alignItems: 'center', gap: '6px',

@@ -3,6 +3,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from config.database import engine, Base
 from routes import meteorologia, incendios, regioes, risco, alertas, ipma
+from routes.auth import router as auth_router
+from models import utilizador
 
 Base.metadata.create_all(bind=engine)
 
@@ -22,6 +24,7 @@ app.include_router(regioes.router, prefix="/api")
 app.include_router(risco.router, prefix="/api")
 app.include_router(alertas.router, prefix="/api")
 app.include_router(ipma.router, prefix="/api")
+app.include_router(auth_router, prefix="/api")
 
 
 @app.on_event("startup")

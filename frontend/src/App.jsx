@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
-import DetalheRegiao from './pages/DetalheRegiao.jsx'
+import DetalheRegiao from './pages/DetalheRegiao'
+import Login from './pages/Login'
+import RotaProtegida from './components/RotaProtegida'
 import './App.css'
 
 function App() {
@@ -15,8 +17,17 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Dashboard darkMode={darkMode} onToggleDark={toggleDark} />} />
-      <Route path="/regiao/:id" element={<DetalheRegiao darkMode={darkMode} onToggleDark={toggleDark} />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={
+        <RotaProtegida>
+          <Dashboard darkMode={darkMode} onToggleDark={toggleDark} />
+        </RotaProtegida>
+      } />
+      <Route path="/regiao/:id" element={
+        <RotaProtegida>
+          <DetalheRegiao darkMode={darkMode} onToggleDark={toggleDark} />
+        </RotaProtegida>
+      } />
     </Routes>
   )
 }
