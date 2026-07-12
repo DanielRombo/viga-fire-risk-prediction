@@ -1,6 +1,7 @@
 __pycache__/
 *.pyc
 .env
+.env.prod
 node_modules/
 *.joblib
 .DS_Store
