@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from config.database import get_db
+from routes.auth import get_administrador_atual
 from services.openstreetmap import obter_concelhos_portugal, popular_regioes
 
 router = APIRouter()
@@ -12,7 +13,7 @@ async def get_concelhos():
     return {"total": len(concelhos), "concelhos": concelhos}
 
 
-@router.post("/regioes/popular")
+@router.post("/regioes/popular", dependencies=[Depends(get_administrador_atual)])
 async def popular_bd(db: Session = Depends(get_db)):
     resultado = await popular_regioes(db)
     return resultado

@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from config.database import get_db
+from routes.auth import get_administrador_atual
 from services.nasa_firms import obter_focos_incendio, guardar_focos_incendio
 
 router = APIRouter()
@@ -12,7 +13,7 @@ async def get_focos_incendio(dias: int = 1):
     return {"total": len(focos), "focos": focos}
 
 
-@router.post("/incendios/guardar")
+@router.post("/incendios/guardar", dependencies=[Depends(get_administrador_atual)])
 async def guardar_focos(id_regiao: int = 1, db: Session = Depends(get_db)):
     resultado = await guardar_focos_incendio(db, id_regiao)
     return resultado

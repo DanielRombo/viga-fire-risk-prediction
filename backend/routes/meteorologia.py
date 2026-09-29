@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from config.database import get_db
+from routes.auth import get_administrador_atual
 from services.open_meteo import obter_dados_meteorologicos, guardar_dados_meteorologicos
 
 router = APIRouter()
@@ -12,13 +13,13 @@ async def get_meteorologia(latitude: float, longitude: float):
     return dados
 
 
-@router.post("/meteorologia/guardar")
+@router.post("/meteorologia/guardar", dependencies=[Depends(get_administrador_atual)])
 async def guardar_meteorologia(latitude: float, longitude: float, id_regiao: int, db: Session = Depends(get_db)):
     registo = await guardar_dados_meteorologicos(latitude, longitude, id_regiao, db)
     return {"mensagem": "Dados guardados com sucesso!", "id": registo.id_dado}
 
 
-@router.post("/meteorologia/atualizar-agora")
+@router.post("/meteorologia/atualizar-agora", dependencies=[Depends(get_administrador_atual)])
 async def atualizar_agora():
     from services.scheduler import atualizar_dados_meteorologicos
     await atualizar_dados_meteorologicos()

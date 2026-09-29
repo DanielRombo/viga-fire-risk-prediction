@@ -46,6 +46,17 @@ def get_utilizador_atual(
     return user
 
 
+def get_administrador_atual(
+    utilizador: Utilizador = Depends(get_utilizador_atual),
+) -> Utilizador:
+    if not utilizador.admin:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Permissões de administrador necessárias",
+        )
+    return utilizador
+
+
 @router.post("/auth/registar", response_model=TokenSchema)
 def registar(dados: RegistoSchema, db: Session = Depends(get_db)):
     if get_utilizador_por_email(db, dados.email):
