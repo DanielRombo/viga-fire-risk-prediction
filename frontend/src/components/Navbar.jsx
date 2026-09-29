@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Sun, Moon } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { logout, getUtilizadorAtual } from '../services/auth'
+import { obterApresentacaoRisco } from '../utils/risco'
 
 function Navbar({ risco, localidade, darkMode, onToggleDark }) {
     const [hora, setHora] = useState('')
@@ -19,17 +20,7 @@ function Navbar({ risco, localidade, darkMode, onToggleDark }) {
         return () => clearInterval(interval)
     }, [])
 
-    const corRisco = () => {
-        switch (risco) {
-            case 'Muito Alto': return { bg: '#FCEBEB', color: '#A32D2D' }
-            case 'Alto': return { bg: '#FCEBEB', color: '#A32D2D' }
-            case 'Medio': return { bg: '#FAEEDA', color: '#854F0B' }
-            case 'Baixo': return { bg: '#EAF3DE', color: '#3B6D11' }
-            default: return { bg: '#f0f0ec', color: '#666660' }
-        }
-    }
-
-    const { bg, color } = corRisco()
+    const { bg, color, label } = obterApresentacaoRisco(risco)
 
     const navigate = useNavigate()
     const utilizador = getUtilizadorAtual()
@@ -66,15 +57,13 @@ function Navbar({ risco, localidade, darkMode, onToggleDark }) {
                 Última atualização: <strong style={{ color: 'var(--texto-primary)' }}>{hora}</strong>
             </span>
 
-            {risco && (
-                <span style={{
-                    padding: '4px 10px', borderRadius: '99px',
-                    fontSize: '11px', fontWeight: '500',
-                    background: bg, color: color
-                }}>
-                    Risco {risco}
-                </span>
-            )}
+            <span style={{
+                padding: '4px 10px', borderRadius: '99px',
+                fontSize: '11px', fontWeight: '500',
+                background: bg, color: color
+            }}>
+                Risco {label}
+            </span>
 
             <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '12px', color: 'var(--texto-secondary)', fontVariantNumeric: 'tabular-nums' }}>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { getDetalhesRegiao, getRiscoRegiao } from '../services/api'
 import Navbar from '../components/Navbar'
+import { obterApresentacaoRisco } from '../utils/risco'
 
 function DetalheRegiao({ darkMode, onToggleDark }) {
     const { id } = useParams()
@@ -30,34 +31,17 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
         }
     }
 
-    const corNivel = (nivel) => {
-        switch (nivel) {
-            case 'Muito Alto': return { bg: '#FCEBEB', color: '#A32D2D' }
-            case 'Alto': return { bg: '#FCEBEB', color: '#791F1F' }
-            case 'Medio': return { bg: '#FAEEDA', color: '#854F0B' }
-            default: return { bg: '#EAF3DE', color: '#3B6D11' }
-        }
-    }
-
     const gerarInsight = () => {
         if (!detalhes?.atual) return 'Sem dados suficientes para análise.'
-        const { temperatura, humidade, velocidade_vento, fwi, nivel_risco } = detalhes.atual
+        const { temperatura, humidade, velocidade_vento, nivel_risco } = detalhes.atual
+        const apresentacao = obterApresentacaoRisco(nivel_risco)
+        if (!apresentacao.conhecido) return 'Risco indisponível. Não é possível avaliar o nível de risco com os dados apresentados.'
         const fatores = []
         if (humidade < 30) fatores.push('baixa humidade')
         if (velocidade_vento > 25) fatores.push('vento forte')
         if (temperatura > 30) fatores.push('temperatura elevada')
-        if (fatores.length === 0) return 'Condições meteorológicas dentro dos valores normais.'
-        return `Risco ${nivel_risco} devido a ${fatores.join(' + ')}.`
-    }
-
-    const gerarRecomendacao = () => {
-        const nivel = detalhes?.atual?.nivel_risco
-        switch (nivel) {
-            case 'Muito Alto': return 'Evitar qualquer atividade com fogo. Alertar autoridades locais. Manter meios de combate em prontidão.'
-            case 'Alto': return 'Redobrar atenção em zonas florestais. Evitar fogueiras e queimadas. Monitorizar condições.'
-            case 'Medio': return 'Precaução redobrada em zonas de risco. Evitar fogueiras em espaço rural.'
-            default: return 'Condições normais. Manter vigilância habitual.'
-        }
+        if (fatores.length === 0) return `Risco ${apresentacao.label}. Sem fatores adicionais identificados nos dados apresentados.`
+        return `Risco ${apresentacao.label} devido a ${fatores.join(' + ')}.`
     }
 
     if (loading) return (
@@ -75,7 +59,8 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
         </div>
     )
 
-    const cores = corNivel(detalhes.atual?.nivel_risco)
+    const cores = obterApresentacaoRisco(detalhes.atual?.nivel_risco)
+    const coresML = obterApresentacaoRisco(risco?.ml?.nivel_risco_ml)
 
     return (
         <div className="app">
@@ -109,7 +94,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                                 padding: '6px 14px', borderRadius: '99px', fontSize: '13px',
                                 fontWeight: '500', background: cores.bg, color: cores.color
                             }}>
-                                Risco {detalhes.atual?.nivel_risco || 'Sem dados'}
+                                Risco {cores.label}
                             </span>
                         </div>
 
@@ -161,7 +146,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                                 </div>
                                 <div style={{ background: 'var(--cinza-fundo)', borderRadius: '8px', padding: '12px', textAlign: 'center' }}>
                                     <div style={{ fontSize: '11px', color: 'var(--texto-tertiary)', marginBottom: '4px' }}>Nível ML</div>
-                                    <div style={{ fontSize: '16px', fontWeight: '500', color: cores.color }}>{risco.ml?.nivel_risco_ml ?? '--'}</div>
+                                    <div style={{ fontSize: '16px', fontWeight: '500', color: coresML.color }}>{coresML.label}</div>
                                 </div>
                             </div>
                         </div>
@@ -178,7 +163,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                         </div>
                         <div style={{ background: 'var(--cinza-fundo)', borderRadius: '8px', padding: '12px' }}>
                             <div style={{ fontSize: '12px', color: 'var(--texto-secondary)', marginBottom: '4px' }}>Recomendação</div>
-                            <div style={{ fontSize: '13px', color: 'var(--texto-primary)' }}>{gerarRecomendacao()}</div>
+                            <div style={{ fontSize: '13px', color: 'var(--texto-primary)' }}>{cores.recomendacao}</div>
                         </div>
                     </div>
 
@@ -199,7 +184,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                                     </thead>
                                     <tbody>
                                         {detalhes.historico.map((h, i) => {
-                                            const c = corNivel(h.nivel_risco)
+                                            const c = obterApresentacaoRisco(h.nivel_risco)
                                             return (
                                                 <tr key={i}>
                                                     <td style={{ padding: '8px', color: 'var(--texto-secondary)', borderBottom: '0.5px solid var(--cinza-borda)' }}>
@@ -211,7 +196,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                                                     <td style={{ padding: '8px', color: 'var(--texto-primary)', borderBottom: '0.5px solid var(--cinza-borda)' }}>{h.fwi}</td>
                                                     <td style={{ padding: '8px', borderBottom: '0.5px solid var(--cinza-borda)' }}>
                                                         <span style={{ padding: '2px 8px', borderRadius: '99px', background: c.bg, color: c.color, fontSize: '11px' }}>
-                                                            {h.nivel_risco}
+                                                            {c.label}
                                                         </span>
                                                     </td>
                                                 </tr>

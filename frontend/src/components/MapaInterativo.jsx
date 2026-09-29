@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap, CircleMarker, GeoJSON }
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import { getFocosIncendio, getRiscoRegiao } from '../services/api'
+import { legendaRisco, obterApresentacaoRisco } from '../utils/risco'
 
 delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.mergeOptions({
@@ -23,13 +24,6 @@ const camadas = [
     { id: 'vento', label: 'Vento' },
     { id: 'humidade', label: 'Humidade' },
     { id: 'satelite', label: 'Satélite' },
-]
-
-const legendaRisco = [
-    { cor: '#639922', label: 'Baixo' },
-    { cor: '#BA7517', label: 'Médio' },
-    { cor: '#E24B4A', label: 'Alto' },
-    { cor: '#791F1F', label: 'Muito Alto' },
 ]
 
 const CIDADES = [
@@ -65,15 +59,6 @@ function CentrarMapa({ regiao }) {
     return null
 }
 
-const corFWI = (nivel) => {
-    switch (nivel) {
-        case 'Muito Alto': return '#791F1F'
-        case 'Alto': return '#E24B4A'
-        case 'Medio': return '#BA7517'
-        default: return '#639922'
-    }
-}
-
 const corTemperatura = (temp) => {
     if (!temp) return '#cccccc'
     if (temp > 35) return '#791F1F'
@@ -100,7 +85,7 @@ const corHumidade = (hum) => {
 }
 
 const legendas = {
-    fwi: [{ cor: '#639922', label: 'Baixo' }, { cor: '#BA7517', label: 'Médio' }, { cor: '#E24B4A', label: 'Alto' }, { cor: '#791F1F', label: 'Muito Alto' }],
+    fwi: legendaRisco,
     temperatura: [{ cor: '#3B6D11', label: '< 12°C' }, { cor: '#639922', label: '12-20°C' }, { cor: '#BA7517', label: '20-28°C' }, { cor: '#E24B4A', label: '28-35°C' }, { cor: '#791F1F', label: '> 35°C' }],
     vento: [{ cor: '#639922', label: '< 15 km/h' }, { cor: '#BA7517', label: '15-30 km/h' }, { cor: '#E24B4A', label: '30-50 km/h' }, { cor: '#791F1F', label: '> 50 km/h' }],
     humidade: [{ cor: '#791F1F', label: '< 20%' }, { cor: '#E24B4A', label: '20-35%' }, { cor: '#BA7517', label: '35-50%' }, { cor: '#639922', label: '> 50%' }],
@@ -176,7 +161,7 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada }) {
         let cor = '#cccccc'
         let opacidade = cidade ? 0.5 : 0.1
 
-        if (camada === 'fwi') cor = cidade ? corFWI(cidade.risco?.fwi?.nivel_risco) : '#cccccc'
+        if (camada === 'fwi') cor = obterApresentacaoRisco(cidade?.risco?.fwi?.nivel_risco).color
         if (camada === 'temperatura') cor = corTemperatura(dados?.temperatura)
         if (camada === 'vento') cor = corVento(dados?.velocidade_vento)
         if (camada === 'humidade') cor = corHumidade(dados?.humidade)
@@ -187,9 +172,9 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada }) {
     const popupGeoJSON = (camada) => (feature, layer) => {
         const cidade = encontrarCidade(feature.properties.name)
         const dados = cidade?.risco?.dados_meteorologicos
-        if (!cidade) return
+        if (!cidade && camada !== 'fwi') return
         let conteudo = `<strong>${feature.properties.name}</strong><br/>`
-        if (camada === 'fwi') conteudo += `FWI: ${cidade.risco?.fwi?.fwi}<br/>Risco: ${cidade.risco?.fwi?.nivel_risco}`
+        if (camada === 'fwi') conteudo += `FWI: ${cidade?.risco?.fwi?.fwi ?? '--'}<br/>Risco: ${obterApresentacaoRisco(cidade?.risco?.fwi?.nivel_risco).label}`
         if (camada === 'temperatura') conteudo += `Temperatura: ${dados?.temperatura}°C`
         if (camada === 'vento') conteudo += `Vento: ${dados?.velocidade_vento} km/h`
         if (camada === 'humidade') conteudo += `Humidade: ${dados?.humidade}%`

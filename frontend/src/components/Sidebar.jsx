@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { pesquisarRegioes, getDistritos } from '../services/api'
 import { useNavigate } from 'react-router-dom'
+import { obterApresentacaoRisco } from '../utils/risco'
 
 function Sidebar({ risco, dados, onRegiaoSelecionada }) {
     const navigate = useNavigate()
@@ -49,16 +50,7 @@ function Sidebar({ risco, dados, onRegiaoSelecionada }) {
         if (onRegiaoSelecionada) onRegiaoSelecionada(regiao)
     }
 
-    const corRiscoNacional = () => {
-        switch (risco?.fwi?.nivel_risco) {
-            case 'Muito Alto': return { bg: '#FCEBEB', border: '#F09595', label: '#A32D2D', value: '#501313' }
-            case 'Alto': return { bg: '#FCEBEB', border: '#F7C1C1', label: '#A32D2D', value: '#791F1F' }
-            case 'Medio': return { bg: '#FAEEDA', border: '#FAC775', label: '#854F0B', value: '#633806' }
-            default: return { bg: '#EAF3DE', border: '#C0DD97', label: '#3B6D11', value: '#27500A' }
-        }
-    }
-
-    const cores = corRiscoNacional()
+    const cores = obterApresentacaoRisco(risco?.fwi?.nivel_risco)
 
     return (
         <aside style={{
@@ -79,13 +71,13 @@ function Sidebar({ risco, dados, onRegiaoSelecionada }) {
                 padding: '14px',
                 textAlign: 'center'
             }}>
-                <div style={{ fontSize: '10px', color: cores.label, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '4px' }}>
+                <div style={{ fontSize: '10px', color: cores.color, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '4px' }}>
                     Risco nacional
                 </div>
-                <div style={{ fontSize: '20px', fontWeight: '500', color: cores.value }}>
-                    {risco?.fwi?.nivel_risco || 'Sem dados'}
+                <div style={{ fontSize: '20px', fontWeight: '500', color: cores.color }}>
+                    {cores.label}
                 </div>
-                <div style={{ fontSize: '11px', color: cores.label, marginTop: '2px' }}>
+                <div style={{ fontSize: '11px', color: cores.color, marginTop: '2px' }}>
                     FWI {risco?.fwi?.fwi || '--'} — ML {risco?.ml?.probabilidade_incendio ? Math.round(risco.ml.probabilidade_incendio * 100) + '%' : '--'}
                 </div>
             </div>
