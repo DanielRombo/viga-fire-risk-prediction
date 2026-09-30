@@ -102,6 +102,10 @@ Access at `http://localhost:5173`
 
 As variáveis de produção são carregadas de `.env.prod` através de `--env-file`; o Compose não carrega este ficheiro automaticamente. Defina `POSTGRES_DB`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, `SECRET_KEY` e `NASA_FIRMS_KEY` nesse ficheiro local, que está excluído do Git. O `.env` usa as variáveis `DB_*` de desenvolvimento e não substitui o `.env.prod`.
 
+No arranque, o backend prepara as regiões antes de iniciar a recolha. O catálogo principal é `backend/data/regioes_principais.json`, baseado nas 30 cidades de `database/seeds/cidades_principais.sql`; a marca `recolha_automatica` mantém as 28 regiões recolhidas pelo scheduler. Os IDs são atribuídos pela BD e resolvidos por nome e distrito, sem depender dos IDs do dump histórico `regioes_seed.sql`. Não é necessário importar os ficheiros SQL numa instalação nova. Os registos existentes são reutilizados sem alterar os seus campos; duplicados históricos não são removidos. Correspondências ambíguas com distrito desconhecido interrompem a preparação, sem inserções parciais.
+
+Esta preparação não substitui a lista de IDs ainda existente no mapa do frontend; essa lista não deve ser usada como catálogo de inicialização.
+
 ```bash
 docker compose -f docker-compose.prod.yml --env-file .env.prod up -d
 ```

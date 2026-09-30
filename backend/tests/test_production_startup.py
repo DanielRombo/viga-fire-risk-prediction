@@ -56,6 +56,7 @@ class ProductionStartupTests(unittest.TestCase):
 
         scheduler.add_listener(registar, EVENT_JOB_EXECUTED)
         with patch.object(jobs, "scheduler", scheduler), \
+                patch("services.regioes_iniciais.preparar_regioes") as preparar, \
                 patch.object(scheduler, "start", wraps=scheduler.start) as start, \
                 patch.object(jobs, "atualizar_dados_meteorologicos", initial), \
                 patch.object(jobs, "atualizar_dados_meteorologicos_sync", meteorologia), \
@@ -72,6 +73,7 @@ class ProductionStartupTests(unittest.TestCase):
                     time.sleep(0.01)
                 self.assertTrue(server.started, "O backend não concluiu o arranque")
                 start.assert_called_once()
+                preparar.assert_called_once()
                 initial.assert_awaited_once()
                 self.assertEqual({job.id for job in scheduler.get_jobs()}, {"meteorologia", "focos"})
                 self.assertEqual(scheduler.get_job("meteorologia").trigger.interval.total_seconds(), 3600)

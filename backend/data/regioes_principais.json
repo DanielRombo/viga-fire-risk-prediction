@@ -1,0 +1,242 @@
+[
+  {
+    "nome": "Lisboa",
+    "distrito": "Lisboa",
+    "latitude": 38.7169,
+    "longitude": -9.1399,
+    "area_km2": 84.8,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Porto",
+    "distrito": "Porto",
+    "latitude": 41.1579,
+    "longitude": -8.6291,
+    "area_km2": 41.3,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Braga",
+    "distrito": "Braga",
+    "latitude": 41.5503,
+    "longitude": -8.42,
+    "area_km2": 183.0,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Coimbra",
+    "distrito": "Coimbra",
+    "latitude": 40.2033,
+    "longitude": -8.4103,
+    "area_km2": 319.4,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Faro",
+    "distrito": "Faro",
+    "latitude": 37.0194,
+    "longitude": -7.9322,
+    "area_km2": 201.6,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Aveiro",
+    "distrito": "Aveiro",
+    "latitude": 40.6405,
+    "longitude": -8.6538,
+    "area_km2": 197.6,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Setúbal",
+    "distrito": "Setúbal",
+    "latitude": 38.5244,
+    "longitude": -8.8882,
+    "area_km2": 230.0,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Viseu",
+    "distrito": "Viseu",
+    "latitude": 40.6566,
+    "longitude": -7.9122,
+    "area_km2": 507.1,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Leiria",
+    "distrito": "Leiria",
+    "latitude": 39.7436,
+    "longitude": -8.8071,
+    "area_km2": 565.2,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Évora",
+    "distrito": "Évora",
+    "latitude": 38.5714,
+    "longitude": -7.9101,
+    "area_km2": 1307.9,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Castelo Branco",
+    "distrito": "Castelo Branco",
+    "latitude": 39.8194,
+    "longitude": -7.4906,
+    "area_km2": 1438.4,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Guarda",
+    "distrito": "Guarda",
+    "latitude": 40.5374,
+    "longitude": -7.265,
+    "area_km2": 712.1,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Beja",
+    "distrito": "Beja",
+    "latitude": 38.015,
+    "longitude": -7.8653,
+    "area_km2": 1146.4,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Portalegre",
+    "distrito": "Portalegre",
+    "latitude": 39.2967,
+    "longitude": -7.4286,
+    "area_km2": 447.1,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Santarém",
+    "distrito": "Santarém",
+    "latitude": 39.2369,
+    "longitude": -8.6881,
+    "area_km2": 562.0,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Bragança",
+    "distrito": "Bragança",
+    "latitude": 41.8061,
+    "longitude": -6.7588,
+    "area_km2": 1173.6,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Vila Real",
+    "distrito": "Vila Real",
+    "latitude": 41.3006,
+    "longitude": -7.7457,
+    "area_km2": 378.6,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Viana do Castelo",
+    "distrito": "Viana do Castelo",
+    "latitude": 41.6918,
+    "longitude": -8.8341,
+    "area_km2": 314.4,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Funchal",
+    "distrito": "Madeira",
+    "latitude": 32.6669,
+    "longitude": -16.9241,
+    "area_km2": 76.2,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Ponta Delgada",
+    "distrito": "Açores",
+    "latitude": 37.7412,
+    "longitude": -25.6756,
+    "area_km2": 232.7,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Sintra",
+    "distrito": "Lisboa",
+    "latitude": 38.8029,
+    "longitude": -9.3817,
+    "area_km2": 319.4,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Cascais",
+    "distrito": "Lisboa",
+    "latitude": 38.6979,
+    "longitude": -9.4215,
+    "area_km2": 97.1,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Loures",
+    "distrito": "Lisboa",
+    "latitude": 38.8314,
+    "longitude": -9.1683,
+    "area_km2": 167.2,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Almada",
+    "distrito": "Setúbal",
+    "latitude": 38.6766,
+    "longitude": -9.1572,
+    "area_km2": 70.2,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Amadora",
+    "distrito": "Lisboa",
+    "latitude": 38.7539,
+    "longitude": -9.2249,
+    "area_km2": 23.8,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Vila Nova de Gaia",
+    "distrito": "Porto",
+    "latitude": 41.1333,
+    "longitude": -8.6167,
+    "area_km2": 168.7,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Matosinhos",
+    "distrito": "Porto",
+    "latitude": 41.1833,
+    "longitude": -8.6833,
+    "area_km2": 62.3,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Gondomar",
+    "distrito": "Porto",
+    "latitude": 41.15,
+    "longitude": -8.5333,
+    "area_km2": 131.9,
+    "recolha_automatica": false
+  },
+  {
+    "nome": "Guimarães",
+    "distrito": "Braga",
+    "latitude": 41.4425,
+    "longitude": -8.2919,
+    "area_km2": 241.0,
+    "recolha_automatica": true
+  },
+  {
+    "nome": "Barcelos",
+    "distrito": "Braga",
+    "latitude": 41.5333,
+    "longitude": -8.6167,
+    "area_km2": 379.4,
+    "recolha_automatica": false
+  }
+]

@@ -37,6 +37,7 @@ class SchedulerFocosTests(unittest.TestCase):
 
     def executar(self, handler, falha=False):
         with patch.object(scheduler, "SessionLocal", return_value=self.db), \
+                patch.object(scheduler, "resolver_regioes", return_value=[{"nome": "Lisboa", "id_regiao": 1}]), \
                 patch("httpx.AsyncClient", side_effect=lambda **kwargs:
                       HTTP_CLIENT(transport=httpx.MockTransport(handler), **kwargs)), \
                 patch.object(self.db, "commit", wraps=self.db.commit) as commit, \
