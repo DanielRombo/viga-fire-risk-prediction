@@ -3,9 +3,8 @@ import logging
 from apscheduler.schedulers.background import BackgroundScheduler
 from config.database import SessionLocal
 from services.open_meteo import obter_dados_meteorologicos
-from services.nasa_firms import obter_focos_incendio
+from services.nasa_firms import guardar_focos_incendio
 from models.dado_meteorologico import DadoMeteorologico
-from models.ocorrencia import Ocorrencia
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
@@ -126,20 +125,8 @@ def atualizar_focos_sync():
 async def _atualizar_focos():
     db = SessionLocal()
     try:
-        focos = await obter_focos_incendio()
-        for foco in focos:
-            ocorrencia = Ocorrencia(
-                id_regiao=1,
-                data_hora=datetime.utcnow(),
-                latitude=foco.get("latitude"),
-                longitude=foco.get("longitude"),
-                tipo="foco_ativo",
-                fonte="NASA FIRMS",
-                descricao="Foco detetado por satélite"
-            )
-            db.add(ocorrencia)
-        db.commit()
-        logger.info(f"  ✓ {len(focos)} focos guardados")
+        resultado = await guardar_focos_incendio(db, id_regiao=1)
+        logger.info(f"  ✓ {resultado['focos_guardados']} focos guardados")
     except Exception as e:
         db.rollback()
         logger.error(f"Erro focos: {e}")
