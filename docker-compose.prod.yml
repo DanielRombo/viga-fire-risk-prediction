@@ -1,20 +1,21 @@
 version: '3.8'
 
+# Produção: docker compose --env-file .env.prod -f docker-compose.prod.yml up -d --build
 services:
   db:
     image: postgis/postgis:15-3.3
     container_name: viga_db_prod
     restart: always
     environment:
-      POSTGRES_DB: ${POSTGRES_DB}
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB:?Defina POSTGRES_DB em .env.prod e use --env-file .env.prod}
+      POSTGRES_USER: ${POSTGRES_USER:?Defina POSTGRES_USER em .env.prod e use --env-file .env.prod}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD em .env.prod e use --env-file .env.prod}
     volumes:
       - postgres_data_prod:/var/lib/postgresql/data
     networks:
       - viga_network
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}" ]
+      test: [ "CMD-SHELL", "pg_isready -U \"$${POSTGRES_USER}\" -d \"$${POSTGRES_DB}\"" ]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -26,8 +27,8 @@ services:
     container_name: viga_backend_prod
     restart: always
     environment:
-      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
-      SECRET_KEY: ${SECRET_KEY}
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:?Defina POSTGRES_USER em .env.prod e use --env-file .env.prod}:${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD em .env.prod e use --env-file .env.prod}@db:5432/${POSTGRES_DB:?Defina POSTGRES_DB em .env.prod e use --env-file .env.prod}
+      SECRET_KEY: ${SECRET_KEY:?Defina SECRET_KEY em .env.prod e use --env-file .env.prod}
       NASA_FIRMS_KEY: ${NASA_FIRMS_KEY}
     depends_on:
       db:
