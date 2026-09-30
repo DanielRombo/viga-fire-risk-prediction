@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { obterApresentacaoRisco } from '../utils/risco'
 import { formatarValor, formatarProbabilidade, numeroDisponivel, mensagemEstado } from '../utils/disponibilidade'
 
-function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos }) {
+function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos, localidade }) {
     const navigate = useNavigate()
     const [pesquisa, setPesquisa] = useState('')
     const [resultados, setResultados] = useState([])
@@ -73,7 +73,7 @@ function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos }) {
                 textAlign: 'center'
             }}>
                 <div style={{ fontSize: '10px', color: cores.color, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '4px' }}>
-                    Risco nacional
+                    Risco — {localidade}
                 </div>
                 <div style={{ fontSize: '20px', fontWeight: '500', color: cores.color }}>
                     {cores.label}

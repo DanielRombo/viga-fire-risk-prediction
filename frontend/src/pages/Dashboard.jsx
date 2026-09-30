@@ -14,25 +14,43 @@ function Dashboard({ darkMode, onToggleDark }) {
     const [regiaoSelecionada, setRegiaoSelecionada] = useState(null)
     const [erroDados, setErroDados] = useState('')
     const [dadosFocos, setDadosFocos] = useState({ estado: 'carregando', total: null })
+    const idRegiao = regiaoSelecionada?.id_regiao ?? 1
+    const localidade = regiaoSelecionada?.nome || 'Lisboa'
 
     useEffect(() => {
+        let ativo = true
+        let ultimoPedido = 0
+        const carregarDados = async () => {
+            const pedido = ++ultimoPedido
+            try {
+                const dados = await getRiscoRegiao(idRegiao)
+                if (!ativo || pedido !== ultimoPedido) return
+                setRisco(dados)
+                setErroDados('')
+            } catch (err) {
+                if (!ativo || pedido !== ultimoPedido) return
+                setRisco(null)
+                setErroDados(mensagemErro(err))
+                console.error('Erro ao carregar dados:', err)
+            } finally {
+                if (ativo && pedido === ultimoPedido) setLoading(false)
+            }
+        }
         carregarDados()
         const interval = setInterval(carregarDados, 60000)
-        return () => clearInterval(interval)
-    }, [])
-
-    const carregarDados = async () => {
-        try {
-            const dados = await getRiscoRegiao(1)
-            setRisco(dados)
-            setErroDados('')
-        } catch (err) {
-            setRisco(null)
-            setErroDados(mensagemErro(err))
-            console.error('Erro ao carregar dados:', err)
-        } finally {
-            setLoading(false)
+        return () => {
+            ativo = false
+            clearInterval(interval)
         }
+    }, [idRegiao])
+
+    const selecionarRegiao = (regiao) => {
+        if (regiao.id_regiao !== idRegiao) {
+            setRisco(null)
+            setErroDados('')
+            setLoading(true)
+        }
+        setRegiaoSelecionada(regiao)
     }
 
     const toggleCamada = (id) => {
@@ -41,30 +59,21 @@ function Dashboard({ darkMode, onToggleDark }) {
         )
     }
 
-    if (loading) return (
-        <div style={{
-            height: '100vh', display: 'flex',
-            alignItems: 'center', justifyContent: 'center',
-            color: 'var(--texto-secondary)', fontSize: '14px'
-        }}>
-            A carregar dados...
-        </div>
-    )
-
     return (
         <div className="app">
             <Navbar
                 risco={risco?.fwi?.nivel_risco}
-                localidade={regiaoSelecionada?.nome || 'Portugal'}
+                localidade={localidade}
                 darkMode={darkMode}
                 onToggleDark={onToggleDark}
             />
-            {(erroDados || mensagemEstado(risco?.estado)) && <div role="status">{erroDados || mensagemEstado(risco?.estado)}</div>}
+            {(loading || erroDados || mensagemEstado(risco?.estado)) && <div role="status">{loading ? 'A carregar dados...' : erroDados || mensagemEstado(risco?.estado)}</div>}
             <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
                 <Sidebar
                     risco={risco}
                     dados={risco?.dados_meteorologicos}
-                    onRegiaoSelecionada={setRegiaoSelecionada}
+                    onRegiaoSelecionada={selecionarRegiao}
+                    localidade={localidade}
                     dadosFocos={dadosFocos}
                 />
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
