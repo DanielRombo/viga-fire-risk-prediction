@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react'
 import { getAlertas } from '../services/api'
+import { apresentarAlertas } from '../utils/disponibilidade'
 
 function PainelAlertas() {
-    const [alertas, setAlertas] = useState([])
+    const [resposta, setResposta] = useState(null)
+    const [erro, setErro] = useState(false)
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -14,8 +16,11 @@ function PainelAlertas() {
     const carregarAlertas = async () => {
         try {
             const dados = await getAlertas()
-            setAlertas(dados.alertas || [])
+            setResposta(dados)
+            setErro(false)
         } catch (err) {
+            setErro(true)
+            setResposta(null)
             console.error('Erro ao carregar alertas:', err)
         } finally {
             setLoading(false)
@@ -28,21 +33,19 @@ function PainelAlertas() {
         </div>
     )
 
+    const { alertas, total, mensagem } = apresentarAlertas(resposta, erro)
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', overflow: 'hidden', height: '100%' }}>
             <div style={{
                 fontSize: '11px', fontWeight: '500', color: 'var(--texto-tertiary)',
                 textTransform: 'uppercase', letterSpacing: '0.06em', flexShrink: 0
             }}>
-                Alertas prioritários ({alertas.length})
+                Alertas prioritários ({total ?? 'Indisponível'})
             </div>
 
             <div style={{ overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '4px', flex: 1 }}>
-                {alertas.length === 0 ? (
-                    <div style={{ fontSize: '12px', color: 'var(--texto-secondary)' }}>
-                        Sem alertas ativos
-                    </div>
-                ) : (
+                <div role="status" style={{ fontSize: '12px', color: 'var(--texto-secondary)' }}>{mensagem}</div>
+                {alertas.length > 0 && (
                     alertas.map(alerta => (
                         <div key={alerta.id} style={{
                             display: 'flex', alignItems: 'flex-start', gap: '8px',

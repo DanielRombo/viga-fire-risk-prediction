@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { formatarValor, formatarProbabilidade, percentagemDisponivel } from '../utils/disponibilidade'
 
 const tooltips = {
     FWI: 'Fire Weather Index — índice global de risco de incêndio. Combina temperatura, humidade, vento e precipitação. Quanto maior, maior o risco.',
@@ -24,7 +25,7 @@ function FwiItem({ label, value }) {
                 {label}
             </div>
             <div style={{ fontSize: '13px', fontWeight: '500', color: 'var(--texto-primary)' }}>
-                {value ?? '--'}
+                {formatarValor(value)}
             </div>
             {hover && (
                 <div style={{
@@ -44,7 +45,7 @@ function FwiItem({ label, value }) {
 
 function PainelML({ risco }) {
     const probabilidade = risco?.ml?.probabilidade_incendio
-    const percentagem = probabilidade ? Math.round(probabilidade * 100) : 0
+    const percentagem = percentagemDisponivel(probabilidade)
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
@@ -61,23 +62,23 @@ function PainelML({ risco }) {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
                     <span style={{ fontSize: '12px', color: 'var(--texto-secondary)' }}>Nível de risco ML</span>
                     <span style={{ fontSize: '13px', fontWeight: '500', color: 'var(--texto-primary)' }}>
-                        {risco?.ml?.nivel_risco_ml || '--'}
+                        {risco?.ml?.nivel_risco_ml || 'Indisponível'}
                     </span>
                 </div>
 
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
                     <span style={{ fontSize: '12px', color: 'var(--texto-secondary)' }}>Probabilidade</span>
                     <span style={{ fontSize: '13px', fontWeight: '500', color: 'var(--texto-primary)' }}>
-                        {percentagem}%
+                        {formatarProbabilidade(probabilidade)}
                     </span>
                 </div>
 
                 <div style={{ height: '6px', borderRadius: '99px', background: 'var(--cinza-borda)', marginTop: '6px' }}>
-                    <div style={{
+                    {percentagem !== null && <div style={{
                         height: '6px', borderRadius: '99px',
                         background: percentagem > 70 ? '#E24B4A' : percentagem > 50 ? '#BA7517' : '#639922',
                         width: `${percentagem}%`, transition: 'width 0.3s'
-                    }} />
+                    }} />}
                 </div>
 
                 <div style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>

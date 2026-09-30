@@ -1,5 +1,6 @@
 import httpx
 import logging
+from services.fontes import validar_fonte, numero
 
 logger = logging.getLogger(__name__)
 
@@ -14,24 +15,30 @@ async def obter_concelhos_portugal():
     out center;
     """
 
-    async with httpx.AsyncClient(timeout=60) as client:
-        resposta = await client.post(OVERPASS_URL, data={"data": query}, headers={"User-Agent": "VIGA/1.0 (projeto academico)"})
-        dados = resposta.json()
+    with validar_fonte("Overpass"):
+        async with httpx.AsyncClient(timeout=60) as client:
+            resposta = await client.post(OVERPASS_URL, data={"data": query}, headers={"User-Agent": "VIGA/1.0 (projeto academico)"})
+            resposta.raise_for_status()
+            dados = resposta.json()
 
-        concelhos = []
-        for elemento in dados["elements"]:
-            if "tags" in elemento and "name" in elemento["tags"]:
-                concelho = {
-                    "nome": elemento["tags"]["name"],
-                    "distrito": elemento["tags"].get("is_in:district", "Desconhecido"),
-                    "latitude": elemento.get("center", {}).get("lat"),
-                    "longitude": elemento.get("center", {}).get("lon"),
-                }
-                if concelho["latitude"] and concelho["longitude"]:
+            if not isinstance(dados["elements"], list) or dados.get("remark"):
+                raise ValueError("Resposta Overpass incompleta")
+            concelhos = []
+            for elemento in dados["elements"]:
+                if not elemento.get("tags", {}).get("name"):
+                    raise ValueError("Região sem nome")
+                if "tags" in elemento and "name" in elemento["tags"]:
+                    concelho = {
+                        "nome": elemento["tags"]["name"],
+                        "distrito": elemento["tags"].get("is_in:district", "Desconhecido"),
+                        "latitude": numero(elemento["center"]["lat"]),
+                        "longitude": numero(elemento["center"]["lon"]),
+                    }
                     concelhos.append(concelho)
 
-        logger.info(f"Concelhos obtidos: {len(concelhos)}")
-        return concelhos
+            logger.info(f"Concelhos obtidos: {len(concelhos)}")
+            return concelhos
+
 
 
 async def popular_regioes(db):

@@ -4,6 +4,7 @@ import io
 import os
 from datetime import datetime
 from models.ocorrencia import Ocorrencia
+from services.fontes import validar_fonte, erro_fonte, numero
 
 NASA_FIRMS_URL = "https://firms.modaps.eosdis.nasa.gov/api/area/csv"
 
@@ -25,15 +26,18 @@ async def obter_focos_incendio(dias: int = 1):
     map_key = os.getenv("NASA_FIRMS_KEY")
     area = "-9.5,36.9,-6.2,42.2"
     url = f"{NASA_FIRMS_URL}/{map_key}/VIIRS_SNPP_NRT/{area}/{dias}"
-    async with httpx.AsyncClient() as client:
-        resposta = await client.get(url)
-        conteudo = resposta.text
-        leitor = csv.DictReader(io.StringIO(conteudo))
-        focos = []
-        for linha in leitor:
-            try:
-                lat = float(linha["latitude"])
-                lon = float(linha["longitude"])
+    with validar_fonte("NASA FIRMS"):
+        async with httpx.AsyncClient() as client:
+            resposta = await client.get(url)
+            resposta.raise_for_status()
+            leitor = csv.DictReader(io.StringIO(resposta.text))
+            if not {"latitude", "longitude", "acq_date", "acq_time"}.issubset(leitor.fieldnames or []):
+                raise erro_fonte("NASA FIRMS", "dados_incompletos")
+            focos = []
+            for linha in leitor:
+                lat = numero(linha["latitude"])
+                lon = numero(linha["longitude"])
+                datetime.strptime(f"{linha['acq_date']} {linha['acq_time']}", "%Y-%m-%d %H%M")
                 if not is_portugal(lat, lon):
                     continue
                 foco = {
@@ -44,9 +48,7 @@ async def obter_focos_incendio(dias: int = 1):
                     "fonte": "NASA FIRMS - VIIRS"
                 }
                 focos.append(foco)
-            except Exception:
-                continue
-        return focos
+            return focos
 
 
 async def guardar_focos_incendio(db, id_regiao: int = 1):

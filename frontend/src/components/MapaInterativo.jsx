@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import { getFocosIncendio, getRiscoRegiao } from '../services/api'
 import { legendaRisco, obterApresentacaoRisco } from '../utils/risco'
+import { numeroDisponivel, formatarValor, mensagemErro } from '../utils/disponibilidade'
 
 delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.mergeOptions({
@@ -60,7 +61,7 @@ function CentrarMapa({ regiao }) {
 }
 
 const corTemperatura = (temp) => {
-    if (!temp) return '#cccccc'
+    if (!numeroDisponivel(temp)) return '#cccccc'
     if (temp > 35) return '#791F1F'
     if (temp > 28) return '#E24B4A'
     if (temp > 20) return '#BA7517'
@@ -69,7 +70,7 @@ const corTemperatura = (temp) => {
 }
 
 const corVento = (vento) => {
-    if (!vento) return '#cccccc'
+    if (!numeroDisponivel(vento)) return '#cccccc'
     if (vento > 50) return '#791F1F'
     if (vento > 30) return '#E24B4A'
     if (vento > 15) return '#BA7517'
@@ -77,7 +78,7 @@ const corVento = (vento) => {
 }
 
 const corHumidade = (hum) => {
-    if (!hum) return '#cccccc'
+    if (!numeroDisponivel(hum)) return '#cccccc'
     if (hum < 20) return '#791F1F'
     if (hum < 35) return '#E24B4A'
     if (hum < 50) return '#BA7517'
@@ -91,8 +92,10 @@ const legendas = {
     humidade: [{ cor: '#791F1F', label: '< 20%' }, { cor: '#E24B4A', label: '20-35%' }, { cor: '#BA7517', label: '35-50%' }, { cor: '#639922', label: '> 50%' }],
 }
 
-function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada }) {
+function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDadosFocos }) {
     const [focos, setFocos] = useState([])
+    const [estadoFocos, setEstadoFocos] = useState('carregando')
+    const [erroFocos, setErroFocos] = useState('')
     const [riscosCidades, setRiscosCidades] = useState([])
     const [geoData, setGeoData] = useState(null)
 
@@ -114,8 +117,16 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada }) {
     const carregarFocos = async () => {
         try {
             const dados = await getFocosIncendio()
-            setFocos(dados.focos || [])
+            if (!Array.isArray(dados.focos)) throw new Error('Resposta de focos inválida')
+            setFocos(dados.focos)
+            setEstadoFocos('ok')
+            setErroFocos('')
+            onDadosFocos?.({ estado: 'ok', total: dados.focos.length })
         } catch (err) {
+            setFocos([])
+            setEstadoFocos('erro_fonte')
+            setErroFocos(mensagemErro(err))
+            onDadosFocos?.({ estado: 'erro_fonte', total: null })
             console.error('Erro focos:', err)
         }
     }
@@ -175,9 +186,9 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada }) {
         if (!cidade && camada !== 'fwi') return
         let conteudo = `<strong>${feature.properties.name}</strong><br/>`
         if (camada === 'fwi') conteudo += `FWI: ${cidade?.risco?.fwi?.fwi ?? '--'}<br/>Risco: ${obterApresentacaoRisco(cidade?.risco?.fwi?.nivel_risco).label}`
-        if (camada === 'temperatura') conteudo += `Temperatura: ${dados?.temperatura}°C`
-        if (camada === 'vento') conteudo += `Vento: ${dados?.velocidade_vento} km/h`
-        if (camada === 'humidade') conteudo += `Humidade: ${dados?.humidade}%`
+        if (camada === 'temperatura') conteudo += `Temperatura: ${formatarValor(dados?.temperatura)}${numeroDisponivel(dados?.temperatura) ? '°C' : ''}`
+        if (camada === 'vento') conteudo += `Vento: ${formatarValor(dados?.velocidade_vento)}${numeroDisponivel(dados?.velocidade_vento) ? ' km/h' : ''}`
+        if (camada === 'humidade') conteudo += `Humidade: ${formatarValor(dados?.humidade)}${numeroDisponivel(dados?.humidade) ? '%' : ''}`
         layer.bindPopup(conteudo)
     }
 
@@ -243,13 +254,14 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada }) {
                             }} />
                         </div>
                         {c.label}
-                        {c.id === 'focos' && focos.length > 0 && (
-                            <span style={{ background: '#E24B4A', color: 'white', borderRadius: '99px', fontSize: '9px', padding: '1px 5px', fontWeight: '500' }}>
-                                {focos.length}
+                        {c.id === 'focos' && (
+                            <span style={{ background: estadoFocos === 'ok' && focos.length > 0 ? '#E24B4A' : '#666666', color: 'white', borderRadius: '99px', fontSize: '9px', padding: '1px 5px', fontWeight: '500' }}>
+                                {estadoFocos === 'ok' ? focos.length : 'Indisponível'}
                             </span>
                         )}
                     </div>
                 ))}
+                {estadoFocos !== 'ok' && <div role="status" style={{ maxWidth: '190px', fontSize: '11px' }}>{estadoFocos === 'carregando' ? 'A carregar focos…' : erroFocos}</div>}
             </div>
 
             <div style={{

@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { getDetalhesRegiao, getRiscoRegiao } from '../services/api'
 import Navbar from '../components/Navbar'
 import { obterApresentacaoRisco } from '../utils/risco'
+import { formatarValor, formatarProbabilidade, percentagemDisponivel, mensagemErro, mensagemEstado } from '../utils/disponibilidade'
 
 function DetalheRegiao({ darkMode, onToggleDark }) {
     const { id } = useParams()
@@ -11,20 +12,28 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
     const [risco, setRisco] = useState(null)
     const [loading, setLoading] = useState(true)
     const [tecnicoAberto, setTecnicoAberto] = useState(false)
+    const [erroDados, setErroDados] = useState('')
+    const [erroRisco, setErroRisco] = useState('')
 
     useEffect(() => {
         carregarDados()
     }, [id])
 
     const carregarDados = async () => {
+        setLoading(true)
+        setErroDados('')
+        setErroRisco('')
         try {
             const [det, risc] = await Promise.all([
                 getDetalhesRegiao(id),
-                getRiscoRegiao(id).catch(() => null)
+                getRiscoRegiao(id).catch(err => { setErroRisco(mensagemErro(err)); return null })
             ])
             setDetalhes(det)
             setRisco(risc)
         } catch (err) {
+            setDetalhes(null)
+            setRisco(null)
+            setErroDados(mensagemErro(err))
             console.error('Erro ao carregar detalhes:', err)
         } finally {
             setLoading(false)
@@ -52,7 +61,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
 
     if (!detalhes || detalhes.erro) return (
         <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '16px' }}>
-            <div style={{ color: 'var(--texto-secondary)' }}>Região não encontrada</div>
+            <div role="status" style={{ color: 'var(--texto-secondary)' }}>{erroDados || detalhes?.erro || 'Dados indisponíveis'}</div>
             <button onClick={() => navigate('/')} style={{ padding: '8px 16px', borderRadius: '8px', border: 'none', background: '#639922', color: 'white', cursor: 'pointer' }}>
                 Voltar ao Dashboard
             </button>
@@ -61,6 +70,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
 
     const cores = obterApresentacaoRisco(detalhes.atual?.nivel_risco)
     const coresML = obterApresentacaoRisco(risco?.ml?.nivel_risco_ml)
+    const percentagem = percentagemDisponivel(risco?.ml?.probabilidade_incendio)
 
     return (
         <div className="app">
@@ -70,6 +80,8 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                 darkMode={darkMode}
                 onToggleDark={onToggleDark}
             />
+            {mensagemEstado(detalhes.estado) && <div role="status">{mensagemEstado(detalhes.estado)}</div>}
+            {(erroRisco || mensagemEstado(risco?.estado)) && <div role="status">{erroRisco || mensagemEstado(risco?.estado)}</div>}
 
             <div style={{ padding: '24px', overflowY: 'auto', flex: 1 }}>
                 <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
@@ -109,7 +121,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                                     <div style={{ fontSize: '20px', marginBottom: '4px' }}>{item.icon}</div>
                                     <div style={{ fontSize: '11px', color: 'var(--texto-tertiary)' }}>{item.label}</div>
                                     <div style={{ fontSize: '18px', fontWeight: '500', color: 'var(--texto-primary)' }}>
-                                        {item.value ?? '--'} <span style={{ fontSize: '11px', color: 'var(--texto-tertiary)' }}>{item.unit}</span>
+                                        {formatarValor(item.value)} <span style={{ fontSize: '11px', color: 'var(--texto-tertiary)' }}>{item.unit}</span>
                                     </div>
                                 </div>
                             ))}
@@ -134,15 +146,15 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                                 <div style={{ background: 'var(--cinza-fundo)', borderRadius: '8px', padding: '12px', textAlign: 'center' }}>
                                     <div style={{ fontSize: '11px', color: 'var(--texto-tertiary)', marginBottom: '4px' }}>Probabilidade</div>
                                     <div style={{ fontSize: '24px', fontWeight: '500', color: 'var(--texto-primary)' }}>
-                                        {risco.ml?.probabilidade_incendio ? Math.round(risco.ml.probabilidade_incendio * 100) + '%' : '--'}
+                                        {formatarProbabilidade(risco.ml?.probabilidade_incendio)}
                                     </div>
                                     <div style={{ height: '4px', borderRadius: '99px', background: 'var(--cinza-borda)', marginTop: '8px' }}>
-                                        <div style={{ height: '4px', borderRadius: '99px', background: '#E24B4A', width: `${Math.round((risco.ml?.probabilidade_incendio || 0) * 100)}%` }} />
+                                        {percentagem !== null && <div style={{ height: '4px', borderRadius: '99px', background: '#E24B4A', width: `${percentagem}%` }} />}
                                     </div>
                                 </div>
                                 <div style={{ background: 'var(--cinza-fundo)', borderRadius: '8px', padding: '12px', textAlign: 'center' }}>
                                     <div style={{ fontSize: '11px', color: 'var(--texto-tertiary)', marginBottom: '4px' }}>FWI</div>
-                                    <div style={{ fontSize: '24px', fontWeight: '500', color: 'var(--texto-primary)' }}>{risco.fwi?.fwi ?? '--'}</div>
+                                    <div style={{ fontSize: '24px', fontWeight: '500', color: 'var(--texto-primary)' }}>{formatarValor(risco.fwi?.fwi)}</div>
                                 </div>
                                 <div style={{ background: 'var(--cinza-fundo)', borderRadius: '8px', padding: '12px', textAlign: 'center' }}>
                                     <div style={{ fontSize: '11px', color: 'var(--texto-tertiary)', marginBottom: '4px' }}>Nível ML</div>
@@ -193,7 +205,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                                                     <td style={{ padding: '8px', color: 'var(--texto-primary)', borderBottom: '0.5px solid var(--cinza-borda)' }}>{h.temperatura ?? '--'}</td>
                                                     <td style={{ padding: '8px', color: 'var(--texto-primary)', borderBottom: '0.5px solid var(--cinza-borda)' }}>{h.humidade ?? '--'}</td>
                                                     <td style={{ padding: '8px', color: 'var(--texto-primary)', borderBottom: '0.5px solid var(--cinza-borda)' }}>{h.velocidade_vento ?? '--'}</td>
-                                                    <td style={{ padding: '8px', color: 'var(--texto-primary)', borderBottom: '0.5px solid var(--cinza-borda)' }}>{h.fwi}</td>
+                                                    <td style={{ padding: '8px', color: 'var(--texto-primary)', borderBottom: '0.5px solid var(--cinza-borda)' }}>{formatarValor(h.fwi)}</td>
                                                     <td style={{ padding: '8px', borderBottom: '0.5px solid var(--cinza-borda)' }}>
                                                         <span style={{ padding: '2px 8px', borderRadius: '99px', background: c.bg, color: c.color, fontSize: '11px' }}>
                                                             {c.label}

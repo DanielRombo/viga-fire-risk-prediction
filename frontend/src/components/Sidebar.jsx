@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 import { pesquisarRegioes, getDistritos } from '../services/api'
 import { useNavigate } from 'react-router-dom'
 import { obterApresentacaoRisco } from '../utils/risco'
+import { formatarValor, formatarProbabilidade, numeroDisponivel, mensagemEstado } from '../utils/disponibilidade'
 
-function Sidebar({ risco, dados, onRegiaoSelecionada }) {
+function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos }) {
     const navigate = useNavigate()
     const [pesquisa, setPesquisa] = useState('')
     const [resultados, setResultados] = useState([])
@@ -78,7 +79,7 @@ function Sidebar({ risco, dados, onRegiaoSelecionada }) {
                     {cores.label}
                 </div>
                 <div style={{ fontSize: '11px', color: cores.color, marginTop: '2px' }}>
-                    FWI {risco?.fwi?.fwi || '--'} — ML {risco?.ml?.probabilidade_incendio ? Math.round(risco.ml.probabilidade_incendio * 100) + '%' : '--'}
+                    FWI {formatarValor(risco?.fwi?.fwi)} — ML {formatarProbabilidade(risco?.ml?.probabilidade_incendio)}
                 </div>
             </div>
 
@@ -163,7 +164,7 @@ function Sidebar({ risco, dados, onRegiaoSelecionada }) {
                 { icon: '🌡', label: 'Temperatura', value: dados?.temperatura, unit: '°C', bg: '#FFF3CD' },
                 { icon: '💧', label: 'Humidade', value: dados?.humidade, unit: '%', bg: '#E3F2FD' },
                 { icon: '💨', label: 'Vento', value: dados?.velocidade_vento, unit: 'km/h', bg: '#E8F5E9' },
-                { icon: '🔥', label: 'Focos ativos', value: 0, unit: 'hoje', bg: '#FCE4EC' },
+                { icon: '🔥', label: 'Focos ativos', value: dadosFocos?.estado === 'ok' ? dadosFocos.total : null, unit: 'hoje', bg: '#FCE4EC' },
             ].map((item, i) => (
                 <div key={i} style={{
                     background: 'var(--cinza-fundo)',
@@ -180,11 +181,12 @@ function Sidebar({ risco, dados, onRegiaoSelecionada }) {
                     <div>
                         <div style={{ fontSize: '11px', color: 'var(--texto-secondary)' }}>{item.label}</div>
                         <div style={{ fontSize: '15px', fontWeight: '500', color: 'var(--texto-primary)' }}>
-                            {item.value ?? '--'} <span style={{ fontSize: '11px', color: 'var(--texto-tertiary)' }}>{item.unit}</span>
+                            {formatarValor(item.value)} <span style={{ fontSize: '11px', color: 'var(--texto-tertiary)' }}>{numeroDisponivel(item.value) ? item.unit : ''}</span>
                         </div>
                     </div>
                 </div>
             ))}
+            {dadosFocos?.estado !== 'ok' && <div role="status">{dadosFocos?.estado === 'carregando' ? 'A carregar focos…' : mensagemEstado(dadosFocos?.estado || 'sem_dados')}</div>}
         </aside>
     )
 }
