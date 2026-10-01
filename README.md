@@ -110,6 +110,10 @@ As observações NASA são deduplicadas na BD por produto (`VIIRS_SNPP_NRT`), da
 
 A associação de novos focos usa polígonos válidos com SRID conhecido, através de PostGIS: `poligono` quando há uma única correspondência, `nao_determinada` quando não há e `ambigua` quando há várias. Nos dois últimos casos, `id_regiao` é nulo. Coordenadas de cidades e o GeoJSON de distritos do frontend não são tratados como limites administrativos das regiões. A rota `/api/incendios/guardar` deixa de aceitar uma região imposta por `id_regiao` (HTTP 422) e devolve `focos_guardados`, `focos_duplicados` e `focos_sem_regiao`; esta última contagem refere-se apenas aos novos registos. A importação de polígonos e a revisão das associações históricas não são realizadas automaticamente.
 
+O filtro territorial inicial da NASA usa `backend/data/portugal_distritos.geojson`, uma cópia integral do GeoJSON já existente em `frontend/public/portugal_distritos.json`. Shapely verifica a inclusão nos polígonos, sem acesso à BD. Os retângulos de consulta são calculados separadamente para continente, Açores e Madeira, incluindo as ilhas representadas no ficheiro (também Porto Santo, Desertas e Selvagens); servem apenas para obter candidatos. Pontos fora dos polígonos são rejeitados. A precisão fica limitada à resolução deste GeoJSON, que não substitui cartografia administrativa de maior detalhe. Este filtro nacional não determina a região de uma ocorrência.
+
+Só há sucesso após respostas válidas das três áreas: uma falha ou timeout mantém o erro HTTP, sem devolver uma lista parcial como cobertura nacional. Observações repetidas entre áreas são removidas da resposta usando a mesma identidade NASA; a deduplicação persistente na BD mantém-se inalterada.
+
 ```bash
 docker compose -f docker-compose.prod.yml --env-file .env.prod up -d
 ```

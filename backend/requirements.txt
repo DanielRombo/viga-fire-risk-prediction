@@ -3,6 +3,7 @@ uvicorn
 sqlalchemy
 psycopg2-binary
 geoalchemy2
+shapely>=2,<3
 python-dotenv
 httpx
 requests

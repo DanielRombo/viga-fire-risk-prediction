@@ -7,51 +7,44 @@ from models.ocorrencia import Ocorrencia
 from services.fontes import validar_fonte, erro_fonte, numero
 from services.identidade_nasa import PRODUTO_NASA, chave_observacao
 from services.geografia_focos import determinar_regiao
+from services.territorio_portugues import areas_consulta, pertence_a_portugal as is_portugal
 from sqlalchemy.dialects.postgresql import insert as pg_insert
 from sqlalchemy.dialects.sqlite import insert as sqlite_insert
 
 NASA_FIRMS_URL = "https://firms.modaps.eosdis.nasa.gov/api/area/csv"
 
 
-def is_portugal(lat, lon):
-    # Portugal continental
-    if 36.8 <= lat <= 42.2 and -9.6 <= lon <= -6.1:
-        return True
-    # Açores
-    if 36.8 <= lat <= 40.0 and -31.3 <= lon <= -24.8:
-        return True
-    # Madeira
-    if 32.4 <= lat <= 33.2 and -17.3 <= lon <= -16.2:
-        return True
-    return False
-
-
 async def obter_focos_incendio(dias: int = 1):
     map_key = os.getenv("NASA_FIRMS_KEY")
-    area = "-9.5,36.9,-6.2,42.2"
-    url = f"{NASA_FIRMS_URL}/{map_key}/{PRODUTO_NASA}/{area}/{dias}"
+    areas = areas_consulta()
     with validar_fonte("NASA FIRMS"):
         async with httpx.AsyncClient() as client:
-            resposta = await client.get(url)
-            resposta.raise_for_status()
-            leitor = csv.DictReader(io.StringIO(resposta.text))
-            if not {"latitude", "longitude", "acq_date", "acq_time"}.issubset(leitor.fieldnames or []):
-                raise erro_fonte("NASA FIRMS", "dados_incompletos")
             focos = []
-            for linha in leitor:
-                lat = numero(linha["latitude"])
-                lon = numero(linha["longitude"])
-                datetime.strptime(f"{linha['acq_date']} {linha['acq_time']}", "%Y-%m-%d %H%M")
-                if not is_portugal(lat, lon):
-                    continue
-                foco = {
-                    "latitude": lat,
-                    "longitude": lon,
-                    "data": linha["acq_date"],
-                    "hora": linha["acq_time"],
-                    "fonte": "NASA FIRMS - VIIRS"
-                }
-                focos.append(foco)
+            vistas = set()
+            for area in areas.values():
+                url = f"{NASA_FIRMS_URL}/{map_key}/{PRODUTO_NASA}/{area}/{dias}"
+                resposta = await client.get(url)
+                resposta.raise_for_status()
+                leitor = csv.DictReader(io.StringIO(resposta.text))
+                if not {"latitude", "longitude", "acq_date", "acq_time"}.issubset(leitor.fieldnames or []):
+                    raise erro_fonte("NASA FIRMS", "dados_incompletos")
+                for linha in leitor:
+                    lat = numero(linha["latitude"])
+                    lon = numero(linha["longitude"])
+                    data = datetime.strptime(f"{linha['acq_date']} {linha['acq_time']}", "%Y-%m-%d %H%M")
+                    if not is_portugal(lat, lon):
+                        continue
+                    foco = {
+                        "latitude": lat,
+                        "longitude": lon,
+                        "data": linha["acq_date"],
+                        "hora": linha["acq_time"],
+                        "fonte": "NASA FIRMS - VIIRS"
+                    }
+                    chave = chave_observacao(data, lat, lon)
+                    if chave not in vistas:
+                        vistas.add(chave)
+                        focos.append(foco)
             return focos
 
 
