@@ -4,7 +4,7 @@ from config.database import get_db
 from services.fwi import calcular_risco_regiao
 from services.modelo_ml import prever_risco
 from models.dado_meteorologico import DadoMeteorologico
-from services.disponibilidade import estado_observacao, valor_observado
+from services.disponibilidade import estado_observacao, valor_observado, data_utc
 
 router = APIRouter()
 
@@ -29,7 +29,7 @@ def get_risco_regiao(id_regiao: int, db: Session = Depends(get_db)):
     estado = estado_observacao(ultimo_dado)
     if estado != "ok":
         return {
-            "id_regiao": id_regiao, "data_hora": ultimo_dado.data_hora,
+            "id_regiao": id_regiao, "data_hora": data_utc(ultimo_dado.data_hora),
             "dados_meteorologicos": dados, "estado": estado,
             "fwi": None, "ml": None,
         }
@@ -40,7 +40,7 @@ def get_risco_regiao(id_regiao: int, db: Session = Depends(get_db)):
 
     return {
         "id_regiao": id_regiao,
-        "data_hora": ultimo_dado.data_hora,
+        "data_hora": data_utc(ultimo_dado.data_hora),
         "dados_meteorologicos": dados,
         "estado": estado,
         "fwi": resultado_fwi,

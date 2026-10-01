@@ -2,10 +2,16 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from config.database import get_db
 from routes.auth import get_administrador_atual
-from services.disponibilidade import estado_observacao, valor_observado
+from services.disponibilidade import estado_observacao, valor_observado, data_utc
 from services.openstreetmap import obter_concelhos_portugal, popular_regioes
 
 router = APIRouter()
+
+
+@router.get("/regioes/monitorizadas")
+def get_regioes_monitorizadas(db: Session = Depends(get_db)):
+    from services.regioes_iniciais import resolver_regioes
+    return {"regioes": resolver_regioes(db)}
 
 
 @router.get("/regioes/concelhos")
@@ -70,7 +76,7 @@ async def get_detalhes_regiao(id_regiao: int, db: Session = Depends(get_db)):
     from models.regiao import Regiao
     from models.dado_meteorologico import DadoMeteorologico
     from services.fwi import calcular_fwi
-    from services.open_meteo import obter_dados_meteorologicos
+    from services.open_meteo import obter_dados_meteorologicos, data_observacao
 
     regiao = db.query(Regiao).filter(Regiao.id_regiao == id_regiao).first()
     if not regiao:
@@ -87,7 +93,7 @@ async def get_detalhes_regiao(id_regiao: int, db: Session = Depends(get_db)):
         estado = estado_observacao(d)
         fwi = calcular_fwi(d.temperatura, d.humidade, d.velocidade_vento, d.precipitacao) if estado in ("ok", "desatualizado") else None
         dados_fwi.append({
-            "data_hora": d.data_hora.isoformat() if d.data_hora else None,
+            "data_hora": data_utc(d.data_hora).isoformat() if d.data_hora else None,
             "temperatura": valor_observado(d.temperatura), "humidade": valor_observado(d.humidade),
             "velocidade_vento": valor_observado(d.velocidade_vento), "precipitacao": valor_observado(d.precipitacao),
             "fwi": fwi["fwi"] if fwi else None,
@@ -99,11 +105,10 @@ async def get_detalhes_regiao(id_regiao: int, db: Session = Depends(get_db)):
     if not historico and regiao.latitude is not None and regiao.longitude is not None:
         dados_rt = await obter_dados_meteorologicos(regiao.latitude, regiao.longitude)
         current = dados_rt["current"]
-        from datetime import datetime
         fwi = calcular_fwi(current["temperature_2m"], current["relative_humidity_2m"],
                            current["wind_speed_10m"], current["precipitation"])
         dados_fwi.append({
-            "data_hora": datetime.utcnow().isoformat(),
+            "data_hora": data_observacao(dados_rt).isoformat(),
             "temperatura": current["temperature_2m"], "humidade": current["relative_humidity_2m"],
             "velocidade_vento": current["wind_speed_10m"], "precipitacao": current["precipitation"],
             "fwi": fwi["fwi"], "nivel_risco": fwi["nivel_risco"],

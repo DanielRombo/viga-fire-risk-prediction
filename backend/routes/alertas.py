@@ -4,16 +4,15 @@ from config.database import get_db
 from models.dado_meteorologico import DadoMeteorologico
 from models.regiao import Regiao
 from services.fwi import calcular_fwi
-from datetime import datetime
 from sqlalchemy import select, func, and_
-from services.disponibilidade import estado_observacao, MAX_IDADE_DADOS
+from services.disponibilidade import estado_observacao, MAX_IDADE_DADOS, data_utc
 
 router = APIRouter()
 
 
 def gerar_alertas(dados, regiao_nome):
     alertas = []
-    agora = datetime.utcnow()
+    agora = data_utc(dados.data_hora)
 
     if dados.velocidade_vento is not None and dados.velocidade_vento > 30:
         alertas.append({

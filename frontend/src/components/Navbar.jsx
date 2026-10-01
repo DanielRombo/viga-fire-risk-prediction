@@ -1,25 +1,10 @@
-import { useState, useEffect } from 'react'
 import { Sun, Moon } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { logout, getUtilizadorAtual } from '../services/auth'
 import { obterApresentacaoRisco } from '../utils/risco'
+import { formatarDataObservacao, estadoDados } from '../utils/disponibilidade'
 
-function Navbar({ risco, localidade, darkMode, onToggleDark }) {
-    const [hora, setHora] = useState('')
-
-    useEffect(() => {
-        const atualizar = () => {
-            const agora = new Date()
-            const h = String(agora.getHours()).padStart(2, '0')
-            const m = String(agora.getMinutes()).padStart(2, '0')
-            const s = String(agora.getSeconds()).padStart(2, '0')
-            setHora(`${h}:${m}:${s}`)
-        }
-        atualizar()
-        const interval = setInterval(atualizar, 1000)
-        return () => clearInterval(interval)
-    }, [])
-
+function Navbar({ risco, localidade, darkMode, onToggleDark, dataObservacao, estado }) {
     const { bg, color, label } = obterApresentacaoRisco(risco)
 
     const navigate = useNavigate()
@@ -54,7 +39,7 @@ function Navbar({ risco, localidade, darkMode, onToggleDark }) {
             <div style={{ width: '0.5px', height: '24px', background: 'var(--cinza-borda)' }} />
 
             <span style={{ fontSize: '12px', color: 'var(--texto-secondary)' }}>
-                Última atualização: <strong style={{ color: 'var(--texto-primary)' }}>{hora}</strong>
+                Última atualização: <strong style={{ color: 'var(--texto-primary)' }}>{formatarDataObservacao(dataObservacao)}</strong>
             </span>
 
             <span style={{
@@ -66,13 +51,9 @@ function Navbar({ risco, localidade, darkMode, onToggleDark }) {
             </span>
 
             <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ fontSize: '12px', color: 'var(--texto-secondary)', fontVariantNumeric: 'tabular-nums' }}>
-                    {hora}
-                </span>
-
                 <span style={{ fontSize: '11px', color: 'var(--texto-secondary)' }}>
-                    <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#639922', display: 'inline-block', marginRight: '4px' }} />
-                    Sistema ativo
+                    <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: estado === 'ok' ? '#639922' : '#888888', display: 'inline-block', marginRight: '4px' }} />
+                    {estadoDados(estado)}
                 </span>
 
                 {utilizador && (

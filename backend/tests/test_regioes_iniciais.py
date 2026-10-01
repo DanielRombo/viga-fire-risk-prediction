@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import AsyncMock, patch
 
@@ -80,6 +81,7 @@ class RegioesIniciaisTests(unittest.TestCase):
         self.assertEqual(inicializar_regioes(self.db), 0)
         regioes = resolver_regioes(self.db)
         meteo = AsyncMock(return_value={"current": {
+            "time": datetime.now(timezone.utc).isoformat(),
             "temperature_2m": 20, "relative_humidity_2m": 50,
             "wind_speed_10m": 10, "precipitation": 0,
         }})
@@ -118,7 +120,7 @@ class RegioesIniciaisTests(unittest.TestCase):
         self.db.commit()
         self.assertEqual(inicializar_regioes(self.db), 0)
         resolvidas = resolver_regioes(self.db)
-        meteo = AsyncMock(return_value={"current": {"temperature_2m": 20, "relative_humidity_2m": 50,
+        meteo = AsyncMock(return_value={"current": {"time": datetime.now(timezone.utc).isoformat(), "temperature_2m": 20, "relative_humidity_2m": 50,
                                                     "wind_speed_10m": 10, "precipitation": 0}})
         with patch.object(scheduler, "SessionLocal", return_value=self.db), \
                 patch.object(scheduler, "obter_dados_meteorologicos", meteo):

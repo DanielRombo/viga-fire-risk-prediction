@@ -14,6 +14,7 @@ def erro_fonte(fonte, codigo="erro_fonte", status_code=502):
         "erro_fonte": "Não foi possível obter dados da fonte externa.",
         "dados_incompletos": "A fonte devolveu dados incompletos ou inválidos.",
         "sem_dados": "A fonte não disponibiliza uma observação atual.",
+        "desatualizado": "A fonte disponibilizou apenas dados desatualizados.",
     }
     logger.warning("Fonte %s: %s (HTTP %s)", fonte, codigo, status_code)
     return HTTPException(status_code=status_code, detail={

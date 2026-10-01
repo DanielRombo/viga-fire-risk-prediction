@@ -22,5 +22,4 @@ async def guardar_meteorologia(latitude: float, longitude: float, id_regiao: int
 @router.post("/meteorologia/atualizar-agora", dependencies=[Depends(get_administrador_atual)])
 async def atualizar_agora():
     from services.scheduler import atualizar_dados_meteorologicos
-    await atualizar_dados_meteorologicos()
-    return {"status": "ok", "mensagem": "Dados atualizados com sucesso"}
+    return await atualizar_dados_meteorologicos()

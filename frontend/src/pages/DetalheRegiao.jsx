@@ -17,10 +17,12 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
 
     useEffect(() => {
         carregarDados()
+        const intervalo = setInterval(() => carregarDados(false), 60000)
+        return () => clearInterval(intervalo)
     }, [id])
 
-    const carregarDados = async () => {
-        setLoading(true)
+    const carregarDados = async (inicial = true) => {
+        if (inicial) setLoading(true)
         setErroDados('')
         setErroRisco('')
         try {
@@ -75,6 +77,8 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
     return (
         <div className="app">
             <Navbar
+                dataObservacao={detalhes.atual?.data_hora}
+                estado={erroRisco ? 'erro_fonte' : detalhes.estado}
                 risco={detalhes.atual?.nivel_risco}
                 localidade={detalhes.regiao?.nome}
                 darkMode={darkMode}

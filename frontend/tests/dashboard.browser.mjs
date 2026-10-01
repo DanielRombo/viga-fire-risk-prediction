@@ -11,12 +11,15 @@ const regioes = [
     { id_regiao: 1, nome: 'Lisboa', latitude: 38.7169, longitude: -9.1399 },
     { id_regiao: 3263, nome: 'Coimbra', latitude: 40.2033, longitude: -8.4103 },
     { id_regiao: 3261, nome: 'Porto', latitude: 41.1579, longitude: -8.6291 },
+    { id_regiao: 3279, nome: 'Ponta Delgada', distrito: 'Açores', latitude: 37.7412, longitude: -25.6756 },
+    { id_regiao: 3278, nome: 'Funchal', distrito: 'Madeira', latitude: 32.6669, longitude: -16.9241 },
 ]
 const respostas = Object.fromEntries(regioes.map((r, i) => [r.id_regiao, {
     id_regiao: r.id_regiao, estado: 'ok',
+    data_hora: '2026-10-01T12:15:00+00:00',
     dados_meteorologicos: { temperatura: 21 + i, humidade: 51 + i, velocidade_vento: 11 + i, precipitacao: 0 },
-    fwi: { fwi: 10 + i, nivel_risco: ['Baixo', 'Moderado', 'Elevado'][i] },
-    ml: { probabilidade_incendio: (31 + i) / 100, nivel_risco_ml: ['Baixo', 'Moderado', 'Elevado'][i] },
+    fwi: { fwi: 10 + i, nivel_risco: ['Baixo', 'Moderado', 'Elevado'][i % 3] },
+    ml: { probabilidade_incendio: (31 + i) / 100, nivel_risco_ml: ['Baixo', 'Moderado', 'Elevado'][i % 3] },
 }]))
 
 async function preparar(t) {
@@ -40,6 +43,7 @@ async function preparar(t) {
             return url.hostname === '127.0.0.1' ? route.continue() : route.abort()
         }
         const json = body => route.fulfill({ json: body })
+        if (url.pathname === '/api/regioes/monitorizadas') return json({ regioes })
         if (url.pathname === '/api/regioes/pesquisa') {
             return json({ resultados: regioes.filter(r => r.nome.toLowerCase().includes(url.searchParams.get('q').toLowerCase())) })
         }
@@ -74,6 +78,52 @@ async function selecionar(page, regiao) {
     await page.locator('aside').getByText(regiao.nome, { exact: true }).click()
 }
 
+test('ilhas: dados reais, timestamp, dados antigos e ausência explícita', async t => {
+    const { page, controlo } = await preparar(t)
+    for (const [nome, regiao] of [['Azores', regioes[3]], ['Madeira', regioes[4]]]) {
+        await page.waitForFunction(nome => {
+            let pronto = false
+            window.mapaDoTeste?.eachLayer(layer => {
+                if (layer.feature?.properties.name === nome && layer.getPopup()?.getContent().includes('Observação em')) pronto = true
+            })
+            return pronto
+        }, nome)
+        await page.evaluate(nome => {
+            window.mapaDoTeste.eachLayer(layer => {
+                if (layer.feature?.properties.name === nome) layer.fire('click')
+            })
+        }, nome)
+        await confirmarIndicadores(page, regiao)
+    }
+    for (const regiao of regioes.slice(3)) {
+        await selecionar(page, regiao)
+        await confirmarIndicadores(page, regiao)
+        const texto = await page.locator('nav').innerText()
+        assert.match(texto, /12:15:00 UTC/)
+        assert.match(texto, /Dados atuais/)
+        assert.doesNotMatch(texto, /Sistema ativo/)
+    }
+    controlo.resposta = async (id, route) => {
+        if (id !== 3279) return false
+        await route.fulfill({ json: { ...respostas[id], estado: 'desatualizado', fwi: null, ml: null } })
+        return true
+    }
+    await selecionar(page, regioes[3])
+    await page.getByRole('status').filter({ hasText: 'Dados desatualizados;' }).waitFor()
+    assert.match(await page.locator('nav').innerText(), /Dados desatualizados/)
+    assert.match(await page.locator('aside').innerText(), /Temperatura\s+Indisponível/)
+    controlo.resposta = async (id, route) => {
+        if (id !== 3278) return false
+        await route.fulfill({ json: { estado: 'sem_dados' } })
+        return true
+    }
+    await selecionar(page, regioes[4])
+    await page.locator('nav').getByText('Sem dados', { exact: true }).waitFor()
+    await page.getByRole('status').filter({ hasText: 'Sem dados disponíveis.' }).first().waitFor()
+    assert.match(await page.locator('nav').innerText(), /Sem dados/)
+    assert.match(await page.locator('aside').innerText(), /Temperatura\s+Indisponível/)
+})
+
 async function confirmarIndicadores(page, regiao) {
     const dados = respostas[regiao.id_regiao]
     await page.waitForFunction(({ nome, fwi, ml }) => {
@@ -94,7 +144,7 @@ async function confirmarIndicadores(page, regiao) {
 test('Lisboa, Coimbra e Porto: indicadores, mapa, atualização periódica e detalhes', async t => {
     const { page, pedidos } = await preparar(t)
     await confirmarIndicadores(page, regioes[0])
-    for (const regiao of regioes) {
+    for (const regiao of regioes.slice(0, 3)) {
         await selecionar(page, regiao)
         await confirmarIndicadores(page, regiao)
         await page.clock.runFor(2000)

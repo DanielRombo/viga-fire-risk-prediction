@@ -4,7 +4,7 @@ import Sidebar from '../components/Sidebar'
 import MapaInterativo from '../components/MapaInterativo'
 import PainelAlertas from '../components/PainelAlertas'
 import PainelML from '../components/PainelML'
-import { getRiscoRegiao } from '../services/api'
+import { getRiscoRegiao, getRegioesMonitorizadas } from '../services/api'
 import { mensagemErro, mensagemEstado } from '../utils/disponibilidade'
 
 function Dashboard({ darkMode, onToggleDark }) {
@@ -14,12 +14,21 @@ function Dashboard({ darkMode, onToggleDark }) {
     const [regiaoSelecionada, setRegiaoSelecionada] = useState(null)
     const [erroDados, setErroDados] = useState('')
     const [dadosFocos, setDadosFocos] = useState({ estado: 'carregando', total: null })
-    const idRegiao = regiaoSelecionada?.id_regiao ?? 1
+    const [regioes, setRegioes] = useState([])
+    const idRegiao = regiaoSelecionada?.id_regiao ?? regioes.find(r => r.nome === 'Lisboa')?.id_regiao
+
+    useEffect(() => {
+        let ativo = true
+        getRegioesMonitorizadas().then(dados => { if (ativo) setRegioes(dados.regioes) })
+            .catch(erro => { if (ativo) { setErroDados(mensagemErro(erro)); setLoading(false) } })
+        return () => { ativo = false }
+    }, [])
     const localidade = regiaoSelecionada?.nome || 'Lisboa'
 
     useEffect(() => {
         let ativo = true
         let ultimoPedido = 0
+        if (idRegiao == null) return
         const carregarDados = async () => {
             const pedido = ++ultimoPedido
             try {
@@ -62,6 +71,8 @@ function Dashboard({ darkMode, onToggleDark }) {
     return (
         <div className="app">
             <Navbar
+                dataObservacao={risco?.data_hora}
+                estado={loading ? 'carregando' : erroDados ? 'erro_fonte' : risco?.estado}
                 risco={risco?.fwi?.nivel_risco}
                 localidade={localidade}
                 darkMode={darkMode}
@@ -71,13 +82,15 @@ function Dashboard({ darkMode, onToggleDark }) {
             <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
                 <Sidebar
                     risco={risco}
-                    dados={risco?.dados_meteorologicos}
+                    dados={risco?.estado === 'ok' ? risco.dados_meteorologicos : null}
                     onRegiaoSelecionada={selecionarRegiao}
                     localidade={localidade}
                     dadosFocos={dadosFocos}
                 />
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
                     <MapaInterativo
+                        regioes={regioes}
+                        onRegiaoSelecionada={selecionarRegiao}
                         camadasAtivas={camadasAtivas}
                         onToggleCamada={toggleCamada}
                         regiaoSelecionada={regiaoSelecionada}

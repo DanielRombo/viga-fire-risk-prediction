@@ -92,6 +92,7 @@ class ExternalSourceTests(unittest.TestCase):
 
     def test_meteo_zero_missing_and_partial_are_distinct(self):
         complete = {k: 0 for k in ("temperature_2m", "relative_humidity_2m", "wind_speed_10m", "precipitation")}
+        complete["time"] = datetime.now(timezone.utc).isoformat()
         for current, status in [(complete, 200), (None, 503), ({}, 503),
                                 ({"temperature_2m": 0}, 502), ({**complete, "precipitation": None}, 502)]:
             with self.subTest(current=current), self.source(lambda request: httpx.Response(200, json={"current": current})):

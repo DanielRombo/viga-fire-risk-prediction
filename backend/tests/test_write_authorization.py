@@ -43,7 +43,7 @@ class WriteAuthorizationTests(unittest.TestCase):
         self.weather = AsyncMock(return_value=SimpleNamespace(id_dado=123))
         self.fires = AsyncMock(return_value={"focos_guardados": 1})
         self.regions = AsyncMock(return_value={"regioes_inseridas": 1})
-        self.update = AsyncMock()
+        self.update = AsyncMock(return_value={"status": "ok", "mensagem": "Dados atualizados com sucesso"})
         scheduler = ModuleType("services.scheduler")
         scheduler.atualizar_dados_meteorologicos = self.update
         patches = [

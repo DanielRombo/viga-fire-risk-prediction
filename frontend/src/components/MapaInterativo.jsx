@@ -4,7 +4,9 @@ import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import { getFocosIncendio, getRiscoRegiao } from '../services/api'
 import { legendaRisco, obterApresentacaoRisco } from '../utils/risco'
-import { numeroDisponivel, formatarValor, mensagemErro } from '../utils/disponibilidade'
+import { numeroDisponivel, formatarValor, mensagemErro, mensagemEstado, formatarDataObservacao } from '../utils/disponibilidade'
+
+import { encontrarRegiaoMapa } from '../utils/regioesMapa'
 
 delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.mergeOptions({
@@ -25,29 +27,6 @@ const camadas = [
     { id: 'vento', label: 'Vento' },
     { id: 'humidade', label: 'Humidade' },
     { id: 'satelite', label: 'Satélite' },
-]
-
-const CIDADES = [
-    { id: 1, nome: "Lisboa", lat: 38.7169, lon: -9.1399 },
-    { id: 3261, nome: "Porto", lat: 41.1579, lon: -8.6291 },
-    { id: 3262, nome: "Braga", lat: 41.5503, lon: -8.42 },
-    { id: 3263, nome: "Coimbra", lat: 40.2033, lon: -8.4103 },
-    { id: 3264, nome: "Faro", lat: 37.0194, lon: -9.3322 },
-    { id: 3265, nome: "Aveiro", lat: 40.6405, lon: -8.6538 },
-    { id: 3266, nome: "Setubal", lat: 38.5244, lon: -8.8882 },
-    { id: 3267, nome: "Viseu", lat: 40.6566, lon: -7.9122 },
-    { id: 3268, nome: "Leiria", lat: 39.7436, lon: -8.8071 },
-    { id: 3269, nome: "Evora", lat: 38.5714, lon: -7.9101 },
-    { id: 3270, nome: "Castelo Branco", lat: 39.8194, lon: -7.4906 },
-    { id: 3272, nome: "Beja", lat: 38.015, lon: -7.8653 },
-    { id: 3271, nome: "Guarda", lat: 40.5374, lon: -7.265 },
-    { id: 3273, nome: "Portalegre", lat: 39.2967, lon: -7.4286 },
-    { id: 3274, nome: "Santarem", lat: 39.2369, lon: -8.6881 },
-    { id: 3275, nome: "Braganca", lat: 41.8061, lon: -6.7588 },
-    { id: 3276, nome: "Vila Real", lat: 41.1006, lon: -7.7457 },
-    { id: 3277, nome: "Viana do Castelo", lat: 41.6918, lon: -8.8341 },
-    { id: 3278, nome: "Funchal", lat: 32.6669, lon: -16.9241 },
-    { id: 3279, nome: "Ponta Delgada", lat: 37.7412, lon: -25.6756 },
 ]
 
 function CentrarMapa({ regiao }) {
@@ -92,11 +71,12 @@ const legendas = {
     humidade: [{ cor: '#791F1F', label: '< 20%' }, { cor: '#E24B4A', label: '20-35%' }, { cor: '#BA7517', label: '35-50%' }, { cor: '#639922', label: '> 50%' }],
 }
 
-function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDadosFocos }) {
+function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDadosFocos, regioes = [], onRegiaoSelecionada }) {
     const [focos, setFocos] = useState([])
     const [estadoFocos, setEstadoFocos] = useState('carregando')
     const [erroFocos, setErroFocos] = useState('')
     const [riscosCidades, setRiscosCidades] = useState([])
+    const [versaoDados, setVersaoDados] = useState(0)
     const [geoData, setGeoData] = useState(null)
 
     useEffect(() => {
@@ -110,9 +90,23 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
     }, [])
 
     useEffect(() => {
-        const precisaCidades = ['fwi', 'temperatura', 'vento', 'humidade'].some(c => camadasAtivas.includes(c))
-        if (precisaCidades && riscosCidades.length === 0) carregarRiscos()
-    }, [camadasAtivas])
+        let ativo = true
+        let pedido = 0
+        const carregarRiscos = async () => {
+            const atual = ++pedido
+            const resultados = await Promise.all(regioes.map(async cidade => {
+                try { return { ...cidade, risco: await getRiscoRegiao(cidade.id_regiao) } }
+                catch (erro) { return { ...cidade, risco: { estado: 'erro_fonte' }, erro: mensagemErro(erro) } }
+            }))
+            if (ativo && atual === pedido) {
+                setRiscosCidades(resultados)
+                setVersaoDados(v => v + 1)
+            }
+        }
+        carregarRiscos()
+        const intervalo = setInterval(carregarRiscos, 60000)
+        return () => { ativo = false; clearInterval(intervalo) }
+    }, [regioes])
 
     const carregarFocos = async () => {
         try {
@@ -131,44 +125,11 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
         }
     }
 
-    const carregarRiscos = async () => {
-        const resultados = await Promise.allSettled(
-            CIDADES.map(async cidade => {
-                try {
-                    const risco = await getRiscoRegiao(cidade.id)
-                    return { ...cidade, risco }
-                } catch {
-                    return { ...cidade, risco: null }
-                }
-            })
-        )
-        setRiscosCidades(
-            resultados
-                .filter(r => r.status === 'fulfilled')
-                .map(r => r.value)
-                .filter(c => c.risco && !c.risco.erro)
-        )
-    }
-
-    const normalizar = (str) => str?.toLowerCase()
-        .normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .trim() || ""
-
-    const encontrarCidade = (nomeDistrito) => {
-        if (!nomeDistrito) return null
-        const nomeNorm = normalizar(nomeDistrito)
-        return riscosCidades.find(c => {
-            const cidadeNorm = normalizar(c.nome)
-            return nomeNorm === cidadeNorm ||
-                nomeNorm.includes(cidadeNorm) ||
-                cidadeNorm.includes(nomeNorm)
-        })
-    }
+    const encontrarCidade = nome => encontrarRegiaoMapa(riscosCidades, nome)
 
     const estiloGeoJSON = (camada) => (feature) => {
         const cidade = encontrarCidade(feature.properties.name)
-        const dados = cidade?.risco?.dados_meteorologicos
+        const dados = cidade?.risco?.estado === 'ok' ? cidade.risco.dados_meteorologicos : null
         let cor = '#cccccc'
         let opacidade = cidade ? 0.5 : 0.1
 
@@ -182,14 +143,16 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
 
     const popupGeoJSON = (camada) => (feature, layer) => {
         const cidade = encontrarCidade(feature.properties.name)
-        const dados = cidade?.risco?.dados_meteorologicos
-        if (!cidade && camada !== 'fwi') return
-        let conteudo = `<strong>${feature.properties.name}</strong><br/>`
+        const dados = cidade?.risco?.estado === 'ok' ? cidade.risco.dados_meteorologicos : null
+        let conteudo = `<strong>${feature.properties.name === 'Azores' ? 'Açores' : feature.properties.name}</strong><br/>`
+        if (cidade) conteudo += `Observação em ${cidade.nome}<br/>Última atualização: ${formatarDataObservacao(cidade.risco?.data_hora)}<br/>`
         if (camada === 'fwi') conteudo += `FWI: ${cidade?.risco?.fwi?.fwi ?? '--'}<br/>Risco: ${obterApresentacaoRisco(cidade?.risco?.fwi?.nivel_risco).label}`
         if (camada === 'temperatura') conteudo += `Temperatura: ${formatarValor(dados?.temperatura)}${numeroDisponivel(dados?.temperatura) ? '°C' : ''}`
         if (camada === 'vento') conteudo += `Vento: ${formatarValor(dados?.velocidade_vento)}${numeroDisponivel(dados?.velocidade_vento) ? ' km/h' : ''}`
         if (camada === 'humidade') conteudo += `Humidade: ${formatarValor(dados?.humidade)}${numeroDisponivel(dados?.humidade) ? '%' : ''}`
+        conteudo += `<br/>${cidade?.erro || mensagemEstado(cidade?.risco?.estado || 'sem_dados')}`
         layer.bindPopup(conteudo)
+        if (cidade) layer.on('click', () => onRegiaoSelecionada?.(cidade))
     }
 
     const legendaAtiva = camadasAtivas.find(c => ['fwi', 'temperatura', 'vento', 'humidade'].includes(c))
@@ -222,7 +185,7 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
                 {geoData && ['fwi', 'temperatura', 'vento', 'humidade'].map(camada =>
                     camadasAtivas.includes(camada) && (
                         <GeoJSON
-                            key={`${camada}-${riscosCidades.length}`}
+                            key={`${camada}-${versaoDados}`}
                             data={geoData}
                             style={estiloGeoJSON(camada)}
                             onEachFeature={popupGeoJSON(camada)}

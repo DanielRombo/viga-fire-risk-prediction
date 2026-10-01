@@ -65,6 +65,6 @@ def resolver_regioes(db):
         existente = encontrar(regiao, registos)
         if existente is None:
             raise ValueError(f"Região necessária não preparada: {regiao['nome']}.")
-        resolvidas.append({"id_regiao": existente.id_regiao, "nome": regiao["nome"],
+        resolvidas.append({"id_regiao": existente.id_regiao, "nome": regiao["nome"], "distrito": regiao["distrito"],
                            "latitude": existente.latitude, "longitude": existente.longitude})
     return resolvidas

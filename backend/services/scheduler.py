@@ -2,10 +2,10 @@ import asyncio
 import logging
 from apscheduler.schedulers.background import BackgroundScheduler
 from config.database import SessionLocal
-from services.open_meteo import obter_dados_meteorologicos
+from services.open_meteo import obter_dados_meteorologicos, data_observacao
+from fastapi import HTTPException
 from services.nasa_firms import guardar_focos_incendio
 from models.dado_meteorologico import DadoMeteorologico
-from datetime import datetime
 from services.regioes_iniciais import REGIOES_RECOLHA, resolver_regioes
 
 logger = logging.getLogger(__name__)
@@ -26,36 +26,49 @@ def atualizar_dados_meteorologicos_sync():
 
 async def _atualizar_dados():
     db = SessionLocal()
+    atualizadas, falhas = [], []
     try:
         for regiao in resolver_regioes(db):
             try:
                 dados = await obter_dados_meteorologicos(regiao["latitude"], regiao["longitude"])
-                current = dados.get("current", {})
-                if current:
-                    dado = DadoMeteorologico(
-                        id_regiao=regiao["id_regiao"],
-                        data_hora=datetime.utcnow(),
-                        temperatura=current.get("temperature_2m"),
-                        humidade=current.get("relative_humidity_2m"),
-                        velocidade_vento=current.get("wind_speed_10m"),
-                        precipitacao=current.get("precipitation", 0),
-                    )
-                    db.add(dado)
-                    logger.info(
-                        f"  ✓ {regiao['nome']}: {current.get('temperature_2m')}°C")
-            except Exception as e:
-                logger.error(f"  ✗ Erro em {regiao['nome']}: {e}")
+                data = data_observacao(dados)
+            except HTTPException as erro:
+                falhas.append({"id_regiao": regiao["id_regiao"], "nome": regiao["nome"],
+                               "http_status": erro.status_code, "causa": erro.detail})
+                logger.warning("Falha na recolha da região %s: HTTP %s", regiao["nome"], erro.status_code)
+                continue
+            current = dados["current"]
+            db.add(DadoMeteorologico(
+                id_regiao=regiao["id_regiao"], data_hora=data.replace(tzinfo=None),
+                temperatura=current["temperature_2m"], humidade=current["relative_humidity_2m"],
+                velocidade_vento=current["wind_speed_10m"], precipitacao=current["precipitation"],
+                fonte="Open-Meteo",
+            ))
+            atualizadas.append({"id_regiao": regiao["id_regiao"], "nome": regiao["nome"],
+                                "data_hora": data.isoformat()})
+        if not atualizadas:
+            codigo = 504 if falhas and all(f["http_status"] == 504 for f in falhas) else 503
+            raise HTTPException(status_code=codigo, detail={
+                "status": "falha", "mensagem": "Não foi possível atualizar nenhuma região.",
+                "atualizadas": [], "falhas": falhas,
+            })
         db.commit()
-        logger.info("Dados meteorológicos guardados!")
-    except Exception as e:
+        resultado = {"status": "parcial" if falhas else "ok",
+                     "mensagem": "Atualização parcial: algumas regiões não foram atualizadas." if falhas else "Dados atualizados com sucesso",
+                     "atualizadas": atualizadas, "falhas": falhas}
+        logger.log(logging.WARNING if falhas else logging.INFO,
+                   "Recolha meteorológica: %s regiões atualizadas, %s falhas", len(atualizadas), len(falhas))
+        return resultado
+    except Exception:
         db.rollback()
-        logger.error(f"Erro: {e}")
+        logger.exception("Falha na atualização meteorológica")
+        raise
     finally:
         db.close()
 
 
 async def atualizar_dados_meteorologicos():
-    await _atualizar_dados()
+    return await _atualizar_dados()
 
 
 def atualizar_focos_sync():

@@ -9,6 +9,8 @@ export const getRiscoRegiao = async (idRegiao) => {
     return response.data
 }
 
+export const getRegioesMonitorizadas = async () => (await api.get('/regioes/monitorizadas')).data
+
 export const getMeteorologia = async (latitude, longitude) => {
     const response = await api.get('/meteorologia', {
         params: { latitude, longitude }

@@ -6,6 +6,12 @@ MAX_IDADE_DADOS = timedelta(hours=2)
 CAMPOS_METEO = ("temperatura", "humidade", "velocidade_vento", "precipitacao")
 
 
+def data_utc(data):
+    if data is None:
+        return None
+    return (data.replace(tzinfo=timezone.utc) if data.tzinfo is None else data).astimezone(timezone.utc)
+
+
 def valor_observado(valor):
     return valor if isinstance(valor, (float, int)) and not isinstance(valor, bool) and isfinite(valor) else None
 
