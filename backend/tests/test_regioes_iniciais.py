@@ -1,6 +1,7 @@
 """Inicialização idempotente e recolha sem IDs predefinidos."""
 import asyncio
 import os
+import re
 import sys
 import unittest
 from pathlib import Path
@@ -57,6 +58,40 @@ class RegioesIniciaisTests(unittest.TestCase):
         self.assertEqual(inicializar_regioes(self.db), 0)
         self.assertEqual(self.db.query(Regiao.id_regiao).count(), 30)
         self.assertEqual(ids, {r["nome"]: r["id_regiao"] for r in resolver_regioes(self.db)})
+
+    @unittest.skipUnless((Path(__file__).resolve().parents[2] / "database/seeds/cidades_principais.sql").exists(),
+                         "O seed SQL histórico não faz parte da imagem do backend")
+    def test_catalogo_mantem_coordenadas_do_seed(self):
+        seed = (Path(__file__).resolve().parents[2] / "database/seeds/cidades_principais.sql").read_text(encoding="utf-8")
+        coordenadas_seed = {
+            nome: (float(latitude), float(longitude))
+            for nome, latitude, longitude in re.findall(
+                r"\('([^']+)', '[^']+', ([\d.-]+), ([\d.-]+), [\d.-]+\)", seed)
+        }
+        coordenadas_catalogo = {r["nome"]: (r["latitude"], r["longitude"]) for r in CATALOGO}
+        self.assertEqual(len(coordenadas_seed), 30)
+        self.assertEqual(coordenadas_catalogo, coordenadas_seed)
+        self.assertEqual(coordenadas_catalogo["Faro"], (37.0194, -7.9322))
+        self.assertEqual(coordenadas_catalogo["Vila Real"], (41.3006, -7.7457))
+
+    def test_coordenadas_enviadas_na_recolha_meteorologica(self):
+        coordenadas_catalogo = {r["nome"]: (r["latitude"], r["longitude"]) for r in CATALOGO}
+        inicializar_regioes(self.db)
+        self.assertEqual(inicializar_regioes(self.db), 0)
+        regioes = resolver_regioes(self.db)
+        meteo = AsyncMock(return_value={"current": {
+            "temperature_2m": 20, "relative_humidity_2m": 50,
+            "wind_speed_10m": 10, "precipitation": 0,
+        }})
+        with patch.object(scheduler, "SessionLocal", return_value=self.db), \
+                patch.object(scheduler, "obter_dados_meteorologicos", meteo):
+            asyncio.run(scheduler._atualizar_dados())
+        self.assertEqual(meteo.await_count, 28)
+        enviadas = {r["nome"]: chamada.args for r, chamada in zip(regioes, meteo.await_args_list)}
+        self.assertEqual(enviadas["Faro"], (37.0194, -7.9322))
+        self.assertEqual(enviadas["Vila Real"], (41.3006, -7.7457))
+        for nome, coordenadas in enviadas.items():
+            self.assertEqual(coordenadas, coordenadas_catalogo[nome])
 
     def test_base_existente_preserva_ids_campos_e_duplicados_historicos(self):
         self.db.add_all([
