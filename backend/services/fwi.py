@@ -1,4 +1,5 @@
 import logging
+from services.disponibilidade import valor_observado
 
 logger = logging.getLogger(__name__)
 
@@ -8,6 +9,9 @@ def calcular_fwi(temperatura: float, humidade: float, vento: float, precipitacao
     Calculo simplificado do Fire Weather Index (FWI)
     baseado no sistema canadiano de risco de incendio.
     """
+
+    if any(valor_observado(valor) is None for valor in (temperatura, humidade, vento, precipitacao)):
+        return {"estado": "dados_incompletos", "fwi": None, "nivel_risco": None, "componentes": None}
 
     # Componente de humidade do combustivel fino
     # Humidade baixa = combustivel mais seco = maior risco
@@ -46,12 +50,13 @@ def calcular_fwi(temperatura: float, humidade: float, vento: float, precipitacao
 
 
 def calcular_risco_regiao(dados_meteorologicos: dict) -> dict:
-    temperatura = dados_meteorologicos.get("temperatura", 20)
-    humidade = dados_meteorologicos.get("humidade", 50)
-    vento = dados_meteorologicos.get("velocidade_vento", 0)
-    precipitacao = dados_meteorologicos.get("precipitacao", 0)
+    temperatura = dados_meteorologicos.get("temperatura")
+    humidade = dados_meteorologicos.get("humidade")
+    vento = dados_meteorologicos.get("velocidade_vento")
+    precipitacao = dados_meteorologicos.get("precipitacao")
 
     resultado = calcular_fwi(temperatura, humidade, vento, precipitacao)
-    logger.info(
-        f"FWI calculado: {resultado['fwi']} - Risco: {resultado['nivel_risco']}")
+    if resultado["fwi"] is not None:
+        logger.info(
+            f"FWI calculado: {resultado['fwi']} - Risco: {resultado['nivel_risco']}")
     return resultado

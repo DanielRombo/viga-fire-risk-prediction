@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { getDetalhesRegiao, getRiscoRegiao } from '../services/api'
 import Navbar from '../components/Navbar'
 import { obterApresentacaoRisco } from '../utils/risco'
-import { formatarValor, formatarProbabilidade, percentagemDisponivel, mensagemErro, mensagemEstado } from '../utils/disponibilidade'
+import { formatarValor, formatarProbabilidade, percentagemDisponivel, mensagemErro, mensagemEstado, numeroDisponivel } from '../utils/disponibilidade'
 
 function DetalheRegiao({ darkMode, onToggleDark }) {
     const { id } = useParams()
@@ -44,7 +44,8 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
 
     const gerarInsight = () => {
         if (!detalhes?.atual) return 'Sem dados suficientes para análise.'
-        const { temperatura, humidade, velocidade_vento, nivel_risco } = detalhes.atual
+        const { temperatura, humidade, velocidade_vento, precipitacao, nivel_risco } = detalhes.atual
+        if (![temperatura, humidade, velocidade_vento, precipitacao].every(numeroDisponivel)) return 'Sem dados suficientes para análise.'
         const apresentacao = obterApresentacaoRisco(nivel_risco)
         if (!apresentacao.conhecido) return 'Risco indisponível. Não é possível avaliar o nível de risco com os dados apresentados.'
         const fatores = []

@@ -52,6 +52,7 @@ async function preparar(t) {
         if (url.pathname === '/api/alertas') return json({ estado: 'sem_dados', alertas: [], cobertura: { regioes_avaliadas: 0 } })
         const detalhe = url.pathname.match(/^\/api\/regioes\/(\d+)\/detalhes$/)
         if (detalhe) {
+            if (controlo.detalhe) return json(controlo.detalhe)
             const risco = respostas[detalhe[1]]
             return json({ regiao: regioes.find(r => r.id_regiao === Number(detalhe[1])), estado: 'ok',
                 atual: { ...risco.dados_meteorologicos, ...risco.fwi }, historico: [] })
@@ -77,6 +78,40 @@ async function selecionar(page, regiao) {
     await page.getByPlaceholder('Pesquisar localidade...').fill(regiao.nome)
     await page.locator('aside').getByText(regiao.nome, { exact: true }).click()
 }
+
+test('zeros reais e null no dashboard, painel ML e detalhes', async t => {
+    const { page, controlo } = await preparar(t)
+    const zeros = { ...respostas[3263],
+        dados_meteorologicos: { temperatura: 0, humidade: 0, velocidade_vento: 0, precipitacao: 0 },
+        fwi: { fwi: 0, nivel_risco: 'Baixo', componentes: { ffmc: 0, isi: 0 } },
+        ml: { probabilidade_incendio: 0, nivel_risco_ml: 'Baixo' } }
+    controlo.resposta = async (id, route) => {
+        if (id !== 3263) return false
+        await route.fulfill({ json: zeros })
+        return true
+    }
+    await selecionar(page, regioes[1])
+    await page.waitForFunction(() => document.querySelector('aside')?.textContent.includes('FWI 0 — ML 0%'))
+    const sidebar = await page.locator('aside').innerText()
+    for (const label of ['Temperatura', 'Humidade', 'Vento']) assert.match(sidebar, new RegExp(`${label}\\s+0`))
+    const painel = page.getByText('Previsão ML + FWI', { exact: true }).locator('..')
+    assert.match(await painel.innerText(), /Probabilidade\s+0%/)
+    assert.doesNotMatch(await painel.innerText(), /Indisponível/)
+    controlo.detalhe = { regiao: regioes[1], estado: 'ok', historico: [],
+        atual: { ...zeros.dados_meteorologicos, ...zeros.fwi } }
+    await page.getByPlaceholder('Pesquisar localidade...').fill('')
+    await page.getByPlaceholder('Pesquisar localidade...').fill('Coimbra')
+    await page.locator('aside').getByText('Detalhes', { exact: true }).click()
+    await page.getByRole('heading', { name: 'Coimbra', exact: true }).waitFor()
+    assert.match(await page.locator('body').innerText(), /Temperatura\s+0/)
+    assert.match(await page.locator('body').innerText(), /Probabilidade\s+0%/)
+    // Uma resposta incompleta nunca deve originar o fator "baixa humidade" por coerção de null.
+    controlo.detalhe.atual.humidade = null
+    await page.reload()
+    await page.getByText('Sem dados suficientes para análise.', { exact: true }).waitFor()
+    assert.match(await page.locator('body').innerText(), /Humidade\s+Indisponível/)
+    assert.doesNotMatch(await page.locator('body').innerText(), /devido a baixa humidade/)
+})
 
 test('ilhas: dados reais, timestamp, dados antigos e ausência explícita', async t => {
     const { page, controlo } = await preparar(t)

@@ -48,7 +48,7 @@ def gerar_alertas(dados, regiao_nome):
         dados.precipitacao
     )
 
-    if fwi["fwi"] > 20:
+    if fwi["fwi"] is not None and fwi["fwi"] > 20:
         alertas.append({
             "id": f"fwi_{regiao_nome}",
             "texto": f"Risco FWI elevado — {regiao_nome}",
