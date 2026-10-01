@@ -79,6 +79,29 @@ async function selecionar(page, regiao) {
     await page.locator('aside').getByText(regiao.nome, { exact: true }).click()
 }
 
+test('ML parcial e indisponível são comunicados sem perder FWI', async t => {
+    const { page, controlo } = await preparar(t)
+    const parcial = { ...respostas[3263], ml: { probabilidade_incendio: 0.8, nivel_risco_ml: 'Muito Alto',
+        estado: 'parcial', mensagem: 'Previsão ML parcial: apenas um modelo disponível.' } }
+    controlo.resposta = async (id, route) => {
+        if (id !== 3263) return false
+        await route.fulfill({ json: parcial })
+        return true
+    }
+    await selecionar(page, regioes[1])
+    await page.getByRole('status').filter({ hasText: 'Previsão ML parcial:' }).waitFor()
+    assert.match(await page.locator('aside').innerText(), /FWI 11 — ML 80%/)
+    await page.getByPlaceholder('Pesquisar localidade...').fill('')
+    await page.getByPlaceholder('Pesquisar localidade...').fill('Coimbra')
+    await page.locator('aside').getByText('Detalhes', { exact: true }).click()
+    await page.getByRole('status').filter({ hasText: 'Previsão ML parcial:' }).waitFor()
+    parcial.ml = { estado: 'indisponivel', probabilidade_incendio: null, nivel_risco_ml: null,
+        mensagem: 'Previsão ML indisponível: nenhum modelo tem uma avaliação válida.' }
+    await page.reload()
+    await page.getByRole('status').filter({ hasText: 'Previsão ML indisponível:' }).waitFor()
+    assert.match(await page.locator('body').innerText(), /Probabilidade\s+Indisponível/)
+})
+
 test('zeros reais e null no dashboard, painel ML e detalhes', async t => {
     const { page, controlo } = await preparar(t)
     const zeros = { ...respostas[3263],

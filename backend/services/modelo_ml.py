@@ -1,7 +1,8 @@
 import numpy as np
 import logging
-import traceback
 from datetime import datetime
+from zoneinfo import ZoneInfo
+from services.disponibilidade import valor_observado, data_utc
 
 logger = logging.getLogger(__name__)
 
@@ -17,81 +18,82 @@ FEATURES_ANPC = ['mes', 'hora', 'dia_semana',
 
 
 def prever_risco(dados: dict) -> dict:
-    agora = datetime.utcnow()
-    resultados = {}
+    resultados, disponibilidade = {}, {}
+    data = dados.get('data_hora')
+    # O treino extrai hora/dia de datas civis continentais sem fuso explícito.
+    observacao = data_utc(data).astimezone(ZoneInfo('Europe/Lisbon')) if isinstance(data, datetime) else None
+    campos_meteo = ('temperatura', 'humidade', 'velocidade_vento', 'precipitacao', 'ffmc', 'dmc', 'dc', 'isi')
+    pesos = {'prob_meteorologico': 0.4, 'prob_historico_portugal': 0.6}
 
-    # Modelo meteorologico (Kaggle)
-    if modelo and scaler:
+    def executar(chave, estimador, normalizador, valores, faltam):
+        if faltam:
+            disponibilidade[chave] = {'estado': 'indisponivel', 'motivo': 'Dados obrigatórios ausentes ou inválidos.', 'campos': faltam}
+            return
+        if estimador is None or normalizador is None:
+            disponibilidade[chave] = {'estado': 'indisponivel', 'motivo': 'Artefactos do modelo indisponíveis.'}
+            return
         try:
-            X_meteo = np.array([[
-                dados.get("temperatura", 20),
-                dados.get("humidade", 50),
-                dados.get("velocidade_vento", 0),
-                dados.get("precipitacao", 0),
-                dados.get("ffmc", 85),
-                dados.get("dmc", 100),
-                dados.get("dc", 500),
-                dados.get("isi", 8),
-                agora.month,
-                agora.weekday() + 1
-            ]])
-            X_meteo_s = scaler.transform(X_meteo)
-            prob_meteo = float(modelo.predict_proba(X_meteo_s)[0][1])
-            resultados['prob_meteorologico'] = round(prob_meteo, 3)
-        except Exception as e:
-            logger.error(f"Erro modelo meteorologico: {e}")
-            logger.error(traceback.format_exc())
+            probabilidade = float(estimador.predict_proba(normalizador.transform(np.array([valores])))[0][1])
+            if not np.isfinite(probabilidade) or not 0 <= probabilidade <= 1:
+                raise ValueError('Probabilidade inválida')
+            resultados[chave] = probabilidade
+            disponibilidade[chave] = {'estado': 'ok'}
+        except Exception:
+            logger.exception('Falha na inferência do modelo %s', chave)
+            disponibilidade[chave] = {'estado': 'indisponivel', 'motivo': 'Falha na inferência do modelo.'}
 
-    # Modelo ANPC (historico Portugal)
-    if modelo_anpc and scaler_anpc and encoder_distrito:
-        try:
-            distrito = dados.get("distrito", "Desconhecido")
-            try:
-                distrito_cod = encoder_distrito.transform([distrito])[0]
-            except:
-                distrito_cod = 0
+    faltam = [campo for campo in campos_meteo if valor_observado(dados.get(campo)) is None]
+    for campo in campos_meteo[1:]:
+        if campo not in faltam and (dados[campo] < 0 or (campo == 'humidade' and dados[campo] > 100)):
+            faltam.append(campo)
+    if observacao is None:
+        faltam.append('data_hora')
+    valores = [dados.get(campo) for campo in campos_meteo]
+    if observacao is not None:
+        valores += [observacao.month, observacao.weekday() + 1]
+    executar('prob_meteorologico', modelo, scaler, valores, faltam)
 
-            X_anpc = np.array([[
-                agora.month,
-                agora.hour,
-                agora.weekday(),
-                agora.year,
-                distrito_cod,
-                dados.get("latitude", 39.5),
-                dados.get("longitude", -8.0)
-            ]])
-            X_anpc_s = scaler_anpc.transform(X_anpc)
-            prob_anpc = float(modelo_anpc.predict_proba(X_anpc_s)[0][1])
-            resultados['prob_historico_portugal'] = round(prob_anpc, 3)
-        except Exception as e:
-            logger.error(f"Erro modelo ANPC: {e}")
-            logger.error(traceback.format_exc())
-
-    # Ensemble — media ponderada
-    probs = []
-    if 'prob_meteorologico' in resultados:
-        probs.append(resultados['prob_meteorologico'] * 0.4)
-    if 'prob_historico_portugal' in resultados:
-        probs.append(resultados['prob_historico_portugal'] * 0.6)
-
-    if probs:
-        prob_final = sum(probs) / len(probs) * (10 / 5)
-        prob_final = min(prob_final, 1.0)
+    faltam = [campo for campo in ('latitude', 'longitude') if valor_observado(dados.get(campo)) is None]
+    if 'latitude' not in faltam and not -90 <= dados['latitude'] <= 90:
+        faltam.append('latitude')
+    if 'longitude' not in faltam and not -180 <= dados['longitude'] <= 180:
+        faltam.append('longitude')
+    if observacao is None:
+        faltam.append('data_hora')
+    distrito = dados.get('distrito')
+    distrito = distrito.strip().upper() if isinstance(distrito, str) else None
+    if encoder_distrito is None:
+        disponibilidade['prob_historico_portugal'] = {'estado': 'indisponivel', 'motivo': 'Artefactos do modelo indisponíveis.'}
+    elif distrito not in encoder_distrito.classes_:
+        disponibilidade['prob_historico_portugal'] = {'estado': 'indisponivel', 'motivo': 'Distrito ausente ou não reconhecido pelo modelo ANPC.', 'campos': ['distrito', *faltam]}
     else:
-        return {"erro": "Modelos nao disponiveis"}
+        try:
+            codigo = int(encoder_distrito.transform([distrito])[0])
+        except Exception:
+            logger.exception('Falha na codificação do distrito ANPC')
+            disponibilidade['prob_historico_portugal'] = {'estado': 'indisponivel', 'motivo': 'Falha na codificação do distrito ANPC.'}
+        else:
+            valores = [observacao.month, observacao.hour, observacao.weekday(), observacao.year,
+                       codigo, dados.get('latitude'), dados.get('longitude')] if observacao is not None else []
+            executar('prob_historico_portugal', modelo_anpc, scaler_anpc, valores, faltam)
 
-    # Classificar risco
+    if not resultados:
+        return {'estado': 'indisponivel', 'mensagem': 'Previsão ML indisponível: nenhum modelo tem uma avaliação válida.',
+                'probabilidade_incendio': None, 'nivel_risco_ml': None, 'modelos': {}, 'disponibilidade': disponibilidade}
+    soma_pesos = sum(pesos[chave] for chave in resultados)
+    prob_final = sum(prob * pesos[chave] for chave, prob in resultados.items()) / soma_pesos
     if prob_final < 0.3:
-        nivel = "Baixo"
+        nivel = 'Baixo'
     elif prob_final < 0.5:
-        nivel = "Medio"
+        nivel = 'Medio'
     elif prob_final < 0.7:
-        nivel = "Alto"
+        nivel = 'Alto'
     else:
-        nivel = "Muito Alto"
-
-    return {
-        "probabilidade_incendio": round(prob_final, 3),
-        "nivel_risco_ml": nivel,
-        "modelos": resultados
-    }
+        nivel = 'Muito Alto'
+    parcial = len(resultados) == 1
+    return {'probabilidade_incendio': round(prob_final, 3), 'nivel_risco_ml': nivel,
+            'modelos': {chave: round(prob, 3) for chave, prob in resultados.items()},
+            'estado': 'parcial' if parcial else 'ok',
+            'mensagem': 'Previsão ML parcial: apenas um modelo disponível.' if parcial else 'Previsão ML com os dois modelos disponíveis.',
+            'disponibilidade': disponibilidade,
+            'pesos_aplicados': {chave: pesos[chave] / soma_pesos for chave in resultados}}

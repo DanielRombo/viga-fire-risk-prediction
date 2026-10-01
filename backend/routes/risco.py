@@ -4,6 +4,7 @@ from config.database import get_db
 from services.fwi import calcular_risco_regiao
 from services.modelo_ml import prever_risco
 from models.dado_meteorologico import DadoMeteorologico
+from models.regiao import Regiao
 from services.disponibilidade import estado_observacao, valor_observado, data_utc
 
 router = APIRouter()
@@ -36,7 +37,13 @@ def get_risco_regiao(id_regiao: int, db: Session = Depends(get_db)):
 
     resultado_fwi = calcular_risco_regiao(dados)
 
-    resultado_ml = prever_risco(dados)
+    regiao = db.query(Regiao.distrito, Regiao.latitude, Regiao.longitude).filter(Regiao.id_regiao == id_regiao).first()
+    resultado_ml = prever_risco({
+        **dados, 'data_hora': data_utc(ultimo_dado.data_hora),
+        'distrito': regiao.distrito if regiao is not None else None,
+        'latitude': regiao.latitude if regiao is not None else None,
+        'longitude': regiao.longitude if regiao is not None else None,
+    })
 
     return {
         "id_regiao": id_regiao,

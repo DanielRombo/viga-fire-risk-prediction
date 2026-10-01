@@ -32,7 +32,7 @@ class ArtefactosMLTests(unittest.TestCase):
     def test_conjunto_real_e_copia_limpa(self):
         self.assertEqual(len(artefactos.carregar_artefactos()), 5)
         for args in [('-m', 'services.artefactos_ml'),
-                     ('-c', 'from services.modelo_ml import prever_risco; assert "probabilidade_incendio" in prever_risco({"temperatura":20,"humidade":50,"velocidade_vento":0,"precipitacao":0})')]:
+                     ('-c', 'from datetime import datetime; from services.modelo_ml import prever_risco; r = prever_risco({"distrito":"Lisboa","latitude":38.7,"longitude":-9.1,"data_hora":datetime(2024,7,1,12)}); assert r["estado"] == "parcial" and r["probabilidade_incendio"] is not None')]:
             resultado = self.executar(*args)
             self.assertEqual(resultado.returncode, 0, resultado.stderr)
 

@@ -87,6 +87,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
             />
             {mensagemEstado(detalhes.estado) && <div role="status">{mensagemEstado(detalhes.estado)}</div>}
             {(erroRisco || mensagemEstado(risco?.estado)) && <div role="status">{erroRisco || mensagemEstado(risco?.estado)}</div>}
+            {risco?.ml?.estado && risco.ml.estado !== 'ok' && <div role="status">{risco.ml.mensagem}</div>}
 
             <div style={{ padding: '24px', overflowY: 'auto', flex: 1 }}>
                 <div style={{ maxWidth: '1000px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>

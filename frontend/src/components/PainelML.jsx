@@ -49,6 +49,7 @@ function PainelML({ risco }) {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            {risco?.ml?.estado && risco.ml.estado !== 'ok' && <div role="status">{risco.ml.mensagem}</div>}
             <div style={{
                 fontSize: '11px', fontWeight: '500', color: 'var(--texto-tertiary)',
                 textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '4px'
