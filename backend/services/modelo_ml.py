@@ -1,42 +1,14 @@
-import joblib
 import numpy as np
 import logging
-import os
 import traceback
 from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
-MODELO_PATH = os.path.join(os.path.dirname(
-    __file__), "../ml_models/modelo_kaggle.joblib")
-SCALER_PATH = os.path.join(os.path.dirname(
-    __file__), "../ml_models/scaler_kaggle.joblib")
-MODELO_ANPC_PATH = os.path.join(os.path.dirname(
-    __file__), "../ml_models/modelo_anpc.joblib")
-SCALER_ANPC_PATH = os.path.join(os.path.dirname(
-    __file__), "../ml_models/scaler_anpc.joblib")
-ENCODER_PATH = os.path.join(os.path.dirname(
-    __file__), "../ml_models/encoder_distrito_anpc.joblib")
+from services.artefactos_ml import carregar_artefactos
 
-try:
-    modelo = joblib.load(MODELO_PATH)
-    scaler = joblib.load(SCALER_PATH)
-    logger.info(f"Modelo meteorologico carregado: {type(modelo)}")
-except Exception as e:
-    logger.error(f"Erro ao carregar modelo meteorologico: {e}")
-    modelo = None
-    scaler = None
-
-try:
-    modelo_anpc = joblib.load(MODELO_ANPC_PATH)
-    scaler_anpc = joblib.load(SCALER_ANPC_PATH)
-    encoder_distrito = joblib.load(ENCODER_PATH)
-    logger.info(f"Modelo ANPC carregado: {type(modelo_anpc)}")
-except Exception as e:
-    logger.error(f"Erro ao carregar modelo ANPC: {e}")
-    modelo_anpc = None
-    scaler_anpc = None
-    encoder_distrito = None
+# Falhar antes de disponibilizar a API se o conjunto obrigatorio nao for valido.
+modelo, scaler, modelo_anpc, scaler_anpc, encoder_distrito = carregar_artefactos()
 
 FEATURES_METEO = ['temp', 'RH', 'wind', 'rain',
                   'FFMC', 'DMC', 'DC', 'ISI', 'month_num', 'day_num']

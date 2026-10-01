@@ -1,0 +1,16 @@
+{
+  "versao": 1,
+  "ambiente_validado": {
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.2.0",
+    "joblib": "1.5.3",
+    "numpy": "2.4.4"
+  },
+  "sha256": {
+    "modelo_kaggle.joblib": "5aaec7e3391f4102c079426b582244442d8aa1ee3a0fbfaffa292f448542f8ba",
+    "scaler_kaggle.joblib": "16f8246c8bfad53eb23c0d9328b601a8a15b390513bdfac4eae1ad3755c490b8",
+    "modelo_anpc.joblib": "5e26f27df336cb61b169fe41e931dbf396acd48821851af9e776f1f25df64ff2",
+    "scaler_anpc.joblib": "9cfdae5805eb6ed971ae5f6855288fe85524f269044dc1a60962cd657ef7484b",
+    "encoder_distrito_anpc.joblib": "31d084690d3ff7b45246395eb5f5da65dd5f56818ea2d5c699d5b20dc570c8cf"
+  }
+}

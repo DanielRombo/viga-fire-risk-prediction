@@ -8,10 +8,11 @@ python-dotenv
 httpx
 requests
 apscheduler==3.10.4
-scikit-learn
-xgboost
+scikit-learn==1.8.0
+xgboost==3.2.0
 shap
-joblib
+joblib==1.5.3
+numpy==2.4.4
 python-jose[cryptography]
 passlib[bcrypt]==1.7.4
 bcrypt==4.0.1
