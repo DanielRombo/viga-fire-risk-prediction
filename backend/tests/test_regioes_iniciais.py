@@ -134,8 +134,7 @@ class RegioesIniciaisTests(unittest.TestCase):
                 patch("services.nasa_firms.obter_focos_incendio", AsyncMock(return_value=[foco])):
             asyncio.run(scheduler._atualizar_focos())
         with Session(self.engine) as db:
-            self.assertEqual(db.query(Ocorrencia).one().id_regiao,
-                             next(r["id_regiao"] for r in resolvidas if r["nome"] == "Lisboa"))
+            self.assertIsNone(db.query(Ocorrencia).one().id_regiao)
 
     def test_ambiguidade_nao_insere_parcialmente(self):
         for indice in range(2):

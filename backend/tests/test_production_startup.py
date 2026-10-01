@@ -56,6 +56,7 @@ class ProductionStartupTests(unittest.TestCase):
 
         scheduler.add_listener(registar, EVENT_JOB_EXECUTED)
         with patch.object(jobs, "scheduler", scheduler), \
+                patch("services.esquema_ocorrencias.preparar_ocorrencias"), \
                 patch("services.regioes_iniciais.preparar_regioes") as preparar, \
                 patch.object(scheduler, "start", wraps=scheduler.start) as start, \
                 patch.object(jobs, "atualizar_dados_meteorologicos", initial), \

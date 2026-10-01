@@ -5,6 +5,10 @@ import os
 from datetime import datetime
 from models.ocorrencia import Ocorrencia
 from services.fontes import validar_fonte, erro_fonte, numero
+from services.identidade_nasa import PRODUTO_NASA, chave_observacao
+from services.geografia_focos import determinar_regiao
+from sqlalchemy.dialects.postgresql import insert as pg_insert
+from sqlalchemy.dialects.sqlite import insert as sqlite_insert
 
 NASA_FIRMS_URL = "https://firms.modaps.eosdis.nasa.gov/api/area/csv"
 
@@ -25,7 +29,7 @@ def is_portugal(lat, lon):
 async def obter_focos_incendio(dias: int = 1):
     map_key = os.getenv("NASA_FIRMS_KEY")
     area = "-9.5,36.9,-6.2,42.2"
-    url = f"{NASA_FIRMS_URL}/{map_key}/VIIRS_SNPP_NRT/{area}/{dias}"
+    url = f"{NASA_FIRMS_URL}/{map_key}/{PRODUTO_NASA}/{area}/{dias}"
     with validar_fonte("NASA FIRMS"):
         async with httpx.AsyncClient() as client:
             resposta = await client.get(url)
@@ -51,20 +55,27 @@ async def obter_focos_incendio(dias: int = 1):
             return focos
 
 
-async def guardar_focos_incendio(db, id_regiao: int = 1):
-    focos = await obter_focos_incendio()
-    registos_guardados = 0
-    for foco in focos:
-        novo_registo = Ocorrencia(
-            id_regiao=id_regiao,
-            data_inicio=datetime.strptime(
-                f"{foco['data']} {foco['hora']}", "%Y-%m-%d %H%M"),
-            latitude=foco["latitude"],
-            longitude=foco["longitude"],
-            estado="ativo",
-            fonte=foco["fonte"]
-        )
-        db.add(novo_registo)
-        registos_guardados += 1
-    db.commit()
-    return {"focos_guardados": registos_guardados}
+async def guardar_focos_incendio(db):
+    contagens = {"focos_guardados": 0, "focos_duplicados": 0, "focos_sem_regiao": 0}
+    try:
+        focos = await obter_focos_incendio()
+        inserir = pg_insert if db.get_bind().dialect.name == "postgresql" else sqlite_insert
+        for foco in focos:
+            data = datetime.strptime(f"{foco['data']} {foco['hora']}", "%Y-%m-%d %H%M")
+            id_regiao, associacao = determinar_regiao(db, foco["latitude"], foco["longitude"])
+            comando = inserir(Ocorrencia).values(
+                nasa_chave=chave_observacao(data, foco["latitude"], foco["longitude"]),
+                id_regiao=id_regiao, associacao_geografica=associacao,
+                data_inicio=data, latitude=foco["latitude"], longitude=foco["longitude"],
+                estado="ativo", fonte=foco["fonte"],
+            ).on_conflict_do_nothing(index_elements=["nasa_chave"])
+            if db.execute(comando).rowcount:
+                contagens["focos_guardados"] += 1
+                contagens["focos_sem_regiao"] += int(id_regiao is None)
+            else:
+                contagens["focos_duplicados"] += 1
+        db.commit()
+        return contagens
+    except Exception:
+        db.rollback()
+        raise

@@ -70,11 +70,9 @@ def atualizar_focos_sync():
 async def _atualizar_focos():
     db = SessionLocal()
     try:
-        lisboa = next(r for r in resolver_regioes(db) if r["nome"] == "Lisboa")
-        resultado = await guardar_focos_incendio(db, id_regiao=lisboa["id_regiao"])
+        resultado = await guardar_focos_incendio(db)
         logger.info(f"  ✓ {resultado['focos_guardados']} focos guardados")
     except Exception as e:
-        db.rollback()
         logger.error(f"Erro focos: {e}")
     finally:
         db.close()

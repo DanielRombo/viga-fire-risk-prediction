@@ -106,6 +106,10 @@ No arranque, o backend prepara as regiões antes de iniciar a recolha. O catálo
 
 Esta preparação não substitui a lista de IDs ainda existente no mapa do frontend; essa lista não deve ser usada como catálogo de inicialização.
 
+As observações NASA são deduplicadas na BD por produto (`VIIRS_SNPP_NRT`), data/hora de aquisição e coordenadas, sem arredondamento adicional. No arranque, a adaptação transacional do esquema permite uma região nula e acrescenta uma chave única nullable. Para registos históricos da fonte `NASA FIRMS - VIIRS`, apenas um representante de cada observação recebe a chave; nenhum duplicado é apagado e as associações antigas ficam marcadas como `legado_nao_validado`. Outros registos históricos permanecem sem chave, pois não é possível inferir com segurança o produto de origem.
+
+A associação de novos focos usa polígonos válidos com SRID conhecido, através de PostGIS: `poligono` quando há uma única correspondência, `nao_determinada` quando não há e `ambigua` quando há várias. Nos dois últimos casos, `id_regiao` é nulo. Coordenadas de cidades e o GeoJSON de distritos do frontend não são tratados como limites administrativos das regiões. A rota `/api/incendios/guardar` deixa de aceitar uma região imposta por `id_regiao` (HTTP 422) e devolve `focos_guardados`, `focos_duplicados` e `focos_sem_regiao`; esta última contagem refere-se apenas aos novos registos. A importação de polígonos e a revisão das associações históricas não são realizadas automaticamente.
+
 ```bash
 docker compose -f docker-compose.prod.yml --env-file .env.prod up -d
 ```

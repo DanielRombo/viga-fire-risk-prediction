@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from config.database import get_db
 from routes.auth import get_administrador_atual
@@ -14,6 +14,8 @@ async def get_focos_incendio(dias: int = 1):
 
 
 @router.post("/incendios/guardar", dependencies=[Depends(get_administrador_atual)])
-async def guardar_focos(id_regiao: int = 1, db: Session = Depends(get_db)):
-    resultado = await guardar_focos_incendio(db, id_regiao)
+async def guardar_focos(id_regiao: int | None = None, db: Session = Depends(get_db)):
+    if id_regiao is not None:
+        raise HTTPException(status_code=422, detail="A região é determinada pelas coordenadas do foco; não indique id_regiao.")
+    resultado = await guardar_focos_incendio(db)
     return resultado

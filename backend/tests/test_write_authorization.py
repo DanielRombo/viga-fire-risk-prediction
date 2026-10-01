@@ -60,13 +60,18 @@ class WriteAuthorizationTests(unittest.TestCase):
         self.operations = [
             ("/api/meteorologia/guardar?latitude=38.7&longitude=-9.1&id_regiao=1", self.weather),
             ("/api/meteorologia/atualizar-agora", self.update),
-            ("/api/incendios/guardar?id_regiao=1", self.fires),
+            ("/api/incendios/guardar", self.fires),
             ("/api/regioes/popular", self.regions),
         ]
 
     def headers(self, **kwargs):
         token = auth.criar_token({"sub": self.user.email}, **kwargs)
         return {"Authorization": f"Bearer {token}"}
+
+    def test_region_override_is_rejected(self):
+        response = self.client.post("/api/incendios/guardar?id_regiao=1", headers=self.headers())
+        self.assertEqual(response.status_code, 422)
+        self.fires.assert_not_called()
 
     def assert_rejected(self, headers, expected):
         for url, operation in self.operations:
@@ -106,7 +111,7 @@ class WriteAuthorizationTests(unittest.TestCase):
                 self.assertEqual(response.status_code, 200, response.text)
                 operation.assert_awaited_once()
         self.weather.assert_awaited_once_with(38.7, -9.1, 1, self.db)
-        self.fires.assert_awaited_once_with(self.db, 1)
+        self.fires.assert_awaited_once_with(self.db)
         self.regions.assert_awaited_once_with(self.db)
         self.update.assert_awaited_once_with()
 

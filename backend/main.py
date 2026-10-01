@@ -29,8 +29,10 @@ app.include_router(auth_router, prefix="/api")
 
 @app.on_event("startup")
 async def startup_event():
+    from services.esquema_ocorrencias import preparar_ocorrencias
     from services.regioes_iniciais import preparar_regioes
     from services.scheduler import iniciar_scheduler, atualizar_dados_meteorologicos
+    preparar_ocorrencias(engine)
     preparar_regioes()
     iniciar_scheduler()
     asyncio.create_task(atualizar_dados_meteorologicos())
