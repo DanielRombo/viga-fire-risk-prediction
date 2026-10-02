@@ -1,0 +1,93 @@
+/usr/local/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+test_apenas_anpc_nao_amplifica_probabilidade (test_inferencia_ml.InferenciaMLTests.test_apenas_anpc_nao_amplifica_probabilidade) ... ok
+test_apenas_kaggle_nao_reduz_probabilidade (test_inferencia_ml.InferenciaMLTests.test_apenas_kaggle_nao_reduz_probabilidade) ... ok
+test_artefacto_indisponivel_em_memoria (test_inferencia_ml.InferenciaMLTests.test_artefacto_indisponivel_em_memoria) ... ok
+test_data_sem_fuso_da_bd_e_utc (test_inferencia_ml.InferenciaMLTests.test_data_sem_fuso_da_bd_e_utc) ... ok
+test_distritos_conhecidos_e_ilhas (test_inferencia_ml.InferenciaMLTests.test_distritos_conhecidos_e_ilhas) ... ok
+test_indices_invalidos_e_coordenadas_fora_dos_limites (test_inferencia_ml.InferenciaMLTests.test_indices_invalidos_e_coordenadas_fora_dos_limites) ... ok
+test_modelo_falhado_ou_probabilidade_invalida (test_inferencia_ml.InferenciaMLTests.test_modelo_falhado_ou_probabilidade_invalida) ... Falha na inferência do modelo prob_meteorologico
+Traceback (most recent call last):
+  File "/app/services/modelo_ml.py", line 38, in executar
+    raise ValueError('Probabilidade inválida')
+ValueError: Probabilidade inválida
+Falha na inferência do modelo prob_meteorologico
+Traceback (most recent call last):
+  File "/app/services/modelo_ml.py", line 38, in executar
+    raise ValueError('Probabilidade inválida')
+ValueError: Probabilidade inválida
+Falha na inferência do modelo prob_meteorologico
+Traceback (most recent call last):
+  File "/app/services/modelo_ml.py", line 38, in executar
+    raise ValueError('Probabilidade inválida')
+ValueError: Probabilidade inválida
+Falha na inferência do modelo prob_meteorologico
+Traceback (most recent call last):
+  File "/app/services/modelo_ml.py", line 38, in executar
+    raise ValueError('Probabilidade inválida')
+ValueError: Probabilidade inválida
+Falha na inferência do modelo prob_meteorologico
+Traceback (most recent call last):
+  File "/app/services/modelo_ml.py", line 36, in executar
+    probabilidade = float(estimador.predict_proba(normalizador.transform(np.array([valores])))[0][1])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+    raise effect
+RuntimeError: teste
+Falha na inferência do modelo prob_meteorologico
+Traceback (most recent call last):
+  File "/app/services/modelo_ml.py", line 36, in executar
+    probabilidade = float(estimador.predict_proba(normalizador.transform(np.array([valores])))[0][1])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+    raise effect
+  File "/app/services/modelo_ml.py", line 36, in executar
+    probabilidade = float(estimador.predict_proba(normalizador.transform(np.array([valores])))[0][1])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+    raise effect
+RuntimeError: teste
+Falha na inferência do modelo prob_historico_portugal
+Traceback (most recent call last):
+  File "/app/services/modelo_ml.py", line 36, in executar
+    probabilidade = float(estimador.predict_proba(normalizador.transform(np.array([valores])))[0][1])
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/unittest/mock.py", line 1183, in _execute_mock_call
+    raise effect
+RuntimeError: teste
+ok
+test_nenhum_modelo_sem_constantes (test_inferencia_ml.InferenciaMLTests.test_nenhum_modelo_sem_constantes) ... ok
+test_ordem_coordenadas_timestamp_e_encoder_reais (test_inferencia_ml.InferenciaMLTests.test_ordem_coordenadas_timestamp_e_encoder_reais) ... ok
+test_rota_envia_regiao_e_observacao_sem_indices_inventados (test_inferencia_ml.InferenciaMLTests.test_rota_envia_regiao_e_observacao_sem_indices_inventados) ... ok
+test_todos_os_campos_obrigatorios_e_zeros (test_inferencia_ml.InferenciaMLTests.test_todos_os_campos_obrigatorios_e_zeros) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.076s
+
+OK

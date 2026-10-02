@@ -1,0 +1,17 @@
+{
+  "http": 200,
+  "resposta": {
+    "status": "VIGA API online"
+  },
+  "xclim": "0.62.0",
+  "bd_simulada": true,
+  "scheduler_simulado": true,
+  "recolha_simulada": true,
+  "artefactos_na_imagem": [
+    "encoder_distrito_anpc.joblib",
+    "modelo_anpc.joblib",
+    "modelo_kaggle.joblib",
+    "scaler_anpc.joblib",
+    "scaler_kaggle.joblib"
+  ]
+}

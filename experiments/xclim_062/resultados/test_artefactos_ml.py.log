@@ -1,0 +1,14 @@
+test_cada_ausencia_bloqueia_validacao_e_arranque (test_artefactos_ml.ArtefactosMLTests.test_cada_ausencia_bloqueia_validacao_e_arranque) ... ok
+test_conjunto_real_e_copia_limpa (test_artefactos_ml.ArtefactosMLTests.test_conjunto_real_e_copia_limpa) ... /usr/local/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.11/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
+  warnings.warn(
+ok
+test_corrupcao_bloqueia_antes_de_desserializar (test_artefactos_ml.ArtefactosMLTests.test_corrupcao_bloqueia_antes_de_desserializar) ... ok
+test_instalacao_explicita_do_conjunto_aprovado (test_artefactos_ml.ArtefactosMLTests.test_instalacao_explicita_do_conjunto_aprovado) ... ok
+test_scaler_trocado_mesmo_com_hash_atualizado (test_artefactos_ml.ArtefactosMLTests.test_scaler_trocado_mesmo_com_hash_atualizado) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 20.192s
+
+OK

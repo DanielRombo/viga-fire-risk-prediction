@@ -1,0 +1,29 @@
+{
+  "novos": {
+    "boltons": "26.2.0",
+    "Bottleneck": "1.6.0",
+    "cf_xarray": "0.11.3",
+    "cftime": "1.6.6",
+    "dask": "2026.8.0",
+    "filelock": "4.0.9",
+    "flexcache": "0.3",
+    "flexparser": "0.4",
+    "fsspec": "2026.9.0",
+    "importlib_metadata": "9.0.1",
+    "locket": "1.0.0",
+    "partd": "1.4.2",
+    "Pint": "0.25.3",
+    "platformdirs": "4.12.2",
+    "pyarrow": "25.0.1",
+    "PyYAML": "6.0.3",
+    "toolz": "1.1.0",
+    "xarray": "2026.9.0",
+    "xclim": "0.62.0",
+    "yamale": "6.1.0",
+    "zipp": "4.1.0"
+  },
+  "alterados": {},
+  "site_packages_antes_bytes": 1402195538,
+  "site_packages_depois_bytes": 1621706285,
+  "adicional_bytes": 219510747
+}

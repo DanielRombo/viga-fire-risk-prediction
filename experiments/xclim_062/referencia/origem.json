@@ -1,0 +1,49 @@
+{
+  "commit": "4364ce8f491dfbe18fb22542104644c1c498ddab",
+  "ficheiros": {
+    "data/test_fwi.csv": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/data/test_fwi.csv",
+      "sha256": "9fac2165cbc4ffdadd9509943efebddba29afcb6936a4e60ab4d86fafd2a6c2a"
+    },
+    "tests/testthat/data/fwi_01.csv": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/tests/testthat/data/fwi_01.csv",
+      "sha256": "72cd76ee4e6fa40d033ed14270bcc0336757539890a03e418119044c066bb498"
+    },
+    "tests/testthat/test_fwi.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/tests/testthat/test_fwi.r",
+      "sha256": "e477a7b9fa4514bc03d7bbd170f62f46d8f169886345ad5d7f705a71e7b82c78"
+    },
+    "R/fwi.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/R/fwi.r",
+      "sha256": "7f2ef9d7bbe288fcdccfdfb109c8a3d5dffebad714e1b03d6099287afe07b692"
+    },
+    "R/fine_fuel_moisture_code.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/R/fine_fuel_moisture_code.r",
+      "sha256": "0e10bdff5a0e1fa71db4446133a63f6690d7f3e6bf7fce7b473932b146861edb"
+    },
+    "R/duff_moisture_code.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/R/duff_moisture_code.r",
+      "sha256": "3399e4b0eea77483e91ac52a2138c36368eb3672070df248728cf97876e49702"
+    },
+    "R/drought_code.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/R/drought_code.r",
+      "sha256": "62511c8c464ccb180a4da4bc9eccb1648273670f15ab54c8a44b91760a990f86"
+    },
+    "R/initial_spread_index.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/R/initial_spread_index.r",
+      "sha256": "aa0c241d7fab6be07d759a91e83f65184c9fdebd30aad3537776f63243fc6795"
+    },
+    "R/buildup_index.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/R/buildup_index.r",
+      "sha256": "8be54c3610db34b4aac65e11343027c03a89332460fa7528624bb0f87ba1834b"
+    },
+    "R/fire_weather_index.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/R/fire_weather_index.r",
+      "sha256": "120456e0644edcd4d071d962c138c778456c840959680823ce45ba7ebff4aaa0"
+    },
+    "DESCRIPTION": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/4364ce8f491dfbe18fb22542104644c1c498ddab/DESCRIPTION",
+      "sha256": "34873d57598c1344eb785a009d1fe276626bb7e3cf98972098a5e6c0baa398cf"
+    }
+  }
+}

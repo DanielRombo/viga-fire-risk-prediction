@@ -1,0 +1,37 @@
+{
+  "commit": "9481404cad25387292c1d8692bdb126bbe514d9c",
+  "ficheiros": {
+    "R/ffmcCalc.R": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/9481404cad25387292c1d8692bdb126bbe514d9c/R/ffmcCalc.R",
+      "sha256": "837706e14625f16dd374eaf82ad1cd19a589b2c28c865cbc855765ab03fe67db"
+    },
+    "R/dmcCalc.R": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/9481404cad25387292c1d8692bdb126bbe514d9c/R/dmcCalc.R",
+      "sha256": "4892a6763212943c33527f252676c44e5ed583995f108889b835e1b110184aff"
+    },
+    "R/dcCalc.R": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/9481404cad25387292c1d8692bdb126bbe514d9c/R/dcCalc.R",
+      "sha256": "d3369dfa12cd6e489f7cecf361a47ef9d9f99ba87542d26880f9e71a1bb069fc"
+    },
+    "R/ISIcalc.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/9481404cad25387292c1d8692bdb126bbe514d9c/R/ISIcalc.r",
+      "sha256": "3a4c143813325fc4fde0cce73a5795807c721f61c26c0a62def17bda261f5104"
+    },
+    "R/buiCalc.R": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/9481404cad25387292c1d8692bdb126bbe514d9c/R/buiCalc.R",
+      "sha256": "6d2610c2c89616422348ef84afa02b4f56a5ee86f95ff8b04599c148c980608e"
+    },
+    "R/fwiCalc.R": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/9481404cad25387292c1d8692bdb126bbe514d9c/R/fwiCalc.R",
+      "sha256": "8568b6fd940906dde56abd9f826e2ac6069e04d5423875f60dcc8158d912b61c"
+    },
+    "R/fwi.r": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/9481404cad25387292c1d8692bdb126bbe514d9c/R/fwi.r",
+      "sha256": "8228d69b87f4e640c9eb3bc73de0607b8a9cccf10c07139fd4fbe39ec7798ae5"
+    },
+    "DESCRIPTION": {
+      "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/9481404cad25387292c1d8692bdb126bbe514d9c/DESCRIPTION",
+      "sha256": "654a796894c89919e2d91f52384c4afc0f663e686e6c88059a294a13a98ec925"
+    }
+  }
+}

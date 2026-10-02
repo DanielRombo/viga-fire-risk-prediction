@@ -1,0 +1,14 @@
+**
+!backend/
+!backend/**
+backend/**/__pycache__
+backend/.env*
+backend/**/*.joblib
+!backend/ml_models/modelo_kaggle.joblib
+!backend/ml_models/scaler_kaggle.joblib
+!backend/ml_models/modelo_anpc.joblib
+!backend/ml_models/scaler_anpc.joblib
+!backend/ml_models/encoder_distrito_anpc.joblib
+!experiments/
+!experiments/xclim_062/
+!experiments/xclim_062/**

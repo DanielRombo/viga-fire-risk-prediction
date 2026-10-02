@@ -1,0 +1,50 @@
+{
+  "kaggle": [
+    [
+      0.16889870166778564,
+      0.8311012983322144
+    ]
+  ],
+  "anpc": [
+    [
+      0.8880186080932617,
+      0.1119813621044159
+    ]
+  ],
+  "shap": [
+    [
+      -0.16720999777317047,
+      -0.06594804674386978,
+      1.687732219696045,
+      0.007883112877607346,
+      0.5397294759750366,
+      -0.07326923310756683,
+      -0.03322577849030495,
+      -0.5419449806213379,
+      -0.03807539865374565,
+      0.17042621970176697
+    ]
+  ],
+  "api_servico": {
+    "probabilidade_incendio": 0.4,
+    "nivel_risco_ml": "Medio",
+    "modelos": {
+      "prob_meteorologico": 0.831,
+      "prob_historico_portugal": 0.112
+    },
+    "estado": "ok",
+    "mensagem": "Previsão ML com os dois modelos disponíveis.",
+    "disponibilidade": {
+      "prob_meteorologico": {
+        "estado": "ok"
+      },
+      "prob_historico_portugal": {
+        "estado": "ok"
+      }
+    },
+    "pesos_aplicados": {
+      "prob_meteorologico": 0.4,
+      "prob_historico_portugal": 0.6
+    }
+  }
+}
