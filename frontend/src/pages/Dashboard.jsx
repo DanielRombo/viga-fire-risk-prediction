@@ -4,11 +4,13 @@ import Sidebar from '../components/Sidebar'
 import MapaInterativo from '../components/MapaInterativo'
 import PainelAlertas from '../components/PainelAlertas'
 import PainelML from '../components/PainelML'
-import { getRiscoRegiao, getRegioesMonitorizadas } from '../services/api'
+import { getRiscoRegiao, getRegioesMonitorizadas, getFWIDiario } from '../services/api'
+import { criarCarregadorFWI } from '../utils/fwiDiario'
 import { mensagemErro, mensagemEstado } from '../utils/disponibilidade'
 
 function Dashboard({ darkMode, onToggleDark }) {
     const [risco, setRisco] = useState(null)
+    const [fwiDiario, setFWIDiario] = useState(null)
     const [loading, setLoading] = useState(true)
     const [camadasAtivas, setCamadasAtivas] = useState(['focos', 'fwi'])
     const [regiaoSelecionada, setRegiaoSelecionada] = useState(null)
@@ -29,7 +31,9 @@ function Dashboard({ darkMode, onToggleDark }) {
         let ativo = true
         let ultimoPedido = 0
         if (idRegiao == null) return
+        const diario = criarCarregadorFWI({ idRegiao, consultar: getFWIDiario, onChange: setFWIDiario })
         const carregarDados = async () => {
+            diario.carregar()
             const pedido = ++ultimoPedido
             try {
                 const dados = await getRiscoRegiao(idRegiao)
@@ -49,6 +53,7 @@ function Dashboard({ darkMode, onToggleDark }) {
         const interval = setInterval(carregarDados, 60000)
         return () => {
             ativo = false
+            diario.cancelar()
             clearInterval(interval)
         }
     }, [idRegiao])
@@ -86,6 +91,8 @@ function Dashboard({ darkMode, onToggleDark }) {
                     onRegiaoSelecionada={selecionarRegiao}
                     localidade={localidade}
                     dadosFocos={dadosFocos}
+                    fwiDiario={fwiDiario}
+                    idRegiao={idRegiao}
                 />
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
                     <MapaInterativo

@@ -9,6 +9,10 @@ export const getRiscoRegiao = async (idRegiao) => {
     return response.data
 }
 
+export const getFWIDiario = async (idRegiao) => (await api.get(`/fwi-diario/${idRegiao}`)).data
+export const getHistoricoFWIDiario = async (idRegiao, params) =>
+    (await api.get(`/fwi-diario/${idRegiao}/historico`, { params })).data
+
 export const getRegioesMonitorizadas = async () => (await api.get('/regioes/monitorizadas')).data
 
 export const getMeteorologia = async (latitude, longitude) => {

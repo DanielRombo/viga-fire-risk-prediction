@@ -7,7 +7,7 @@ import { pathToFileURL } from 'node:url'
 
 const { chromium } = await import(process.env.VIGA_PLAYWRIGHT_MODULE
     ? pathToFileURL(process.env.VIGA_PLAYWRIGHT_MODULE).href : 'playwright')
-const regioes = [
+export const regioes = [
     { id_regiao: 1, nome: 'Lisboa', latitude: 38.7169, longitude: -9.1399 },
     { id_regiao: 3263, nome: 'Coimbra', latitude: 40.2033, longitude: -8.4103 },
     { id_regiao: 3261, nome: 'Porto', latitude: 41.1579, longitude: -8.6291 },
@@ -22,7 +22,19 @@ const respostas = Object.fromEntries(regioes.map((r, i) => [r.id_regiao, {
     ml: { probabilidade_incendio: (31 + i) / 100, nivel_risco_ml: ['Baixo', 'Moderado', 'Elevado'][i % 3] },
 }]))
 
-async function preparar(t) {
+export const diario = id => ({
+    id_regiao: id, estado: 'ok', operacional: true, estabelecido: true,
+    estado_inicializacao: 'estabelecido', qualidade: 'estabelecido', validade: 'valido',
+    fwi: 30 + regioes.findIndex(r => r.id_regiao === id), ffmc: 85, dmc: 6, dc: 15, isi: 3, bui: 7,
+    data_referencia: '2026-10-04', instante_referencia_utc: id === 3279 ? '2026-10-04T13:00:00Z' : '2026-10-04T12:00:00Z',
+    calculado_em: '2026-10-04T14:10:00Z', origem: 'open-meteo-forecast-best-match-horario-v1',
+    metodo: 'Canadian Fire Weather Index diário — variante clássica adotada',
+    versao: 'xclim-0.62.0-cffdrs-1.8.17-classico-v1', versao_xclim: '0.62.0',
+    variante: 'classica_cffdrs_1.8.17', serie: 'operacional', revisao: null, revisao_ativa: null,
+    mensagem: 'FWI diário estabelecido e atual.',
+})
+
+export async function preparar(t) {
     const browser = await chromium.launch({ channel: 'msedge', headless: true })
     t.after(() => browser.close())
     const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } })
@@ -50,6 +62,13 @@ async function preparar(t) {
         if (url.pathname === '/api/regioes/distritos') return json({ distritos: [] })
         if (url.pathname === '/api/incendios/focos') return json({ total: 0, focos: [] })
         if (url.pathname === '/api/alertas') return json({ estado: 'sem_dados', alertas: [], cobertura: { regioes_avaliadas: 0 } })
+        const fwi = url.pathname.match(/^\/api\/fwi-diario\/(\d+)(\/historico)?$/)
+        if (fwi) {
+            const id = Number(fwi[1])
+            if (controlo.fwi && await controlo.fwi(id, route, Boolean(fwi[2]))) return
+            if (!fwi[2]) return json(diario(id))
+            return json({ id_regiao: id, serie: 'operacional', revisao: null, resultados: [diario(id)] })
+        }
         const detalhe = url.pathname.match(/^\/api\/regioes\/(\d+)\/detalhes$/)
         if (detalhe) {
             if (controlo.detalhe) return json(controlo.detalhe)
@@ -67,14 +86,14 @@ async function preparar(t) {
         throw new Error(`Pedido inesperado: ${url.pathname}`)
     })
     await page.goto(process.env.VIGA_TEST_URL || 'http://127.0.0.1:5174')
-    await page.waitForFunction(() => document.querySelector('aside')?.textContent.includes('FWI 10 — ML 31%'))
+    await page.waitForFunction(() => document.querySelector('aside')?.textContent.includes('Índice legado 10 — ML 31%'))
     await page.evaluate(() => {
         window.elementoMapaInicial = document.querySelector('.leaflet-container')
     })
     return { page, pedidos, controlo }
 }
 
-async function selecionar(page, regiao) {
+export async function selecionar(page, regiao) {
     await page.getByPlaceholder('Pesquisar localidade...').fill(regiao.nome)
     await page.locator('aside').getByText(regiao.nome, { exact: true }).click()
 }
@@ -90,7 +109,7 @@ test('ML parcial e indisponível são comunicados sem perder FWI', async t => {
     }
     await selecionar(page, regioes[1])
     await page.getByRole('status').filter({ hasText: 'Previsão ML parcial:' }).waitFor()
-    assert.match(await page.locator('aside').innerText(), /FWI 11 — ML 80%/)
+    assert.match(await page.locator('aside').innerText(), /Índice legado 11 — ML 80%/)
     await page.getByPlaceholder('Pesquisar localidade...').fill('')
     await page.getByPlaceholder('Pesquisar localidade...').fill('Coimbra')
     await page.locator('aside').getByText('Detalhes', { exact: true }).click()
@@ -114,10 +133,10 @@ test('zeros reais e null no dashboard, painel ML e detalhes', async t => {
         return true
     }
     await selecionar(page, regioes[1])
-    await page.waitForFunction(() => document.querySelector('aside')?.textContent.includes('FWI 0 — ML 0%'))
+    await page.waitForFunction(() => document.querySelector('aside')?.textContent.includes('Índice legado 0 — ML 0%'))
     const sidebar = await page.locator('aside').innerText()
     for (const label of ['Temperatura', 'Humidade', 'Vento']) assert.match(sidebar, new RegExp(`${label}\\s+0`))
-    const painel = page.getByText('Previsão ML + FWI', { exact: true }).locator('..')
+    const painel = page.getByText('Previsão ML + índice legado', { exact: true }).locator('..')
     assert.match(await painel.innerText(), /Probabilidade\s+0%/)
     assert.doesNotMatch(await painel.innerText(), /Indisponível/)
     controlo.detalhe = { regiao: regioes[1], estado: 'ok', historico: [],
@@ -186,7 +205,7 @@ async function confirmarIndicadores(page, regiao) {
     const dados = respostas[regiao.id_regiao]
     await page.waitForFunction(({ nome, fwi, ml }) => {
         const texto = document.querySelector('aside')?.textContent || ''
-        return texto.includes(`Risco — ${nome}`) && texto.includes(`FWI ${fwi} — ML ${ml}%`)
+        return texto.includes(`Risco — ${nome}`) && texto.includes(`Índice legado ${fwi} — ML ${ml}%`)
     }, { nome: regiao.nome, fwi: dados.fwi.fwi, ml: Math.round(dados.ml.probabilidade_incendio * 100) })
     const texto = await page.locator('aside').innerText()
     for (const [nome, valor] of [['Temperatura', dados.dados_meteorologicos.temperatura],
@@ -194,7 +213,7 @@ async function confirmarIndicadores(page, regiao) {
         assert.match(texto, new RegExp(`${nome}\\s+${valor}`))
     }
     assert.match(await page.locator('nav').innerText(), new RegExp(regiao.nome))
-    const painel = page.getByText('Previsão ML + FWI', { exact: true }).locator('..')
+    const painel = page.getByText('Previsão ML + índice legado', { exact: true }).locator('..')
     assert.match(await painel.innerText(), new RegExp(`${Math.round(dados.ml.probabilidade_incendio * 100)}%`))
     assert.doesNotMatch(await page.locator('body').innerText(), /Risco nacional/i)
 }
@@ -238,7 +257,7 @@ test('respostas atrasadas, erros e dados ausentes não apresentam valores de out
     }
     await selecionar(page, regioes[1])
     await page.getByRole('status').filter({ hasText: 'A carregar dados...' }).waitFor()
-    assert.doesNotMatch(await page.locator('aside').innerText(), /FWI 10 — ML 31%/)
+    assert.doesNotMatch(await page.locator('aside').innerText(), /Índice legado 10 — ML 31%/)
     assert.match(await page.locator('aside').innerText(), /Indisponível/)
     await selecionar(page, regioes[2])
     await confirmarIndicadores(page, regioes[2])
@@ -252,7 +271,7 @@ test('respostas atrasadas, erros e dados ausentes não apresentam valores de out
     }
     await selecionar(page, regioes[1])
     await page.getByRole('status').filter({ hasText: 'Falha ao obter dados.' }).waitFor()
-    assert.doesNotMatch(await page.locator('aside').innerText(), /FWI 12 — ML 33%/)
+    assert.doesNotMatch(await page.locator('aside').innerText(), /Índice legado 12 — ML 33%/)
     controlo.resposta = async (id, route) => {
         if (id !== 1) return false
         await route.fulfill({ json: { estado: 'sem_dados' } })
@@ -261,5 +280,5 @@ test('respostas atrasadas, erros e dados ausentes não apresentam valores de out
     await selecionar(page, regioes[0])
     await page.getByRole('status').filter({ hasText: 'Sem dados disponíveis.' }).waitFor()
     assert.match(await page.locator('aside').innerText(), /Risco — Lisboa/i)
-    assert.match(await page.locator('aside').innerText(), /FWI Indisponível — ML Indisponível/)
+    assert.match(await page.locator('aside').innerText(), /Índice legado Indisponível — ML Indisponível/)
 })

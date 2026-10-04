@@ -3,8 +3,9 @@ import { pesquisarRegioes, getDistritos } from '../services/api'
 import { useNavigate } from 'react-router-dom'
 import { obterApresentacaoRisco } from '../utils/risco'
 import { formatarValor, formatarProbabilidade, numeroDisponivel, mensagemEstado } from '../utils/disponibilidade'
+import PainelFWIDiario from './PainelFWIDiario'
 
-function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos, localidade }) {
+function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos, localidade, fwiDiario, idRegiao }) {
     const navigate = useNavigate()
     const [pesquisa, setPesquisa] = useState('')
     const [resultados, setResultados] = useState([])
@@ -79,9 +80,11 @@ function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos, localidade }) 
                     {cores.label}
                 </div>
                 <div style={{ fontSize: '11px', color: cores.color, marginTop: '2px' }}>
-                    FWI {formatarValor(risco?.fwi?.fwi)} — ML {formatarProbabilidade(risco?.ml?.probabilidade_incendio)}
+                    Índice legado {formatarValor(risco?.fwi?.fwi)} — ML {formatarProbabilidade(risco?.ml?.probabilidade_incendio)}
                 </div>
             </div>
+
+            <PainelFWIDiario estado={fwiDiario} idRegiao={idRegiao} localidade={localidade} compacto />
 
             <div style={{ fontSize: '11px', fontWeight: '500', color: 'var(--texto-tertiary)', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '4px' }}>
                 Pesquisa

@@ -22,7 +22,7 @@ const iconeRegiao = L.divIcon({ html: '<div style="font-size:18px;line-height:1"
 
 const camadas = [
     { id: 'focos', label: 'Focos ativos' },
-    { id: 'fwi', label: 'Risco FWI' },
+    { id: 'fwi', label: 'Risco legado' },
     { id: 'temperatura', label: 'Temperatura' },
     { id: 'vento', label: 'Vento' },
     { id: 'humidade', label: 'Humidade' },
@@ -146,7 +146,7 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
         const dados = cidade?.risco?.estado === 'ok' ? cidade.risco.dados_meteorologicos : null
         let conteudo = `<strong>${feature.properties.name === 'Azores' ? 'Açores' : feature.properties.name}</strong><br/>`
         if (cidade) conteudo += `Observação em ${cidade.nome}<br/>Última atualização: ${formatarDataObservacao(cidade.risco?.data_hora)}<br/>`
-        if (camada === 'fwi') conteudo += `FWI: ${cidade?.risco?.fwi?.fwi ?? '--'}<br/>Risco: ${obterApresentacaoRisco(cidade?.risco?.fwi?.nivel_risco).label}`
+        if (camada === 'fwi') conteudo += `Índice legado: ${cidade?.risco?.fwi?.fwi ?? '--'}<br/>Risco: ${obterApresentacaoRisco(cidade?.risco?.fwi?.nivel_risco).label}`
         if (camada === 'temperatura') conteudo += `Temperatura: ${formatarValor(dados?.temperatura)}${numeroDisponivel(dados?.temperatura) ? '°C' : ''}`
         if (camada === 'vento') conteudo += `Vento: ${formatarValor(dados?.velocidade_vento)}${numeroDisponivel(dados?.velocidade_vento) ? ' km/h' : ''}`
         if (camada === 'humidade') conteudo += `Humidade: ${formatarValor(dados?.humidade)}${numeroDisponivel(dados?.humidade) ? '%' : ''}`

@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { getDetalhesRegiao, getRiscoRegiao } from '../services/api'
+import { getDetalhesRegiao, getRiscoRegiao, getFWIDiario, getHistoricoFWIDiario } from '../services/api'
 import Navbar from '../components/Navbar'
+import PainelFWIDiario from '../components/PainelFWIDiario'
+import { criarCarregadorFWI } from '../utils/fwiDiario'
 import { obterApresentacaoRisco } from '../utils/risco'
 import { formatarValor, formatarProbabilidade, percentagemDisponivel, mensagemErro, mensagemEstado, numeroDisponivel } from '../utils/disponibilidade'
 
@@ -14,33 +16,31 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
     const [tecnicoAberto, setTecnicoAberto] = useState(false)
     const [erroDados, setErroDados] = useState('')
     const [erroRisco, setErroRisco] = useState('')
+    const [fwiDiario, setFWIDiario] = useState(null)
+    const [idDados, setIdDados] = useState(null)
 
     useEffect(() => {
-        carregarDados()
-        const intervalo = setInterval(() => carregarDados(false), 60000)
-        return () => clearInterval(intervalo)
-    }, [id])
-
-    const carregarDados = async (inicial = true) => {
-        if (inicial) setLoading(true)
-        setErroDados('')
-        setErroRisco('')
-        try {
-            const [det, risc] = await Promise.all([
-                getDetalhesRegiao(id),
-                getRiscoRegiao(id).catch(err => { setErroRisco(mensagemErro(err)); return null })
-            ])
-            setDetalhes(det)
-            setRisco(risc)
-        } catch (err) {
-            setDetalhes(null)
-            setRisco(null)
-            setErroDados(mensagemErro(err))
-            console.error('Erro ao carregar detalhes:', err)
-        } finally {
+        let ativo = true
+        let ultimoPedido = 0
+        const diario = criarCarregadorFWI({ idRegiao: id, consultar: getFWIDiario,
+            consultarHistorico: getHistoricoFWIDiario, onChange: setFWIDiario })
+        const carregarDados = async (inicial = true) => {
+            const pedido = ++ultimoPedido
+            diario.carregar()
+            if (inicial) { setLoading(true); setDetalhes(null); setRisco(null) }
+            const [det, risc] = await Promise.allSettled([getDetalhesRegiao(id), getRiscoRegiao(id)])
+            if (!ativo || pedido !== ultimoPedido) return
+            setDetalhes(det.status === 'fulfilled' ? det.value : null)
+            setRisco(risc.status === 'fulfilled' ? risc.value : null)
+            setErroDados(det.status === 'rejected' ? mensagemErro(det.reason) : '')
+            setErroRisco(risc.status === 'rejected' ? mensagemErro(risc.reason) : '')
+            setIdDados(id)
             setLoading(false)
         }
-    }
+        carregarDados()
+        const intervalo = setInterval(() => carregarDados(false), 60000)
+        return () => { ativo = false; diario.cancelar(); clearInterval(intervalo) }
+    }, [id])
 
     const gerarInsight = () => {
         if (!detalhes?.atual) return 'Sem dados suficientes para análise.'
@@ -56,18 +56,20 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
         return `Risco ${apresentacao.label} devido a ${fatores.join(' + ')}.`
     }
 
-    if (loading) return (
-        <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--texto-secondary)' }}>
+    if (loading || idDados !== id) return (
+        <div style={{ height: '100vh', overflowY: 'auto', padding: '24px', color: 'var(--texto-secondary)' }}>
             A carregar detalhes...
+            <PainelFWIDiario estado={fwiDiario} idRegiao={id} />
         </div>
     )
 
     if (!detalhes || detalhes.erro) return (
-        <div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '16px' }}>
+        <div style={{ height: '100vh', overflowY: 'auto', padding: '24px' }}>
             <div role="status" style={{ color: 'var(--texto-secondary)' }}>{erroDados || detalhes?.erro || 'Dados indisponíveis'}</div>
             <button onClick={() => navigate('/')} style={{ padding: '8px 16px', borderRadius: '8px', border: 'none', background: '#639922', color: 'white', cursor: 'pointer' }}>
                 Voltar ao Dashboard
             </button>
+            <PainelFWIDiario estado={fwiDiario} idRegiao={id} />
         </div>
     )
 
@@ -142,11 +144,13 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                         )}
                     </div>
 
+                    <PainelFWIDiario estado={fwiDiario} idRegiao={id} localidade={detalhes.regiao?.nome} />
+
                     {/* ML e Previsão */}
                     {risco && (
                         <div style={{ background: 'var(--cinza-card)', borderRadius: '12px', padding: '20px', border: '0.5px solid var(--cinza-borda)' }}>
                             <h2 style={{ fontSize: '14px', fontWeight: '500', color: 'var(--texto-tertiary)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '16px' }}>
-                                Previsão ML + FWI
+                                Previsão ML + índice legado
                             </h2>
                             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '12px' }}>
                                 <div style={{ background: 'var(--cinza-fundo)', borderRadius: '8px', padding: '12px', textAlign: 'center' }}>
@@ -159,7 +163,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                                     </div>
                                 </div>
                                 <div style={{ background: 'var(--cinza-fundo)', borderRadius: '8px', padding: '12px', textAlign: 'center' }}>
-                                    <div style={{ fontSize: '11px', color: 'var(--texto-tertiary)', marginBottom: '4px' }}>FWI</div>
+                                    <div style={{ fontSize: '11px', color: 'var(--texto-tertiary)', marginBottom: '4px' }}>Índice legado</div>
                                     <div style={{ fontSize: '24px', fontWeight: '500', color: 'var(--texto-primary)' }}>{formatarValor(risco.fwi?.fwi)}</div>
                                 </div>
                                 <div style={{ background: 'var(--cinza-fundo)', borderRadius: '8px', padding: '12px', textAlign: 'center' }}>
@@ -195,7 +199,7 @@ function DetalheRegiao({ darkMode, onToggleDark }) {
                                 <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '12px' }}>
                                     <thead>
                                         <tr>
-                                            {['Data/Hora', 'Temp (°C)', 'Humidade (%)', 'Vento (km/h)', 'FWI', 'Nível'].map(h => (
+                                            {['Data/Hora', 'Temp (°C)', 'Humidade (%)', 'Vento (km/h)', 'Índice legado', 'Nível'].map(h => (
                                                 <th key={h} style={{ padding: '8px', textAlign: 'left', color: 'var(--texto-tertiary)', fontWeight: '500', borderBottom: '0.5px solid var(--cinza-borda)' }}>{h}</th>
                                             ))}
                                         </tr>

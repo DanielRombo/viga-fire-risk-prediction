@@ -1,0 +1,18 @@
+.painel-fwi-diario {
+    padding: 20px; border: 0.5px solid var(--cinza-borda); border-radius: 12px;
+    background: var(--cinza-card); color: var(--texto-secondary); font-size: 13px;
+    overflow-wrap: anywhere;
+}
+.painel-fwi-diario h2, .painel-fwi-diario h3 { font-size: 14px; font-weight: 500; margin: 0 0 8px; color: var(--texto-primary); }
+.painel-fwi-diario p { margin: 8px 0; }
+.painel-fwi-diario .valor-fwi-diario { font-size: 26px; color: var(--texto-primary); margin: 8px 0; }
+.painel-fwi-diario.compacto { padding: 12px; font-size: 11px; }
+.painel-fwi-diario.compacto h2 { font-size: 13px; }
+.indices-fwi-diario { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 8px; margin: 16px 0; }
+.indices-fwi-diario > div { background: var(--cinza-fundo); border-radius: 8px; padding: 10px; display: grid; gap: 4px; }
+.indices-fwi-diario strong { color: var(--texto-primary); }
+.painel-fwi-diario dl > div { display: grid; grid-template-columns: minmax(100px, 1fr) 3fr; gap: 12px; padding: 4px 0; }
+.painel-fwi-diario dd { margin: 0; color: var(--texto-primary); }
+.historico-fwi-diario { overflow-x: auto; }
+.historico-fwi-diario table { width: 100%; border-collapse: collapse; }
+.historico-fwi-diario th, .historico-fwi-diario td { padding: 8px; text-align: left; border-bottom: 0.5px solid var(--cinza-borda); }

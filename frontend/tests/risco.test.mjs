@@ -68,9 +68,9 @@ test('legenda completa, ordenada e sem duplicação dos aliases', () => {
 })
 
 test('todos os níveis atualmente emitidos pelo backend têm apresentação conhecida', () => {
-    for (const [ficheiro, variavel] of [['fwi.py', 'nivel'], ['modelo_ml.py', 'nivel']]) {
+    for (const [ficheiro, variavel] of [['fwi_legado.py', 'nivel'], ['modelo_ml.py', 'nivel']]) {
         const codigo = readFileSync(new URL(`../../backend/services/${ficheiro}`, import.meta.url), 'utf8')
-        const emitidos = [...codigo.matchAll(new RegExp(`${variavel} = "([^"]+)"`, 'g'))]
+        const emitidos = [...codigo.matchAll(new RegExp(`${variavel} = ['"]([^'"]+)['"]`, 'g'))]
         assert.ok(emitidos.length > 0)
         for (const [, nivel] of emitidos) {
             assert.equal(obterApresentacaoRisco(nivel).conhecido, true, `${ficheiro}: ${nivel}`)

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { formatarValor, formatarProbabilidade, percentagemDisponivel } from '../utils/disponibilidade'
 
 const tooltips = {
-    FWI: 'Fire Weather Index — índice global de risco de incêndio. Combina temperatura, humidade, vento e precipitação. Quanto maior, maior o risco.',
+    'Índice legado': 'Índice legado — heurística baseada em temperatura, humidade, vento e precipitação; distinto do FWI diário.',
     FFMC: 'Fine Fuel Moisture Code — humidade dos combustíveis finos (folhas secas, erva). Valores altos indicam vegetação muito seca e facilmente inflamável.',
     ISI: 'Initial Spread Index — velocidade esperada de propagação do fogo, combinando o efeito do vento com a secura da vegetação fina.'
 }
@@ -54,7 +54,7 @@ function PainelML({ risco }) {
                 fontSize: '11px', fontWeight: '500', color: 'var(--texto-tertiary)',
                 textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '4px'
             }}>
-                Previsão ML + FWI
+                Previsão ML + índice legado
             </div>
 
             <div style={{
@@ -83,7 +83,7 @@ function PainelML({ risco }) {
                 </div>
 
                 <div style={{ display: 'flex', gap: '8px', marginTop: '8px' }}>
-                    <FwiItem label="FWI" value={risco?.fwi?.fwi} />
+                    <FwiItem label="Índice legado" value={risco?.fwi?.fwi} />
                     <FwiItem label="FFMC" value={risco?.fwi?.componentes?.ffmc} />
                     <FwiItem label="ISI" value={risco?.fwi?.componentes?.isi} />
                 </div>
