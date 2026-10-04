@@ -51,17 +51,19 @@ class ProductionStartupTests(unittest.TestCase):
 
         def registar(event):
             executados.append((event.job_id, event.scheduled_run_time))
-            if len(executados) >= 2:
+            if len(executados) >= 3:
                 concluido.set()
 
         scheduler.add_listener(registar, EVENT_JOB_EXECUTED)
         with patch.object(jobs, "scheduler", scheduler), \
                 patch("services.esquema_ocorrencias.preparar_ocorrencias"), \
                 patch("services.regioes_iniciais.preparar_regioes") as preparar, \
+                patch("services.processamento_fwi.preparar_estrutura_fwi") as preparar_fwi, \
                 patch.object(scheduler, "start", wraps=scheduler.start) as start, \
                 patch.object(jobs, "atualizar_dados_meteorologicos", initial), \
                 patch.object(jobs, "atualizar_dados_meteorologicos_sync", meteorologia), \
                 patch.object(jobs, "atualizar_focos_sync", focos), \
+                patch.object(jobs, "atualizar_fwi_diario_sync") as fwi, \
                 socket.socket() as listener:
             listener.bind(("127.0.0.1", 0))
             config = uvicorn.Config(main.app, workers=int(command[-1]), log_level="error", lifespan="on")
@@ -75,8 +77,12 @@ class ProductionStartupTests(unittest.TestCase):
                 self.assertTrue(server.started, "O backend não concluiu o arranque")
                 start.assert_called_once()
                 preparar.assert_called_once()
+                preparar_fwi.assert_called_once()
                 initial.assert_awaited_once()
-                self.assertEqual({job.id for job in scheduler.get_jobs()}, {"meteorologia", "focos"})
+                self.assertEqual({job.id for job in scheduler.get_jobs()}, {"meteorologia", "focos", "fwi_diario"})
+                self.assertEqual(scheduler.get_job('fwi_diario').max_instances, 1)
+                jobs.iniciar_scheduler()
+                start.assert_called_once()
                 self.assertEqual(scheduler.get_job("meteorologia").trigger.interval.total_seconds(), 3600)
                 self.assertEqual(scheduler.get_job("focos").trigger.interval.total_seconds(), 21600)
                 meteorologia.assert_not_called()
@@ -84,12 +90,14 @@ class ProductionStartupTests(unittest.TestCase):
 
                 # Antecipar só a próxima execução: manter os triggers periódicos reais.
                 for job in scheduler.get_jobs():
-                    scheduler.modify_job(job.id, next_run_time=datetime.now(timezone.utc))
+                    if job.id != 'fwi_diario':  # Já agendado uma vez no arranque.
+                        scheduler.modify_job(job.id, next_run_time=datetime.now(timezone.utc))
                 self.assertTrue(concluido.wait(5), "Os jobs periódicos não foram executados")
                 meteorologia.assert_called_once()
                 focos.assert_called_once()
+                fwi.assert_called_once()
                 self.assertEqual(len(executados), len(set(executados)))
-                self.assertEqual(sorted(job_id for job_id, _ in executados), ["focos", "meteorologia"])
+                self.assertEqual(sorted(job_id for job_id, _ in executados), ["focos", "fwi_diario", "meteorologia"])
                 initial.assert_awaited_once()
                 port = listener.getsockname()[1]
                 response = httpx.get(f"http://127.0.0.1:{port}/", timeout=5, trust_env=False)

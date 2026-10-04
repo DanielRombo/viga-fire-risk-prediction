@@ -92,6 +92,8 @@ async def _atualizar_focos():
 
 
 def iniciar_scheduler():
+    if scheduler.running:
+        return
     scheduler.add_job(
         atualizar_dados_meteorologicos_sync,
         'interval',
@@ -106,5 +108,17 @@ def iniciar_scheduler():
         id="focos",
         replace_existing=True
     )
+    from datetime import datetime, timezone
+    scheduler.add_job(atualizar_fwi_diario_sync, 'interval', minutes=15,
+                      id='fwi_diario', replace_existing=True, max_instances=1,
+                      coalesce=True, misfire_grace_time=900,
+                      next_run_time=datetime.now(timezone.utc))
     scheduler.start()
     logger.info("Scheduler BackgroundScheduler iniciado!")
+
+
+def atualizar_fwi_diario_sync():
+    from services.processamento_fwi import executar_ciclo_fwi
+    resultados = asyncio.run(executar_ciclo_fwi(SessionLocal))
+    logger.info('FWI diário: %s', resultados)
+    return resultados

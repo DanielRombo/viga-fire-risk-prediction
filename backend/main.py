@@ -34,6 +34,8 @@ async def startup_event():
     from services.scheduler import iniciar_scheduler, atualizar_dados_meteorologicos
     preparar_ocorrencias(engine)
     preparar_regioes()
+    from services.processamento_fwi import preparar_estrutura_fwi
+    preparar_estrutura_fwi(engine)
     iniciar_scheduler()
     asyncio.create_task(atualizar_dados_meteorologicos())
 
