@@ -1,0 +1,6 @@
+{
+  "passou": true,
+  "navegador": "Edge",
+  "api": "Respostas reais da API isolada reproduzidas no navegador; sem ligação HTTP direta à BD.",
+  "zero_null": "Variações simuladas explícitas, sem alteração de valores reais persistidos."
+}

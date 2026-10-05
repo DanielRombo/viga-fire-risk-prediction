@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 20,
+    "nome": "Ponta Delgada",
+    "distrito": "Açores",
+    "latitude": 37.7412,
+    "longitude": -25.6756
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2026-08-02",
+  "janela_dias": 60,
+  "inicio_utc": "2026-08-01 14:00:00+00:00",
+  "fim_utc": "2026-09-30 13:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:21:43.461458+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 37.7412,
+    "longitude": -25.6756,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2026-08-01",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "4568f7ded0d89f1a2163ccfb2450fff8e472441e902659006c7163871169a040",
+  "bytes": 53811,
+  "estado": "validado",
+  "horas_utilizadas": 1440,
+  "latitude_grelha": 37.785587,
+  "longitude_grelha": -25.662628,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.36106028400001833
+}
