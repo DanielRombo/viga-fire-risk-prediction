@@ -1,0 +1,27 @@
+{
+  "cffdrs_1817_fwi.Rd": {
+    "url": "https://raw.githubusercontent.com/cffdrs/cffdrs_r/9481404cad25387292c1d8692bdb126bbe514d9c/man/fwi.Rd",
+    "status": 200,
+    "sha256": "53a374af6f296e3f5054aca37ed4c6ff8a68c101e3009cbafdd55495866993f6"
+  },
+  "cffdrs_historico.json": {
+    "url": "https://api.github.com/repos/cffdrs/cffdrs_r/commits?path=R/fwi.r&sha=9481404cad25387292c1d8692bdb126bbe514d9c&per_page=100",
+    "status": 200,
+    "sha256": "d1e7e77121fd71ed3a0ecfd6ba1787d29f79fe74d10a09ed55c9597ad546738a"
+  },
+  "CFS_2015.pdf": {
+    "url": "https://publications.gc.ca/collections/collection_2016/rncan-nrcan/Fo133-1-424-eng.pdf",
+    "status": 200,
+    "sha256": "91c003ee292884ede18deb32f7a4baeabc621cae1a692704a61ba74a267d4e21"
+  },
+  "CFS_1985.pdf": {
+    "url": "https://climatelibrary.ecc.gov.nt.ca/dataset/c36897fc-7ee0-44ea-9e8a-3b2147911139/resource/a4df620a-52bc-4a78-afed-2e6a8dd226d4/download/fwi_equation_19973.pdf",
+    "status": 200,
+    "sha256": "64620cb7c1a6dd8b39e85159b3aae06a289f89f6a96240df01e93b74ad97e13b"
+  },
+  "xclim_062_cffwis.py": {
+    "url": "https://raw.githubusercontent.com/Ouranosinc/xclim/v0.62.0/src/xclim/indices/fire/_cffwis.py",
+    "status": 200,
+    "sha256": "2a974f7a6fdbc6a6b44ca6ab616adbc42021439189f5e772d82de2226fee6c05"
+  }
+}

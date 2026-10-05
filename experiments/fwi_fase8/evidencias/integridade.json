@@ -1,0 +1,72 @@
+{
+  "estado": "aprovado",
+  "regioes": [
+    {
+      "regiao": "Castelo Branco",
+      "horas": 43824,
+      "dias": 1826,
+      "regressao": 0.0,
+      "segundos": 3.818330871999933,
+      "pico_rss_mib": 419.85546875
+    },
+    {
+      "regiao": "Faro",
+      "horas": 43824,
+      "dias": 1826,
+      "regressao": 0.0,
+      "segundos": 1.0257041810000374,
+      "pico_rss_mib": 400.8984375
+    },
+    {
+      "regiao": "Funchal",
+      "horas": 43824,
+      "dias": 1826,
+      "regressao": 0.0,
+      "segundos": 3.435985432999587,
+      "pico_rss_mib": 419.85546875
+    },
+    {
+      "regiao": "Lisboa",
+      "horas": 43824,
+      "dias": 1826,
+      "regressao": 0.0,
+      "segundos": 1.775577477999832,
+      "pico_rss_mib": 389.58203125
+    },
+    {
+      "regiao": "Ponta Delgada",
+      "horas": 43824,
+      "dias": 1826,
+      "regressao": 0.0,
+      "segundos": 3.308683313000074,
+      "pico_rss_mib": 419.85546875
+    },
+    {
+      "regiao": "Vila Real",
+      "horas": 43824,
+      "dias": 1826,
+      "regressao": 0.0,
+      "segundos": 0.9202383850006299,
+      "pico_rss_mib": 405.85546875
+    },
+    {
+      "regiao": "Évora",
+      "horas": 43824,
+      "dias": 1826,
+      "regressao": 0.0,
+      "segundos": 3.452272100999835,
+      "pico_rss_mib": 419.85546875
+    }
+  ],
+  "horas": 306768,
+  "dias_unicos": 12782,
+  "dias_por_semente_e_horizontes": 28119,
+  "dias_calculados_27_sementes": 759213,
+  "matrizes": 28,
+  "metricas": 168,
+  "comparacoes_rh": 108,
+  "verificacoes_referencia_rh": 216,
+  "divergencias_publicas_preservadas": 56,
+  "novas_chamadas": 0,
+  "acesso_bd": false
+}

@@ -1,0 +1,39 @@
+{
+  "regiao": {
+    "id_regiao": 5,
+    "nome": "Faro",
+    "distrito": "Faro",
+    "latitude": 37.0194,
+    "longitude": -7.9322
+  },
+  "territorio": "continente",
+  "inicio": "2021-09-30 13:00:00+00:00",
+  "fim": "2025-09-30 12:00:00+00:00",
+  "horas_reutilizadas": 8760,
+  "origem_reutilizada": "experiments/fwi_fase7/evidencias/365",
+  "sha256_resposta_reutilizada": "0c08715d5893af5c66aabb765f7a1a08254c6c9c03172d61084fab012319bf7e",
+  "ingerido_em": "2026-10-05 16:30:57.090824+00:00",
+  "chamadas": 1,
+  "retries": 0,
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 37.0194,
+    "longitude": -7.9322,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2021-09-30",
+    "end_date": "2025-09-30"
+  },
+  "status_http": 200,
+  "sha256": "8583b4f60298d656c71b95f06e512b16945c300b6a8170a44529a7d14e8e52e3",
+  "bytes": 1284051,
+  "estado": "validado",
+  "horas_novas": 35064,
+  "horas_total": 43824,
+  "segundos": 4.703165214999899
+}

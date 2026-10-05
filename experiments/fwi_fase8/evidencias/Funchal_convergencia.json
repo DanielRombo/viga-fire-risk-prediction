@@ -1,0 +1,571 @@
+{
+  "sementes": [
+    [
+      60.0,
+      2.0,
+      5.0
+    ],
+    [
+      60.0,
+      2.0,
+      15.0
+    ],
+    [
+      60.0,
+      2.0,
+      1000.0
+    ],
+    [
+      60.0,
+      6.0,
+      5.0
+    ],
+    [
+      60.0,
+      6.0,
+      15.0
+    ],
+    [
+      60.0,
+      6.0,
+      1000.0
+    ],
+    [
+      60.0,
+      150.0,
+      5.0
+    ],
+    [
+      60.0,
+      150.0,
+      15.0
+    ],
+    [
+      60.0,
+      150.0,
+      1000.0
+    ],
+    [
+      85.0,
+      2.0,
+      5.0
+    ],
+    [
+      85.0,
+      2.0,
+      15.0
+    ],
+    [
+      85.0,
+      2.0,
+      1000.0
+    ],
+    [
+      85.0,
+      6.0,
+      5.0
+    ],
+    [
+      85.0,
+      6.0,
+      15.0
+    ],
+    [
+      85.0,
+      6.0,
+      1000.0
+    ],
+    [
+      85.0,
+      150.0,
+      5.0
+    ],
+    [
+      85.0,
+      150.0,
+      15.0
+    ],
+    [
+      85.0,
+      150.0,
+      1000.0
+    ],
+    [
+      95.0,
+      2.0,
+      5.0
+    ],
+    [
+      95.0,
+      2.0,
+      15.0
+    ],
+    [
+      95.0,
+      2.0,
+      1000.0
+    ],
+    [
+      95.0,
+      6.0,
+      5.0
+    ],
+    [
+      95.0,
+      6.0,
+      15.0
+    ],
+    [
+      95.0,
+      6.0,
+      1000.0
+    ],
+    [
+      95.0,
+      150.0,
+      5.0
+    ],
+    [
+      95.0,
+      150.0,
+      15.0
+    ],
+    [
+      95.0,
+      150.0,
+      1000.0
+    ]
+  ],
+  "regressao_existente": true,
+  "erro_regressao": 0.0,
+  "resultados": [
+    {
+      "regiao": "Funchal",
+      "anos": 1,
+      "dias": 365,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 11.157705998274835,
+          "max_diferenca_relativa": 0.12529562615627823,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 24,
+            "data": "2025-10-24",
+            "dias_seguimento": 341
+          },
+          "igualdade_exata": {
+            "dia": 35,
+            "data": "2025-11-04",
+            "dias_seguimento": 330
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.00000000000003,
+          "max_diferenca_relativa": 0.9778783213826153,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 93,
+            "data": "2026-01-01",
+            "dias_seguimento": 272
+          },
+          "igualdade_exata": {
+            "dia": 93,
+            "data": "2026-01-01",
+            "dias_seguimento": 272
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0,
+          "max_diferenca_relativa": 0.9921484888225358,
+          "diferenca_final_absoluta": 0.5100204211377104,
+          "diferenca_final_relativa": 0.0008306929574735614,
+          "convergencia_numerica": null,
+          "igualdade_exata": null
+        },
+        "isi": {
+          "max_diferenca_absoluta": 4.50913757875462,
+          "max_diferenca_relativa": 0.7504481022483934,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 21,
+            "data": "2025-10-21",
+            "dias_seguimento": 344
+          },
+          "igualdade_exata": {
+            "dia": 35,
+            "data": "2025-11-04",
+            "dias_seguimento": 330
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 216.46097479735198,
+          "max_diferenca_relativa": 0.9838803061359094,
+          "diferenca_final_absoluta": 0.014911515681987453,
+          "diferenca_final_relativa": 0.00015885782293832167,
+          "convergencia_numerica": null,
+          "igualdade_exata": null
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 27.416612645324214,
+          "max_diferenca_relativa": 0.9799429950482531,
+          "diferenca_final_absoluta": 0.0005576022499385047,
+          "diferenca_final_relativa": 0.00011927388290269488,
+          "convergencia_numerica": null,
+          "igualdade_exata": null
+        }
+      },
+      "janela_inicial": "2025-10-01",
+      "janela_final": "2026-09-30"
+    },
+    {
+      "regiao": "Funchal",
+      "anos": 2,
+      "dias": 730,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 11.693223693880924,
+          "max_diferenca_relativa": 0.13172980351900349,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 15,
+            "data": "2024-10-15",
+            "dias_seguimento": 715
+          },
+          "igualdade_exata": {
+            "dia": 29,
+            "data": "2024-10-29",
+            "dias_seguimento": 701
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.0,
+          "max_diferenca_relativa": 0.9777500906199924,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 35,
+            "data": "2024-11-04",
+            "dias_seguimento": 695
+          },
+          "igualdade_exata": {
+            "dia": 35,
+            "data": "2024-11-04",
+            "dias_seguimento": 695
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0000000000001,
+          "max_diferenca_relativa": 0.9901502441043767,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 167,
+            "data": "2025-03-16",
+            "dias_seguimento": 563
+          },
+          "igualdade_exata": {
+            "dia": 167,
+            "data": "2025-03-16",
+            "dias_seguimento": 563
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 3.602166717288665,
+          "max_diferenca_relativa": 0.7562702345994686,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 14,
+            "data": "2024-10-14",
+            "dias_seguimento": 716
+          },
+          "igualdade_exata": {
+            "dia": 29,
+            "data": "2024-10-29",
+            "dias_seguimento": 701
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 217.38566209646416,
+          "max_diferenca_relativa": 0.9834498392355692,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 167,
+            "data": "2025-03-16",
+            "dias_seguimento": 563
+          },
+          "igualdade_exata": {
+            "dia": 167,
+            "data": "2025-03-16",
+            "dias_seguimento": 563
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 23.37940122932561,
+          "max_diferenca_relativa": 0.9815751448400583,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 167,
+            "data": "2025-03-16",
+            "dias_seguimento": 563
+          },
+          "igualdade_exata": {
+            "dia": 167,
+            "data": "2025-03-16",
+            "dias_seguimento": 563
+          }
+        }
+      },
+      "janela_inicial": "2024-10-01",
+      "janela_final": "2026-09-30"
+    },
+    {
+      "regiao": "Funchal",
+      "anos": 3,
+      "dias": 1096,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 11.395723426865402,
+          "max_diferenca_relativa": 0.1315478992068637,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 16,
+            "data": "2023-10-16",
+            "dias_seguimento": 1080
+          },
+          "igualdade_exata": {
+            "dia": 25,
+            "data": "2023-10-25",
+            "dias_seguimento": 1071
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.00000000000003,
+          "max_diferenca_relativa": 0.9803585015242561,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 32,
+            "data": "2023-11-01",
+            "dias_seguimento": 1064
+          },
+          "igualdade_exata": {
+            "dia": 32,
+            "data": "2023-11-01",
+            "dias_seguimento": 1064
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0000000000005,
+          "max_diferenca_relativa": 0.9901325085877825,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 106,
+            "data": "2024-01-14",
+            "dias_seguimento": 990
+          },
+          "igualdade_exata": {
+            "dia": 106,
+            "data": "2024-01-14",
+            "dias_seguimento": 990
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 3.048544539045424,
+          "max_diferenca_relativa": 0.7067100900157053,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 16,
+            "data": "2023-10-16",
+            "dias_seguimento": 1080
+          },
+          "igualdade_exata": {
+            "dia": 25,
+            "data": "2023-10-25",
+            "dias_seguimento": 1071
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 222.31581141601825,
+          "max_diferenca_relativa": 0.9845396122793189,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 106,
+            "data": "2024-01-14",
+            "dias_seguimento": 990
+          },
+          "igualdade_exata": {
+            "dia": 106,
+            "data": "2024-01-14",
+            "dias_seguimento": 990
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 38.8644931573943,
+          "max_diferenca_relativa": 0.9790183768016507,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 106,
+            "data": "2024-01-14",
+            "dias_seguimento": 990
+          },
+          "igualdade_exata": {
+            "dia": 106,
+            "data": "2024-01-14",
+            "dias_seguimento": 990
+          }
+        }
+      },
+      "janela_inicial": "2023-10-01",
+      "janela_final": "2026-09-30"
+    },
+    {
+      "regiao": "Funchal",
+      "anos": 5,
+      "dias": 1826,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 7.812398821787895,
+          "max_diferenca_relativa": 0.08683085887267196,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 20,
+            "data": "2021-10-20",
+            "dias_seguimento": 1806
+          },
+          "igualdade_exata": {
+            "dia": 31,
+            "data": "2021-10-31",
+            "dias_seguimento": 1795
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.00000000000006,
+          "max_diferenca_relativa": 0.9750017272814383,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 82,
+            "data": "2021-12-21",
+            "dias_seguimento": 1744
+          },
+          "igualdade_exata": {
+            "dia": 82,
+            "data": "2021-12-21",
+            "dias_seguimento": 1744
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0000000000001,
+          "max_diferenca_relativa": 0.9900083777593374,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 179,
+            "data": "2022-03-28",
+            "dias_seguimento": 1647
+          },
+          "igualdade_exata": {
+            "dia": 179,
+            "data": "2022-03-28",
+            "dias_seguimento": 1647
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 6.404458964801398,
+          "max_diferenca_relativa": 0.6596244428691153,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 20,
+            "data": "2021-10-20",
+            "dias_seguimento": 1806
+          },
+          "igualdade_exata": {
+            "dia": 31,
+            "data": "2021-10-31",
+            "dias_seguimento": 1795
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 218.00661312312877,
+          "max_diferenca_relativa": 0.9822916187385013,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 179,
+            "data": "2022-03-28",
+            "dias_seguimento": 1647
+          },
+          "igualdade_exata": {
+            "dia": 179,
+            "data": "2022-03-28",
+            "dias_seguimento": 1647
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 36.6249724675585,
+          "max_diferenca_relativa": 0.9511524355909182,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 179,
+            "data": "2022-03-28",
+            "dias_seguimento": 1647
+          },
+          "igualdade_exata": {
+            "dia": 179,
+            "data": "2022-03-28",
+            "dias_seguimento": 1647
+          }
+        }
+      },
+      "janela_inicial": "2021-10-01",
+      "janela_final": "2026-09-30"
+    }
+  ],
+  "diferenca_final_vs_5anos": {
+    "1": {
+      "ffmc": 0.0,
+      "dmc": 0.0,
+      "dc": 0.0,
+      "isi": 0.0,
+      "bui": 0.0,
+      "fwi": 0.0
+    },
+    "2": {
+      "ffmc": 0.0,
+      "dmc": 0.0,
+      "dc": 0.0,
+      "isi": 0.0,
+      "bui": 0.0,
+      "fwi": 0.0
+    },
+    "3": {
+      "ffmc": 0.0,
+      "dmc": 0.0,
+      "dc": 0.0,
+      "isi": 0.0,
+      "bui": 0.0,
+      "fwi": 0.0
+    }
+  },
+  "segundos": 3.435985432999587,
+  "pico_rss_mib": 419.85546875
+}

@@ -1,0 +1,39 @@
+{
+  "regiao": {
+    "id_regiao": 10,
+    "nome": "Évora",
+    "distrito": "Évora",
+    "latitude": 38.5714,
+    "longitude": -7.9101
+  },
+  "territorio": "continente",
+  "inicio": "2021-09-30 13:00:00+00:00",
+  "fim": "2025-09-30 12:00:00+00:00",
+  "horas_reutilizadas": 8760,
+  "origem_reutilizada": "experiments/fwi_fase7/evidencias/365",
+  "sha256_resposta_reutilizada": "b12ae31e4e38cf9a70d53526cfc1b8839d01f57c1523d0d677873efbd59490fd",
+  "ingerido_em": "2026-10-05 16:31:09.392619+00:00",
+  "chamadas": 1,
+  "retries": 0,
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 38.5714,
+    "longitude": -7.9101,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2021-09-30",
+    "end_date": "2025-09-30"
+  },
+  "status_http": 200,
+  "sha256": "7768b3ea85c76199fe9e7c957b67911506b740165d3fc486aab375f6b665b81b",
+  "bytes": 1279705,
+  "estado": "validado",
+  "horas_novas": 35064,
+  "horas_total": 43824,
+  "segundos": 2.2384066740005437
+}

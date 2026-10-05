@@ -1,0 +1,39 @@
+{
+  "regiao": {
+    "id_regiao": 17,
+    "nome": "Vila Real",
+    "distrito": "Vila Real",
+    "latitude": 41.3006,
+    "longitude": -7.7457
+  },
+  "territorio": "continente",
+  "inicio": "2021-09-30 13:00:00+00:00",
+  "fim": "2026-08-01 12:00:00+00:00",
+  "horas_reutilizadas": 1440,
+  "origem_reutilizada": "experiments/fwi_fase6/evidencias",
+  "sha256_resposta_reutilizada": "83647b34ecb92c0e553ee2b9ecf24f62f7e50a7ddd9224615c309db4aee368f2",
+  "ingerido_em": "2026-10-05 16:31:01.833770+00:00",
+  "chamadas": 1,
+  "retries": 0,
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 41.3006,
+    "longitude": -7.7457,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2021-09-30",
+    "end_date": "2026-08-01"
+  },
+  "status_http": 200,
+  "sha256": "f534c1830603b3394e4856f216671f9a27abdcba2dc88d9e527a01682b33bcdd",
+  "bytes": 1526279,
+  "estado": "validado",
+  "horas_novas": 42384,
+  "horas_total": 43824,
+  "segundos": 5.005357094999454
+}

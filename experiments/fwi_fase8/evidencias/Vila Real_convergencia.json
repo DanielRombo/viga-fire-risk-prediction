@@ -1,0 +1,595 @@
+{
+  "sementes": [
+    [
+      60.0,
+      2.0,
+      5.0
+    ],
+    [
+      60.0,
+      2.0,
+      15.0
+    ],
+    [
+      60.0,
+      2.0,
+      1000.0
+    ],
+    [
+      60.0,
+      6.0,
+      5.0
+    ],
+    [
+      60.0,
+      6.0,
+      15.0
+    ],
+    [
+      60.0,
+      6.0,
+      1000.0
+    ],
+    [
+      60.0,
+      150.0,
+      5.0
+    ],
+    [
+      60.0,
+      150.0,
+      15.0
+    ],
+    [
+      60.0,
+      150.0,
+      1000.0
+    ],
+    [
+      85.0,
+      2.0,
+      5.0
+    ],
+    [
+      85.0,
+      2.0,
+      15.0
+    ],
+    [
+      85.0,
+      2.0,
+      1000.0
+    ],
+    [
+      85.0,
+      6.0,
+      5.0
+    ],
+    [
+      85.0,
+      6.0,
+      15.0
+    ],
+    [
+      85.0,
+      6.0,
+      1000.0
+    ],
+    [
+      85.0,
+      150.0,
+      5.0
+    ],
+    [
+      85.0,
+      150.0,
+      15.0
+    ],
+    [
+      85.0,
+      150.0,
+      1000.0
+    ],
+    [
+      95.0,
+      2.0,
+      5.0
+    ],
+    [
+      95.0,
+      2.0,
+      15.0
+    ],
+    [
+      95.0,
+      2.0,
+      1000.0
+    ],
+    [
+      95.0,
+      6.0,
+      5.0
+    ],
+    [
+      95.0,
+      6.0,
+      15.0
+    ],
+    [
+      95.0,
+      6.0,
+      1000.0
+    ],
+    [
+      95.0,
+      150.0,
+      5.0
+    ],
+    [
+      95.0,
+      150.0,
+      15.0
+    ],
+    [
+      95.0,
+      150.0,
+      1000.0
+    ]
+  ],
+  "regressao_existente": true,
+  "erro_regressao": 0.0,
+  "resultados": [
+    {
+      "regiao": "Vila Real",
+      "anos": 1,
+      "dias": 365,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 9.628235985648345,
+          "max_diferenca_relativa": 0.10505774042364902,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 23,
+            "data": "2025-10-23",
+            "dias_seguimento": 342
+          },
+          "igualdade_exata": {
+            "dia": 32,
+            "data": "2025-11-01",
+            "dias_seguimento": 333
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.0,
+          "max_diferenca_relativa": 0.9730707621350256,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 32,
+            "data": "2025-11-01",
+            "dias_seguimento": 333
+          },
+          "igualdade_exata": {
+            "dia": 32,
+            "data": "2025-11-01",
+            "dias_seguimento": 333
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0,
+          "max_diferenca_relativa": 0.9919241065492805,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 44,
+            "data": "2025-11-13",
+            "dias_seguimento": 321
+          },
+          "igualdade_exata": {
+            "dia": 44,
+            "data": "2025-11-13",
+            "dias_seguimento": 321
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 5.65422237843881,
+          "max_diferenca_relativa": 0.736511565070362,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 21,
+            "data": "2025-10-21",
+            "dias_seguimento": 344
+          },
+          "igualdade_exata": {
+            "dia": 32,
+            "data": "2025-11-01",
+            "dias_seguimento": 333
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 222.48126256407915,
+          "max_diferenca_relativa": 0.9815005511282779,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 44,
+            "data": "2025-11-13",
+            "dias_seguimento": 321
+          },
+          "igualdade_exata": {
+            "dia": 44,
+            "data": "2025-11-13",
+            "dias_seguimento": 321
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 32.21913415388412,
+          "max_diferenca_relativa": 0.9757796316354868,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 44,
+            "data": "2025-11-13",
+            "dias_seguimento": 321
+          },
+          "igualdade_exata": {
+            "dia": 44,
+            "data": "2025-11-13",
+            "dias_seguimento": 321
+          }
+        }
+      },
+      "janela_inicial": "2025-10-01",
+      "janela_final": "2026-09-30"
+    },
+    {
+      "regiao": "Vila Real",
+      "anos": 2,
+      "dias": 730,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 10.994967866248501,
+          "max_diferenca_relativa": 0.1765799296565407,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 7,
+            "data": "2024-10-07",
+            "dias_seguimento": 723
+          },
+          "igualdade_exata": {
+            "dia": 7,
+            "data": "2024-10-07",
+            "dias_seguimento": 723
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 95.79865631373065,
+          "max_diferenca_relativa": 0.9988014786479816,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 9,
+            "data": "2024-10-09",
+            "dias_seguimento": 721
+          },
+          "igualdade_exata": {
+            "dia": 9,
+            "data": "2024-10-09",
+            "dias_seguimento": 721
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 969.1878075186282,
+          "max_diferenca_relativa": 0.9951841580959371,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 98,
+            "data": "2025-01-06",
+            "dias_seguimento": 632
+          },
+          "igualdade_exata": {
+            "dia": 98,
+            "data": "2025-01-06",
+            "dias_seguimento": 632
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 0.4912641997883514,
+          "max_diferenca_relativa": 0.6884247543765313,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 7,
+            "data": "2024-10-07",
+            "dias_seguimento": 723
+          },
+          "igualdade_exata": {
+            "dia": 7,
+            "data": "2024-10-07",
+            "dias_seguimento": 723
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 153.70618569282948,
+          "max_diferenca_relativa": 0.9986734595057695,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 98,
+            "data": "2025-01-06",
+            "dias_seguimento": 632
+          },
+          "igualdade_exata": {
+            "dia": 98,
+            "data": "2025-01-06",
+            "dias_seguimento": 632
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 5.225814782605037,
+          "max_diferenca_relativa": 0.9813717454354037,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 98,
+            "data": "2025-01-06",
+            "dias_seguimento": 632
+          },
+          "igualdade_exata": {
+            "dia": 98,
+            "data": "2025-01-06",
+            "dias_seguimento": 632
+          }
+        }
+      },
+      "janela_inicial": "2024-10-01",
+      "janela_final": "2026-09-30"
+    },
+    {
+      "regiao": "Vila Real",
+      "anos": 3,
+      "dias": 1096,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 7.835049948455151,
+          "max_diferenca_relativa": 0.084746521836064,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 18,
+            "data": "2023-10-18",
+            "dias_seguimento": 1078
+          },
+          "igualdade_exata": {
+            "dia": 18,
+            "data": "2023-10-18",
+            "dias_seguimento": 1078
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.0,
+          "max_diferenca_relativa": 0.9697917502325735,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 23,
+            "data": "2023-10-23",
+            "dias_seguimento": 1073
+          },
+          "igualdade_exata": {
+            "dia": 23,
+            "data": "2023-10-23",
+            "dias_seguimento": 1073
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0000000000001,
+          "max_diferenca_relativa": 0.9912822618748548,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 26,
+            "data": "2023-10-26",
+            "dias_seguimento": 1070
+          },
+          "igualdade_exata": {
+            "dia": 26,
+            "data": "2023-10-26",
+            "dias_seguimento": 1070
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 5.4054672773591745,
+          "max_diferenca_relativa": 0.6708687096726068,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 15,
+            "data": "2023-10-15",
+            "dias_seguimento": 1081
+          },
+          "igualdade_exata": {
+            "dia": 18,
+            "data": "2023-10-18",
+            "dias_seguimento": 1078
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 221.77049626276732,
+          "max_diferenca_relativa": 0.9792927834370897,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 26,
+            "data": "2023-10-26",
+            "dias_seguimento": 1070
+          },
+          "igualdade_exata": {
+            "dia": 26,
+            "data": "2023-10-26",
+            "dias_seguimento": 1070
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 32.69345677914815,
+          "max_diferenca_relativa": 0.9586154202943582,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 26,
+            "data": "2023-10-26",
+            "dias_seguimento": 1070
+          },
+          "igualdade_exata": {
+            "dia": 26,
+            "data": "2023-10-26",
+            "dias_seguimento": 1070
+          }
+        }
+      },
+      "janela_inicial": "2023-10-01",
+      "janela_final": "2026-09-30"
+    },
+    {
+      "regiao": "Vila Real",
+      "anos": 5,
+      "dias": 1826,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 9.703094863143235,
+          "max_diferenca_relativa": 0.10682254588907696,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 22,
+            "data": "2021-10-22",
+            "dias_seguimento": 1804
+          },
+          "igualdade_exata": {
+            "dia": 36,
+            "data": "2021-11-05",
+            "dias_seguimento": 1790
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.0,
+          "max_diferenca_relativa": 0.9746865001481482,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 34,
+            "data": "2021-11-03",
+            "dias_seguimento": 1792
+          },
+          "igualdade_exata": {
+            "dia": 34,
+            "data": "2021-11-03",
+            "dias_seguimento": 1792
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0,
+          "max_diferenca_relativa": 0.9956307533585105,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 102,
+            "data": "2022-01-10",
+            "dias_seguimento": 1724
+          },
+          "igualdade_exata": {
+            "dia": 102,
+            "data": "2022-01-10",
+            "dias_seguimento": 1724
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 5.690053913439089,
+          "max_diferenca_relativa": 0.7335959635046562,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 18,
+            "data": "2021-10-18",
+            "dias_seguimento": 1808
+          },
+          "igualdade_exata": {
+            "dia": 36,
+            "data": "2021-11-05",
+            "dias_seguimento": 1790
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 216.54512347614758,
+          "max_diferenca_relativa": 0.9824630579288772,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 102,
+            "data": "2022-01-10",
+            "dias_seguimento": 1724
+          },
+          "igualdade_exata": {
+            "dia": 102,
+            "data": "2022-01-10",
+            "dias_seguimento": 1724
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 32.442399542333234,
+          "max_diferenca_relativa": 0.9759501192036785,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 102,
+            "data": "2022-01-10",
+            "dias_seguimento": 1724
+          },
+          "igualdade_exata": {
+            "dia": 102,
+            "data": "2022-01-10",
+            "dias_seguimento": 1724
+          }
+        }
+      },
+      "janela_inicial": "2021-10-01",
+      "janela_final": "2026-09-30"
+    }
+  ],
+  "diferenca_final_vs_5anos": {
+    "1": {
+      "ffmc": 0.0,
+      "dmc": 0.0,
+      "dc": 0.0,
+      "isi": 0.0,
+      "bui": 0.0,
+      "fwi": 0.0
+    },
+    "2": {
+      "ffmc": 0.0,
+      "dmc": 0.0,
+      "dc": 0.0,
+      "isi": 0.0,
+      "bui": 0.0,
+      "fwi": 0.0
+    },
+    "3": {
+      "ffmc": 0.0,
+      "dmc": 0.0,
+      "dc": 0.0,
+      "isi": 0.0,
+      "bui": 0.0,
+      "fwi": 0.0
+    }
+  },
+  "segundos": 0.9202383850006299,
+  "pico_rss_mib": 405.85546875
+}

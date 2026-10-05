@@ -1,0 +1,39 @@
+{
+  "regiao": {
+    "id_regiao": 19,
+    "nome": "Funchal",
+    "distrito": "Madeira",
+    "latitude": 32.6669,
+    "longitude": -16.9241
+  },
+  "territorio": "madeira",
+  "inicio": "2021-09-30 13:00:00+00:00",
+  "fim": "2026-08-01 12:00:00+00:00",
+  "horas_reutilizadas": 1440,
+  "origem_reutilizada": "experiments/fwi_fase6/evidencias",
+  "sha256_resposta_reutilizada": "949340302e52350d9a4fa685fd8b354118da636caf814d569c4509cae9dd3df0",
+  "ingerido_em": "2026-10-05 16:31:11.670440+00:00",
+  "chamadas": 1,
+  "retries": 0,
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 32.6669,
+    "longitude": -16.9241,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2021-09-30",
+    "end_date": "2026-08-01"
+  },
+  "status_http": 200,
+  "sha256": "a0e0f6acea63dc1107a96ff7cd25ef83aae79698dffd7f0efab1e8021cf74e25",
+  "bytes": 1541633,
+  "estado": "validado",
+  "horas_novas": 42384,
+  "horas_total": 43824,
+  "segundos": 2.656650293999519
+}

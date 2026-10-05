@@ -1,0 +1,595 @@
+{
+  "sementes": [
+    [
+      60.0,
+      2.0,
+      5.0
+    ],
+    [
+      60.0,
+      2.0,
+      15.0
+    ],
+    [
+      60.0,
+      2.0,
+      1000.0
+    ],
+    [
+      60.0,
+      6.0,
+      5.0
+    ],
+    [
+      60.0,
+      6.0,
+      15.0
+    ],
+    [
+      60.0,
+      6.0,
+      1000.0
+    ],
+    [
+      60.0,
+      150.0,
+      5.0
+    ],
+    [
+      60.0,
+      150.0,
+      15.0
+    ],
+    [
+      60.0,
+      150.0,
+      1000.0
+    ],
+    [
+      85.0,
+      2.0,
+      5.0
+    ],
+    [
+      85.0,
+      2.0,
+      15.0
+    ],
+    [
+      85.0,
+      2.0,
+      1000.0
+    ],
+    [
+      85.0,
+      6.0,
+      5.0
+    ],
+    [
+      85.0,
+      6.0,
+      15.0
+    ],
+    [
+      85.0,
+      6.0,
+      1000.0
+    ],
+    [
+      85.0,
+      150.0,
+      5.0
+    ],
+    [
+      85.0,
+      150.0,
+      15.0
+    ],
+    [
+      85.0,
+      150.0,
+      1000.0
+    ],
+    [
+      95.0,
+      2.0,
+      5.0
+    ],
+    [
+      95.0,
+      2.0,
+      15.0
+    ],
+    [
+      95.0,
+      2.0,
+      1000.0
+    ],
+    [
+      95.0,
+      6.0,
+      5.0
+    ],
+    [
+      95.0,
+      6.0,
+      15.0
+    ],
+    [
+      95.0,
+      6.0,
+      1000.0
+    ],
+    [
+      95.0,
+      150.0,
+      5.0
+    ],
+    [
+      95.0,
+      150.0,
+      15.0
+    ],
+    [
+      95.0,
+      150.0,
+      1000.0
+    ]
+  ],
+  "regressao_existente": true,
+  "erro_regressao": 0.0,
+  "resultados": [
+    {
+      "regiao": "Faro",
+      "anos": 1,
+      "dias": 365,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 8.730419790964802,
+          "max_diferenca_relativa": 0.09780364071804885,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 15,
+            "data": "2025-10-15",
+            "dias_seguimento": 350
+          },
+          "igualdade_exata": {
+            "dia": 21,
+            "data": "2025-10-21",
+            "dias_seguimento": 344
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.00000000000003,
+          "max_diferenca_relativa": 0.9759554592075913,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 48,
+            "data": "2025-11-17",
+            "dias_seguimento": 317
+          },
+          "igualdade_exata": {
+            "dia": 48,
+            "data": "2025-11-17",
+            "dias_seguimento": 317
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0000000000001,
+          "max_diferenca_relativa": 0.9897779316327059,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 96,
+            "data": "2026-01-04",
+            "dias_seguimento": 269
+          },
+          "igualdade_exata": {
+            "dia": 96,
+            "data": "2026-01-04",
+            "dias_seguimento": 269
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 4.643850036263256,
+          "max_diferenca_relativa": 0.6879834468295795,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 15,
+            "data": "2025-10-15",
+            "dias_seguimento": 350
+          },
+          "igualdade_exata": {
+            "dia": 21,
+            "data": "2025-10-21",
+            "dias_seguimento": 344
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 221.11662153377435,
+          "max_diferenca_relativa": 0.9824531480922092,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 96,
+            "data": "2026-01-04",
+            "dias_seguimento": 269
+          },
+          "igualdade_exata": {
+            "dia": 96,
+            "data": "2026-01-04",
+            "dias_seguimento": 269
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 29.468829523228536,
+          "max_diferenca_relativa": 0.9730952041239412,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 96,
+            "data": "2026-01-04",
+            "dias_seguimento": 269
+          },
+          "igualdade_exata": {
+            "dia": 96,
+            "data": "2026-01-04",
+            "dias_seguimento": 269
+          }
+        }
+      },
+      "janela_inicial": "2025-10-01",
+      "janela_final": "2026-09-30"
+    },
+    {
+      "regiao": "Faro",
+      "anos": 2,
+      "dias": 730,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 7.151981995543466,
+          "max_diferenca_relativa": 0.07819843853823298,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 16,
+            "data": "2024-10-16",
+            "dias_seguimento": 714
+          },
+          "igualdade_exata": {
+            "dia": 28,
+            "data": "2024-10-28",
+            "dias_seguimento": 702
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.00000000000003,
+          "max_diferenca_relativa": 0.97182379197785,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 115,
+            "data": "2025-01-23",
+            "dias_seguimento": 615
+          },
+          "igualdade_exata": {
+            "dia": 115,
+            "data": "2025-01-23",
+            "dias_seguimento": 615
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0000000000001,
+          "max_diferenca_relativa": 0.9919238494550173,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 151,
+            "data": "2025-02-28",
+            "dias_seguimento": 579
+          },
+          "igualdade_exata": {
+            "dia": 151,
+            "data": "2025-02-28",
+            "dias_seguimento": 579
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 6.124204790861798,
+          "max_diferenca_relativa": 0.6368019316829198,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 14,
+            "data": "2024-10-14",
+            "dias_seguimento": 716
+          },
+          "igualdade_exata": {
+            "dia": 28,
+            "data": "2024-10-28",
+            "dias_seguimento": 702
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 217.3364040013984,
+          "max_diferenca_relativa": 0.9806134988487663,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 151,
+            "data": "2025-02-28",
+            "dias_seguimento": 579
+          },
+          "igualdade_exata": {
+            "dia": 151,
+            "data": "2025-02-28",
+            "dias_seguimento": 579
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 36.094765572905324,
+          "max_diferenca_relativa": 0.9423676704202563,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 151,
+            "data": "2025-02-28",
+            "dias_seguimento": 579
+          },
+          "igualdade_exata": {
+            "dia": 151,
+            "data": "2025-02-28",
+            "dias_seguimento": 579
+          }
+        }
+      },
+      "janela_inicial": "2024-10-01",
+      "janela_final": "2026-09-30"
+    },
+    {
+      "regiao": "Faro",
+      "anos": 3,
+      "dias": 1096,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 4.9230315424888715,
+          "max_diferenca_relativa": 0.05264111466145078,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 14,
+            "data": "2023-10-14",
+            "dias_seguimento": 1082
+          },
+          "igualdade_exata": {
+            "dia": 24,
+            "data": "2023-10-24",
+            "dias_seguimento": 1072
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.00000000000003,
+          "max_diferenca_relativa": 0.967572622591012,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 183,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          },
+          "igualdade_exata": {
+            "dia": 183,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0,
+          "max_diferenca_relativa": 0.9892288389535451,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 183,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          },
+          "igualdade_exata": {
+            "dia": 183,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 9.630660189558206,
+          "max_diferenca_relativa": 0.5031989759536167,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 14,
+            "data": "2023-10-14",
+            "dias_seguimento": 1082
+          },
+          "igualdade_exata": {
+            "dia": 23,
+            "data": "2023-10-23",
+            "dias_seguimento": 1073
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 222.08096507648895,
+          "max_diferenca_relativa": 0.9779042550523496,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 183,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          },
+          "igualdade_exata": {
+            "dia": 183,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 51.96800840582506,
+          "max_diferenca_relativa": 0.8787324778472531,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 183,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          },
+          "igualdade_exata": {
+            "dia": 183,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          }
+        }
+      },
+      "janela_inicial": "2023-10-01",
+      "janela_final": "2026-09-30"
+    },
+    {
+      "regiao": "Faro",
+      "anos": 5,
+      "dias": 1826,
+      "semente_convencional": 13,
+      "metricas": {
+        "ffmc": {
+          "max_diferenca_absoluta": 9.207579234284808,
+          "max_diferenca_relativa": 0.10270677385133316,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 20,
+            "data": "2021-10-20",
+            "dias_seguimento": 1806
+          },
+          "igualdade_exata": {
+            "dia": 31,
+            "data": "2021-10-31",
+            "dias_seguimento": 1795
+          }
+        },
+        "dmc": {
+          "max_diferenca_absoluta": 148.00000000000003,
+          "max_diferenca_relativa": 0.9755226877717523,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 175,
+            "data": "2022-03-24",
+            "dias_seguimento": 1651
+          },
+          "igualdade_exata": {
+            "dia": 175,
+            "data": "2022-03-24",
+            "dias_seguimento": 1651
+          }
+        },
+        "dc": {
+          "max_diferenca_absoluta": 995.0000000000002,
+          "max_diferenca_relativa": 0.9898133778998051,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 913,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          },
+          "igualdade_exata": {
+            "dia": 913,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          }
+        },
+        "isi": {
+          "max_diferenca_absoluta": 4.540867526816349,
+          "max_diferenca_relativa": 0.7076867694330915,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 20,
+            "data": "2021-10-20",
+            "dias_seguimento": 1806
+          },
+          "igualdade_exata": {
+            "dia": 31,
+            "data": "2021-10-31",
+            "dias_seguimento": 1795
+          }
+        },
+        "bui": {
+          "max_diferenca_absoluta": 225.0036063008613,
+          "max_diferenca_relativa": 0.9823181004362166,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 913,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          },
+          "igualdade_exata": {
+            "dia": 913,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          }
+        },
+        "fwi": {
+          "max_diferenca_absoluta": 28.53558483461426,
+          "max_diferenca_relativa": 0.9751265379862333,
+          "diferenca_final_absoluta": 0.0,
+          "diferenca_final_relativa": 0.0,
+          "convergencia_numerica": {
+            "dia": 913,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          },
+          "igualdade_exata": {
+            "dia": 913,
+            "data": "2024-03-31",
+            "dias_seguimento": 913
+          }
+        }
+      },
+      "janela_inicial": "2021-10-01",
+      "janela_final": "2026-09-30"
+    }
+  ],
+  "diferenca_final_vs_5anos": {
+    "1": {
+      "ffmc": 0.0,
+      "dmc": 0.0,
+      "dc": 0.0,
+      "isi": 0.0,
+      "bui": 0.0,
+      "fwi": 0.0
+    },
+    "2": {
+      "ffmc": 0.0,
+      "dmc": 0.0,
+      "dc": 0.0,
+      "isi": 0.0,
+      "bui": 0.0,
+      "fwi": 0.0
+    },
+    "3": {
+      "ffmc": 0.0,
+      "dmc": 0.0,
+      "dc": 0.0,
+      "isi": 0.0,
+      "bui": 0.0,
+      "fwi": 0.0
+    }
+  },
+  "segundos": 1.0257041810000374,
+  "pico_rss_mib": 400.8984375
+}

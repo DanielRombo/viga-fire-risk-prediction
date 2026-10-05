@@ -1,0 +1,21 @@
+{
+  "estado": "aprovado",
+  "checksums_anteriores_verificados": 102,
+  "producao_metadados_iguais": true,
+  "ficheiros_rastreados_alterados": [],
+  "novos_apenas_fase8": true,
+  "git_diff_check": true,
+  "sintaxe_e_espacos": [
+    "convergencia.py",
+    "dados.py",
+    "ESTADO.md",
+    "executar.ps1",
+    "finalizar.py",
+    "fontes.py",
+    "RELATORIO.md",
+    "relatorio.py",
+    "rh100.py",
+    "verificar.py"
+  ],
+  "imagem_ensaio": "sha256:01851c692dd3b127c8750229e44d002b2af089ae570c7dffde1782358ec2db81"
+}

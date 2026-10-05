@@ -1,0 +1,39 @@
+{
+  "regiao": {
+    "id_regiao": 11,
+    "nome": "Castelo Branco",
+    "distrito": "Castelo Branco",
+    "latitude": 39.8194,
+    "longitude": -7.4906
+  },
+  "territorio": "continente",
+  "inicio": "2021-09-30 13:00:00+00:00",
+  "fim": "2025-09-30 12:00:00+00:00",
+  "horas_reutilizadas": 8760,
+  "origem_reutilizada": "experiments/fwi_fase7/evidencias/365",
+  "sha256_resposta_reutilizada": "2995ab120e9b4120afce47a008cd1cf52dc20ead93e47e32cccea760ddac0819",
+  "ingerido_em": "2026-10-05 16:31:06.903793+00:00",
+  "chamadas": 1,
+  "retries": 0,
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 39.8194,
+    "longitude": -7.4906,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2021-09-30",
+    "end_date": "2025-09-30"
+  },
+  "status_http": 200,
+  "sha256": "25103cd6cd90fc3fff5d87a6061bcf55e0abfc62f144ddb6d7fd312cfa36e8a0",
+  "bytes": 1272632,
+  "estado": "validado",
+  "horas_novas": 35064,
+  "horas_total": 43824,
+  "segundos": 2.4017996430002313
+}
