@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 3,
+    "nome": "Braga",
+    "distrito": "Braga",
+    "latitude": 41.5503,
+    "longitude": -8.42
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:14.316264+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 41.5503,
+    "longitude": -8.42,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "beeac0f283da00eddad5f5b5a9e246236a7eff269c657bf5a9234c44b7064878",
+  "bytes": 317950,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 41.581722,
+  "longitude_grelha": -8.441559,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.5245449540000209
+}

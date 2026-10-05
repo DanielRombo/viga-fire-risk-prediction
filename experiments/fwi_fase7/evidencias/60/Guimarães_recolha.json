@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 29,
+    "nome": "Guimarães",
+    "distrito": "Braga",
+    "latitude": 41.4425,
+    "longitude": -8.2919
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2026-08-02",
+  "janela_dias": 60,
+  "inicio_utc": "2026-08-01 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:35:11.179119+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 41.4425,
+    "longitude": -8.2919,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2026-08-01",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "1fdf1dfa37438dcf106ab138abb0e08b367191cfbe564dfb5cac5ea829f38f13",
+  "bytes": 53510,
+  "estado": "validado",
+  "horas_utilizadas": 1440,
+  "latitude_grelha": 41.441124,
+  "longitude_grelha": -8.287781,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.33520279599997593
+}

@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 22,
+    "nome": "Cascais",
+    "distrito": "Lisboa",
+    "latitude": 38.6979,
+    "longitude": -9.4215
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:14.852739+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 38.6979,
+    "longitude": -9.4215,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "df263379a646893a6812325bfc3e769a17e8a8bbb1331f086bc3599bbcbfd196",
+  "bytes": 323840,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 38.76977,
+  "longitude_grelha": -9.454315,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.47276303199987524
+}

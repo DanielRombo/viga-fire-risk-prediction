@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 16,
+    "nome": "Bragança",
+    "distrito": "Bragança",
+    "latitude": 41.8061,
+    "longitude": -6.7588
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:08.013183+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 41.8061,
+    "longitude": -6.7588,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "54a0a94f6b4715d325bafbb77610d9a3e360f64835ab37ac485a244c2ec9c932",
+  "bytes": 316894,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 41.792618,
+  "longitude_grelha": -6.7826233,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.6505960880001567
+}

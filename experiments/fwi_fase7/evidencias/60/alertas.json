@@ -1,0 +1,3790 @@
+{
+  "limiares_salto": {
+    "ffmc": 40,
+    "dmc": 100,
+    "dc": 150,
+    "isi": 15,
+    "bui": 100,
+    "fwi": 25
+  },
+  "limiar_fwi": 50,
+  "regra_regional": "máximo regional > Q3 + 3 IQR dos máximos; apenas mesma janela",
+  "alertas": [
+    {
+      "regiao": "Almada",
+      "data": "2026-08-23",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 42.22863485346278,
+      "anterior": 89.75773789436565,
+      "inputs": {
+        "id_regiao": 24,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 20.0,
+        "humidade": 97.0,
+        "vento": 14.8,
+        "precipitacao_24h": 4.2,
+        "latitude": 38.6766,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 24,
+        "data_referencia": "2026-08-22",
+        "instante_referencia_utc": "2026-08-22T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.4,
+        "humidade": 47.0,
+        "vento": 10.0,
+        "precipitacao_24h": 0.0,
+        "latitude": 38.6766,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 24,
+        "data_referencia": "2026-08-22",
+        "ffmc": 89.75773789436565,
+        "dmc": 77.12333079800001,
+        "dc": 188.298,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Almada",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 3.866310529331822,
+      "anterior": 41.690409683422565,
+      "inputs": {
+        "id_regiao": 24,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 22.7,
+        "humidade": 65.0,
+        "vento": 1.8,
+        "precipitacao_24h": 2.4,
+        "latitude": 38.6766,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 24,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.0,
+        "humidade": 58.0,
+        "vento": 25.2,
+        "precipitacao_24h": 0.0,
+        "latitude": 38.6766,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 24,
+        "data_referencia": "2026-09-29",
+        "ffmc": 88.64590948751348,
+        "dmc": 124.98676115159009,
+        "dc": 391.9083337807744,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Amadora",
+      "data": "2026-08-23",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 43.42671232521891,
+      "anterior": 89.14332711782886,
+      "inputs": {
+        "id_regiao": 25,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.2,
+        "humidade": 98.0,
+        "vento": 16.9,
+        "precipitacao_24h": 3.7,
+        "latitude": 38.7539,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 25,
+        "data_referencia": "2026-08-22",
+        "instante_referencia_utc": "2026-08-22T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.1,
+        "humidade": 47.0,
+        "vento": 7.8,
+        "precipitacao_24h": 0.0,
+        "latitude": 38.7539,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 25,
+        "data_referencia": "2026-08-22",
+        "ffmc": 89.14332711782886,
+        "dmc": 74.23256137453775,
+        "dc": 186.57000000000002,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Amadora",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 4.095911899016532,
+      "anterior": 38.224443829915,
+      "inputs": {
+        "id_regiao": 25,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 22.4,
+        "humidade": 64.0,
+        "vento": 3.3,
+        "precipitacao_24h": 2.6,
+        "latitude": 38.7539,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 25,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.3,
+        "humidade": 61.0,
+        "vento": 24.4,
+        "precipitacao_24h": 0.2,
+        "latitude": 38.7539,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 25,
+        "data_referencia": "2026-09-29",
+        "ffmc": 88.07970830537599,
+        "dmc": 121.81683816357737,
+        "dc": 382.0274442960365,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Aveiro",
+      "data": "2026-09-29",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 31.596876560434016,
+      "anterior": 5.928267945903748,
+      "inputs": {
+        "id_regiao": 6,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.9,
+        "humidade": 49.0,
+        "vento": 32.2,
+        "precipitacao_24h": 0.7,
+        "latitude": 40.6405,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 6,
+        "data_referencia": "2026-09-28",
+        "instante_referencia_utc": "2026-09-28T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 22.9,
+        "humidade": 71.0,
+        "vento": 10.4,
+        "precipitacao_24h": 1.1,
+        "latitude": 40.6405,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 6,
+        "data_referencia": "2026-09-28",
+        "ffmc": 79.67757112416746,
+        "dmc": 37.334530599839944,
+        "dc": 245.28871075134384,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Aveiro",
+      "data": "2026-09-30",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 47.4220236697861,
+      "anterior": 87.47260593200147,
+      "inputs": {
+        "id_regiao": 6,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 21.2,
+        "humidade": 68.0,
+        "vento": 7.4,
+        "precipitacao_24h": 38.4,
+        "latitude": 40.6405,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 6,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.9,
+        "humidade": 49.0,
+        "vento": 32.2,
+        "precipitacao_24h": 0.7,
+        "latitude": 40.6405,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 6,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.47260593200147,
+        "dmc": 39.87688467983995,
+        "dc": 251.83471075134383,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Aveiro",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.1723407691092985,
+      "anterior": 31.596876560434016,
+      "inputs": {
+        "id_regiao": 6,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 21.2,
+        "humidade": 68.0,
+        "vento": 7.4,
+        "precipitacao_24h": 38.4,
+        "latitude": 40.6405,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 6,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.9,
+        "humidade": 49.0,
+        "vento": 32.2,
+        "precipitacao_24h": 0.7,
+        "latitude": 40.6405,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 6,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.47260593200147,
+        "dmc": 39.87688467983995,
+        "dc": 251.83471075134383,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Barcelos",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 33.44840103190863,
+      "anterior": 88.32837400041925,
+      "inputs": {
+        "id_regiao": 30,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.8,
+        "humidade": 92.0,
+        "vento": 26.2,
+        "precipitacao_24h": 22.6,
+        "latitude": 41.5333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 30,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.0,
+        "humidade": 53.0,
+        "vento": 5.6,
+        "precipitacao_24h": 0.5,
+        "latitude": 41.5333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 30,
+        "data_referencia": "2026-08-23",
+        "ffmc": 88.32837400041925,
+        "dmc": 58.95636238409715,
+        "dc": 186.57874841814964,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Barcelos",
+      "data": "2026-09-30",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 43.684787032964465,
+      "anterior": 85.30490770394293,
+      "inputs": {
+        "id_regiao": 30,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.7,
+        "humidade": 74.0,
+        "vento": 9.5,
+        "precipitacao_24h": 35.8,
+        "latitude": 41.5333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 30,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.7,
+        "humidade": 46.0,
+        "vento": 32.7,
+        "precipitacao_24h": 2.3000000000000003,
+        "latitude": 41.5333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 30,
+        "data_referencia": "2026-09-29",
+        "ffmc": 85.30490770394293,
+        "dmc": 68.96650867614888,
+        "dc": 270.46651285400446,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Barcelos",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.15415301623109884,
+      "anterior": 31.67019449646431,
+      "inputs": {
+        "id_regiao": 30,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.7,
+        "humidade": 74.0,
+        "vento": 9.5,
+        "precipitacao_24h": 35.8,
+        "latitude": 41.5333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 30,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.7,
+        "humidade": 46.0,
+        "vento": 32.7,
+        "precipitacao_24h": 2.3000000000000003,
+        "latitude": 41.5333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 30,
+        "data_referencia": "2026-09-29",
+        "ffmc": 85.30490770394293,
+        "dmc": 68.96650867614888,
+        "dc": 270.46651285400446,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Beja",
+      "data": "2026-08-27",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 9.651943007886022,
+      "anterior": 37.61781901729649,
+      "inputs": {
+        "id_regiao": 13,
+        "data_referencia": "2026-08-27",
+        "instante_referencia_utc": "2026-08-27T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 23.3,
+        "humidade": 49.0,
+        "vento": 24.2,
+        "precipitacao_24h": 6.9,
+        "latitude": 38.015,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 13,
+        "data_referencia": "2026-08-26",
+        "instante_referencia_utc": "2026-08-26T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 24.8,
+        "humidade": 51.0,
+        "vento": 22.2,
+        "precipitacao_24h": 0.5,
+        "latitude": 38.015,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 13,
+        "data_referencia": "2026-08-26",
+        "ffmc": 89.60764813687602,
+        "dmc": 108.28945118800002,
+        "dc": 226.306,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Beja",
+      "data": "2026-09-15",
+      "indice": "fwi",
+      "tipo": "fwi_extremo",
+      "valor": 55.77741871348898,
+      "anterior": 36.07233627571145,
+      "inputs": {
+        "id_regiao": 13,
+        "data_referencia": "2026-09-15",
+        "instante_referencia_utc": "2026-09-15T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 33.2,
+        "humidade": 19.0,
+        "vento": 13.4,
+        "precipitacao_24h": 0.0,
+        "latitude": 38.015,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 13,
+        "data_referencia": "2026-09-14",
+        "instante_referencia_utc": "2026-09-14T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 33.9,
+        "humidade": 23.0,
+        "vento": 0.2,
+        "precipitacao_24h": 0.0,
+        "latitude": 38.015,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 13,
+        "data_referencia": "2026-09-14",
+        "ffmc": 95.9870206669777,
+        "dmc": 138.6492803494526,
+        "dc": 357.1063429093406,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Beja",
+      "data": "2026-09-29",
+      "indice": "dmc",
+      "tipo": "salto",
+      "valor": 78.06014141841798,
+      "anterior": 197.2945167854526,
+      "inputs": {
+        "id_regiao": 13,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 58.0,
+        "vento": 21.8,
+        "precipitacao_24h": 9.7,
+        "latitude": 38.015,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 13,
+        "data_referencia": "2026-09-28",
+        "instante_referencia_utc": "2026-09-28T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 27.4,
+        "humidade": 46.0,
+        "vento": 7.1,
+        "precipitacao_24h": 0.1,
+        "latitude": 38.015,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 13,
+        "data_referencia": "2026-09-28",
+        "ffmc": 91.65095435621384,
+        "dmc": 197.2945167854526,
+        "dc": 459.49634290934057,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 27.20793776896296,
+      "anterior": 88.9890968761881,
+      "inputs": {
+        "id_regiao": 3,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 20.0,
+        "humidade": 95.0,
+        "vento": 25.9,
+        "precipitacao_24h": 22.0,
+        "latitude": 41.5503,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 3,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 5.1,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.5503,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 3,
+        "data_referencia": "2026-08-23",
+        "ffmc": 88.9890968761881,
+        "dmc": 68.85934839941223,
+        "dc": 188.13639772021497,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-09-30",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 40.383324440405936,
+      "anterior": 85.39428378296142,
+      "inputs": {
+        "id_regiao": 3,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 77.0,
+        "vento": 8.6,
+        "precipitacao_24h": 33.4,
+        "latitude": 41.5503,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 3,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.7,
+        "humidade": 42.0,
+        "vento": 33.4,
+        "precipitacao_24h": 2.9,
+        "latitude": 41.5503,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 3,
+        "data_referencia": "2026-09-29",
+        "ffmc": 85.39428378296142,
+        "dmc": 64.69276696587326,
+        "dc": 251.8066215177795,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.07756387203468548,
+      "anterior": 31.638374255761406,
+      "inputs": {
+        "id_regiao": 3,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 77.0,
+        "vento": 8.6,
+        "precipitacao_24h": 33.4,
+        "latitude": 41.5503,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 3,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.7,
+        "humidade": 42.0,
+        "vento": 33.4,
+        "precipitacao_24h": 2.9,
+        "latitude": 41.5503,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 3,
+        "data_referencia": "2026-09-29",
+        "ffmc": 85.39428378296142,
+        "dmc": 64.69276696587326,
+        "dc": 251.8066215177795,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Bragança",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 47.87914477717471,
+      "anterior": 92.78615218648149,
+      "inputs": {
+        "id_regiao": 16,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 16.7,
+        "humidade": 94.0,
+        "vento": 18.3,
+        "precipitacao_24h": 4.1000000000000005,
+        "latitude": 41.8061,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 16,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 27.1,
+        "humidade": 27.0,
+        "vento": 11.0,
+        "precipitacao_24h": 0.0,
+        "latitude": 41.8061,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 16,
+        "data_referencia": "2026-08-23",
+        "ffmc": 92.78615218648149,
+        "dmc": 99.840855084,
+        "dc": 197.31399999999996,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Bragança",
+      "data": "2026-08-24",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.6893624971028252,
+      "anterior": 33.67486392593542,
+      "inputs": {
+        "id_regiao": 16,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 16.7,
+        "humidade": 94.0,
+        "vento": 18.3,
+        "precipitacao_24h": 4.1000000000000005,
+        "latitude": 41.8061,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 16,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 27.1,
+        "humidade": 27.0,
+        "vento": 11.0,
+        "precipitacao_24h": 0.0,
+        "latitude": 41.8061,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 16,
+        "data_referencia": "2026-08-23",
+        "ffmc": 92.78615218648149,
+        "dmc": 99.840855084,
+        "dc": 197.31399999999996,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Cascais",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 3.7930621051116615,
+      "anterior": 31.689186443714284,
+      "inputs": {
+        "id_regiao": 22,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 22.2,
+        "humidade": 69.0,
+        "vento": 8.9,
+        "precipitacao_24h": 3.2,
+        "latitude": 38.6979,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 22,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 23.7,
+        "humidade": 73.0,
+        "vento": 30.4,
+        "precipitacao_24h": 0.30000000000000004,
+        "latitude": 38.6979,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 22,
+        "data_referencia": "2026-09-29",
+        "ffmc": 85.65952925526499,
+        "dmc": 68.07874187473043,
+        "dc": 358.31383505922344,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Castelo Branco",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 45.86360716321569,
+      "anterior": 92.28283837248942,
+      "inputs": {
+        "id_regiao": 11,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 20.3,
+        "humidade": 82.0,
+        "vento": 15.4,
+        "precipitacao_24h": 16.3,
+        "latitude": 39.8194,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 11,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.9,
+        "humidade": 38.0,
+        "vento": 6.0,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.8194,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 11,
+        "data_referencia": "2026-08-23",
+        "ffmc": 92.28283837248942,
+        "dmc": 111.70097133800002,
+        "dc": 205.81,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Castelo Branco",
+      "data": "2026-08-24",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.389461577365022,
+      "anterior": 28.506627835250217,
+      "inputs": {
+        "id_regiao": 11,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 20.3,
+        "humidade": 82.0,
+        "vento": 15.4,
+        "precipitacao_24h": 16.3,
+        "latitude": 39.8194,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 11,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.9,
+        "humidade": 38.0,
+        "vento": 6.0,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.8194,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 11,
+        "data_referencia": "2026-08-23",
+        "ffmc": 92.28283837248942,
+        "dmc": 111.70097133800002,
+        "dc": 205.81,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Castelo Branco",
+      "data": "2026-09-16",
+      "indice": "fwi",
+      "tipo": "fwi_extremo",
+      "valor": 53.60957581356386,
+      "anterior": 44.32767157449001,
+      "inputs": {
+        "id_regiao": 11,
+        "data_referencia": "2026-09-16",
+        "instante_referencia_utc": "2026-09-16T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 27.0,
+        "humidade": 37.0,
+        "vento": 22.7,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.8194,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 11,
+        "data_referencia": "2026-09-15",
+        "instante_referencia_utc": "2026-09-15T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 33.4,
+        "humidade": 19.0,
+        "vento": 7.6,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.8194,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 11,
+        "data_referencia": "2026-09-15",
+        "ffmc": 96.43666881171576,
+        "dmc": 105.28919229910977,
+        "dc": 312.57903823127896,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Coimbra",
+      "data": "2026-08-24",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 5.159268702424088,
+      "anterior": 30.889942803719592,
+      "inputs": {
+        "id_regiao": 4,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 22.9,
+        "humidade": 69.0,
+        "vento": 26.9,
+        "precipitacao_24h": 22.0,
+        "latitude": 40.2033,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 4,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 28.7,
+        "humidade": 42.0,
+        "vento": 18.6,
+        "precipitacao_24h": 0.0,
+        "latitude": 40.2033,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 4,
+        "data_referencia": "2026-08-23",
+        "ffmc": 90.2187914202339,
+        "dmc": 81.36891953151918,
+        "dc": 197.29600000000002,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Coimbra",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.9799912239729714,
+      "anterior": 44.609836726974166,
+      "inputs": {
+        "id_regiao": 4,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 21.9,
+        "humidade": 64.0,
+        "vento": 7.0,
+        "precipitacao_24h": 11.6,
+        "latitude": 40.2033,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 4,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 27.6,
+        "humidade": 46.0,
+        "vento": 28.5,
+        "precipitacao_24h": 0.9,
+        "latitude": 40.2033,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 4,
+        "data_referencia": "2026-09-29",
+        "ffmc": 88.57343750306474,
+        "dmc": 116.97579692071005,
+        "dc": 343.2568024046584,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 33.00937388704428,
+      "anterior": 87.73184900882318,
+      "inputs": {
+        "id_regiao": 28,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.2,
+        "humidade": 92.0,
+        "vento": 25.9,
+        "precipitacao_24h": 21.9,
+        "latitude": 41.15,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 28,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.2,
+        "humidade": 50.0,
+        "vento": 7.3,
+        "precipitacao_24h": 0.7,
+        "latitude": 41.15,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 28,
+        "data_referencia": "2026-08-23",
+        "ffmc": 87.73184900882318,
+        "dmc": 72.60247004899749,
+        "dc": 188.3329717588722,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-09-30",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 41.31396329625167,
+      "anterior": 85.70515735530829,
+      "inputs": {
+        "id_regiao": 28,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.2,
+        "humidade": 75.0,
+        "vento": 6.7,
+        "precipitacao_24h": 25.0,
+        "latitude": 41.15,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 28,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 27.1,
+        "humidade": 44.0,
+        "vento": 29.8,
+        "precipitacao_24h": 2.4,
+        "latitude": 41.15,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 28,
+        "data_referencia": "2026-09-29",
+        "ffmc": 85.70515735530829,
+        "dmc": 77.8918995380063,
+        "dc": 257.182158080844,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.10109384974028422,
+      "anterior": 30.571579961340426,
+      "inputs": {
+        "id_regiao": 28,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.2,
+        "humidade": 75.0,
+        "vento": 6.7,
+        "precipitacao_24h": 25.0,
+        "latitude": 41.15,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 28,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 27.1,
+        "humidade": 44.0,
+        "vento": 29.8,
+        "precipitacao_24h": 2.4,
+        "latitude": 41.15,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 28,
+        "data_referencia": "2026-09-29",
+        "ffmc": 85.70515735530829,
+        "dmc": 77.8918995380063,
+        "dc": 257.182158080844,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2026-08-22",
+      "indice": "isi",
+      "tipo": "salto",
+      "valor": 16.731981102410945,
+      "anterior": 1.7248044834722336,
+      "inputs": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-22",
+        "instante_referencia_utc": "2026-08-22T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 24.0,
+        "humidade": 22.0,
+        "vento": 21.3,
+        "precipitacao_24h": 0.0,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-21",
+        "instante_referencia_utc": "2026-08-21T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 22.4,
+        "humidade": 33.0,
+        "vento": 9.0,
+        "precipitacao_24h": 3.2,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-21",
+        "ffmc": 79.63887415569081,
+        "dmc": 57.49180722270761,
+        "dc": 169.30038995951432,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2026-08-22",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 36.17079499199289,
+      "anterior": 6.080195679179766,
+      "inputs": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-22",
+        "instante_referencia_utc": "2026-08-22T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 24.0,
+        "humidade": 22.0,
+        "vento": 21.3,
+        "precipitacao_24h": 0.0,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-21",
+        "instante_referencia_utc": "2026-08-21T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 22.4,
+        "humidade": 33.0,
+        "vento": 9.0,
+        "precipitacao_24h": 3.2,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-21",
+        "ffmc": 79.63887415569081,
+        "dmc": 57.49180722270761,
+        "dc": 169.30038995951432,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 43.733668554915916,
+      "anterior": 91.81131589357877,
+      "inputs": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 16.3,
+        "humidade": 86.0,
+        "vento": 27.8,
+        "precipitacao_24h": 13.9,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 23.0,
+        "humidade": 37.0,
+        "vento": 20.8,
+        "precipitacao_24h": 0.0,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-23",
+        "ffmc": 91.81131589357877,
+        "dmc": 64.66807662870761,
+        "dc": 183.76838995951434,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2026-08-24",
+      "indice": "isi",
+      "tipo": "salto",
+      "valor": 0.27286462089870833,
+      "anterior": 15.830343339887875,
+      "inputs": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 16.3,
+        "humidade": 86.0,
+        "vento": 27.8,
+        "precipitacao_24h": 13.9,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 23.0,
+        "humidade": 37.0,
+        "vento": 20.8,
+        "precipitacao_24h": 0.0,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-23",
+        "ffmc": 91.81131589357877,
+        "dmc": 64.66807662870761,
+        "dc": 183.76838995951434,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2026-08-24",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.39878920760502923,
+      "anterior": 35.64020759116618,
+      "inputs": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 16.3,
+        "humidade": 86.0,
+        "vento": 27.8,
+        "precipitacao_24h": 13.9,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 23.0,
+        "humidade": 37.0,
+        "vento": 20.8,
+        "precipitacao_24h": 0.0,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 12,
+        "data_referencia": "2026-08-23",
+        "ffmc": 91.81131589357877,
+        "dmc": 64.66807662870761,
+        "dc": 183.76838995951434,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2026-09-09",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 4.188153531370903,
+      "anterior": 31.485961090869644,
+      "inputs": {
+        "id_regiao": 12,
+        "data_referencia": "2026-09-09",
+        "instante_referencia_utc": "2026-09-09T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 21.4,
+        "humidade": 45.0,
+        "vento": 16.8,
+        "precipitacao_24h": 6.7,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 12,
+        "data_referencia": "2026-09-08",
+        "instante_referencia_utc": "2026-09-08T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 24.8,
+        "humidade": 27.0,
+        "vento": 14.8,
+        "precipitacao_24h": 0.0,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 12,
+        "data_referencia": "2026-09-08",
+        "ffmc": 93.54506095494368,
+        "dmc": 45.19323154639554,
+        "dc": 199.66965549985352,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2026-09-30",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 23.47621807476217,
+      "anterior": 67.60824382719585,
+      "inputs": {
+        "id_regiao": 12,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 14.2,
+        "humidade": 91.0,
+        "vento": 8.1,
+        "precipitacao_24h": 16.9,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 12,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 17.9,
+        "humidade": 64.0,
+        "vento": 30.7,
+        "precipitacao_24h": 5.9,
+        "latitude": 40.5374,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 12,
+        "data_referencia": "2026-09-29",
+        "ffmc": 67.60824382719585,
+        "dmc": 59.84110639860817,
+        "dc": 303.0470228313412,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 25.464702052891514,
+      "anterior": 89.95858973452428,
+      "inputs": {
+        "id_regiao": 29,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.2,
+        "humidade": 95.0,
+        "vento": 20.7,
+        "precipitacao_24h": 23.900000000000002,
+        "latitude": 41.4425,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 29,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.6,
+        "humidade": 43.0,
+        "vento": 11.6,
+        "precipitacao_24h": 0.0,
+        "latitude": 41.4425,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 29,
+        "data_referencia": "2026-08-23",
+        "ffmc": 89.95858973452428,
+        "dmc": 75.74084917212443,
+        "dc": 189.70314179023808,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Leiria",
+      "data": "2026-09-21",
+      "indice": "fwi",
+      "tipo": "fwi_extremo",
+      "valor": 57.054340358367284,
+      "anterior": 48.6503881004559,
+      "inputs": {
+        "id_regiao": 9,
+        "data_referencia": "2026-09-21",
+        "instante_referencia_utc": "2026-09-21T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 34.5,
+        "humidade": 20.0,
+        "vento": 17.8,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.7436,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 9,
+        "data_referencia": "2026-09-20",
+        "instante_referencia_utc": "2026-09-20T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 34.2,
+        "humidade": 24.0,
+        "vento": 15.7,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.7436,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 9,
+        "data_referencia": "2026-09-20",
+        "ffmc": 94.80599202060684,
+        "dmc": 90.56458916455908,
+        "dc": 330.87752703930533,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Leiria",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 3.3351841856797306,
+      "anterior": 32.39578414417125,
+      "inputs": {
+        "id_regiao": 9,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 23.6,
+        "humidade": 60.0,
+        "vento": 10.0,
+        "precipitacao_24h": 10.3,
+        "latitude": 39.7436,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 9,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 27.3,
+        "humidade": 52.0,
+        "vento": 26.4,
+        "precipitacao_24h": 1.5,
+        "latitude": 39.7436,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 9,
+        "data_referencia": "2026-09-29",
+        "ffmc": 85.5311480989704,
+        "dmc": 122.84803508055909,
+        "dc": 394.9395270393053,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Loures",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 3.3940953938643923,
+      "anterior": 44.992546089991826,
+      "inputs": {
+        "id_regiao": 23,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 21.9,
+        "humidade": 73.0,
+        "vento": 1.3,
+        "precipitacao_24h": 2.2,
+        "latitude": 38.8314,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 23,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.6,
+        "humidade": 59.0,
+        "vento": 29.0,
+        "precipitacao_24h": 0.5,
+        "latitude": 38.8314,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 23,
+        "data_referencia": "2026-09-29",
+        "ffmc": 88.37212904499711,
+        "dmc": 111.97832397502066,
+        "dc": 389.8247961830255,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 35.478024873518244,
+      "anterior": 83.1903794272814,
+      "inputs": {
+        "id_regiao": 27,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 20.1,
+        "humidade": 91.0,
+        "vento": 26.7,
+        "precipitacao_24h": 20.4,
+        "latitude": 41.1833,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 27,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 24.1,
+        "humidade": 60.0,
+        "vento": 6.2,
+        "precipitacao_24h": 1.0,
+        "latitude": 41.1833,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 27,
+        "data_referencia": "2026-08-23",
+        "ffmc": 83.1903794272814,
+        "dmc": 49.87261736357648,
+        "dc": 177.46419673904515,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-09-30",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 39.640527294246375,
+      "anterior": 87.97685512808584,
+      "inputs": {
+        "id_regiao": 27,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 79.0,
+        "vento": 8.4,
+        "precipitacao_24h": 27.900000000000002,
+        "latitude": 41.1833,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 27,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 31.7,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.1833,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 27,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.97685512808584,
+        "dmc": 71.51064254674797,
+        "dc": 273.318397414481,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-09-30",
+      "indice": "isi",
+      "tipo": "salto",
+      "valor": 0.04948749603591917,
+      "anterior": 15.843526535485502,
+      "inputs": {
+        "id_regiao": 27,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 79.0,
+        "vento": 8.4,
+        "precipitacao_24h": 27.900000000000002,
+        "latitude": 41.1833,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 27,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 31.7,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.1833,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 27,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.97685512808584,
+        "dmc": 71.51064254674797,
+        "dc": 273.318397414481,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.07570919633773877,
+      "anterior": 39.80014482522191,
+      "inputs": {
+        "id_regiao": 27,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 79.0,
+        "vento": 8.4,
+        "precipitacao_24h": 27.900000000000002,
+        "latitude": 41.1833,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 27,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 31.7,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.1833,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 27,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.97685512808584,
+        "dmc": 71.51064254674797,
+        "dc": 273.318397414481,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-08-18",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 6.4174784547699115,
+      "anterior": 39.048539565559636,
+      "inputs": {
+        "id_regiao": 14,
+        "data_referencia": "2026-08-18",
+        "instante_referencia_utc": "2026-08-18T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 32.3,
+        "humidade": 44.0,
+        "vento": 7.3,
+        "precipitacao_24h": 4.8,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 14,
+        "data_referencia": "2026-08-17",
+        "instante_referencia_utc": "2026-08-17T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 36.0,
+        "humidade": 21.0,
+        "vento": 11.1,
+        "precipitacao_24h": 0.2,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 14,
+        "data_referencia": "2026-08-17",
+        "ffmc": 95.66988607694401,
+        "dmc": 78.241855226,
+        "dc": 152.16399999999996,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-08-24",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 1.9945742140660687,
+      "anterior": 27.664441802157974,
+      "inputs": {
+        "id_regiao": 14,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.6,
+        "humidade": 82.0,
+        "vento": 25.9,
+        "precipitacao_24h": 10.7,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 14,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.2,
+        "humidade": 39.0,
+        "vento": 12.9,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 14,
+        "data_referencia": "2026-08-23",
+        "ffmc": 91.55325019658183,
+        "dmc": 72.02055425686804,
+        "dc": 192.2558995468994,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-09-24",
+      "indice": "fwi",
+      "tipo": "fwi_extremo",
+      "valor": 52.95112294610015,
+      "anterior": 47.02328172918999,
+      "inputs": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-24",
+        "instante_referencia_utc": "2026-09-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 34.0,
+        "humidade": 17.0,
+        "vento": 8.3,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-23",
+        "instante_referencia_utc": "2026-09-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 34.6,
+        "humidade": 12.0,
+        "vento": 5.0,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-23",
+        "ffmc": 97.487335581236,
+        "dmc": 124.49934680048335,
+        "dc": 351.7729550410262,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-09-25",
+      "indice": "fwi",
+      "tipo": "fwi_extremo",
+      "valor": 55.63246986227137,
+      "anterior": 52.95112294610015,
+      "inputs": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-25",
+        "instante_referencia_utc": "2026-09-25T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 31.5,
+        "humidade": 18.0,
+        "vento": 10.6,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-24",
+        "instante_referencia_utc": "2026-09-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 34.0,
+        "humidade": 17.0,
+        "vento": 8.3,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-24",
+        "ffmc": 97.53916500429972,
+        "dmc": 129.68606958848335,
+        "dc": 359.5969550410262,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-09-27",
+      "indice": "fwi",
+      "tipo": "fwi_extremo",
+      "valor": 56.25157517810216,
+      "anterior": 49.38871130679626,
+      "inputs": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-27",
+        "instante_referencia_utc": "2026-09-27T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 28.8,
+        "humidade": 24.0,
+        "vento": 14.3,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-26",
+        "instante_referencia_utc": "2026-09-26T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 31.7,
+        "humidade": 12.0,
+        "vento": 6.4,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-26",
+        "ffmc": 97.21504398389521,
+        "dmc": 139.58415904448333,
+        "dc": 374.38095504102625,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-09-28",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 31.022152916262662,
+      "anterior": 56.25157517810216,
+      "inputs": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-28",
+        "instante_referencia_utc": "2026-09-28T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.4,
+        "humidade": 50.0,
+        "vento": 9.2,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-27",
+        "instante_referencia_utc": "2026-09-27T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 28.8,
+        "humidade": 24.0,
+        "vento": 14.3,
+        "precipitacao_24h": 0.0,
+        "latitude": 39.2967,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 14,
+        "data_referencia": "2026-09-27",
+        "ffmc": 95.73435543443813,
+        "dmc": 143.62984910848334,
+        "dc": 381.26895504102623,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 35.478024873518244,
+      "anterior": 83.1903794272814,
+      "inputs": {
+        "id_regiao": 2,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 20.1,
+        "humidade": 91.0,
+        "vento": 26.7,
+        "precipitacao_24h": 20.4,
+        "latitude": 41.1579,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 2,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 24.1,
+        "humidade": 60.0,
+        "vento": 6.2,
+        "precipitacao_24h": 1.0,
+        "latitude": 41.1579,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 2,
+        "data_referencia": "2026-08-23",
+        "ffmc": 83.1903794272814,
+        "dmc": 49.87261736357648,
+        "dc": 177.46419673904515,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-09-30",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 39.640527294246375,
+      "anterior": 87.97685512808584,
+      "inputs": {
+        "id_regiao": 2,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 79.0,
+        "vento": 8.4,
+        "precipitacao_24h": 27.900000000000002,
+        "latitude": 41.1579,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 2,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 31.7,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.1579,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 2,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.97685512808584,
+        "dmc": 71.51064254674797,
+        "dc": 273.318397414481,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-09-30",
+      "indice": "isi",
+      "tipo": "salto",
+      "valor": 0.04948749603591917,
+      "anterior": 15.843526535485502,
+      "inputs": {
+        "id_regiao": 2,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 79.0,
+        "vento": 8.4,
+        "precipitacao_24h": 27.900000000000002,
+        "latitude": 41.1579,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 2,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 31.7,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.1579,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 2,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.97685512808584,
+        "dmc": 71.51064254674797,
+        "dc": 273.318397414481,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.07570919633773877,
+      "anterior": 39.80014482522191,
+      "inputs": {
+        "id_regiao": 2,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 79.0,
+        "vento": 8.4,
+        "precipitacao_24h": 27.900000000000002,
+        "latitude": 41.1579,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 2,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 31.7,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.1579,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 2,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.97685512808584,
+        "dmc": 71.51064254674797,
+        "dc": 273.318397414481,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Santarém",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 5.327339401078558,
+      "anterior": 46.46741504516329,
+      "inputs": {
+        "id_regiao": 15,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 23.4,
+        "humidade": 62.0,
+        "vento": 6.3,
+        "precipitacao_24h": 2.9,
+        "latitude": 39.2369,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 15,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 28.7,
+        "humidade": 42.0,
+        "vento": 24.8,
+        "precipitacao_24h": 0.8,
+        "latitude": 39.2369,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 15,
+        "data_referencia": "2026-09-29",
+        "ffmc": 89.67629104768334,
+        "dmc": 144.30650160072267,
+        "dc": 407.488367489673,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Setúbal",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 6.836886628519799,
+      "anterior": 41.20531993486147,
+      "inputs": {
+        "id_regiao": 7,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 21.8,
+        "humidade": 72.0,
+        "vento": 4.9,
+        "precipitacao_24h": 1.5,
+        "latitude": 38.5244,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 7,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 59.0,
+        "vento": 24.6,
+        "precipitacao_24h": 0.0,
+        "latitude": 38.5244,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 7,
+        "data_referencia": "2026-09-29",
+        "ffmc": 88.465842596784,
+        "dmc": 135.3074653956043,
+        "dc": 429.64594956936867,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Sintra",
+      "data": "2026-08-23",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 36.865718576301624,
+      "anterior": 87.36965344871022,
+      "inputs": {
+        "id_regiao": 21,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.3,
+        "humidade": 97.0,
+        "vento": 24.3,
+        "precipitacao_24h": 5.5,
+        "latitude": 38.8029,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 21,
+        "data_referencia": "2026-08-22",
+        "instante_referencia_utc": "2026-08-22T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 23.9,
+        "humidade": 52.0,
+        "vento": 13.0,
+        "precipitacao_24h": 0.0,
+        "latitude": 38.8029,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 21,
+        "data_referencia": "2026-08-22",
+        "ffmc": 87.36965344871022,
+        "dmc": 43.97152792200731,
+        "dc": 176.12999999999997,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Sintra",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 5.24212157186447,
+      "anterior": 36.612221271952464,
+      "inputs": {
+        "id_regiao": 21,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 21.9,
+        "humidade": 66.0,
+        "vento": 11.0,
+        "precipitacao_24h": 3.3,
+        "latitude": 38.8029,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 21,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 24.8,
+        "humidade": 66.0,
+        "vento": 27.4,
+        "precipitacao_24h": 0.5,
+        "latitude": 38.8029,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 21,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.22564427584742,
+        "dmc": 94.04979740184267,
+        "dc": 366.9823665839804,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2026-08-23",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 36.75354525325931,
+      "anterior": 82.52302573756184,
+      "inputs": {
+        "id_regiao": 18,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 21.6,
+        "humidade": 85.0,
+        "vento": 11.0,
+        "precipitacao_24h": 32.8,
+        "latitude": 41.6918,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 18,
+        "data_referencia": "2026-08-22",
+        "instante_referencia_utc": "2026-08-22T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 20.5,
+        "humidade": 74.0,
+        "vento": 15.5,
+        "precipitacao_24h": 0.0,
+        "latitude": 41.6918,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 18,
+        "data_referencia": "2026-08-22",
+        "ffmc": 82.52302573756184,
+        "dmc": 27.954423862925587,
+        "dc": 161.10816816286413,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 35.478024873518244,
+      "anterior": 83.1903794272814,
+      "inputs": {
+        "id_regiao": 26,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 20.1,
+        "humidade": 91.0,
+        "vento": 26.7,
+        "precipitacao_24h": 20.4,
+        "latitude": 41.1333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 26,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 24.1,
+        "humidade": 60.0,
+        "vento": 6.2,
+        "precipitacao_24h": 1.0,
+        "latitude": 41.1333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 26,
+        "data_referencia": "2026-08-23",
+        "ffmc": 83.1903794272814,
+        "dmc": 49.87261736357648,
+        "dc": 177.46419673904515,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-09-30",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 39.640527294246375,
+      "anterior": 87.97685512808584,
+      "inputs": {
+        "id_regiao": 26,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 79.0,
+        "vento": 8.4,
+        "precipitacao_24h": 27.900000000000002,
+        "latitude": 41.1333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 26,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 31.7,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.1333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 26,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.97685512808584,
+        "dmc": 71.51064254674797,
+        "dc": 273.318397414481,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-09-30",
+      "indice": "isi",
+      "tipo": "salto",
+      "valor": 0.04948749603591917,
+      "anterior": 15.843526535485502,
+      "inputs": {
+        "id_regiao": 26,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 79.0,
+        "vento": 8.4,
+        "precipitacao_24h": 27.900000000000002,
+        "latitude": 41.1333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 26,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 31.7,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.1333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 26,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.97685512808584,
+        "dmc": 71.51064254674797,
+        "dc": 273.318397414481,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.07570919633773877,
+      "anterior": 39.80014482522191,
+      "inputs": {
+        "id_regiao": 26,
+        "data_referencia": "2026-09-30",
+        "instante_referencia_utc": "2026-09-30T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 19.1,
+        "humidade": 79.0,
+        "vento": 8.4,
+        "precipitacao_24h": 27.900000000000002,
+        "latitude": 41.1333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 26,
+        "data_referencia": "2026-09-29",
+        "instante_referencia_utc": "2026-09-29T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 25.5,
+        "humidade": 51.0,
+        "vento": 31.7,
+        "precipitacao_24h": 0.4,
+        "latitude": 41.1333,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 26,
+        "data_referencia": "2026-09-29",
+        "ffmc": 87.97685512808584,
+        "dmc": 71.51064254674797,
+        "dc": 273.318397414481,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Viseu",
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "tipo": "salto",
+      "valor": 23.404500224679456,
+      "anterior": 90.64614661554943,
+      "inputs": {
+        "id_regiao": 8,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 18.2,
+        "humidade": 96.0,
+        "vento": 22.6,
+        "precipitacao_24h": 23.4,
+        "latitude": 40.6566,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 8,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.5,
+        "humidade": 39.0,
+        "vento": 17.0,
+        "precipitacao_24h": 0.0,
+        "latitude": 40.6566,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 8,
+        "data_referencia": "2026-08-23",
+        "ffmc": 90.64614661554943,
+        "dmc": 94.506083998,
+        "dc": 198.37599999999995,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Viseu",
+      "data": "2026-08-24",
+      "indice": "fwi",
+      "tipo": "salto",
+      "valor": 0.002355738546975394,
+      "anterior": 32.80353970374971,
+      "inputs": {
+        "id_regiao": 8,
+        "data_referencia": "2026-08-24",
+        "instante_referencia_utc": "2026-08-24T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 18.2,
+        "humidade": 96.0,
+        "vento": 22.6,
+        "precipitacao_24h": 23.4,
+        "latitude": 40.6566,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 8,
+        "data_referencia": "2026-08-23",
+        "instante_referencia_utc": "2026-08-23T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 26.5,
+        "humidade": 39.0,
+        "vento": 17.0,
+        "precipitacao_24h": 0.0,
+        "latitude": 40.6566,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 8,
+        "data_referencia": "2026-08-23",
+        "ffmc": 90.64614661554943,
+        "dmc": 94.506083998,
+        "dc": 198.37599999999995,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    },
+    {
+      "regiao": "Évora",
+      "data": "2026-09-27",
+      "indice": "fwi",
+      "tipo": "fwi_extremo",
+      "valor": 50.68479911581344,
+      "anterior": 42.54033019220315,
+      "inputs": {
+        "id_regiao": 10,
+        "data_referencia": "2026-09-27",
+        "instante_referencia_utc": "2026-09-27T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 29.0,
+        "humidade": 27.0,
+        "vento": 11.8,
+        "precipitacao_24h": 0.0,
+        "latitude": 38.5714,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "inputs_anteriores": {
+        "id_regiao": 10,
+        "data_referencia": "2026-09-26",
+        "instante_referencia_utc": "2026-09-26T12:00:00+00:00",
+        "territorio": "continente",
+        "temperatura": 32.0,
+        "humidade": 15.0,
+        "vento": 2.7,
+        "precipitacao_24h": 0.0,
+        "latitude": 38.5714,
+        "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+        "unidades": {
+          "temperatura": "degC",
+          "humidade": "%",
+          "vento": "km/h",
+          "precipitacao": "mm",
+          "latitude": "degrees_north",
+          "altura_vento_m": 10
+        }
+      },
+      "estado_anterior": {
+        "id_regiao": 10,
+        "data_referencia": "2026-09-26",
+        "ffmc": 96.51512254745059,
+        "dmc": 157.82804199566903,
+        "dc": 413.2192541891574,
+        "qualidade": "inicializacao_convencional",
+        "origem": "Ensaio Fase 6: semente convencional 85/6/15, sem estabelecimento científico.",
+        "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+        "id_fwi": null
+      }
+    }
+  ]
+}

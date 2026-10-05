@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 9,
+    "nome": "Leiria",
+    "distrito": "Leiria",
+    "latitude": 39.7436,
+    "longitude": -8.8071
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:16.926064+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 39.7436,
+    "longitude": -8.8071,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "79ad1a965ad72d5faab6532e5b52f49886afeb2617e052e6c7a864e9ee5314f5",
+  "bytes": 320724,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 39.753952,
+  "longitude_grelha": -8.7621765,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.49401532599995335
+}

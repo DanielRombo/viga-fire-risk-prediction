@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 18,
+    "nome": "Viana do Castelo",
+    "distrito": "Viana do Castelo",
+    "latitude": 41.6918,
+    "longitude": -8.8341
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:20.700904+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 41.6918,
+    "longitude": -8.8341,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "27280c60de0e553dc98456313bd3c3677aafd4c1519fe8b5c382b61f7468cf35",
+  "bytes": 321598,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 41.722317,
+  "longitude_grelha": -8.8567505,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.5238047370000913
+}

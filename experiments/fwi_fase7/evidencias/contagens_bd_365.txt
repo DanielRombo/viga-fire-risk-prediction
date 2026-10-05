@@ -1,0 +1,20 @@
+﻿    estado    | count 
+--------------+-------
+ reconstruido |    26
+(1 row)
+
+ count 
+-------
+  9490
+(1 row)
+
+ count  
+--------
+ 227760
+(1 row)
+
+ count 
+-------
+     0
+(1 row)
+

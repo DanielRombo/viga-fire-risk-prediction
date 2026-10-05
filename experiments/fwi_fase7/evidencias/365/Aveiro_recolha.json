@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 6,
+    "nome": "Aveiro",
+    "distrito": "Aveiro",
+    "latitude": 40.6405,
+    "longitude": -8.6538
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:12.420852+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 40.6405,
+    "longitude": -8.6538,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "287f5126d50d946618cfa800e4f44591b26761a654c7071ac6817bb8742b3366",
+  "bytes": 321270,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 40.667835,
+  "longitude_grelha": -8.668579,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.6199174989999392
+}

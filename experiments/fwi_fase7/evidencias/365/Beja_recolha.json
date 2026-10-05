@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 13,
+    "nome": "Beja",
+    "distrito": "Beja",
+    "latitude": 38.015,
+    "longitude": -7.8653
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:13.635471+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 38.015,
+    "longitude": -7.8653,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "be7b8236fee96d4c2d9fb75f324ee367644388902120a53c9a190a5e47cc80ec",
+  "bytes": 320870,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 37.996483,
+  "longitude_grelha": -7.862915,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.6696639489998688
+}

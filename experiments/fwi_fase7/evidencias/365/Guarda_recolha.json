@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 12,
+    "nome": "Guarda",
+    "distrito": "Guarda",
+    "latitude": 40.5374,
+    "longitude": -7.265
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:15.802897+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 40.5374,
+    "longitude": -7.265,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "6f057d2d7dd38419dac5c3171df4ccc622d23216a6d5d6ca867315c6b37f3e5a",
+  "bytes": 317440,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 40.52724,
+  "longitude_grelha": -7.245758,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.5748304819999248
+}

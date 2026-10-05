@@ -1,0 +1,818 @@
+{
+  "atol": 1e-08,
+  "rtol": 1e-10,
+  "referencia": "cffdrs 1.8.17; lat.adjust=TRUE; estado anterior persistido explícito por dia",
+  "passou": true,
+  "comparacoes": [
+    {
+      "data": "2026-08-02",
+      "indice": "ffmc",
+      "xclim": 92.21148643910051,
+      "referencia": 92.2114864391005,
+      "diferenca_absoluta": 1.4210854715202004e-14,
+      "diferenca_relativa": 1.5411154579519028e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-02",
+      "indice": "dmc",
+      "xclim": 10.455930464000001,
+      "referencia": 10.455930464,
+      "diferenca_absoluta": 1.7763568394002505e-15,
+      "diferenca_relativa": 1.6988988646359943e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-02",
+      "indice": "dc",
+      "xclim": 23.278,
+      "referencia": 23.278,
+      "diferenca_absoluta": 0.0,
+      "diferenca_relativa": 0.0,
+      "passou": true
+    },
+    {
+      "data": "2026-08-02",
+      "indice": "isi",
+      "xclim": 11.772614769621331,
+      "referencia": 11.7726147696213,
+      "diferenca_absoluta": 3.019806626980426e-14,
+      "diferenca_relativa": 2.5651112230164023e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-08-02",
+      "indice": "bui",
+      "xclim": 10.401095071054147,
+      "referencia": 10.4010950710541,
+      "diferenca_absoluta": 4.796163466380676e-14,
+      "diferenca_relativa": 4.611210102028813e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-08-02",
+      "indice": "fwi",
+      "xclim": 11.789949104882712,
+      "referencia": 11.7899491048827,
+      "diferenca_absoluta": 1.2434497875801753e-14,
+      "diferenca_relativa": 1.0546693429450106e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-08-13",
+      "indice": "ffmc",
+      "xclim": 95.07996630303104,
+      "referencia": 95.079966303031,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "diferenca_relativa": 4.483864036061081e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-13",
+      "indice": "dmc",
+      "xclim": 57.486187278,
+      "referencia": 57.486187278,
+      "diferenca_absoluta": 0.0,
+      "diferenca_relativa": 0.0,
+      "passou": true
+    },
+    {
+      "data": "2026-08-13",
+      "indice": "dc",
+      "xclim": 114.40799999999999,
+      "referencia": 114.408,
+      "diferenca_absoluta": 1.4210854715202004e-14,
+      "diferenca_relativa": 1.242120718411475e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-13",
+      "indice": "isi",
+      "xclim": 12.144455319818368,
+      "referencia": 12.1444553198184,
+      "diferenca_absoluta": 3.197442310920451e-14,
+      "diferenca_relativa": 2.6328412651842694e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-08-13",
+      "indice": "bui",
+      "xclim": 57.32637626996315,
+      "referencia": 57.3263762699631,
+      "diferenca_absoluta": 4.973799150320701e-14,
+      "diferenca_relativa": 8.67628389224872e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-13",
+      "indice": "fwi",
+      "xclim": 27.280002798965626,
+      "referencia": 27.2800027989656,
+      "diferenca_absoluta": 2.4868995751603507e-14,
+      "diferenca_relativa": 9.116199853376293e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-19",
+      "indice": "ffmc",
+      "xclim": 93.48744097168596,
+      "referencia": 93.487440971686,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "diferenca_relativa": 4.560245066341894e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-19",
+      "indice": "dmc",
+      "xclim": 86.030649914,
+      "referencia": 86.030649914,
+      "diferenca_absoluta": 0.0,
+      "diferenca_relativa": 0.0,
+      "passou": true
+    },
+    {
+      "data": "2026-08-19",
+      "indice": "dc",
+      "xclim": 166.99199999999996,
+      "referencia": 166.992,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 1.7019803002780978e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-19",
+      "indice": "isi",
+      "xclim": 15.41676457094881,
+      "referencia": 15.4167645709488,
+      "diferenca_absoluta": 1.0658141036401503e-14,
+      "diferenca_relativa": 6.913344876839853e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-19",
+      "indice": "bui",
+      "xclim": 85.7931023134949,
+      "referencia": 85.7931023134949,
+      "diferenca_absoluta": 0.0,
+      "diferenca_relativa": 0.0,
+      "passou": true
+    },
+    {
+      "data": "2026-08-19",
+      "indice": "fwi",
+      "xclim": 38.95527162340388,
+      "referencia": 38.9552716234039,
+      "diferenca_absoluta": 2.1316282072803006e-14,
+      "diferenca_relativa": 5.471989074771697e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-23",
+      "indice": "ffmc",
+      "xclim": 92.78615218648149,
+      "referencia": 92.7861521864815,
+      "diferenca_absoluta": 1.4210854715202004e-14,
+      "diferenca_relativa": 1.531570647163064e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-23",
+      "indice": "dmc",
+      "xclim": 99.840855084,
+      "referencia": 99.840855084,
+      "diferenca_absoluta": 0.0,
+      "diferenca_relativa": 0.0,
+      "passou": true
+    },
+    {
+      "data": "2026-08-23",
+      "indice": "dc",
+      "xclim": 197.31399999999996,
+      "referencia": 197.314,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 1.4404304524972384e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-23",
+      "indice": "isi",
+      "xclim": 11.084774218581016,
+      "referencia": 11.084774218581,
+      "diferenca_absoluta": 1.5987211554602254e-14,
+      "diferenca_relativa": 1.4422676763053485e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-08-23",
+      "indice": "bui",
+      "xclim": 99.58742330356944,
+      "referencia": 99.5874233035694,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "diferenca_relativa": 4.2809184866296244e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-23",
+      "indice": "fwi",
+      "xclim": 33.67486392593542,
+      "referencia": 33.6748639259354,
+      "diferenca_absoluta": 2.1316282072803006e-14,
+      "diferenca_relativa": 6.330027678711963e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-24",
+      "indice": "ffmc",
+      "xclim": 47.87914477717471,
+      "referencia": 47.8791447771747,
+      "diferenca_absoluta": 7.105427357601002e-15,
+      "diferenca_relativa": 1.4840338921401021e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-24",
+      "indice": "dmc",
+      "xclim": 66.685638966365,
+      "referencia": 66.685638966365,
+      "diferenca_absoluta": 0.0,
+      "diferenca_relativa": 0.0,
+      "passou": true
+    },
+    {
+      "data": "2026-08-24",
+      "indice": "dc",
+      "xclim": 196.50609807861102,
+      "referencia": 196.506098078611,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 1.4463525411325448e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-24",
+      "indice": "isi",
+      "xclim": 0.31407973059017164,
+      "referencia": 0.314079730590172,
+      "diferenca_absoluta": 3.885780586188048e-16,
+      "diferenca_relativa": 1.2371955932611333e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-08-24",
+      "indice": "bui",
+      "xclim": 72.15531996131502,
+      "referencia": 72.155319961315,
+      "diferenca_absoluta": 1.4210854715202004e-14,
+      "diferenca_relativa": 1.969481213972988e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-24",
+      "indice": "fwi",
+      "xclim": 0.6893624971028252,
+      "referencia": 0.689362497102825,
+      "diferenca_absoluta": 1.1102230246251565e-16,
+      "diferenca_relativa": 1.6105068513170888e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-26",
+      "indice": "ffmc",
+      "xclim": 31.72628318803478,
+      "referencia": 31.7262831880348,
+      "diferenca_absoluta": 1.7763568394002505e-14,
+      "diferenca_relativa": 5.599007072061258e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-26",
+      "indice": "dmc",
+      "xclim": 19.456056075869995,
+      "referencia": 19.45605607587,
+      "diferenca_absoluta": 3.552713678800501e-15,
+      "diferenca_relativa": 1.8260194486212888e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-26",
+      "indice": "dc",
+      "xclim": 162.1858721507647,
+      "referencia": 162.185872150765,
+      "diferenca_absoluta": 2.8421709430404007e-13,
+      "diferenca_relativa": 1.7524158580214502e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-08-26",
+      "indice": "isi",
+      "xclim": 0.007810671617928118,
+      "referencia": 0.00781067161792812,
+      "diferenca_absoluta": 1.734723475976807e-18,
+      "diferenca_relativa": 2.22096582833547e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-26",
+      "indice": "bui",
+      "xclim": 29.934611846508723,
+      "referencia": 29.9346118465087,
+      "diferenca_absoluta": 2.1316282072803006e-14,
+      "diferenca_relativa": 7.120948212758984e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-26",
+      "indice": "fwi",
+      "xclim": 0.009209065474960044,
+      "referencia": 0.00920906547496004,
+      "diferenca_absoluta": 3.469446951953614e-18,
+      "diferenca_relativa": 3.7674256539789327e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-27",
+      "indice": "ffmc",
+      "xclim": 30.72248403152757,
+      "referencia": 30.7224840315276,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 9.251110490036377e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-27",
+      "indice": "dmc",
+      "xclim": 8.556965484494384,
+      "referencia": 8.55696548449438,
+      "diferenca_absoluta": 3.552713678800501e-15,
+      "diferenca_relativa": 4.151838271684259e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-27",
+      "indice": "dc",
+      "xclim": 120.62806234405468,
+      "referencia": 120.628062344055,
+      "diferenca_absoluta": 3.126388037344441e-13,
+      "diferenca_relativa": 2.591758481892353e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-08-27",
+      "indice": "isi",
+      "xclim": 0.008839236837084043,
+      "referencia": 0.00883923683708404,
+      "diferenca_absoluta": 3.469446951953614e-18,
+      "diferenca_relativa": 3.92505259888267e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-27",
+      "indice": "bui",
+      "xclim": 14.536075284491487,
+      "referencia": 14.5360752844915,
+      "diferenca_absoluta": 1.4210854715202004e-14,
+      "diferenca_relativa": 9.776266589898256e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-08-27",
+      "indice": "fwi",
+      "xclim": 0.006591864694156769,
+      "referencia": 0.00659186469415677,
+      "diferenca_absoluta": 8.673617379884035e-19,
+      "diferenca_relativa": 1.3158063434725223e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-05",
+      "indice": "ffmc",
+      "xclim": 94.25695219241884,
+      "referencia": 94.2569521924188,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "diferenca_relativa": 4.523015348361221e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-05",
+      "indice": "dmc",
+      "xclim": 36.84020574649439,
+      "referencia": 36.8402057464944,
+      "diferenca_absoluta": 7.105427357601002e-15,
+      "diferenca_relativa": 1.928715438370518e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-05",
+      "indice": "dc",
+      "xclim": 183.3920623440547,
+      "referencia": 183.392062344055,
+      "diferenca_absoluta": 3.126388037344441e-13,
+      "diferenca_relativa": 1.704756464038853e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-05",
+      "indice": "isi",
+      "xclim": 13.60514561159891,
+      "referencia": 13.6051456115989,
+      "diferenca_absoluta": 1.0658141036401503e-14,
+      "diferenca_relativa": 7.833904421658696e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-05",
+      "indice": "bui",
+      "xclim": 49.04815505162417,
+      "referencia": 49.0481550516242,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 5.794654131330642e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-05",
+      "indice": "fwi",
+      "xclim": 27.31357396895478,
+      "referencia": 27.3135739689548,
+      "diferenca_absoluta": 1.7763568394002505e-14,
+      "diferenca_relativa": 6.503567938122254e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-06",
+      "indice": "ffmc",
+      "xclim": 80.90380195886324,
+      "referencia": 80.9038019588632,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "diferenca_relativa": 5.269537786034235e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-06",
+      "indice": "dmc",
+      "xclim": 31.231095791265236,
+      "referencia": 31.2310957912652,
+      "diferenca_absoluta": 3.552713678800501e-14,
+      "diferenca_relativa": 1.1375565246078025e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-06",
+      "indice": "dc",
+      "xclim": 185.76826167095726,
+      "referencia": 185.768261670957,
+      "diferenca_absoluta": 2.5579538487363607e-13,
+      "diferenca_relativa": 1.3769595654973343e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-06",
+      "indice": "isi",
+      "xclim": 1.5111129037927225,
+      "referencia": 1.51111290379272,
+      "diferenca_absoluta": 2.4424906541753444e-15,
+      "diferenca_relativa": 1.6163521918481227e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-06",
+      "indice": "bui",
+      "xclim": 43.978277858707926,
+      "referencia": 43.9782778587079,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 6.462669939399726e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-06",
+      "indice": "fwi",
+      "xclim": 4.130653962350033,
+      "referencia": 4.13065396235003,
+      "diferenca_absoluta": 3.552713678800501e-15,
+      "diferenca_relativa": 8.60085040088731e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-10",
+      "indice": "ffmc",
+      "xclim": 81.91411947408143,
+      "referencia": 81.9141194740814,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 3.469696019792653e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-10",
+      "indice": "dmc",
+      "xclim": 23.38748771927088,
+      "referencia": 23.3874877192709,
+      "diferenca_absoluta": 2.1316282072803006e-14,
+      "diferenca_relativa": 9.114395837924371e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-10",
+      "indice": "dc",
+      "xclim": 188.5963522048445,
+      "referencia": 188.596352204844,
+      "diferenca_absoluta": 4.831690603168681e-13,
+      "diferenca_relativa": 2.5619215571681567e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-10",
+      "indice": "isi",
+      "xclim": 1.7432832879826279,
+      "referencia": 1.74328328798263,
+      "diferenca_absoluta": 2.220446049250313e-15,
+      "diferenca_relativa": 1.2737149862888134e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-10",
+      "indice": "bui",
+      "xclim": 35.705531698649196,
+      "referencia": 35.7055316986492,
+      "diferenca_absoluta": 7.105427357601002e-15,
+      "diferenca_relativa": 1.99000743570213e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-10",
+      "indice": "fwi",
+      "xclim": 4.121471925524139,
+      "referencia": 4.12147192552414,
+      "diferenca_absoluta": 8.881784197001252e-16,
+      "diferenca_relativa": 2.1550029595001377e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-15",
+      "indice": "ffmc",
+      "xclim": 94.13304752744934,
+      "referencia": 94.1330475274493,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 3.0193125769264193e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-15",
+      "indice": "dmc",
+      "xclim": 41.30930362327088,
+      "referencia": 41.3093036232709,
+      "diferenca_absoluta": 2.1316282072803006e-14,
+      "diferenca_relativa": 5.160164951508609e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-15",
+      "indice": "dc",
+      "xclim": 222.2443522048445,
+      "referencia": 222.244352204844,
+      "diferenca_absoluta": 4.831690603168681e-13,
+      "diferenca_relativa": 2.174044269397353e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-15",
+      "indice": "isi",
+      "xclim": 16.196536621126697,
+      "referencia": 16.1965366211267,
+      "diferenca_absoluta": 3.552713678800501e-15,
+      "diferenca_relativa": 2.1935020812822135e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-15",
+      "indice": "bui",
+      "xclim": 56.407144228942634,
+      "referencia": 56.4071442289426,
+      "diferenca_absoluta": 3.552713678800501e-14,
+      "diferenca_relativa": 6.298339913080722e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-15",
+      "indice": "fwi",
+      "xclim": 32.88408576195037,
+      "referencia": 32.8840857619503,
+      "diferenca_absoluta": 6.394884621840902e-14,
+      "diferenca_relativa": 1.9446745967437933e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-27",
+      "indice": "ffmc",
+      "xclim": 93.57963372403393,
+      "referencia": 93.5796337240339,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 3.037168270418706e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-27",
+      "indice": "dmc",
+      "xclim": 82.53193709927086,
+      "referencia": 82.5319370992709,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "diferenca_relativa": 5.165583850809995e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-27",
+      "indice": "dc",
+      "xclim": 299.2483522048444,
+      "referencia": 299.248352204844,
+      "diferenca_absoluta": 3.979039320256561e-13,
+      "diferenca_relativa": 1.3296779383877092e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-27",
+      "indice": "isi",
+      "xclim": 11.029857864728625,
+      "referencia": 11.0298578647286,
+      "diferenca_absoluta": 2.4868995751603507e-14,
+      "diferenca_relativa": 2.254697753733514e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-27",
+      "indice": "bui",
+      "xclim": 97.70020316451968,
+      "referencia": 97.7002031645197,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 2.9090737285923563e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-27",
+      "indice": "fwi",
+      "xclim": 33.26502912458844,
+      "referencia": 33.2650291245884,
+      "diferenca_absoluta": 3.552713678800501e-14,
+      "diferenca_relativa": 1.0680025757664085e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-28",
+      "indice": "ffmc",
+      "xclim": 88.2308854466372,
+      "referencia": 88.2308854466372,
+      "diferenca_absoluta": 0.0,
+      "diferenca_relativa": 0.0,
+      "passou": true
+    },
+    {
+      "data": "2026-09-28",
+      "indice": "dmc",
+      "xclim": 84.70397629927086,
+      "referencia": 84.7039762992709,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "diferenca_relativa": 5.033124300443611e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-28",
+      "indice": "dc",
+      "xclim": 305.14635220484445,
+      "referencia": 305.146352204844,
+      "diferenca_absoluta": 4.547473508864641e-13,
+      "diferenca_relativa": 1.490259829752752e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-28",
+      "indice": "isi",
+      "xclim": 5.674302162633579,
+      "referencia": 5.67430216263358,
+      "diferenca_absoluta": 1.7763568394002505e-15,
+      "diferenca_relativa": 3.130529161978573e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-28",
+      "indice": "bui",
+      "xclim": 100.00694414961278,
+      "referencia": 100.006944149613,
+      "diferenca_absoluta": 2.2737367544323206e-13,
+      "diferenca_relativa": 2.2735788737137603e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-28",
+      "indice": "fwi",
+      "xclim": 21.273178344517245,
+      "referencia": 21.2731783445172,
+      "diferenca_absoluta": 4.618527782440651e-14,
+      "diferenca_relativa": 2.1710567681255766e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-29",
+      "indice": "ffmc",
+      "xclim": 52.42468784263979,
+      "referencia": 52.4246878426398,
+      "diferenca_absoluta": 7.105427357601002e-15,
+      "diferenca_relativa": 1.3553590207211073e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-29",
+      "indice": "dmc",
+      "xclim": 38.55608942523803,
+      "referencia": 38.556089425238,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 7.371522852574296e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-29",
+      "indice": "dc",
+      "xclim": 243.1517353874738,
+      "referencia": 243.151735387474,
+      "diferenca_absoluta": 1.9895196601282805e-13,
+      "diferenca_relativa": 8.182214521142056e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-29",
+      "indice": "isi",
+      "xclim": 0.6657138573269912,
+      "referencia": 0.665713857326991,
+      "diferenca_absoluta": 2.220446049250313e-16,
+      "diferenca_relativa": 3.335436125914464e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-29",
+      "indice": "bui",
+      "xclim": 55.22133454420036,
+      "referencia": 55.2213345442004,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "diferenca_relativa": 7.72030674330805e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-29",
+      "indice": "fwi",
+      "xclim": 1.7010580269522435,
+      "referencia": 1.70105802695224,
+      "diferenca_absoluta": 3.552713678800501e-15,
+      "diferenca_relativa": 2.088531738782506e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-30",
+      "indice": "ffmc",
+      "xclim": 57.92324996052097,
+      "referencia": 57.923249960521,
+      "diferenca_absoluta": 2.842170943040401e-14,
+      "diferenca_relativa": 4.906787766531663e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-30",
+      "indice": "dmc",
+      "xclim": 20.906387260048774,
+      "referencia": 20.9063872600488,
+      "diferenca_absoluta": 2.4868995751603507e-14,
+      "diferenca_relativa": 1.189540566826057e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-30",
+      "indice": "dc",
+      "xclim": 224.5368355340269,
+      "referencia": 224.536835534027,
+      "diferenca_absoluta": 1.1368683772161603e-13,
+      "diferenca_relativa": 5.063170924771832e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-30",
+      "indice": "isi",
+      "xclim": 0.8407246851233424,
+      "referencia": 0.840724685123342,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "diferenca_relativa": 5.28221922953185e-16,
+      "passou": true
+    },
+    {
+      "data": "2026-09-30",
+      "indice": "bui",
+      "xclim": 33.917676955156246,
+      "referencia": 33.9176769551562,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "diferenca_relativa": 1.2569423372353029e-15,
+      "passou": true
+    },
+    {
+      "data": "2026-09-30",
+      "indice": "fwi",
+      "xclim": 1.348140929185945,
+      "referencia": 1.34814092918594,
+      "diferenca_absoluta": 4.884981308350689e-15,
+      "diferenca_relativa": 3.623494549119899e-15,
+      "passou": true
+    }
+  ]
+}

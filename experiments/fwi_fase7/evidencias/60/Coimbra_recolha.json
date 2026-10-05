@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 4,
+    "nome": "Coimbra",
+    "distrito": "Coimbra",
+    "latitude": 40.2033,
+    "longitude": -8.4103
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2026-08-02",
+  "janela_dias": 60,
+  "inicio_utc": "2026-08-01 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:35:03.914993+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 40.2033,
+    "longitude": -8.4103,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2026-08-01",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "0b8f1d0a57d983e28255122593c0286d8caf4556297fe154af18d2a8d3b0db3b",
+  "bytes": 53598,
+  "estado": "validado",
+  "horas_utilizadas": 1440,
+  "latitude_grelha": 40.175747,
+  "longitude_grelha": -8.457214,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.317083084999922
+}

@@ -1,0 +1,14 @@
+{
+  "integridade": true,
+  "ficheiros": 637,
+  "dias": 10990,
+  "horas": 263760,
+  "comparacoes": 6018,
+  "reprovadas": 56,
+  "regioes_com_divergencia": 12,
+  "dias_regiao_com_divergencia": 18,
+  "sensibilidade_confirmada": 26,
+  "diagnostico_interno_rh100_confirmado": true,
+  "estado_cientifico": "bloqueado",
+  "nota": "Integridade confirmada; as 56 reprovações originais permanecem. Sem novas recolhas ou reconstruções."
+}

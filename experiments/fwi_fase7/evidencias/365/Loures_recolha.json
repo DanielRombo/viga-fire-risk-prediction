@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 23,
+    "nome": "Loures",
+    "distrito": "Lisboa",
+    "latitude": 38.8314,
+    "longitude": -9.1683
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:17.430962+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 38.8314,
+    "longitude": -9.1683,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "7fe57c0d88271acbd09a833fd5806dd939198dd50160fe44d5852b60d00739e3",
+  "bytes": 322386,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 38.84007,
+  "longitude_grelha": -9.098358,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.6371661630000744
+}

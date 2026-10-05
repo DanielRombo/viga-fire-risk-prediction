@@ -1,0 +1,978 @@
+{
+  "nota": "Diagnóstico das funções internas sem alteração. Não substitui a reprovação da API pública cffdrs.",
+  "passou": true,
+  "comparacoes": [
+    {
+      "regiao": "Braga",
+      "data": "2026-02-09",
+      "indice": "ffmc",
+      "xclim": 3.0935850357558783,
+      "r_interno_rh100": 3.09358503575588,
+      "diferenca_absoluta": 1.7763568394002505e-15,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-09",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-09",
+      "indice": "dc",
+      "xclim": 2.1159999999999997,
+      "r_interno_rh100": 2.116,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-09",
+      "indice": "isi",
+      "xclim": 6.183907639320897e-08,
+      "r_interno_rh100": 6.18390763932089e-08,
+      "diferenca_absoluta": 7.940933880509066e-23,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-09",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-09",
+      "indice": "fwi",
+      "xclim": 1.2367815278641796e-08,
+      "r_interno_rh100": 1.23678152786418e-08,
+      "diferenca_absoluta": 4.963083675318166e-24,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-11",
+      "indice": "ffmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-11",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-11",
+      "indice": "dc",
+      "xclim": 2.2780000000000005,
+      "r_interno_rh100": 2.278,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-11",
+      "indice": "isi",
+      "xclim": 5.14152085027268e-09,
+      "r_interno_rh100": 5.14152085027268e-09,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-11",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Braga",
+      "data": "2026-02-11",
+      "indice": "fwi",
+      "xclim": 1.028304170054536e-09,
+      "r_interno_rh100": 1.02830417005454e-09,
+      "diferenca_absoluta": 3.9291079096268815e-24,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Cascais",
+      "data": "2026-02-09",
+      "indice": "ffmc",
+      "xclim": 6.98091257689839,
+      "r_interno_rh100": 6.98091257689839,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Cascais",
+      "data": "2026-02-09",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Cascais",
+      "data": "2026-02-09",
+      "indice": "dc",
+      "xclim": 2.476,
+      "r_interno_rh100": 2.476,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Cascais",
+      "data": "2026-02-09",
+      "indice": "isi",
+      "xclim": 7.190036131570395e-07,
+      "r_interno_rh100": 7.19003613157039e-07,
+      "diferenca_absoluta": 5.293955920339377e-22,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Cascais",
+      "data": "2026-02-09",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Cascais",
+      "data": "2026-02-09",
+      "indice": "fwi",
+      "xclim": 1.438007226314079e-07,
+      "r_interno_rh100": 1.43800722631408e-07,
+      "diferenca_absoluta": 1.0587911840678754e-22,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Coimbra",
+      "data": "2026-02-10",
+      "indice": "ffmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Coimbra",
+      "data": "2026-02-10",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Coimbra",
+      "data": "2026-02-10",
+      "indice": "dc",
+      "xclim": 2.4399999999999995,
+      "r_interno_rh100": 2.44,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Coimbra",
+      "data": "2026-02-10",
+      "indice": "isi",
+      "xclim": 4.510170334434666e-09,
+      "r_interno_rh100": 4.51017033443467e-09,
+      "diferenca_absoluta": 4.1359030627651384e-24,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Coimbra",
+      "data": "2026-02-10",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Coimbra",
+      "data": "2026-02-10",
+      "indice": "fwi",
+      "xclim": 9.020340668869332e-10,
+      "r_interno_rh100": 9.02034066886933e-10,
+      "diferenca_absoluta": 2.0679515313825692e-25,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-09",
+      "indice": "ffmc",
+      "xclim": 2.6031549532225506,
+      "r_interno_rh100": 2.60315495322255,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-09",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-09",
+      "indice": "dc",
+      "xclim": 2.098,
+      "r_interno_rh100": 2.098,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-09",
+      "indice": "isi",
+      "xclim": 2.4169947758166995e-08,
+      "r_interno_rh100": 2.4169947758167e-08,
+      "diferenca_absoluta": 3.308722450212111e-24,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-09",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-09",
+      "indice": "fwi",
+      "xclim": 4.833989551633399e-09,
+      "r_interno_rh100": 4.8339895516334e-09,
+      "diferenca_absoluta": 8.271806125530277e-25,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-10",
+      "indice": "ffmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-10",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-10",
+      "indice": "dc",
+      "xclim": 2.2959999999999994,
+      "r_interno_rh100": 2.296,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-10",
+      "indice": "isi",
+      "xclim": 4.202959504062034e-09,
+      "r_interno_rh100": 4.20295950406203e-09,
+      "diferenca_absoluta": 4.1359030627651384e-24,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-10",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Gondomar",
+      "data": "2026-02-10",
+      "indice": "fwi",
+      "xclim": 8.405919008124068e-10,
+      "r_interno_rh100": 8.40591900812407e-10,
+      "diferenca_absoluta": 2.0679515313825692e-25,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2025-11-07",
+      "indice": "ffmc",
+      "xclim": 28.227089709715063,
+      "r_interno_rh100": 28.2270897097151,
+      "diferenca_absoluta": 3.552713678800501e-14,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2025-11-07",
+      "indice": "dmc",
+      "xclim": 0.04193156355163306,
+      "r_interno_rh100": 0.0419315635516331,
+      "diferenca_absoluta": 4.163336342344337e-17,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2025-11-07",
+      "indice": "dc",
+      "xclim": 2.737999999999999,
+      "r_interno_rh100": 2.738,
+      "diferenca_absoluta": 8.881784197001252e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2025-11-07",
+      "indice": "isi",
+      "xclim": 0.004159712934070327,
+      "r_interno_rh100": 0.00415971293407033,
+      "diferenca_absoluta": 3.469446951953614e-18,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2025-11-07",
+      "indice": "bui",
+      "xclim": 0.08077068630179363,
+      "r_interno_rh100": 0.0807706863017936,
+      "diferenca_absoluta": 2.7755575615628914e-17,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guarda",
+      "data": "2025-11-07",
+      "indice": "fwi",
+      "xclim": 0.0008659525370279751,
+      "r_interno_rh100": 0.000865952537027975,
+      "diferenca_absoluta": 1.0842021724855044e-19,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2025-12-05",
+      "indice": "ffmc",
+      "xclim": 4.2297297824327895,
+      "r_interno_rh100": 4.22972978243279,
+      "diferenca_absoluta": 8.881784197001252e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2025-12-05",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2025-12-05",
+      "indice": "dc",
+      "xclim": 2.1879999999999997,
+      "r_interno_rh100": 2.188,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2025-12-05",
+      "indice": "isi",
+      "xclim": 8.029349834266969e-08,
+      "r_interno_rh100": 8.02934983426697e-08,
+      "diferenca_absoluta": 1.3234889800848443e-23,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2025-12-05",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2025-12-05",
+      "indice": "fwi",
+      "xclim": 1.6058699668533937e-08,
+      "r_interno_rh100": 1.60586996685339e-08,
+      "diferenca_absoluta": 3.639594695233322e-23,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2026-02-10",
+      "indice": "ffmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2026-02-10",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2026-02-10",
+      "indice": "dc",
+      "xclim": 2.2059999999999995,
+      "r_interno_rh100": 2.206,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2026-02-10",
+      "indice": "isi",
+      "xclim": 3.936460309755208e-09,
+      "r_interno_rh100": 3.93646030975521e-09,
+      "diferenca_absoluta": 1.6543612251060553e-24,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2026-02-10",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Guimarães",
+      "data": "2026-02-10",
+      "indice": "fwi",
+      "xclim": 7.872920619510417e-10,
+      "r_interno_rh100": 7.87292061951042e-10,
+      "diferenca_absoluta": 3.101927297073854e-25,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Loures",
+      "data": "2026-02-09",
+      "indice": "ffmc",
+      "xclim": 13.726061338433377,
+      "r_interno_rh100": 13.7260613384334,
+      "diferenca_absoluta": 2.3092638912203256e-14,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Loures",
+      "data": "2026-02-09",
+      "indice": "dmc",
+      "xclim": 0.043829511143368576,
+      "r_interno_rh100": 0.0438295111433686,
+      "diferenca_absoluta": 2.7755575615628914e-17,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Loures",
+      "data": "2026-02-09",
+      "indice": "dc",
+      "xclim": 2.62,
+      "r_interno_rh100": 2.62,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Loures",
+      "data": "2026-02-09",
+      "indice": "isi",
+      "xclim": 2.0318679429782757e-05,
+      "r_interno_rh100": 2.03186794297828e-05,
+      "diferenca_absoluta": 4.404571325722362e-20,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Loures",
+      "data": "2026-02-09",
+      "indice": "bui",
+      "xclim": 0.08414011017186866,
+      "r_interno_rh100": 0.0841401101718687,
+      "diferenca_absoluta": 4.163336342344337e-17,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Loures",
+      "data": "2026-02-09",
+      "indice": "fwi",
+      "xclim": 4.235446562927587e-06,
+      "r_interno_rh100": 4.23544656292759e-06,
+      "diferenca_absoluta": 3.3881317890172014e-21,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-02-09",
+      "indice": "ffmc",
+      "xclim": 4.6897671513331645,
+      "r_interno_rh100": 4.68976715133316,
+      "diferenca_absoluta": 4.440892098500626e-15,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-02-09",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-02-09",
+      "indice": "dc",
+      "xclim": 2.1879999999999997,
+      "r_interno_rh100": 2.188,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-02-09",
+      "indice": "isi",
+      "xclim": 1.1804402543136023e-07,
+      "r_interno_rh100": 1.1804402543136e-07,
+      "diferenca_absoluta": 2.2499312661442353e-22,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-02-09",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Matosinhos",
+      "data": "2026-02-09",
+      "indice": "fwi",
+      "xclim": 2.3608805086272047e-08,
+      "r_interno_rh100": 2.3608805086272e-08,
+      "diferenca_absoluta": 4.632211430296955e-23,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2025-11-05",
+      "indice": "ffmc",
+      "xclim": 11.954288341213733,
+      "r_interno_rh100": 11.9542883412137,
+      "diferenca_absoluta": 3.197442310920451e-14,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2025-11-05",
+      "indice": "dmc",
+      "xclim": 1.7384802344618409,
+      "r_interno_rh100": 1.73848023446184,
+      "diferenca_absoluta": 8.881784197001252e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2025-11-05",
+      "indice": "dc",
+      "xclim": 57.51874349841672,
+      "r_interno_rh100": 57.5187434984167,
+      "diferenca_absoluta": 2.1316282072803006e-14,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2025-11-05",
+      "indice": "isi",
+      "xclim": 1.0711144225505877e-05,
+      "r_interno_rh100": 1.07111442255059e-05,
+      "diferenca_absoluta": 2.371692252312041e-20,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2025-11-05",
+      "indice": "bui",
+      "xclim": 3.232693415074664,
+      "r_interno_rh100": 3.23269341507466,
+      "diferenca_absoluta": 3.9968028886505635e-15,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2025-11-05",
+      "indice": "fwi",
+      "xclim": 3.874627731386231e-06,
+      "r_interno_rh100": 3.87462773138623e-06,
+      "diferenca_absoluta": 8.470329472543003e-22,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-01-21",
+      "indice": "ffmc",
+      "xclim": 12.713003706505887,
+      "r_interno_rh100": 12.7130037065059,
+      "diferenca_absoluta": 1.2434497875801753e-14,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-01-21",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-01-21",
+      "indice": "dc",
+      "xclim": 1.5759999999999998,
+      "r_interno_rh100": 1.576,
+      "diferenca_absoluta": 2.220446049250313e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-01-21",
+      "indice": "isi",
+      "xclim": 1.5043378481967985e-05,
+      "r_interno_rh100": 1.5043378481968e-05,
+      "diferenca_absoluta": 1.5246593050577406e-20,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-01-21",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-01-21",
+      "indice": "fwi",
+      "xclim": 3.008675696393597e-06,
+      "r_interno_rh100": 3.0086756963936e-06,
+      "diferenca_absoluta": 2.964615315390051e-21,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-02-11",
+      "indice": "ffmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-02-11",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-02-11",
+      "indice": "dc",
+      "xclim": 2.1519999999999992,
+      "r_interno_rh100": 2.152,
+      "diferenca_absoluta": 8.881784197001252e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-02-11",
+      "indice": "isi",
+      "xclim": 6.515486756385953e-09,
+      "r_interno_rh100": 6.51548675638595e-09,
+      "diferenca_absoluta": 3.308722450212111e-24,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-02-11",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Portalegre",
+      "data": "2026-02-11",
+      "indice": "fwi",
+      "xclim": 1.3030973512771906e-09,
+      "r_interno_rh100": 1.30309735127719e-09,
+      "diferenca_absoluta": 6.203854594147708e-25,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-02-09",
+      "indice": "ffmc",
+      "xclim": 4.6897671513331645,
+      "r_interno_rh100": 4.68976715133316,
+      "diferenca_absoluta": 4.440892098500626e-15,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-02-09",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-02-09",
+      "indice": "dc",
+      "xclim": 2.1879999999999997,
+      "r_interno_rh100": 2.188,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-02-09",
+      "indice": "isi",
+      "xclim": 1.1804402543136023e-07,
+      "r_interno_rh100": 1.1804402543136e-07,
+      "diferenca_absoluta": 2.2499312661442353e-22,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-02-09",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Porto",
+      "data": "2026-02-09",
+      "indice": "fwi",
+      "xclim": 2.3608805086272047e-08,
+      "r_interno_rh100": 2.3608805086272e-08,
+      "diferenca_absoluta": 4.632211430296955e-23,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2025-10-19",
+      "indice": "ffmc",
+      "xclim": 14.271713661067155,
+      "r_interno_rh100": 14.2717136610672,
+      "diferenca_absoluta": 4.440892098500626e-14,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2025-10-19",
+      "indice": "dmc",
+      "xclim": 8.291301203538477,
+      "r_interno_rh100": 8.29130120353848,
+      "diferenca_absoluta": 1.7763568394002505e-15,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2025-10-19",
+      "indice": "dc",
+      "xclim": 68.06422515725595,
+      "r_interno_rh100": 68.0642251572559,
+      "diferenca_absoluta": 4.263256414560601e-14,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2025-10-19",
+      "indice": "isi",
+      "xclim": 4.532177347363733e-05,
+      "r_interno_rh100": 4.53217734736373e-05,
+      "diferenca_absoluta": 2.710505431213761e-20,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2025-10-19",
+      "indice": "bui",
+      "xclim": 12.711459430348818,
+      "r_interno_rh100": 12.7114594303488,
+      "diferenca_absoluta": 1.7763568394002505e-14,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2025-10-19",
+      "indice": "fwi",
+      "xclim": 3.125527533560316e-05,
+      "r_interno_rh100": 3.12552753356032e-05,
+      "diferenca_absoluta": 4.0657581468206416e-20,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2026-02-10",
+      "indice": "ffmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2026-02-10",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2026-02-10",
+      "indice": "dc",
+      "xclim": 2.332,
+      "r_interno_rh100": 2.332,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2026-02-10",
+      "indice": "isi",
+      "xclim": 5.77331200958071e-09,
+      "r_interno_rh100": 5.77331200958071e-09,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2026-02-10",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Viana do Castelo",
+      "data": "2026-02-10",
+      "indice": "fwi",
+      "xclim": 1.1546624019161421e-09,
+      "r_interno_rh100": 1.15466240191614e-09,
+      "diferenca_absoluta": 2.0679515313825692e-24,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-02-09",
+      "indice": "ffmc",
+      "xclim": 4.6897671513331645,
+      "r_interno_rh100": 4.68976715133316,
+      "diferenca_absoluta": 4.440892098500626e-15,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-02-09",
+      "indice": "dmc",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-02-09",
+      "indice": "dc",
+      "xclim": 2.1879999999999997,
+      "r_interno_rh100": 2.188,
+      "diferenca_absoluta": 4.440892098500626e-16,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-02-09",
+      "indice": "isi",
+      "xclim": 1.1804402543136023e-07,
+      "r_interno_rh100": 1.1804402543136e-07,
+      "diferenca_absoluta": 2.2499312661442353e-22,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-02-09",
+      "indice": "bui",
+      "xclim": 0.0,
+      "r_interno_rh100": 0.0,
+      "diferenca_absoluta": 0.0,
+      "passou_mesma_tolerancia": true
+    },
+    {
+      "regiao": "Vila Nova de Gaia",
+      "data": "2026-02-09",
+      "indice": "fwi",
+      "xclim": 2.3608805086272047e-08,
+      "r_interno_rh100": 2.3608805086272e-08,
+      "diferenca_absoluta": 4.632211430296955e-23,
+      "passou_mesma_tolerancia": true
+    }
+  ]
+}

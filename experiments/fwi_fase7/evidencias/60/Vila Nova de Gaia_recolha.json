@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 26,
+    "nome": "Vila Nova de Gaia",
+    "distrito": "Porto",
+    "latitude": 41.1333,
+    "longitude": -8.6167
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2026-08-02",
+  "janela_dias": 60,
+  "inicio_utc": "2026-08-01 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:35:10.262205+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 41.1333,
+    "longitude": -8.6167,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2026-08-01",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "14a7af2bc07cc7888cbe4628e718335eefc174e723551a7716ac29c1e58f8610",
+  "bytes": 53667,
+  "estado": "validado",
+  "horas_utilizadas": 1440,
+  "latitude_grelha": 41.159927,
+  "longitude_grelha": -8.626617,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.31006905000003826
+}

@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 10,
+    "nome": "Évora",
+    "distrito": "Évora",
+    "latitude": 38.5714,
+    "longitude": -7.9101
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2026-08-02",
+  "janela_dias": 60,
+  "inicio_utc": "2026-08-01 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:35:05.690873+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 38.5714,
+    "longitude": -7.9101,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2026-08-01",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "3dab325b8a1cd2705f4ce25c5efaa230d50c212e53bb359926e1c987dbd9f76f",
+  "bytes": 53926,
+  "estado": "validado",
+  "horas_utilizadas": 1440,
+  "latitude_grelha": 38.558872,
+  "longitude_grelha": -7.9483643,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.3447810780000964
+}

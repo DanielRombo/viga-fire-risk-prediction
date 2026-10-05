@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 15,
+    "nome": "Santarém",
+    "distrito": "Santarém",
+    "latitude": 39.2369,
+    "longitude": -8.6881
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:19.242367+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 39.2369,
+    "longitude": -8.6881,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "6dd80c69c1de581e2493a2a7c5bb26365600c33b0d915e76c6035ec1a9736c2f",
+  "bytes": 319592,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 39.26186,
+  "longitude_grelha": -8.677704,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.5012343769999461
+}

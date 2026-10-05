@@ -1,0 +1,2550 @@
+{
+  "365/Almada_amostra_inputs.csv": {
+    "bytes": 2349,
+    "sha256": "fb0cc52ff734ae5064ac3c6f064194c27114e50d647b8fe16bdd320f8eaf0085"
+  },
+  "365/Almada_api.json": {
+    "bytes": 1428,
+    "sha256": "e4bb4231f98a7e2cb8ebafa274b1505232535103335ab14945c1ff6fb8b08662"
+  },
+  "365/Almada_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "af5f3ed912662a7db59ceebb9ab1209b9667b41f08e258e6db442d8be2db6b97"
+  },
+  "365/Almada_api_historico.json": {
+    "bytes": 583131,
+    "sha256": "240154dadb0062ee35646d894c703adab5e73c7a0bfe0bea36586a89e6ec9e5e"
+  },
+  "365/Almada_comparacao.json": {
+    "bytes": 35336,
+    "sha256": "5b03b25bb301c2af8fafee8d031a423544fc3586c1032da36effe3420477a3b1"
+  },
+  "365/Almada_dias.json": {
+    "bytes": 5047488,
+    "sha256": "01c7f56e05ef7968da976afe529cbd94dcbd1b4aaff0735d5065e9a937623350"
+  },
+  "365/Almada_episodios.json": {
+    "bytes": 40600,
+    "sha256": "bc57472710f1959455ef2644fc893c8a4d75dfaa8ba3c8e83a48dbf8133eeb29"
+  },
+  "365/Almada_estado.json": {
+    "bytes": 193,
+    "sha256": "ea11d866f8f55661284885034ae051115e17dd49504d97784f8aad89ab553fc4"
+  },
+  "365/Almada_recolha.json": {
+    "bytes": 1316,
+    "sha256": "2d54123dbc5356db19ad19cb99a2a72d60dbeb8bb5ab44ea8b67bc59d3227f2f"
+  },
+  "365/Almada_referencia.csv": {
+    "bytes": 2382,
+    "sha256": "142f9730cbcd07a76d5db7cc5e72853e4f916bdd732dfc93905db924e05d427e"
+  },
+  "365/Almada_resposta.json": {
+    "bytes": 321125,
+    "sha256": "598622c2007e5c8b73f60c9f2dff886369194ca4b4762829de2acda0b736977b"
+  },
+  "365/Almada_resultado.json": {
+    "bytes": 2043,
+    "sha256": "c4c9f3c4fc3f55fd57e06e9a34f2e9e284f92e72c204dad9b5982f9826191b24"
+  },
+  "365/Amadora_amostra_inputs.csv": {
+    "bytes": 2350,
+    "sha256": "ba5cfee9b7d3b396c64240785fae6a37f6427df03247eb821aa4590329503802"
+  },
+  "365/Amadora_api.json": {
+    "bytes": 1428,
+    "sha256": "b29d0c57e5c1be10d5326cfb4b340d34b3dc799187bc288dc9d0b147b041be69"
+  },
+  "365/Amadora_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "c9209aaf2179d1b597557e7e638397dd10701d62c416d8dc288b3a54e9b512b4"
+  },
+  "365/Amadora_api_historico.json": {
+    "bytes": 583213,
+    "sha256": "e4ebf813a05727d7b0fa50b0c3e1e49ed48e2594dce02558a5816cd144ff0789"
+  },
+  "365/Amadora_comparacao.json": {
+    "bytes": 34975,
+    "sha256": "85a3e446d7a553e4953f53b15f15b1faa0cc99021ff0c4a0bbf4afb2a3268616"
+  },
+  "365/Amadora_dias.json": {
+    "bytes": 5039308,
+    "sha256": "84d62ce435fe1246497fb2a454ce6ac1728fed1718b2adca032cc7210969ed9e"
+  },
+  "365/Amadora_episodios.json": {
+    "bytes": 43094,
+    "sha256": "5a80999d2613987971dd0c94c839fb13b42a0fa514610c1c4b112f523c5b7d78"
+  },
+  "365/Amadora_estado.json": {
+    "bytes": 193,
+    "sha256": "28e2caf97a22fd1c927bb4b8dc7917e13927028629fe5f8eba3c4fd24addc8d5"
+  },
+  "365/Amadora_recolha.json": {
+    "bytes": 1315,
+    "sha256": "54d651d5fe79008bf212a377fb7d4b5c462b6c621bb56296184dc90d9236d53f"
+  },
+  "365/Amadora_referencia.csv": {
+    "bytes": 2376,
+    "sha256": "87da0957302d4fce603daffdec7d7ac78dbe3f4cf7c927edd5abf698ae07565b"
+  },
+  "365/Amadora_resposta.json": {
+    "bytes": 321612,
+    "sha256": "91490f8ebcff7ee8a2042f7218c0761bb8e61f1034e79beba061dc254b6720ab"
+  },
+  "365/Amadora_resultado.json": {
+    "bytes": 2048,
+    "sha256": "96f2201764468fc7874a0e214531771992abd935a26ef906b1084b7f809d54a2"
+  },
+  "365/Aveiro_amostra_inputs.csv": {
+    "bytes": 2135,
+    "sha256": "8104eafcbaa847366766b07db84ef4abaa2dd8af249abccc3983914f4ae30b94"
+  },
+  "365/Aveiro_api.json": {
+    "bytes": 1430,
+    "sha256": "87ebadecf7943ab948e50ceddb3a932b5c24e586b1b79a0042d4c4d9a16b6d15"
+  },
+  "365/Aveiro_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "1ae7ec7b85a8472cd653cb6ee592646887330bcc742ce2f7b4768c9727990a30"
+  },
+  "365/Aveiro_api_historico.json": {
+    "bytes": 582611,
+    "sha256": "b154b9cf6ea8bac1367691eab2d3261567708ed5b6ac27f01bbfcb0d811ef125"
+  },
+  "365/Aveiro_comparacao.json": {
+    "bytes": 32193,
+    "sha256": "1e1c600f6683daf5aebfda858209da99edd60510ae14fb799d01a406f30ca653"
+  },
+  "365/Aveiro_dias.json": {
+    "bytes": 5055342,
+    "sha256": "679d4d5f2395f516475a0d708b48631beb851ed1dcc974606f8d2270685e2729"
+  },
+  "365/Aveiro_episodios.json": {
+    "bytes": 36996,
+    "sha256": "c324728375c93e8a4d276c0721d346501f6cc3b5a70fc4f158abd5159df6aa9b"
+  },
+  "365/Aveiro_estado.json": {
+    "bytes": 193,
+    "sha256": "9e7b9fb65e7f944961b66757544b21a8fd833eb0ec8db94f365c846dedd2db82"
+  },
+  "365/Aveiro_recolha.json": {
+    "bytes": 1314,
+    "sha256": "f2fd4caa17023ff4035c9395f0afb30b537f5b92f9151c020e8de39e37481803"
+  },
+  "365/Aveiro_referencia.csv": {
+    "bytes": 2156,
+    "sha256": "6e16890e758c8e5bdcdd1e02c298beee24ab733ebd09ff34ea7df4504252892f"
+  },
+  "365/Aveiro_resposta.json": {
+    "bytes": 321270,
+    "sha256": "287f5126d50d946618cfa800e4f44591b26761a654c7071ac6817bb8742b3366"
+  },
+  "365/Aveiro_resultado.json": {
+    "bytes": 2022,
+    "sha256": "6009827a871cf414a59d986e344e51e8e966511e0510c7e350fa42ca81c423de"
+  },
+  "365/Barcelos_amostra_inputs.csv": {
+    "bytes": 2699,
+    "sha256": "ca258479f253167fcebe74b71a389f89f6b11b2c3ea3db0fbfcd20f964d90505"
+  },
+  "365/Barcelos_api.json": {
+    "bytes": 1434,
+    "sha256": "4b0059f5cce965a3e961cd7cc3126dafb2f0d60e1c04b85fb27abc8ffbdb4d2f"
+  },
+  "365/Barcelos_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "5d73cf332f7bacc110826c67814692256eda8be19c0ba28e29ef9ddabce174c2"
+  },
+  "365/Barcelos_api_historico.json": {
+    "bytes": 583721,
+    "sha256": "d58248617e0219e46ba60c9d3e7feacfae303e89b8185cd96aa8208b08d962c4"
+  },
+  "365/Barcelos_comparacao.json": {
+    "bytes": 40298,
+    "sha256": "dc66ba946468e188e0d12e0441b14728582918b39b979b209bb284888687c57f"
+  },
+  "365/Barcelos_dias.json": {
+    "bytes": 5053793,
+    "sha256": "eef1f49e9f90c27f08a99a61a100588b0e88b17810ccec9b8f8bc5e6bbd842b6"
+  },
+  "365/Barcelos_episodios.json": {
+    "bytes": 38984,
+    "sha256": "b373ad83f854b103ef1928d6dbe8c52672b25530eb1d138aae585ae47c97339b"
+  },
+  "365/Barcelos_estado.json": {
+    "bytes": 194,
+    "sha256": "cb795776d6bfe418b6cf17cf723713a4b0f5b190e6db103ac532789847171ff8"
+  },
+  "365/Barcelos_recolha.json": {
+    "bytes": 1316,
+    "sha256": "d05c2926da7937315d316e40ab129680f480647d0f367ff9dc2045dfa138db33"
+  },
+  "365/Barcelos_referencia.csv": {
+    "bytes": 2766,
+    "sha256": "972a9fffb924aedd97e64a635495fc5122f001d00362664b96351121df21b959"
+  },
+  "365/Barcelos_resposta.json": {
+    "bytes": 318362,
+    "sha256": "ba3b9512903c9a55c8b29528358f586aa28c8550253323c0931c7129eca39c1a"
+  },
+  "365/Barcelos_resultado.json": {
+    "bytes": 2058,
+    "sha256": "7e38902763dff1433046b8fcfd08952615fd4622a4e178701d6b826154f00419"
+  },
+  "365/Beja_amostra_inputs.csv": {
+    "bytes": 4069,
+    "sha256": "ce060520839ded0c2a7d0076ea9ce807f93ae07b89b9b289d2ec414051d0fab4"
+  },
+  "365/Beja_api.json": {
+    "bytes": 1430,
+    "sha256": "515aff561c49c38c7b78f9fac0130f81b9f82a53e9be6e9234679d4c96f2003e"
+  },
+  "365/Beja_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "d7d10658ec001ea1c31e30eb78e0ce9046ad21f2645ecb134bf8a875a8769d2e"
+  },
+  "365/Beja_api_historico.json": {
+    "bytes": 583357,
+    "sha256": "92c72f8a30c21d634b6824aef07da40fca15b9c38408efe3a780d1456e46f280"
+  },
+  "365/Beja_comparacao.json": {
+    "bytes": 61298,
+    "sha256": "4aa565cd464415780535f09e774a7b503cc27e409db55a5d49e62be2b29251f2"
+  },
+  "365/Beja_dias.json": {
+    "bytes": 5046926,
+    "sha256": "619abcd63396cce74126773c3b4603d9f98b87bffd2f5d8547c54bddde35090f"
+  },
+  "365/Beja_episodios.json": {
+    "bytes": 52243,
+    "sha256": "2d0fdd29d5f02e3b2931449636585b3b11db16bc8b12f90145e1402e6c4f7ea1"
+  },
+  "365/Beja_estado.json": {
+    "bytes": 194,
+    "sha256": "fb312a02960a3a5abcaa2372e1ad50fb1755bc7f6d66b7f145de1a3e351a6ce9"
+  },
+  "365/Beja_recolha.json": {
+    "bytes": 1309,
+    "sha256": "87b01991dfd489f8de03de4814300e96d98e0a9fcde33d2a92fbf07d8a313fbf"
+  },
+  "365/Beja_referencia.csv": {
+    "bytes": 4191,
+    "sha256": "40aa18b18458bad918dbaafff6e01698021a27a7a89c8fde64a3d133c2cb208b"
+  },
+  "365/Beja_resposta.json": {
+    "bytes": 320870,
+    "sha256": "be7b8236fee96d4c2d9fb75f324ee367644388902120a53c9a190a5e47cc80ec"
+  },
+  "365/Beja_resultado.json": {
+    "bytes": 2043,
+    "sha256": "3bb7fb32bb3117341cdc89a27f4ff37a926a35719d54d66053f7c88e383c8e9f"
+  },
+  "365/Braga_amostra_inputs.csv": {
+    "bytes": 2518,
+    "sha256": "9e6d6975f275aee6031887ad73f80e07e5b43bb2ee36f9a877a93b37a9d48a24"
+  },
+  "365/Braga_api.json": {
+    "bytes": 1432,
+    "sha256": "0fc31ff34f8bbe2d4fa08ef0be610233ec2344b57bedeba62d48654db95fc1a5"
+  },
+  "365/Braga_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "5f2bb6681e12ac2b4f2e9f68ed8a94c8cfddf9d826843869d4cd5e1a5e8a8f18"
+  },
+  "365/Braga_api_historico.json": {
+    "bytes": 583475,
+    "sha256": "fe0af60ad4da4484084b206beeb83dee57b0ceba8396209293854c731b1d7ae1"
+  },
+  "365/Braga_comparacao.json": {
+    "bytes": 38542,
+    "sha256": "6a3cc1ac419ec423f635d24aac9ed1280eea89d3b77aa89c4b6b7c5a0375025b"
+  },
+  "365/Braga_dias.json": {
+    "bytes": 5035358,
+    "sha256": "4d11ac4e514c6683d69379e5fc1f1909f56e8ffff5491a473f036afdbd7363cb"
+  },
+  "365/Braga_episodios.json": {
+    "bytes": 38885,
+    "sha256": "aef7bd277b6e9be7325537cbe17df8899475f8fb9f62d58e2f09fba04d6035af"
+  },
+  "365/Braga_estado.json": {
+    "bytes": 194,
+    "sha256": "2b4a801d57c6415744d64c6b2bd21910f8d6d54d00d49d4cfe0c7d606b5dadd0"
+  },
+  "365/Braga_recolha.json": {
+    "bytes": 1308,
+    "sha256": "444c17ad9bbc6873f1820b0eca23ce232fcf795a3cb42e96c9745668b20d14d1"
+  },
+  "365/Braga_referencia.csv": {
+    "bytes": 2662,
+    "sha256": "8d62b26790655f56621494f0b309716ac48620ff3c8c5107895329440cc4ab82"
+  },
+  "365/Braga_resposta.json": {
+    "bytes": 317950,
+    "sha256": "beeac0f283da00eddad5f5b5a9e246236a7eff269c657bf5a9234c44b7064878"
+  },
+  "365/Braga_resultado.json": {
+    "bytes": 2015,
+    "sha256": "03dc7e413683a6e84683876693a63e399789f324b724cee546a048dd6f27e32a"
+  },
+  "365/Bragança_amostra_inputs.csv": {
+    "bytes": 3710,
+    "sha256": "6ba1b1a3abe7e3c06f86487e662d7cf8109015f433832324e1bb18bf2c32fa68"
+  },
+  "365/Bragança_api.json": {
+    "bytes": 1429,
+    "sha256": "24e6b25b952744d81581d8149046c5b383acad1caf888198b776e3f685bed36b"
+  },
+  "365/Bragança_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "cdc319b43c94c2b596c08c395bec235c00a5e493dfd1b67ebe300cc144ab7e8a"
+  },
+  "365/Bragança_api_historico.json": {
+    "bytes": 583079,
+    "sha256": "3bb6d0497baceba7f5c66e47b1e305c122e9b940cf31fa3cb09b7ebf74c24e23"
+  },
+  "365/Bragança_comparacao.json": {
+    "bytes": 55606,
+    "sha256": "b13db364fdbc7e85a6c867afc8fbdb262ed763d8518de0ee74007560cfedbf70"
+  },
+  "365/Bragança_dias.json": {
+    "bytes": 5060239,
+    "sha256": "a5eaddac78c8a0d79de5be4d39bda1fc20f5a42d5c305af9119a8d537afd298d"
+  },
+  "365/Bragança_episodios.json": {
+    "bytes": 37250,
+    "sha256": "7094bcd2f54eb1989ff060261963652a555b39e745c59fbe5e86520ed4fdb00d"
+  },
+  "365/Bragança_estado.json": {
+    "bytes": 193,
+    "sha256": "ad8edfab78b3bffe10efd77f24dbcb4b105039152fe8f6817001c9d177c06ca7"
+  },
+  "365/Bragança_recolha.json": {
+    "bytes": 1322,
+    "sha256": "cd20b13e7a1f9872370d4a27c267f0990bad98b993734d4d284e9872f84bec51"
+  },
+  "365/Bragança_referencia.csv": {
+    "bytes": 3705,
+    "sha256": "f9131483e052f4b6db896a9ae093673567917868a784052841fd539046125db6"
+  },
+  "365/Bragança_resposta.json": {
+    "bytes": 316894,
+    "sha256": "54a0a94f6b4715d325bafbb77610d9a3e360f64835ab37ac485a244c2ec9c932"
+  },
+  "365/Bragança_resultado.json": {
+    "bytes": 2046,
+    "sha256": "25967d12e8be009de24727952afc10b06ebb75b4785347b61f523c2ff3fee0ab"
+  },
+  "365/Cascais_amostra_inputs.csv": {
+    "bytes": 2064,
+    "sha256": "a0627771384700fb2d493a3e4261a0d91844cdbb75b4f9313117ca852863c0e5"
+  },
+  "365/Cascais_api.json": {
+    "bytes": 1428,
+    "sha256": "b75143cb123bf799a182353ccd8e7cfc71560bdd46e0ec7a1980f4b15a0533e3"
+  },
+  "365/Cascais_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "58c6c881f99a07b48a4f871939d0cc9b93cc461d4b58a207d5a984400a5bcf2a"
+  },
+  "365/Cascais_api_historico.json": {
+    "bytes": 583319,
+    "sha256": "4b6df7706e2e4e5ad0619d495652dd4eba62972d4a4ba8a1ca8310eea347fc7a"
+  },
+  "365/Cascais_comparacao.json": {
+    "bytes": 30783,
+    "sha256": "4b5566d30f74ffd6e747fc8b0930fad34b64290fc2d22536ce5bb8bd3ea67605"
+  },
+  "365/Cascais_dias.json": {
+    "bytes": 5050322,
+    "sha256": "7c09f26f72705b84293fe259b16b7af1f0c4b787301a432ac1e5641e3954c0ba"
+  },
+  "365/Cascais_episodios.json": {
+    "bytes": 38037,
+    "sha256": "afc4ebbd76499d144c36efad7cf87a0dee08d2e6dda95c32d3638db0cf279a47"
+  },
+  "365/Cascais_estado.json": {
+    "bytes": 194,
+    "sha256": "ebf14c277299652406e0d3c8f917573ac26061fdb472bb7f8972aa901620f3f0"
+  },
+  "365/Cascais_recolha.json": {
+    "bytes": 1316,
+    "sha256": "cdb1399b9a33be944704da50201bee5d1f67ca4e13a1f70e10a8c1f3775c1c1f"
+  },
+  "365/Cascais_referencia.csv": {
+    "bytes": 2092,
+    "sha256": "8a481cd370f1675ee7e4bd300a027d8cf3a801e5e1e69e5689e25be29ffaa41e"
+  },
+  "365/Cascais_resposta.json": {
+    "bytes": 323840,
+    "sha256": "df263379a646893a6812325bfc3e769a17e8a8bbb1331f086bc3599bbcbfd196"
+  },
+  "365/Cascais_resultado.json": {
+    "bytes": 1974,
+    "sha256": "4111d2290f133c49fae4f26505603a159f0d62c6a092b80e87164e22b90e0db0"
+  },
+  "365/Castelo Branco_amostra_inputs.csv": {
+    "bytes": 5043,
+    "sha256": "329c066aed114440fc715a588175c9003b97d6fefc1a5f45ea64b57c22e84763"
+  },
+  "365/Castelo Branco_api.json": {
+    "bytes": 1428,
+    "sha256": "e2928b7876d444bf5e8583d04e5cb99454a2d93fbf06a893e38a1fb0afadd3df"
+  },
+  "365/Castelo Branco_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "2513ef0279dc552e07e21c1c15ea0644f00a7a5fc340dc5a58d0d910f2f91064"
+  },
+  "365/Castelo Branco_api_historico.json": {
+    "bytes": 583043,
+    "sha256": "1415a5d08cdba4083395bf51b50f754526854906d7241a3cab7e1bd86f68abc9"
+  },
+  "365/Castelo Branco_comparacao.json": {
+    "bytes": 74593,
+    "sha256": "32e6fe56799971517325218404dc99bfd4be17d4e7404b06cb5ae46cea7b98c3"
+  },
+  "365/Castelo Branco_dias.json": {
+    "bytes": 5053380,
+    "sha256": "74f56aff258d65bbe57c6a59fc28312625541e4e97359e3c25c218c0dc431f54"
+  },
+  "365/Castelo Branco_episodios.json": {
+    "bytes": 42181,
+    "sha256": "e87625b9593d7bb1447a12c8e1c235b1f934782d3343b5d1787aebf1ec283c85"
+  },
+  "365/Castelo Branco_estado.json": {
+    "bytes": 193,
+    "sha256": "7952d2ee1c37ae3ddb8ac8dc90f0586acf99cd56cc300a531cd4587c4a083dec"
+  },
+  "365/Castelo Branco_recolha.json": {
+    "bytes": 1331,
+    "sha256": "136c9aa5c47f737c7db0b3733db562dc7c8c511268ac5440f7269e53a0458b1a"
+  },
+  "365/Castelo Branco_referencia.csv": {
+    "bytes": 5094,
+    "sha256": "0d7f712c10d471c079afa1ab82c27caabf7d9e8e217c810595dde3ff8a29bc28"
+  },
+  "365/Castelo Branco_resposta.json": {
+    "bytes": 318693,
+    "sha256": "2995ab120e9b4120afce47a008cd1cf52dc20ead93e47e32cccea760ddac0819"
+  },
+  "365/Castelo Branco_resultado.json": {
+    "bytes": 2016,
+    "sha256": "b8413c008d0ed145bdb62788b93d1f54b36e60da6e55e7ad6c51c46adbec7fc0"
+  },
+  "365/Coimbra_amostra_inputs.csv": {
+    "bytes": 2547,
+    "sha256": "a021f613ee3fe3df6feea7abc789400edd4f5a27caddec05e949c46c2bd294a2"
+  },
+  "365/Coimbra_api.json": {
+    "bytes": 1427,
+    "sha256": "90bda660ba92fcefb6c13d30dd03d0d83735b7a1b0a32e6f59df9660b0c49a5a"
+  },
+  "365/Coimbra_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "8e836db32174986d5d329470cf2d7c6289f9c44926cb116276092e0524dcd632"
+  },
+  "365/Coimbra_api_historico.json": {
+    "bytes": 582403,
+    "sha256": "85d5c576b708122b5a2c1410644d5ab64ffdadb59d84a9a0d2b1518b0b900f92"
+  },
+  "365/Coimbra_comparacao.json": {
+    "bytes": 38482,
+    "sha256": "a2aff8a5da1bccf633841c69bf2e3b4f71da3c48af59a70d0f4924104f03d084"
+  },
+  "365/Coimbra_dias.json": {
+    "bytes": 5052834,
+    "sha256": "f6fd216a5d4d8446110df08bd32589688073303222040c0b606765533c15751d"
+  },
+  "365/Coimbra_episodios.json": {
+    "bytes": 41388,
+    "sha256": "2f8d99d6b14b3ba9469a8dfa95a7c861a5013afbb2da2bdc7567a04cdff35b29"
+  },
+  "365/Coimbra_estado.json": {
+    "bytes": 193,
+    "sha256": "446bdd480a38a1741c67bbef5e09ba4ef03af384e347f9db8a10c949a98eb728"
+  },
+  "365/Coimbra_recolha.json": {
+    "bytes": 1316,
+    "sha256": "b7984d42b3a215f69e9599fbe17e556a858756380e9d994b3fe1edc61d9b1663"
+  },
+  "365/Coimbra_referencia.csv": {
+    "bytes": 2616,
+    "sha256": "2d05fa365612fb6e4db0a5bde82714efe2b728ae91fc84e440e736197bb985a2"
+  },
+  "365/Coimbra_resposta.json": {
+    "bytes": 319340,
+    "sha256": "090061535214cca7ec72220247d9e352c71e96688afd854a88b8e5172b6dd987"
+  },
+  "365/Coimbra_resultado.json": {
+    "bytes": 2016,
+    "sha256": "19acf0eee9c9108794e41c2da1e12a01d221c9b6fbe66e4800794989c36ac47b"
+  },
+  "365/Faro_amostra_inputs.csv": {
+    "bytes": 2944,
+    "sha256": "59c2b20ffb89317da31d8eb22d8c232877d49a9ed8899c392e5e4473edc8de1d"
+  },
+  "365/Faro_api.json": {
+    "bytes": 1429,
+    "sha256": "d284175b5d8ca7aa1f65c0c41cc622849914c8fc68e24f333f9b80adcaaa8e81"
+  },
+  "365/Faro_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "59e9e50ec277ca5ee4e4296e3e41e6028421f974531981ca2a77d51575ab5440"
+  },
+  "365/Faro_api_historico.json": {
+    "bytes": 582656,
+    "sha256": "f120f6792057b573a0d0c88b07c48916c04ab3ed89d4ccb0a490ab5e8a1f77c2"
+  },
+  "365/Faro_comparacao.json": {
+    "bytes": 43157,
+    "sha256": "e4343662218bec0baa3cd3df907c010b3e7335c590238a51622959110b8dfc91"
+  },
+  "365/Faro_dias.json": {
+    "bytes": 5056100,
+    "sha256": "c2718a031152d25cdfda470908e113734686ca2b387c60efd432a0ac95c07361"
+  },
+  "365/Faro_episodios.json": {
+    "bytes": 50695,
+    "sha256": "7d4998adcae155b28333e32b5dfb10cd18f9a54bbc1491d6c31d8292086b2b30"
+  },
+  "365/Faro_estado.json": {
+    "bytes": 193,
+    "sha256": "5d617816c92dbd7509d8ae92ca303eba8d07dea115184933fd64316a3c005de5"
+  },
+  "365/Faro_recolha.json": {
+    "bytes": 1310,
+    "sha256": "df8190fe7cd4fb3d152c5bd343cf230a88213abb60b6632852d5edf9a5971d89"
+  },
+  "365/Faro_referencia.csv": {
+    "bytes": 2909,
+    "sha256": "a802a47b09954d4a3844bc758abaa887d13b5aeeeedbacdb42d4fa71fd89cad1"
+  },
+  "365/Faro_resposta.json": {
+    "bytes": 321775,
+    "sha256": "0c08715d5893af5c66aabb765f7a1a08254c6c9c03172d61084fab012319bf7e"
+  },
+  "365/Faro_resultado.json": {
+    "bytes": 2048,
+    "sha256": "421f0df5875b755e8c3b18c9cae75f746669a89373794882095da5d4af99437b"
+  },
+  "365/Gondomar_amostra_inputs.csv": {
+    "bytes": 2493,
+    "sha256": "e89d23c4ec5fb818593058caf72e8afadb48b0e7491392e8cd010d1691da53db"
+  },
+  "365/Gondomar_api.json": {
+    "bytes": 1433,
+    "sha256": "70c49786a4d89aceb581ca7b0dba0aa93dc59781fdba52ff5b48fe1c1afb1782"
+  },
+  "365/Gondomar_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "344435ae51a56ff44607c64d39e31d6efd7157e03057fad7e6545b638629bb0a"
+  },
+  "365/Gondomar_api_historico.json": {
+    "bytes": 583497,
+    "sha256": "efc93210e007c5b6ea158bce318f9f2d6427dae4d94284f43dca24139e8af52f"
+  },
+  "365/Gondomar_comparacao.json": {
+    "bytes": 38566,
+    "sha256": "a024e99a5f0aab24db139c65bd0ad60ee98da49b6d08e653068a687739d5778b"
+  },
+  "365/Gondomar_dias.json": {
+    "bytes": 5035697,
+    "sha256": "15cf9d882154daaf8e9782774139aebeca65d187de72da1e75f1260b8bf53cea"
+  },
+  "365/Gondomar_episodios.json": {
+    "bytes": 38761,
+    "sha256": "b2bb88eddf8df4e458f49644b5eecf0c5a42b8b544f48d2f7da955824243f541"
+  },
+  "365/Gondomar_estado.json": {
+    "bytes": 194,
+    "sha256": "d8ce3a016b1d7cbfce807af36adfc920d6fd5a7b6d3188ebfaceb7d15e9fe9cb"
+  },
+  "365/Gondomar_recolha.json": {
+    "bytes": 1312,
+    "sha256": "ca2626ef2b6a3899aeedb3395e92243f726d57f78b6ccd4e85a5706c74269cd1"
+  },
+  "365/Gondomar_referencia.csv": {
+    "bytes": 2655,
+    "sha256": "01e93e2d8570123582c17795e497662fb95c79ecaee46fa244bc043b729a494f"
+  },
+  "365/Gondomar_resposta.json": {
+    "bytes": 318818,
+    "sha256": "bee2a1cce37a2f0f1fdd8f4758c1d6200f49b75351de1a5333797d2d3ff54f8d"
+  },
+  "365/Gondomar_resultado.json": {
+    "bytes": 2034,
+    "sha256": "e69f1057b470321e757d91d900e08cdb71a2e3c377d14a6a47341bade195f406"
+  },
+  "365/Guarda_amostra_inputs.csv": {
+    "bytes": 5084,
+    "sha256": "da08aa5cc343ddc721c6dbaf2768aaa8498c1498f384fac3c9b33e3be474f279"
+  },
+  "365/Guarda_api.json": {
+    "bytes": 1437,
+    "sha256": "3c922d877c8d3f6160ff2a561d3963261f91a54fe6775580f2f919827fa99483"
+  },
+  "365/Guarda_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "7577c6eef7ebc490290ff13ba55190c28ecf10a8ff68191de23ebdc0fc8c9571"
+  },
+  "365/Guarda_api_historico.json": {
+    "bytes": 583970,
+    "sha256": "4f1a2d39d4ea2aaf4616ae4262d278e2ff56fd7457e95b21e18810ee484ddd41"
+  },
+  "365/Guarda_comparacao.json": {
+    "bytes": 77146,
+    "sha256": "df146bb8d4c1cdd69532ce62602646f51e36a2a40fdfd2672fb3c6b515fbbce6"
+  },
+  "365/Guarda_dias.json": {
+    "bytes": 5035943,
+    "sha256": "038718d3fb0e6f993d274f1f9a5ca4f0967c10ec5bf4d3678ad2a2bf9109a043"
+  },
+  "365/Guarda_episodios.json": {
+    "bytes": 39743,
+    "sha256": "869f9123f86001cbec718273f83e93e0c7ca1699716cfcffe5e5259cf54d33a6"
+  },
+  "365/Guarda_estado.json": {
+    "bytes": 194,
+    "sha256": "eb560375b6cb02ec7d767f6e8e725000b489313d09b53a63d18dd482aceb8f47"
+  },
+  "365/Guarda_recolha.json": {
+    "bytes": 1312,
+    "sha256": "89873331cc72ac30ddf51649929f9ec2cc22715e95dc0d254e87f5da3db19aab"
+  },
+  "365/Guarda_referencia.csv": {
+    "bytes": 5214,
+    "sha256": "4a37a63bf7a793fc26c924aea91ccd868f2bf22132f08790513a5e067794abd9"
+  },
+  "365/Guarda_resposta.json": {
+    "bytes": 317440,
+    "sha256": "6f057d2d7dd38419dac5c3171df4ccc622d23216a6d5d6ca867315c6b37f3e5a"
+  },
+  "365/Guarda_resultado.json": {
+    "bytes": 2041,
+    "sha256": "2c5745b4a3c3d0aaec5437ef90dd12aa031f7300a709eaf7bf143b55e1ab0aba"
+  },
+  "365/Guimarães_amostra_inputs.csv": {
+    "bytes": 2385,
+    "sha256": "6a70f8ae23ce4bcb50d70d809923e844f724b9e70d650eb4f17c477c1b23214f"
+  },
+  "365/Guimarães_api.json": {
+    "bytes": 1434,
+    "sha256": "1193b6238342606dd6fde597ff7fdc409565eb6c1d2bfb5dea2b6c70c03109ff"
+  },
+  "365/Guimarães_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "67740f39ca12f3aa75bd0da4fb9c9f55ca88e31f49fe765a1ab9ba4af2080e5d"
+  },
+  "365/Guimarães_api_historico.json": {
+    "bytes": 583702,
+    "sha256": "ec33bdee545761fd56ab23ea7f69a28745d58ad6653594eab71f09b9d795d97f"
+  },
+  "365/Guimarães_comparacao.json": {
+    "bytes": 35522,
+    "sha256": "6fb90da187b164e49113916baa568f927870f0325ad90ee19753fc1e17560b50"
+  },
+  "365/Guimarães_dias.json": {
+    "bytes": 5053615,
+    "sha256": "22de713456b5b434ee97458ae0a7aac232351dd6f6de3f9086d01a78d239c4fb"
+  },
+  "365/Guimarães_episodios.json": {
+    "bytes": 39817,
+    "sha256": "b21809fd2b75e9d1879b16c321fd85453d16acc9b78b8df0ed6137bc9ff092ce"
+  },
+  "365/Guimarães_estado.json": {
+    "bytes": 194,
+    "sha256": "d20a87a67f0059c8a116a8ef60b5beed1221e79c267bc779f442b4b61ecde723"
+  },
+  "365/Guimarães_recolha.json": {
+    "bytes": 1318,
+    "sha256": "82d88835ba4370879be6d09e1a2b06a0900faf31b396567b94383def255b9c14"
+  },
+  "365/Guimarães_referencia.csv": {
+    "bytes": 2448,
+    "sha256": "9ee8fd110b7dd4ca9a6515b931df5cdc810e5aa7c4a988b225ad5a1326e4a5b9"
+  },
+  "365/Guimarães_resposta.json": {
+    "bytes": 318067,
+    "sha256": "c958282b51b0d64d3a5a6330ea088e7da97eceac3f158e37ab5a7ed6165f97cb"
+  },
+  "365/Guimarães_resultado.json": {
+    "bytes": 2016,
+    "sha256": "f8039e099ffd8a7f266a0284d028e4e1debc1998b892d29904d25220de41a3e6"
+  },
+  "365/Leiria_amostra_inputs.csv": {
+    "bytes": 2702,
+    "sha256": "ca494a7f01b39cb95a61c3680091cf4f5b3e2e881536e62f79d8624bee4ce917"
+  },
+  "365/Leiria_api.json": {
+    "bytes": 1429,
+    "sha256": "46fb757ddd7e116d2c868b9f490a8e1a92ad6c9713013301b897116771156d0b"
+  },
+  "365/Leiria_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "e7168786c794c1af920c22546dbfb9d649f3afb909259993fe9f44ba2fdfbde8"
+  },
+  "365/Leiria_api_historico.json": {
+    "bytes": 583159,
+    "sha256": "b4c53da53fdb81f52ebece302843f56b0b0806722f5761175358a08785011589"
+  },
+  "365/Leiria_comparacao.json": {
+    "bytes": 39972,
+    "sha256": "9820328afc1273e1ea500673df059e467d109a6c8d19e14cb5a496125198eb27"
+  },
+  "365/Leiria_dias.json": {
+    "bytes": 5064297,
+    "sha256": "e5855a3c5a93104cf2930604ee59abda91b7076431bd43a58955644054fd6984"
+  },
+  "365/Leiria_episodios.json": {
+    "bytes": 38980,
+    "sha256": "84c58110835fd963c085e5058a1d794f658cc68a4df6b7a034429953154a6cae"
+  },
+  "365/Leiria_estado.json": {
+    "bytes": 194,
+    "sha256": "6bfb4654ba8f9ab22222ece3126670781e56642ac9f7a0fdcba77c61e29807a8"
+  },
+  "365/Leiria_recolha.json": {
+    "bytes": 1316,
+    "sha256": "20d5bcb696362857702ac414ebd5a410c64313da634fb79bd195b0e7d1b02081"
+  },
+  "365/Leiria_referencia.csv": {
+    "bytes": 2696,
+    "sha256": "85ff62659ecec2bca5c58d24840586268c43f2c71afafb88ad236b12f8355dca"
+  },
+  "365/Leiria_resposta.json": {
+    "bytes": 320724,
+    "sha256": "79ad1a965ad72d5faab6532e5b52f49886afeb2617e052e6c7a864e9ee5314f5"
+  },
+  "365/Leiria_resultado.json": {
+    "bytes": 2065,
+    "sha256": "f951653b8507a49b6d1b68a11a55cc4f27aa4b4885889e817279c91663f3c40f"
+  },
+  "365/Loures_amostra_inputs.csv": {
+    "bytes": 2115,
+    "sha256": "cae6d1cd19d6ec0b194f84a2318bc76a7f308612f77da1509ab727f423a50a9c"
+  },
+  "365/Loures_api.json": {
+    "bytes": 1429,
+    "sha256": "ea1bcc55f48eb134993b1745c57ac37c70b47b4d2e42aba75174333a1d8900b9"
+  },
+  "365/Loures_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "cfb8e99698b79b820827b80bf6b016bc3c9274f838bea74c03f72a40e6060954"
+  },
+  "365/Loures_api_historico.json": {
+    "bytes": 583110,
+    "sha256": "3b60b000efd402c59142f5000b0c25a0a753f893546d41a89aadb090220e06e6"
+  },
+  "365/Loures_comparacao.json": {
+    "bytes": 30538,
+    "sha256": "065044863e49b86a7eb9ac23c0d1dce601282607f94f9fbb349f9b534c41eae6"
+  },
+  "365/Loures_dias.json": {
+    "bytes": 5048366,
+    "sha256": "2ccee13d4c1dbdadcb90e4b9e4030705c21a6516113fd7cd62d28d6a346e1497"
+  },
+  "365/Loures_episodios.json": {
+    "bytes": 43117,
+    "sha256": "9a1d481bbf1712075be1c661628b0650f4120e398e39d49ca56aa9df477b398e"
+  },
+  "365/Loures_estado.json": {
+    "bytes": 194,
+    "sha256": "c3ebf9a1d6d6d0b1c0063fea2a55753f6c03d39621385bc8fda32f8bc693c159"
+  },
+  "365/Loures_recolha.json": {
+    "bytes": 1314,
+    "sha256": "5221200d5ff9b43b37bac0bd4abfa17d74de15bfaaba18ee87ac1d911b52ac7a"
+  },
+  "365/Loures_referencia.csv": {
+    "bytes": 2080,
+    "sha256": "ad452e5717f1149b6cc3a76523f474dd95daba639f1366d40faf957d0d7da339"
+  },
+  "365/Loures_resposta.json": {
+    "bytes": 322386,
+    "sha256": "7fe57c0d88271acbd09a833fd5806dd939198dd50160fe44d5852b60d00739e3"
+  },
+  "365/Loures_resultado.json": {
+    "bytes": 2048,
+    "sha256": "878636fbdf18af96869e18c93751459a3e642cf13691263b995a54d0b4af6ecd"
+  },
+  "365/Matosinhos_amostra_inputs.csv": {
+    "bytes": 1831,
+    "sha256": "04b6a001aff3fd5d28ca73904598b529be5e96048fc9640b9153a14aa8b8400a"
+  },
+  "365/Matosinhos_api.json": {
+    "bytes": 1435,
+    "sha256": "34e35d3fce435df217c06e10fd84be1f9a8c7e84a7a86c5e715d95edc3689642"
+  },
+  "365/Matosinhos_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "75e39fd31b0831327032d49807f2d87a12745993d0c13512a8d712255f0da39c"
+  },
+  "365/Matosinhos_api_historico.json": {
+    "bytes": 583712,
+    "sha256": "f8f9b284105348f4ee696da32e847fa9b8491ac19b3443d5355cd43c1421d4d7"
+  },
+  "365/Matosinhos_comparacao.json": {
+    "bytes": 27803,
+    "sha256": "90b458176e120acbe857745eadc3e912403853e752a332f922c1b8836ad0d1d4"
+  },
+  "365/Matosinhos_dias.json": {
+    "bytes": 5055662,
+    "sha256": "4799837ecf137def0f81e0ddb24afbb0ac8abadf03953e8c9697e317b7d73a3d"
+  },
+  "365/Matosinhos_episodios.json": {
+    "bytes": 39711,
+    "sha256": "20ba4b1eca3aa26e1952f62626651b6f386050296439c825c24f6e51ab67cee8"
+  },
+  "365/Matosinhos_estado.json": {
+    "bytes": 194,
+    "sha256": "cf14f5702167752e9160ebda1ec4431a3d85c1adf25d519a3ad95a5ac9119c50"
+  },
+  "365/Matosinhos_recolha.json": {
+    "bytes": 1319,
+    "sha256": "445606fffc71b22c07cfb665ac262dd5306ed14859569a2151e5e204002991f0"
+  },
+  "365/Matosinhos_referencia.csv": {
+    "bytes": 1901,
+    "sha256": "c03cdab57321d7e2f2b35acff9585b285782abfb7118f635b72af03f7176cf5e"
+  },
+  "365/Matosinhos_resposta.json": {
+    "bytes": 319976,
+    "sha256": "afa5c3020c1eed87a013fcd40481d184a0d43c87687488172d5aab0d2ad16968"
+  },
+  "365/Matosinhos_resultado.json": {
+    "bytes": 2030,
+    "sha256": "4af4213333827994d0d7233f8df41b0587a6194a65cc60a882effb02c727c301"
+  },
+  "365/Portalegre_amostra_inputs.csv": {
+    "bytes": 5180,
+    "sha256": "a2ed21a6e1a4ae56666edf2960f5348309e518fc180ae92fad25ff17833dc88f"
+  },
+  "365/Portalegre_api.json": {
+    "bytes": 1429,
+    "sha256": "73d30a99792bb07c226b7f13ba04d1b1cdaaf3c5739b78f5f233d9a740141750"
+  },
+  "365/Portalegre_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "18a3ca819d904d1160127c28741fd55ba2170fb9fdbb956340ff5d15dbb3b854"
+  },
+  "365/Portalegre_api_historico.json": {
+    "bytes": 583731,
+    "sha256": "8909533a17de537df2c77b1eb058c58c4c2cfa8de57db15b4f88afa2c418a594"
+  },
+  "365/Portalegre_comparacao.json": {
+    "bytes": 77276,
+    "sha256": "5da54fef679da927b0778f7a01e5a9e0e324faf1511af338f561fcd34abe0b40"
+  },
+  "365/Portalegre_dias.json": {
+    "bytes": 5047229,
+    "sha256": "21838057358a6687d2c75e2e8cbee49bcc8c89850b8612347f333e2fecfe6740"
+  },
+  "365/Portalegre_episodios.json": {
+    "bytes": 47343,
+    "sha256": "08e0234a7cc6fe7ba4669e9e520de0e39a0736348681cb6ce15a60368456654a"
+  },
+  "365/Portalegre_estado.json": {
+    "bytes": 194,
+    "sha256": "49bd573ef8d164c7984926232ff92d3f61636af156efb1b718c3a61c19ff8f15"
+  },
+  "365/Portalegre_recolha.json": {
+    "bytes": 1322,
+    "sha256": "a71995c386fa2389f8cda11d78216aee98e1a40a1f81449dcb6d11f753091b54"
+  },
+  "365/Portalegre_referencia.csv": {
+    "bytes": 5291,
+    "sha256": "023f91a4d740c8cac656c5e36c91bbb680dfeee276d139ea0073d569252461a1"
+  },
+  "365/Portalegre_resposta.json": {
+    "bytes": 320235,
+    "sha256": "4da33dcb26aa538207c0d8941e15fa3b309a37d12fdaf659c1af0a8784d4afc5"
+  },
+  "365/Portalegre_resultado.json": {
+    "bytes": 2009,
+    "sha256": "f6a31df971cb3145fb1b536c157f52de93687fe0d29a41bb02fb8ab029238ddd"
+  },
+  "365/Porto_amostra_inputs.csv": {
+    "bytes": 1831,
+    "sha256": "cedc8744967f8685479ac0f8c231697b4f41505dca535fad1e42f433e42a74ab"
+  },
+  "365/Porto_api.json": {
+    "bytes": 1432,
+    "sha256": "beeb286bb3c6a99ab58b233bdb463c1b6f1b3b0fd1487f328c430eb0c11cf9aa"
+  },
+  "365/Porto_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "8abb905f664fc5601c3633abfe945907deb7172d836a708a6ea4d9038262842a"
+  },
+  "365/Porto_api_historico.json": {
+    "bytes": 582508,
+    "sha256": "08002cab2801c918e7cf77fa7e77bfc2502073a25c4fd47916f035255eb09f00"
+  },
+  "365/Porto_comparacao.json": {
+    "bytes": 27803,
+    "sha256": "90b458176e120acbe857745eadc3e912403853e752a332f922c1b8836ad0d1d4"
+  },
+  "365/Porto_dias.json": {
+    "bytes": 5053622,
+    "sha256": "ef4e115bd72a74dff0793c578a683272d8455e5273b2a55146e85a3c28b794df"
+  },
+  "365/Porto_episodios.json": {
+    "bytes": 39662,
+    "sha256": "64958ba498f323ab4dc14556d1f3797a6d01003a4f845228b17b73e107529931"
+  },
+  "365/Porto_estado.json": {
+    "bytes": 193,
+    "sha256": "7744c41d731810882aca61c55a642be0c20db2a731dbe6a45e71e8d8badca9d8"
+  },
+  "365/Porto_recolha.json": {
+    "bytes": 1312,
+    "sha256": "4273fe94fc3f14d617f12270a1452e8ab1762c0222ead65af2e578f2b1ead268"
+  },
+  "365/Porto_referencia.csv": {
+    "bytes": 1901,
+    "sha256": "c03cdab57321d7e2f2b35acff9585b285782abfb7118f635b72af03f7176cf5e"
+  },
+  "365/Porto_resposta.json": {
+    "bytes": 319977,
+    "sha256": "7b140afce7fd22e3b367633969ead633807bd3642ec14ed8bca857a46da6cf69"
+  },
+  "365/Porto_resultado.json": {
+    "bytes": 2027,
+    "sha256": "2fd58b452498ee4995091c273c38041cb46702fc1d1cd6a94176eabeddc5d743"
+  },
+  "365/Santarém_amostra_inputs.csv": {
+    "bytes": 2246,
+    "sha256": "76f648a8095d3f1c9cd5f1ff53bc57e0665b2da4118105be731bde2034bb97e6"
+  },
+  "365/Santarém_api.json": {
+    "bytes": 1430,
+    "sha256": "95315a9a0ee998946ce6697083fd513d679826d988fe454b7f9e52eae432acfd"
+  },
+  "365/Santarém_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "d67fa8feb13ef1fc55229f6c6c2904bf89c000d1e42f4284fda4180107a013bf"
+  },
+  "365/Santarém_api_historico.json": {
+    "bytes": 583345,
+    "sha256": "a8ac0e55ca6d5c18ed3a9874d952e389362b577e34a79803cb0020da0aa62d89"
+  },
+  "365/Santarém_comparacao.json": {
+    "bytes": 33826,
+    "sha256": "e5943d919fdb991056eb083c5be17af1d3e37c8fe2519113c4ce50deb8dde180"
+  },
+  "365/Santarém_dias.json": {
+    "bytes": 5046065,
+    "sha256": "966ebe4f375c57334ea06a53c198457993b8f83b318563538637677b0333fa3c"
+  },
+  "365/Santarém_episodios.json": {
+    "bytes": 43905,
+    "sha256": "82f2f3918f342fc00b2a9b5cadfbec81cc6a1d0bf605ace49a7da2e474ac78b9"
+  },
+  "365/Santarém_estado.json": {
+    "bytes": 194,
+    "sha256": "866b6b586d8d68a8507ad535d7ab13b17b5167956a2da441d2deba12050d2c05"
+  },
+  "365/Santarém_recolha.json": {
+    "bytes": 1320,
+    "sha256": "7b1022506ccea2fc526ecee99c485de8fdc2f247de4b6cdf11d2f803b4b33cac"
+  },
+  "365/Santarém_referencia.csv": {
+    "bytes": 2286,
+    "sha256": "55d63cc5eb4b39dce42ec5b30160f1d9da3e4f38391aa986ef6eaf3a7ea3a2b8"
+  },
+  "365/Santarém_resposta.json": {
+    "bytes": 319592,
+    "sha256": "6dd80c69c1de581e2493a2a7c5bb26365600c33b0d915e76c6035ec1a9736c2f"
+  },
+  "365/Santarém_resultado.json": {
+    "bytes": 2073,
+    "sha256": "fc5cb5e4cbdd8712e09c3ab26912c995042a96f2517934c5b30c27006f7176de"
+  },
+  "365/Setúbal_amostra_inputs.csv": {
+    "bytes": 2191,
+    "sha256": "1b5543637f224490020cac5a23c3af67aba9e1a2b2bddab175536ab488ba781b"
+  },
+  "365/Setúbal_api.json": {
+    "bytes": 1430,
+    "sha256": "cc3e3e6ef3c8882e2198f7ebd163a078775a55801faba331794bdc0723ce53c3"
+  },
+  "365/Setúbal_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "9680fba9a3400ba558d72f2574b7a6ccb115ef231935ee97f8ebf5a99c735355"
+  },
+  "365/Setúbal_api_historico.json": {
+    "bytes": 583181,
+    "sha256": "7ec39438a79a3f26fa78f5cd5b717fa2017b946cb8fc0655b1e96b0a8721977d"
+  },
+  "365/Setúbal_comparacao.json": {
+    "bytes": 32431,
+    "sha256": "f7a83f7a4f45ba8dfdfb6ee3712830ad1f7d6a998023249ee05633e3f98f349d"
+  },
+  "365/Setúbal_dias.json": {
+    "bytes": 5056759,
+    "sha256": "f166b497ff8943894c875cc755f4a31cde7c2b676b075e7d060bb8628cbf4a6a"
+  },
+  "365/Setúbal_episodios.json": {
+    "bytes": 48934,
+    "sha256": "7ba654ac77c86ca923ceba274df28e9a4e529b8f465766430633645e5e718bf8"
+  },
+  "365/Setúbal_estado.json": {
+    "bytes": 194,
+    "sha256": "eaa99a0a80bfa4565f55fb2d2c8b02b4c8257edc7ef805ac2880bf88d7dd9c95"
+  },
+  "365/Setúbal_recolha.json": {
+    "bytes": 1318,
+    "sha256": "d30d377650ec2c01feaac6d87fe9aa6f9af370953da2b9bb44509215939360de"
+  },
+  "365/Setúbal_referencia.csv": {
+    "bytes": 2200,
+    "sha256": "39d12809c4924a3b83fe8372d4a9a8db9932e35dbea5e09d54d211da99353650"
+  },
+  "365/Setúbal_resposta.json": {
+    "bytes": 321771,
+    "sha256": "b0107f5983f4f31e4b27e675f7c355dc17a41cabd5f04104f4b15b4f95e155b6"
+  },
+  "365/Setúbal_resultado.json": {
+    "bytes": 2073,
+    "sha256": "3ec5f0ff3b85497aa064582e7293d0eacb8c9e22043166b2ecdb9d419649c6b4"
+  },
+  "365/Sintra_amostra_inputs.csv": {
+    "bytes": 2593,
+    "sha256": "98b0c66077861633dbf1e7162dcfb618297ad0c7f35cc54ae1e15aea66c97132"
+  },
+  "365/Sintra_api.json": {
+    "bytes": 1430,
+    "sha256": "119afef4ffe417d2894c16003485f2c60f058707c9c7c36123aa2f48d1ee638a"
+  },
+  "365/Sintra_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "43356ccf468af845a2302fee0f865cc88461c03d317cefd6796ca0820cd4117c"
+  },
+  "365/Sintra_api_historico.json": {
+    "bytes": 583653,
+    "sha256": "bc0123419acf6ebfb479cd66cfd78c620aac63a3d72efaf864adbda6716eacd3"
+  },
+  "365/Sintra_comparacao.json": {
+    "bytes": 38329,
+    "sha256": "cab82afb4adf240dcb5f3c9303f8176a524f8ccc18983fe6195eda7e26ee0f1c"
+  },
+  "365/Sintra_dias.json": {
+    "bytes": 5049487,
+    "sha256": "4e5389f6bbad60e46d4df9dba0dec0752122278e28fdacfdf160a8c2a286954a"
+  },
+  "365/Sintra_episodios.json": {
+    "bytes": 39783,
+    "sha256": "a04191a3ede19d3d643cf031a53af1eea9d2e80889a485b47dcabf049ecad6c5"
+  },
+  "365/Sintra_estado.json": {
+    "bytes": 194,
+    "sha256": "e858fdd5c1305f44ccba67b636b86e9f1c767953b13e1f9b51f7461c237a2861"
+  },
+  "365/Sintra_recolha.json": {
+    "bytes": 1315,
+    "sha256": "f18b11d37f7730a7089457b22a5cdac14c58755a9256748bf2a7edbfdbe61098"
+  },
+  "365/Sintra_referencia.csv": {
+    "bytes": 2598,
+    "sha256": "25adcdcb53964cd162330e8e9eb5a8fd7b41b8cc425ac691ded565d6af8a1f10"
+  },
+  "365/Sintra_resposta.json": {
+    "bytes": 322426,
+    "sha256": "2521e2b48c7dce463be340d327e87c52ba44dabc47ce2d670a30b31524a1316c"
+  },
+  "365/Sintra_resultado.json": {
+    "bytes": 2017,
+    "sha256": "3ff41bc76d0915deed031b18f8d0cd859fdf2789de239cf8d943f6e48f8631d9"
+  },
+  "365/Viana do Castelo_amostra_inputs.csv": {
+    "bytes": 2563,
+    "sha256": "b32dae17bed09cac398c6d399f884aacc01c805e1a9a109eb0b726e835b1da82"
+  },
+  "365/Viana do Castelo_api.json": {
+    "bytes": 1433,
+    "sha256": "72441d04218ec2263262d6dca3409d23d8b662acb48c12265956ee7e013d6329"
+  },
+  "365/Viana do Castelo_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "5198dc703d363252a2a070471930d8fcc3a377e07cd56725375181c3a7c82083"
+  },
+  "365/Viana do Castelo_api_historico.json": {
+    "bytes": 583545,
+    "sha256": "79991bec0081d095fca27a206da6addf0dab90318ed30bbd0447b0c1f67c8c51"
+  },
+  "365/Viana do Castelo_comparacao.json": {
+    "bytes": 38365,
+    "sha256": "f1190302ac79f5bbd4e066ecee2e0154a8f85d47887108af6c31fd42f6f4d0e1"
+  },
+  "365/Viana do Castelo_dias.json": {
+    "bytes": 5065715,
+    "sha256": "5a7164170325c056db72d0211e4cb3ca8a179b12bf500df80599224b152bf22b"
+  },
+  "365/Viana do Castelo_episodios.json": {
+    "bytes": 38821,
+    "sha256": "f5b7baa3479a522922178e87992ec33b2376cc00ef6c9a6bc3709cbe46b3c891"
+  },
+  "365/Viana do Castelo_estado.json": {
+    "bytes": 194,
+    "sha256": "2cfed0ff1aefc1b31133ce8ea01dd15f0b9092586ce7fe78cdc8915f2639d481"
+  },
+  "365/Viana do Castelo_recolha.json": {
+    "bytes": 1336,
+    "sha256": "4168664072c810bac9cd74ca6c3cfe0259e4dbc6713c4607e07e509539b41581"
+  },
+  "365/Viana do Castelo_referencia.csv": {
+    "bytes": 2644,
+    "sha256": "db745b23b469ac1c37944105ae3c9794704754365174d340325f211a49c41e36"
+  },
+  "365/Viana do Castelo_resposta.json": {
+    "bytes": 321598,
+    "sha256": "27280c60de0e553dc98456313bd3c3677aafd4c1519fe8b5c382b61f7468cf35"
+  },
+  "365/Viana do Castelo_resultado.json": {
+    "bytes": 1999,
+    "sha256": "db1c401a76cd6b2483bb76511a2291aa0b19eea354de44830488b46dd020d2b6"
+  },
+  "365/Vila Nova de Gaia_amostra_inputs.csv": {
+    "bytes": 1831,
+    "sha256": "09057da557c32e56800180421488f609a9259dc16a6517b45cd604b463352dc8"
+  },
+  "365/Vila Nova de Gaia_api.json": {
+    "bytes": 1435,
+    "sha256": "44ea75a516eda3c843e0698cfe0c953d0cddc330846519b1faddf21875b47eb7"
+  },
+  "365/Vila Nova de Gaia_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "572a5db3e863ae19eb4dcf2d5ea165cfccaacc10fffc0a510fc16f27b4481b53"
+  },
+  "365/Vila Nova de Gaia_api_historico.json": {
+    "bytes": 583712,
+    "sha256": "13e8c77ecd4d8ef8263e4c33a4ba60a70abf13921352fb04fad87a87143a9b87"
+  },
+  "365/Vila Nova de Gaia_comparacao.json": {
+    "bytes": 27803,
+    "sha256": "90b458176e120acbe857745eadc3e912403853e752a332f922c1b8836ad0d1d4"
+  },
+  "365/Vila Nova de Gaia_dias.json": {
+    "bytes": 5055662,
+    "sha256": "d8bb94beab487df6d1c127bc789853c3bdba4df8f8e3d499537b6fb87dd932d2"
+  },
+  "365/Vila Nova de Gaia_episodios.json": {
+    "bytes": 39711,
+    "sha256": "f14127d8c4680f4ea300bf5e1e601bfd6e1f93ed872fbf22a5b0fae680ffc9fa"
+  },
+  "365/Vila Nova de Gaia_estado.json": {
+    "bytes": 194,
+    "sha256": "0770a904b1b5d8a79d6fb3d7731d80804e14756a5fd3229f42c945ecedc54e46"
+  },
+  "365/Vila Nova de Gaia_recolha.json": {
+    "bytes": 1326,
+    "sha256": "11968887f8c0ac1cfd61f6300cb0f1c307fa7a5b35308b2369726cee86a45254"
+  },
+  "365/Vila Nova de Gaia_referencia.csv": {
+    "bytes": 1901,
+    "sha256": "c03cdab57321d7e2f2b35acff9585b285782abfb7118f635b72af03f7176cf5e"
+  },
+  "365/Vila Nova de Gaia_resposta.json": {
+    "bytes": 319977,
+    "sha256": "f2e1e7c6c9033b8d668b358f2e23ecc346ec493d3b4ffe4bf37b14a6e00d9c11"
+  },
+  "365/Vila Nova de Gaia_resultado.json": {
+    "bytes": 2029,
+    "sha256": "f0262b7ed80cbc4e06ac709253139f9ac6c525e5b2dc514c137c4bf554da7b2e"
+  },
+  "365/Viseu_amostra_inputs.csv": {
+    "bytes": 2985,
+    "sha256": "5d21f78fbba859afc6a83c09cb03af89ddb68cfb63bfaad64765f6850b11d086"
+  },
+  "365/Viseu_api.json": {
+    "bytes": 1431,
+    "sha256": "665aa8130dd7e3a062cbfaf1682fdc41149c8e065fc82ccaf5223d743220fbd9"
+  },
+  "365/Viseu_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "288f896b14111251027d0ad88b8344a31f8a5f4c4fc595948aeb24d7d4e7c1de"
+  },
+  "365/Viseu_api_historico.json": {
+    "bytes": 583672,
+    "sha256": "36133978dc9463459f30ffafa648bf09ede692aa410ebf17c4941bc8dbe12b18"
+  },
+  "365/Viseu_comparacao.json": {
+    "bytes": 44689,
+    "sha256": "5b977d9d6cadb5e9fbb7d7498fb761d0ded804c44ea25569ddab375ec3548e3c"
+  },
+  "365/Viseu_dias.json": {
+    "bytes": 5061968,
+    "sha256": "ce9c10a3b25f74151492264e1c42a784bbe248a02d3f9358c05280a2948ed2af"
+  },
+  "365/Viseu_episodios.json": {
+    "bytes": 37886,
+    "sha256": "d3dbb554bb3fd7e82b00f915a3f56d3114203e59885455e464744fcbc5f475c2"
+  },
+  "365/Viseu_estado.json": {
+    "bytes": 194,
+    "sha256": "715a0b39f5831dcb35ff8ab287268946e31c6c916d978eee17e36553d192527a"
+  },
+  "365/Viseu_recolha.json": {
+    "bytes": 1314,
+    "sha256": "01a8224ac5dd6f29cb166a4b647080fcad0b4269dcd124e236b45ab1efbf6f74"
+  },
+  "365/Viseu_referencia.csv": {
+    "bytes": 3028,
+    "sha256": "7f08ee2eede86f761a8b32929c1fe1f9de8a05bcd9e3f593b1bee49be56b6c6f"
+  },
+  "365/Viseu_resposta.json": {
+    "bytes": 317790,
+    "sha256": "e8024641122211fed2c0d1eb134281d6e177b388a418400eb8a188a70db6d632"
+  },
+  "365/Viseu_resultado.json": {
+    "bytes": 2058,
+    "sha256": "3c6a54e9e56241e97764f5d376577c21d914ca8476173fc226c11b78798b1596"
+  },
+  "365/alertas.json": {
+    "bytes": 902840,
+    "sha256": "62fe8998efa851b5fd93949e47eaf62e94589444e766ec8dcb7d59788c8af899"
+  },
+  "365/regioes.json": {
+    "bytes": 3915,
+    "sha256": "b0ceeff1d9d97059f2231c77993b5fb26c7395d76d0ab8fe053504fcb3c8292a"
+  },
+  "365/tempo_comparar.json": {
+    "bytes": 54,
+    "sha256": "c3065c1f16d7828b23eceab25aa7238dc18a2d20a23327dbb30ba27723ab89ea"
+  },
+  "365/tempo_recolher.json": {
+    "bytes": 468,
+    "sha256": "9cc8fbaa55f6aa5ee4bca2ce6a6d80b6c02cff6dc9bc3f6c783dc91a37a05eb6"
+  },
+  "365/tempo_reconstruir.json": {
+    "bytes": 467,
+    "sha256": "f0410157bb92d2b21f2b1df021902546eb3a4307add2cead4de8da93613636ff"
+  },
+  "365/Évora_amostra_inputs.csv": {
+    "bytes": 3511,
+    "sha256": "3a53960d15249df40da690b9dbf6813fbe3823fa73f4f3c236acee92d672163c"
+  },
+  "365/Évora_api.json": {
+    "bytes": 1428,
+    "sha256": "1bbc878f029ef23c0d978a7c7c520daeda4a8600ddb766716cde0a197245405c"
+  },
+  "365/Évora_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "c3a1674ff989d2a5013626e56129246014fa623695efd0af9b31f813efdd211b"
+  },
+  "365/Évora_api_historico.json": {
+    "bytes": 583451,
+    "sha256": "bb0bd8b3d2cb8ae9c461311f18068169fec37bda27971e0c1c891dd937b0bb2b"
+  },
+  "365/Évora_comparacao.json": {
+    "bytes": 52297,
+    "sha256": "efe09a52fb64a7fb8094c3a22984f0b92610f2b6b0616de6f8f8d31c7da7f5b5"
+  },
+  "365/Évora_dias.json": {
+    "bytes": 5065056,
+    "sha256": "bccf648cbbc1d349ca7ea5eef2571f48d117d62feabaadaaf04692851772de7d"
+  },
+  "365/Évora_episodios.json": {
+    "bytes": 49883,
+    "sha256": "31ce516c993dfa6a4465c4a7d838901c457d41053a84e3b49c1882032fc5e5ba"
+  },
+  "365/Évora_estado.json": {
+    "bytes": 193,
+    "sha256": "d7948e7da03e2f78bcae7798537977e1ef1f5490904759f8452b6a1da21e9d3a"
+  },
+  "365/Évora_recolha.json": {
+    "bytes": 1316,
+    "sha256": "74b1d639aee57ab200f06a184e130df8783a24bf11d3931b3a081503fbb60254"
+  },
+  "365/Évora_referencia.csv": {
+    "bytes": 3568,
+    "sha256": "f290a4bfbf0060684816badc10335e44058fd17cacfef204497ee1e4f8248fd7"
+  },
+  "365/Évora_resposta.json": {
+    "bytes": 320634,
+    "sha256": "b12ae31e4e38cf9a70d53526cfc1b8839d01f57c1523d0d677873efbd59490fd"
+  },
+  "365/Évora_resultado.json": {
+    "bytes": 2048,
+    "sha256": "7b12294b27a10c4f421133b8d758dce524715e6346147b0a2df466637a882321"
+  },
+  "60/Almada_amostra_inputs.csv": {
+    "bytes": 1135,
+    "sha256": "9407395902de21e1857eb2746a56b8d1ee97772e4d8fb2525fb27de647bd293c"
+  },
+  "60/Almada_api.json": {
+    "bytes": 1429,
+    "sha256": "8383820d75f4e933af4a924e70c78f2ea9fb7dc06753816223a822b0fb7559b9"
+  },
+  "60/Almada_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "af5f3ed912662a7db59ceebb9ab1209b9667b41f08e258e6db442d8be2db6b97"
+  },
+  "60/Almada_api_historico.json": {
+    "bytes": 96049,
+    "sha256": "bc7fbdd30061ce81a703a72a2bb5a89bbd616449ea06e761425ceca935f3ea38"
+  },
+  "60/Almada_comparacao.json": {
+    "bytes": 17054,
+    "sha256": "480b752008e3f47c453e45dbeee56240c0462107c6b9e00a57ff4f38b386a020"
+  },
+  "60/Almada_dias.json": {
+    "bytes": 829667,
+    "sha256": "fe9515b92044e4fe1df8bdbe0b61f3fe7f5f0c7b4cd630774a6fe15a5dc46eb6"
+  },
+  "60/Almada_episodios.json": {
+    "bytes": 38942,
+    "sha256": "5825f80d9a9610e3db63c47ac6b96e576f8185bcf3010ad33671d7bb3de34250"
+  },
+  "60/Almada_estado.json": {
+    "bytes": 193,
+    "sha256": "d43a786ab0c02156ac61886cb03a8357e72262b1b23b2d9e4a86d07b248ce697"
+  },
+  "60/Almada_recolha.json": {
+    "bytes": 1313,
+    "sha256": "31975a4d29bf2096fea4f07529c96e3adc4c4e0ff495ceb2d8287f8b020d4f7a"
+  },
+  "60/Almada_referencia.csv": {
+    "bytes": 1163,
+    "sha256": "8c2519b397a67c13e365b1c8bfec3f03b7d4840b00bc3fdcee2121fe6d86af2d"
+  },
+  "60/Almada_resposta.json": {
+    "bytes": 53827,
+    "sha256": "16ce0fd1b3eaa29ae034ae956b08ce7ae5c82b7356d4eada44c248d58c7fc138"
+  },
+  "60/Almada_resultado.json": {
+    "bytes": 2025,
+    "sha256": "d438ffd1e2d19007ac17cb66eec7f87190e1b3fcc82319ebd43b513c1b8186fe"
+  },
+  "60/Amadora_amostra_inputs.csv": {
+    "bytes": 1140,
+    "sha256": "268da8a7c3f825e7bc53d7c1b34dd42caa53dfd62aa9e0d9b5d394043297f3f1"
+  },
+  "60/Amadora_api.json": {
+    "bytes": 1429,
+    "sha256": "1f9115df654c15ea8d043ff5896bd23c037f2c2dbb35d8f0f935bfda47762e83"
+  },
+  "60/Amadora_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "c9209aaf2179d1b597557e7e638397dd10701d62c416d8dc288b3a54e9b512b4"
+  },
+  "60/Amadora_api_historico.json": {
+    "bytes": 96095,
+    "sha256": "7bb7b4d5682a945035d542c5bea8da2497de8b6b73fd8983cf1b4bac6e0b03a1"
+  },
+  "60/Amadora_comparacao.json": {
+    "bytes": 17032,
+    "sha256": "9f03cab1af6222b9dd12b7fc5435e020cef4b7f6d81c2e5ecdb653ae78b99de1"
+  },
+  "60/Amadora_dias.json": {
+    "bytes": 828485,
+    "sha256": "cf5168098f545aed8788015f263b96cba0cc248cb225c282644e6ad0e0bda6ba"
+  },
+  "60/Amadora_episodios.json": {
+    "bytes": 43137,
+    "sha256": "465b88da2c97de6e7343bed21f32a12699fdfc9c5240464587140f0301fc5c02"
+  },
+  "60/Amadora_estado.json": {
+    "bytes": 193,
+    "sha256": "131d27a666ed673c17f576ba564151a22c17715a6ff7d8520d3e035652abbd2b"
+  },
+  "60/Amadora_recolha.json": {
+    "bytes": 1313,
+    "sha256": "858291b88fc30c464a237a25006dd916268efd576823cccf3235b6ae3115dd66"
+  },
+  "60/Amadora_referencia.csv": {
+    "bytes": 1164,
+    "sha256": "467feece153befcd2fb8fa860d54ff8dbeeae1696a2ad403c3c19b846c269f4a"
+  },
+  "60/Amadora_resposta.json": {
+    "bytes": 54039,
+    "sha256": "150d3f161052195e4288d3a12506542cf7c60fa228bb1df71f4f49ec2b81a208"
+  },
+  "60/Amadora_resultado.json": {
+    "bytes": 2031,
+    "sha256": "1996585fe16cc2362bf3e6af764dbe97f75e2661f6a6f2c048a125b46ab147d6"
+  },
+  "60/Aveiro_amostra_inputs.csv": {
+    "bytes": 953,
+    "sha256": "ea0961561e6b708bf3659e491ea586938508fdcdd74d4f5687fa4f7bf1982f43"
+  },
+  "60/Aveiro_api.json": {
+    "bytes": 1429,
+    "sha256": "c810ac4c6fc21bbe92abec176b21883e859445b1e928be878492b66f3a2eedde"
+  },
+  "60/Aveiro_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "1ae7ec7b85a8472cd653cb6ee592646887330bcc742ce2f7b4768c9727990a30"
+  },
+  "60/Aveiro_api_historico.json": {
+    "bytes": 95972,
+    "sha256": "d199a6c9e18d55f0fe64b8355a84d9f02ff6c7dcf1153ed625826e69a3f19810"
+  },
+  "60/Aveiro_comparacao.json": {
+    "bytes": 13872,
+    "sha256": "a120ae4ee5dc09fd69e79f930b463bd63a3b343e54ada164b4ab1a82722c2667"
+  },
+  "60/Aveiro_dias.json": {
+    "bytes": 831165,
+    "sha256": "a86c750334d0d31a135ef17ce7f32a10e0c17bc50a2ce28ba7aa23d0e6ed3123"
+  },
+  "60/Aveiro_episodios.json": {
+    "bytes": 35533,
+    "sha256": "3b3cf798b7cd29386e4d938c656bc1560eecf2f05faf3aa3864bed6b0bd619e3"
+  },
+  "60/Aveiro_estado.json": {
+    "bytes": 192,
+    "sha256": "aba8553079b208985c5b36afd38e974fb51c5610b871623cccb599bb77c52a48"
+  },
+  "60/Aveiro_recolha.json": {
+    "bytes": 1311,
+    "sha256": "44fbb24a13c88ae994bfb876eff913d0cce6dc06a6fffe06c07d75ff0ef267dd"
+  },
+  "60/Aveiro_referencia.csv": {
+    "bytes": 977,
+    "sha256": "6ba8af8a35b0f3654f519f31399e0c1e6247cfd4762aa7bee1efd33c9d5cd9e2"
+  },
+  "60/Aveiro_resposta.json": {
+    "bytes": 53966,
+    "sha256": "2d1ab8a0c7ed0b222428fb7ca2dd0c94a65fb4950d5b8e9485b0c3e94e0d24e6"
+  },
+  "60/Aveiro_resultado.json": {
+    "bytes": 2039,
+    "sha256": "80c7bd7d92c8a497e6c3614a406bf6a2f6d9e7d6dfa2b4f9e7d1ae352f06d375"
+  },
+  "60/Barcelos_amostra_inputs.csv": {
+    "bytes": 1282,
+    "sha256": "4fdb3c05601bc1495b09e2441ca38765378a09f05056585b630cebd852f3b8fd"
+  },
+  "60/Barcelos_api.json": {
+    "bytes": 1435,
+    "sha256": "dbe889d6dbc28ed217ce2ca0ad66491aa3d0a6984a64689149b5189fcaabfd71"
+  },
+  "60/Barcelos_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "5d73cf332f7bacc110826c67814692256eda8be19c0ba28e29ef9ddabce174c2"
+  },
+  "60/Barcelos_api_historico.json": {
+    "bytes": 96199,
+    "sha256": "a1db357c9b59a3e591e196c88252516bd026b4090bd01e16c0209f8020219070"
+  },
+  "60/Barcelos_comparacao.json": {
+    "bytes": 18584,
+    "sha256": "139482266f668ac90bd406ed16303b1b4055dcb60b4cdf010d886ee5945c5974"
+  },
+  "60/Barcelos_dias.json": {
+    "bytes": 831028,
+    "sha256": "e102a275ae04dbd40262b93e89356f7812c9a21478150d5645d4a81b5a6d7bef"
+  },
+  "60/Barcelos_episodios.json": {
+    "bytes": 35685,
+    "sha256": "d14d88231e9cc673f1270611ae96c33d23377858178f395f0285b7d944111380"
+  },
+  "60/Barcelos_estado.json": {
+    "bytes": 193,
+    "sha256": "89b2a987d5ee5ece5a7bf42ddba5215a8953db09146c46305ab2ec4c8afde3f7"
+  },
+  "60/Barcelos_recolha.json": {
+    "bytes": 1315,
+    "sha256": "fcfbcd3fd8457bafa085494c9ec93506c6e41a58fd4c16f826f369b213fc4bc5"
+  },
+  "60/Barcelos_referencia.csv": {
+    "bytes": 1297,
+    "sha256": "e09ed7d882dfd8eb1e7006bbee3cf4ffdf5d58af79494e07989dda98004b38f9"
+  },
+  "60/Barcelos_resposta.json": {
+    "bytes": 53493,
+    "sha256": "bb31f3e7301d00a8e4a43ee5890985377f0f0f13401cfc80ed4e18e125d9de04"
+  },
+  "60/Barcelos_resultado.json": {
+    "bytes": 2049,
+    "sha256": "f259f8cf906be516cc9a6ad51b40a93c3a5e3bf6f31eabe3c6fedb16080506bd"
+  },
+  "60/Beja_amostra_inputs.csv": {
+    "bytes": 1132,
+    "sha256": "cf5d9a2adaa8dc2139f2d9aec778bab182db2062644a87b87a095996f77c0d55"
+  },
+  "60/Beja_api.json": {
+    "bytes": 1428,
+    "sha256": "0158497f3f9e07040f558598e56e57b12ce3008477536b1a0f0a2b6385da5ebe"
+  },
+  "60/Beja_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "d7d10658ec001ea1c31e30eb78e0ce9046ad21f2645ecb134bf8a875a8769d2e"
+  },
+  "60/Beja_api_historico.json": {
+    "bytes": 96045,
+    "sha256": "af7d3648a8f5df1909907bf0572d8c658ba0c93c88ab43593da90d75dc71aa86"
+  },
+  "60/Beja_comparacao.json": {
+    "bytes": 17100,
+    "sha256": "b881d4a8c62878c183b68a3534a67249d2684114ec7cdf6d120c7ccaa9e87e9a"
+  },
+  "60/Beja_dias.json": {
+    "bytes": 829598,
+    "sha256": "3a63f77986ce34289f5bbfada57d689642c7a4282a95b84435af60c9a3e6978b"
+  },
+  "60/Beja_episodios.json": {
+    "bytes": 38860,
+    "sha256": "e1d7d603409759e64940e545023bf34d5a110fb1f9d1a310700251b991e2a4dc"
+  },
+  "60/Beja_estado.json": {
+    "bytes": 193,
+    "sha256": "d1cea73d963a671de2613ff9553ed8f804f07592bcf948dd178cdb4f8439266c"
+  },
+  "60/Beja_recolha.json": {
+    "bytes": 1307,
+    "sha256": "e4215614defe8901718cd0fd52e3431a76ea2d308a2dc1d6934365ed09a5019b"
+  },
+  "60/Beja_referencia.csv": {
+    "bytes": 1153,
+    "sha256": "782b1c466241c7b1420a90780e21d2a979cd73ea46c96fc490c7f83154cab994"
+  },
+  "60/Beja_resposta.json": {
+    "bytes": 53890,
+    "sha256": "24cfb6343d423ad1be6a7fe0b3146121b7c9fba2ac4cb02fea42c0e71b6b585e"
+  },
+  "60/Beja_resultado.json": {
+    "bytes": 2037,
+    "sha256": "52408e621f64e963f9885328046e22df07a05cec13067794c1f58604b5b4b0fb"
+  },
+  "60/Braga_amostra_inputs.csv": {
+    "bytes": 1146,
+    "sha256": "277c4c8c49825a86bd08921085798a26eadeb5ff0303a790bca469a9276368bf"
+  },
+  "60/Braga_api.json": {
+    "bytes": 1433,
+    "sha256": "2543b0faf89a05aaa50aa1bd95d08aa21f09f422e9bded0eb686431409397bc8"
+  },
+  "60/Braga_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "5f2bb6681e12ac2b4f2e9f68ed8a94c8cfddf9d826843869d4cd5e1a5e8a8f18"
+  },
+  "60/Braga_api_historico.json": {
+    "bytes": 96000,
+    "sha256": "a9eab3ecec2ff14fe100fd1eee1d29cecc9308af4b2cac94e021feeb9620596a"
+  },
+  "60/Braga_comparacao.json": {
+    "bytes": 17195,
+    "sha256": "ccdc47a5c1f3637db8a337bb712f18f1ba459be38b99b32c57abc6d936c8f15d"
+  },
+  "60/Braga_dias.json": {
+    "bytes": 827746,
+    "sha256": "a716e6afaf6c06c1cd70c41124bf4acaf0f60be029bd8826cf005567d7ce150b"
+  },
+  "60/Braga_episodios.json": {
+    "bytes": 35516,
+    "sha256": "87c441264d0f1e05a89990252625dbf1e0528e2006c76f058e04f3f3a6ef7f3b"
+  },
+  "60/Braga_estado.json": {
+    "bytes": 192,
+    "sha256": "d83218a153e99680dd4cb60fe2ae2322172956dfe9fa1318772d7abb69ccb9e7"
+  },
+  "60/Braga_recolha.json": {
+    "bytes": 1306,
+    "sha256": "1636953276f2d27a780830a4eccaefe31854317e91821b95f04897a967034bd4"
+  },
+  "60/Braga_referencia.csv": {
+    "bytes": 1199,
+    "sha256": "00ee277b32202f5c81ff63f80ad993205ff65348dd41e55210dd0e7489c7661a"
+  },
+  "60/Braga_resposta.json": {
+    "bytes": 53451,
+    "sha256": "8f428781bc08661962fcf9ee734160a172e375851398f8c3c292af90aca9783d"
+  },
+  "60/Braga_resultado.json": {
+    "bytes": 2045,
+    "sha256": "3ac0b1ee409664a191a66406246b81bb1c67f4e7682dc763bf588feafc063b98"
+  },
+  "60/Bragança_amostra_inputs.csv": {
+    "bytes": 1559,
+    "sha256": "eecbeffe0215ecc1b466301dd065ebc4c0a96b3a7c76cbf0839f208699e14ad6"
+  },
+  "60/Bragança_api.json": {
+    "bytes": 1430,
+    "sha256": "b489b6635060215848b1ac1a26db729fe0c876302e17440d3e084152d7454407"
+  },
+  "60/Bragança_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "cdc319b43c94c2b596c08c395bec235c00a5e493dfd1b67ebe300cc144ab7e8a"
+  },
+  "60/Bragança_api_historico.json": {
+    "bytes": 95981,
+    "sha256": "9cb6dd9ef638949996478220c7735d9566716c62f515606d8acdc545d09b042d"
+  },
+  "60/Bragança_comparacao.json": {
+    "bytes": 23257,
+    "sha256": "267ae662a62f1ce8e56fc5db7d4af46bba458e0005900ef70ca0edba74f3c32c"
+  },
+  "60/Bragança_dias.json": {
+    "bytes": 832009,
+    "sha256": "196e8f377930ae0d9e479f695cdc2d6b53ae1dfaf828402dcae4192f97c4d0fe"
+  },
+  "60/Bragança_episodios.json": {
+    "bytes": 36429,
+    "sha256": "82677376ee5177e84c5f547b9a736553dd6aebfba43ec89a489e3eebe9907c0d"
+  },
+  "60/Bragança_estado.json": {
+    "bytes": 193,
+    "sha256": "48c17815d0d813acb3003c80e46774cca580ce693134bf793c958ef23ca0daa7"
+  },
+  "60/Bragança_recolha.json": {
+    "bytes": 1320,
+    "sha256": "9c30531bfd7622b3a2722319d6ce6a7621de35d01b691ea4df2e85a086dc4045"
+  },
+  "60/Bragança_referencia.csv": {
+    "bytes": 1573,
+    "sha256": "53b3b64868e8bd42672148460c19aa3a04e9180dd513b82eee918ada1be4cadc"
+  },
+  "60/Bragança_resposta.json": {
+    "bytes": 53471,
+    "sha256": "423018b08c605f267824221766ae36d62f95318db340f792d2f0104f59e0cc10"
+  },
+  "60/Bragança_resultado.json": {
+    "bytes": 2041,
+    "sha256": "ae898ad1d4c90f50dc917dd884f39edae1bf350609ead2f4aa05fb451de2a01d"
+  },
+  "60/Cascais_amostra_inputs.csv": {
+    "bytes": 1359,
+    "sha256": "4bebf4bd26b4ef173b1fa1fbc556883f9731760b0278fd3b039d5051d7748a2a"
+  },
+  "60/Cascais_api.json": {
+    "bytes": 1429,
+    "sha256": "831823174d0e2a7337918ff28f8213cd977b66f130b56a4c3a623ce764796bfa"
+  },
+  "60/Cascais_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "58c6c881f99a07b48a4f871939d0cc9b93cc461d4b58a207d5a984400a5bcf2a"
+  },
+  "60/Cascais_api_historico.json": {
+    "bytes": 96136,
+    "sha256": "b47b94ac1cd67e331c8b9f380387315c311c8da60c12f82c1d1b11b7d7e90154"
+  },
+  "60/Cascais_comparacao.json": {
+    "bytes": 19993,
+    "sha256": "129ebbc856c22e0d4ad540a32a159ca9b91abf47f1a2d669080ae923e79ef4b7"
+  },
+  "60/Cascais_dias.json": {
+    "bytes": 830351,
+    "sha256": "2238314fa38d8d86add120aaf82fc7011439e590946b5de9b3c1d2827b2605cf"
+  },
+  "60/Cascais_episodios.json": {
+    "bytes": 37270,
+    "sha256": "a37e30104c4f9f13b7e926da2e3fa3ae87f76292123bc69edac629abfac766c6"
+  },
+  "60/Cascais_estado.json": {
+    "bytes": 193,
+    "sha256": "0c43bb38cee896d35045941511530a8ac08cfba6c633a94fa28c572b755bffba"
+  },
+  "60/Cascais_recolha.json": {
+    "bytes": 1313,
+    "sha256": "bf8e05138e9ec34e57c0e414f119f3465781e8ea8aa9d17faeef54a729a505fd"
+  },
+  "60/Cascais_referencia.csv": {
+    "bytes": 1366,
+    "sha256": "f2fc52096ddaa4696db48b1e4650005321698ef6defed0abe3b7a4ae9c3296ed"
+  },
+  "60/Cascais_resposta.json": {
+    "bytes": 54338,
+    "sha256": "8cff0d82d63d6cfe4f08951fb0afe0dbd865d25eca7d5a50fbbd94beca936c8b"
+  },
+  "60/Cascais_resultado.json": {
+    "bytes": 2047,
+    "sha256": "3c1505bae92d46c0b7d68c48e0e3c907de74af1e643ddc9a76f697f9fa508b28"
+  },
+  "60/Castelo Branco_amostra_inputs.csv": {
+    "bytes": 1235,
+    "sha256": "d2e173db88b3cd2481766845d60b6afdeb684bc0c866bce09397cada157f4074"
+  },
+  "60/Castelo Branco_api.json": {
+    "bytes": 1429,
+    "sha256": "1b438ed693c2ab27cf0ea4b284a581bc52a6cb240e9ae2e5afbf2e935a5c8f95"
+  },
+  "60/Castelo Branco_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "2513ef0279dc552e07e21c1c15ea0644f00a7a5fc340dc5a58d0d910f2f91064"
+  },
+  "60/Castelo Branco_api_historico.json": {
+    "bytes": 95854,
+    "sha256": "0676f83e9cfc044e8d411948a8e0715d7d557403d4f1d9cef60f2edbb374fdde"
+  },
+  "60/Castelo Branco_comparacao.json": {
+    "bytes": 18538,
+    "sha256": "a97d1ad3f35721cdf4f6de19444d9af69b764cbd1a12e81fdd696879840e2603"
+  },
+  "60/Castelo Branco_dias.json": {
+    "bytes": 830551,
+    "sha256": "d3fc2403ab6c46600a954803287f2a828cfe62366b67f932eb926a867011c36c"
+  },
+  "60/Castelo Branco_episodios.json": {
+    "bytes": 39739,
+    "sha256": "66e476ad7460c83a1069a2c5e83ff3c8d1448ce8d6afc7413ea8687bf1b13ca6"
+  },
+  "60/Castelo Branco_estado.json": {
+    "bytes": 192,
+    "sha256": "d004ba81febf344a13d397a78a223e8a4830a9e877ab371af6a7ced73c168cc3"
+  },
+  "60/Castelo Branco_recolha.json": {
+    "bytes": 1329,
+    "sha256": "c4dca87833b11a95f15d16ff835f2fa09c57071f457ac61105bec81c98c15671"
+  },
+  "60/Castelo Branco_referencia.csv": {
+    "bytes": 1271,
+    "sha256": "286af40451d79e712433a83a11f1f3d4b06cc9389070352a05d249356543149d"
+  },
+  "60/Castelo Branco_resposta.json": {
+    "bytes": 53662,
+    "sha256": "24e74c7f1a8e23a2aac194528ff8e7387567a7b6f286bef38bf763210173f016"
+  },
+  "60/Castelo Branco_resultado.json": {
+    "bytes": 2023,
+    "sha256": "ffcb6bd79a8c0dd29aec77b2eaea99a263be8b2de3175e574541e5edbd2fcde0"
+  },
+  "60/Coimbra_amostra_inputs.csv": {
+    "bytes": 1053,
+    "sha256": "e3dfec9abb9acf38d54fc00074f1106155ecece5d1ea75e5688ea73ed37cec18"
+  },
+  "60/Coimbra_api.json": {
+    "bytes": 1428,
+    "sha256": "66d09b24927d6918d628350a20220e59d8a4e10606c22267a4a09cf441af0a32"
+  },
+  "60/Coimbra_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "8e836db32174986d5d329470cf2d7c6289f9c44926cb116276092e0524dcd632"
+  },
+  "60/Coimbra_api_historico.json": {
+    "bytes": 95948,
+    "sha256": "4b6615b5bad1045ad1bbdf048ffb4b4a05441057a20b0dead482980f52608330"
+  },
+  "60/Coimbra_comparacao.json": {
+    "bytes": 15537,
+    "sha256": "fb19adbc25c04101e3f16218c68f172c0ec31761773729dd3e2acf02226d674c"
+  },
+  "60/Coimbra_dias.json": {
+    "bytes": 830742,
+    "sha256": "9eab2cddd790a22ff74288562e26c460ce73a3cd6b637bade4cc85cc314453f2"
+  },
+  "60/Coimbra_episodios.json": {
+    "bytes": 41449,
+    "sha256": "10752918a0b9c6e08f4c293f3da821602ed9fbbc10b315caf53286a521198fbd"
+  },
+  "60/Coimbra_estado.json": {
+    "bytes": 192,
+    "sha256": "7f75de6e1d85a5a201b7bd75c36e4cdc74c5422afc4bdd3065eeef06a3bde3e7"
+  },
+  "60/Coimbra_recolha.json": {
+    "bytes": 1313,
+    "sha256": "7c0ff611209b7d3739c084c156a3cbe491d8f3544fd6fa3e764855a94e75bc28"
+  },
+  "60/Coimbra_referencia.csv": {
+    "bytes": 1056,
+    "sha256": "4bcd0b1fdc52df5eb0dd2e30afdf545de3be80a7495222cb7d001d60fe8207a4"
+  },
+  "60/Coimbra_resposta.json": {
+    "bytes": 53598,
+    "sha256": "0b8f1d0a57d983e28255122593c0286d8caf4556297fe154af18d2a8d3b0db3b"
+  },
+  "60/Coimbra_resultado.json": {
+    "bytes": 2024,
+    "sha256": "7b6a21d54ea9b2396c0cbb0db1114b4b10ae4dee2884092ac581f49da1f52a17"
+  },
+  "60/Gondomar_amostra_inputs.csv": {
+    "bytes": 1334,
+    "sha256": "af85acfa8d0dcca350383165f3fab3f269da5ddf13833f71897ac3261de42753"
+  },
+  "60/Gondomar_api.json": {
+    "bytes": 1432,
+    "sha256": "39f0099317cff0c79ef8a5c4504e2cff16843ca7750229eca93ac1ce171449fc"
+  },
+  "60/Gondomar_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "344435ae51a56ff44607c64d39e31d6efd7157e03057fad7e6545b638629bb0a"
+  },
+  "60/Gondomar_api_historico.json": {
+    "bytes": 96191,
+    "sha256": "ce3462fb948c87bf8ef0188e06b9a68c3a3f101b136e231f9a3c1c746a1f5ea0"
+  },
+  "60/Gondomar_comparacao.json": {
+    "bytes": 20103,
+    "sha256": "31a18b80d9d549f56e418b3edf16c269b09a9a715254f58dcb554c0e53959f6c"
+  },
+  "60/Gondomar_dias.json": {
+    "bytes": 828070,
+    "sha256": "c9acd3066782d242973c9f4f71ab49404cd3ed1bed2c108feae985eabfffd25e"
+  },
+  "60/Gondomar_episodios.json": {
+    "bytes": 38833,
+    "sha256": "7c208c74cea4c2e68fe6a768fa8f6acfb4dc174cc969530b9b59ae2ba0320e7d"
+  },
+  "60/Gondomar_estado.json": {
+    "bytes": 193,
+    "sha256": "890a723adfa412238ed3497d0b53929ad631d40ea39daca32feb44364c812d67"
+  },
+  "60/Gondomar_recolha.json": {
+    "bytes": 1310,
+    "sha256": "81f45795694f755934fee9f724c6ccf2ad3b01909917cf759aadcddf43c1301d"
+  },
+  "60/Gondomar_referencia.csv": {
+    "bytes": 1401,
+    "sha256": "0d028b6c6efe366e06339491ce64647d07d0cb40ad74c94c08d75cfad129cf63"
+  },
+  "60/Gondomar_resposta.json": {
+    "bytes": 53536,
+    "sha256": "949f964048f6615d33e3285f84c4b514e02dc9c35a7a62e3bfa0fefbf2cd386c"
+  },
+  "60/Gondomar_resultado.json": {
+    "bytes": 2043,
+    "sha256": "75d94c120ea3bb8011ed3243a406ac1d7b745b9005930c98d4eb183fcd3ae1f4"
+  },
+  "60/Guarda_amostra_inputs.csv": {
+    "bytes": 1547,
+    "sha256": "64d09dd7ea3adba33e484c2ebda8ebe49b79c8744c4b2dc469de371d16c2d4f9"
+  },
+  "60/Guarda_api.json": {
+    "bytes": 1435,
+    "sha256": "2fc453077879933b23cade65cad0ada1a5de218d053dc61d044918498f307a49"
+  },
+  "60/Guarda_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "7577c6eef7ebc490290ff13ba55190c28ecf10a8ff68191de23ebdc0fc8c9571"
+  },
+  "60/Guarda_api_historico.json": {
+    "bytes": 95991,
+    "sha256": "8be83dee04b03c07f4df44aa069cb6461833b99353c36a22855dec2674e3aaf6"
+  },
+  "60/Guarda_comparacao.json": {
+    "bytes": 23290,
+    "sha256": "c6e1d27b593f14f3230a5f185f6d32e70de3bedaf928facffcd25a0c65dc4a75"
+  },
+  "60/Guarda_dias.json": {
+    "bytes": 827830,
+    "sha256": "e4fa3be1c133315c4be8ef0a5011e5f460ef7fd92f96e0444e36fa0962f589ce"
+  },
+  "60/Guarda_episodios.json": {
+    "bytes": 39795,
+    "sha256": "a13f33e02307345b45230ce603bf0e712d612dbe4129ed599469c3032865d62b"
+  },
+  "60/Guarda_estado.json": {
+    "bytes": 193,
+    "sha256": "f8d0eaaccf6600d9e7775a85736869c4d0ae3ff0ce2db694732e32fd9c1238cc"
+  },
+  "60/Guarda_recolha.json": {
+    "bytes": 1311,
+    "sha256": "c288f07f5bb53cc283b6b7d052e6b816804abede6f555a4b8e4b9b64f34b2ef8"
+  },
+  "60/Guarda_referencia.csv": {
+    "bytes": 1610,
+    "sha256": "c02b2f38b040e44056e8f8d3ab0f0a118aa365a75d19be95c4aa2d4cbeee0dc6"
+  },
+  "60/Guarda_resposta.json": {
+    "bytes": 53589,
+    "sha256": "36e9590e31f7e1b193b021bed1572592b8e1d726117d1118a0aacd072de09e92"
+  },
+  "60/Guarda_resultado.json": {
+    "bytes": 2040,
+    "sha256": "873ea4c97f6345dbb00484d5cd420f59052489b03467f46ea744200d7dca461e"
+  },
+  "60/Guimarães_amostra_inputs.csv": {
+    "bytes": 1184,
+    "sha256": "77ec4dcfeb4f08fbad344812ca16bc6249730007986ac2d88891c3db6b3eb826"
+  },
+  "60/Guimarães_api.json": {
+    "bytes": 1436,
+    "sha256": "bd569671cb671ac5211d99ee666eb40f6ce2246e46336d0acec7851fa2c0f9c3"
+  },
+  "60/Guimarães_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "67740f39ca12f3aa75bd0da4fb9c9f55ca88e31f49fe765a1ab9ba4af2080e5d"
+  },
+  "60/Guimarães_api_historico.json": {
+    "bytes": 96216,
+    "sha256": "634880716772fed0e6e87cdd11be9bc6743dc90741c9ee581fe779f9d57de9a1"
+  },
+  "60/Guimarães_comparacao.json": {
+    "bytes": 17123,
+    "sha256": "e01af6c01a42321f801be57a7a573a7fb175ad6ddd05d0e314cf5ec52214f24f"
+  },
+  "60/Guimarães_dias.json": {
+    "bytes": 831083,
+    "sha256": "ece79663dd9b21a7c52adddbe2eadc9609e9c9fc6f2283cde02b806b64b62119"
+  },
+  "60/Guimarães_episodios.json": {
+    "bytes": 39957,
+    "sha256": "8e7202848fd89cbb225e16b7eebd3e451087162e144095645a7f9eac25314ce1"
+  },
+  "60/Guimarães_estado.json": {
+    "bytes": 193,
+    "sha256": "b8039da70902b9a15748083d8019d7612d934d802d4dd7df442c178f05daeb67"
+  },
+  "60/Guimarães_recolha.json": {
+    "bytes": 1317,
+    "sha256": "5af97627995670717678fb0cf7d26d78034b839b0f338d807908d9a89e4b7d39"
+  },
+  "60/Guimarães_referencia.csv": {
+    "bytes": 1199,
+    "sha256": "5d6f12012b849a8957a82aca77ac60e7cb440ed2bbbb819c5cf4ab214a624f22"
+  },
+  "60/Guimarães_resposta.json": {
+    "bytes": 53510,
+    "sha256": "1fdf1dfa37438dcf106ab138abb0e08b367191cfbe564dfb5cac5ea829f38f13"
+  },
+  "60/Guimarães_resultado.json": {
+    "bytes": 2048,
+    "sha256": "b5dc712dc25bbc4b935d563ffc8c8125f999a33019ba2dac16c7dafda2202b4b"
+  },
+  "60/Leiria_amostra_inputs.csv": {
+    "bytes": 1072,
+    "sha256": "a1c6810a1f048f01dcedfa9e93d80f2fb17994e76f9f9350dd6431f2afe45cd0"
+  },
+  "60/Leiria_api.json": {
+    "bytes": 1426,
+    "sha256": "c66b56857a4882b546cf9a4c973f0c9e8ca9b13c961e5a9d881914cb24bec047"
+  },
+  "60/Leiria_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "e7168786c794c1af920c22546dbfb9d649f3afb909259993fe9f44ba2fdfbde8"
+  },
+  "60/Leiria_api_historico.json": {
+    "bytes": 95882,
+    "sha256": "c96303ffe023398943e67446b0b66e65911ab8696d3e943ba37c9ccba67e89af"
+  },
+  "60/Leiria_comparacao.json": {
+    "bytes": 15514,
+    "sha256": "1ee1b744cfe17805c058928f3709cca63ab64d70ea29f59d21505bd8d5b7296c"
+  },
+  "60/Leiria_dias.json": {
+    "bytes": 832330,
+    "sha256": "2cf4478a8a45d4968a940546ee36e26719ce2688db74dcdb013af52cea736034"
+  },
+  "60/Leiria_episodios.json": {
+    "bytes": 38932,
+    "sha256": "81446c3072011d3649ebc3566dc9d32f111aa78866aef48dc5379ff2d1495af2"
+  },
+  "60/Leiria_estado.json": {
+    "bytes": 192,
+    "sha256": "a4797ae43457988c8649ffd6551e574b2593d5c9d871d82c444a2d1e07a17965"
+  },
+  "60/Leiria_recolha.json": {
+    "bytes": 1313,
+    "sha256": "9e5164d1a15386076c99925c396400f8c116b795a01c833b974b5ee83f1ca29b"
+  },
+  "60/Leiria_referencia.csv": {
+    "bytes": 1072,
+    "sha256": "6b0eeed74da2b53a81bf201df36858392bd1ce583a87b2779865a8a3911e89eb"
+  },
+  "60/Leiria_resposta.json": {
+    "bytes": 53851,
+    "sha256": "0e8536ace1fed02dbb8240cc013242623167e66e2e5b2b8ae55277dc6c85d504"
+  },
+  "60/Leiria_resultado.json": {
+    "bytes": 2019,
+    "sha256": "2ee7e9955eb92bf08c1d01c78f8ea6ab1aa1de8da9a41c94006a609f2dfc0567"
+  },
+  "60/Loures_amostra_inputs.csv": {
+    "bytes": 1042,
+    "sha256": "8613af9b9d935d0a5070b429a12e4a8f996bd94dc76e1073de3b71ab663cd8be"
+  },
+  "60/Loures_api.json": {
+    "bytes": 1431,
+    "sha256": "d9704d37d2de9af05946ea338e4596865ded9f2df20e59fa123553b46c646fb4"
+  },
+  "60/Loures_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "cfb8e99698b79b820827b80bf6b016bc3c9274f838bea74c03f72a40e6060954"
+  },
+  "60/Loures_api_historico.json": {
+    "bytes": 96183,
+    "sha256": "96344d0d303d338d6f2ae22af5594dadd54b1df2a5d4a2e14e8e7548e0d71b43"
+  },
+  "60/Loures_comparacao.json": {
+    "bytes": 15482,
+    "sha256": "b46e0ab2c3d4fe78d56feb59efa574f952ddef3570d5b783a9bbf86f61df006d"
+  },
+  "60/Loures_dias.json": {
+    "bytes": 830206,
+    "sha256": "1e885f81979d66237405f2ab88ed59014dee8df64a417a71a06fe9ef7a624256"
+  },
+  "60/Loures_episodios.json": {
+    "bytes": 43108,
+    "sha256": "df3889588952fbd9619965402aa1eed74f817346693a089da39710dc689f8037"
+  },
+  "60/Loures_estado.json": {
+    "bytes": 193,
+    "sha256": "ef6dc9e1211bb8e70c9e34860fc09a5f4869782bc03ed87347e5ec5d52bf9ab0"
+  },
+  "60/Loures_recolha.json": {
+    "bytes": 1312,
+    "sha256": "c3e412f22e4ed72a01e638c4e4db266507cd7dbd57bff0e6f0ede263f0a9da9e"
+  },
+  "60/Loures_referencia.csv": {
+    "bytes": 1079,
+    "sha256": "6fe62a22c573eb8303855fb1498ede36ae69ddf49894c5ab06e63b8ded09d67a"
+  },
+  "60/Loures_resposta.json": {
+    "bytes": 54134,
+    "sha256": "df61b45753fc311d28981e737ac59903f92322403e3acc62c92b1384c299851c"
+  },
+  "60/Loures_resultado.json": {
+    "bytes": 2040,
+    "sha256": "49f8f87e2614743bc19312ad69813fd7cdf6070d9cdf2ae48d6c932676db261d"
+  },
+  "60/Matosinhos_amostra_inputs.csv": {
+    "bytes": 857,
+    "sha256": "cd1e188cc2bc8fd29831c174e35f688850f51ed374800584a9e9d26c539b20b0"
+  },
+  "60/Matosinhos_api.json": {
+    "bytes": 1435,
+    "sha256": "c1a311c2086299cbc3774835dfca26c81a405a885a6b0645ad15e3c1b369be83"
+  },
+  "60/Matosinhos_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "75e39fd31b0831327032d49807f2d87a12745993d0c13512a8d712255f0da39c"
+  },
+  "60/Matosinhos_api_historico.json": {
+    "bytes": 96190,
+    "sha256": "e1e3a2636e0d22977ff9227be3b2734e1be5d6b974daba742964141b7f08654a"
+  },
+  "60/Matosinhos_comparacao.json": {
+    "bytes": 12499,
+    "sha256": "43cf2dad596f1cc5f38e7e56f2711df29f28e6dede25ba4fd44368eca8fbc087"
+  },
+  "60/Matosinhos_dias.json": {
+    "bytes": 831197,
+    "sha256": "78068c453bdfabf053c4105175f1f8265aaa430846b2690f411288ad76516c3d"
+  },
+  "60/Matosinhos_episodios.json": {
+    "bytes": 36523,
+    "sha256": "2d8d8cd9fd3307d6057688b75c710b0b9e4dda372042718403f5ecfc339b1cc9"
+  },
+  "60/Matosinhos_estado.json": {
+    "bytes": 193,
+    "sha256": "2d82f249e59cfee6c149b8d5e4de662f6032229d3f89ef42ae730897f30fec6b"
+  },
+  "60/Matosinhos_recolha.json": {
+    "bytes": 1317,
+    "sha256": "8cabd10790217873f5618ccdc3ff617bb8baa8c575f942aacaf42e4b02636b4e"
+  },
+  "60/Matosinhos_referencia.csv": {
+    "bytes": 876,
+    "sha256": "602923fbf54f540dc3e7c4c535221b9d00b62399b1f60674fb08771e122a22e1"
+  },
+  "60/Matosinhos_resposta.json": {
+    "bytes": 53666,
+    "sha256": "ebd631a33ca603a2113806150f489afb721af517a93a3b8ca81ae18aa062201f"
+  },
+  "60/Matosinhos_resultado.json": {
+    "bytes": 2044,
+    "sha256": "f7493cf7a9e22a2665e83eb35d4466be71aa7be34e5198f63dbd9ca97dc7a4c0"
+  },
+  "60/Portalegre_amostra_inputs.csv": {
+    "bytes": 1457,
+    "sha256": "ac6a18369e2bd0d8c5e369d053aa810efd484299942cb836686cf5d2522da13b"
+  },
+  "60/Portalegre_api.json": {
+    "bytes": 1429,
+    "sha256": "41321c1db36ec059fc82ee3aeaad42c7b87e4478d6fdb181cf09bd0b01b31a77"
+  },
+  "60/Portalegre_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "18a3ca819d904d1160127c28741fd55ba2170fb9fdbb956340ff5d15dbb3b854"
+  },
+  "60/Portalegre_api_historico.json": {
+    "bytes": 96048,
+    "sha256": "075c547bf4f12372a26dd80b6a9848f9cc7c42f0e0250178cb420d54a05d3b6b"
+  },
+  "60/Portalegre_comparacao.json": {
+    "bytes": 21799,
+    "sha256": "2f06a62aca4cfc9d230eb72eb50c07d9302fdec2b23f17a4e41f7c3eb2b05a86"
+  },
+  "60/Portalegre_dias.json": {
+    "bytes": 829643,
+    "sha256": "1ce61e4b9c103fbf35936e6116badc344e1f45b146485eb0782874c976e8c7ed"
+  },
+  "60/Portalegre_episodios.json": {
+    "bytes": 42290,
+    "sha256": "6ac01810aa3e963347828f3ab99e4224051d9f5dfcfc9f5bdd0805d3cd52408d"
+  },
+  "60/Portalegre_estado.json": {
+    "bytes": 193,
+    "sha256": "1d5d95b9bda2d4273183e3cc36af0f341803a3ee170f10a3284581adb8344b99"
+  },
+  "60/Portalegre_recolha.json": {
+    "bytes": 1321,
+    "sha256": "23f0502dca3d83058585ff8dcb22d2f54d010fd226a95bc5b94f63c9a0bd02c7"
+  },
+  "60/Portalegre_referencia.csv": {
+    "bytes": 1480,
+    "sha256": "b417f691d508a9ab06e319800ffd2601a40c89885c0b3d9adc8eb7505da93277"
+  },
+  "60/Portalegre_resposta.json": {
+    "bytes": 53849,
+    "sha256": "81b0d90899cfe5f20b6f393338b3c5fb553c0526dc8019e21d76bb052d4e6a1b"
+  },
+  "60/Portalegre_resultado.json": {
+    "bytes": 2039,
+    "sha256": "60ec43ede01abda8a84faec4314cc6473f19653f05db98572338c3887fc3382b"
+  },
+  "60/Porto_amostra_inputs.csv": {
+    "bytes": 857,
+    "sha256": "74dbd0752d74ef07cb1f480e87988d14af601e9d3044d3662e91afcad5f91b84"
+  },
+  "60/Porto_api.json": {
+    "bytes": 1431,
+    "sha256": "67d6425ba6d0e2438f7445ccc2c8276acb06b9a910f7802309cc2d4fb9624a89"
+  },
+  "60/Porto_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "8abb905f664fc5601c3633abfe945907deb7172d836a708a6ea4d9038262842a"
+  },
+  "60/Porto_api_historico.json": {
+    "bytes": 95940,
+    "sha256": "28bebc19b300ae768f122f9f7fbacd83016af7a403e84a80223f738959d8c396"
+  },
+  "60/Porto_comparacao.json": {
+    "bytes": 12499,
+    "sha256": "43cf2dad596f1cc5f38e7e56f2711df29f28e6dede25ba4fd44368eca8fbc087"
+  },
+  "60/Porto_dias.json": {
+    "bytes": 830761,
+    "sha256": "d7e195d0f2891f948b977c82b9334014c83aa338b9a08a32c5acfdbdb0b59ddb"
+  },
+  "60/Porto_episodios.json": {
+    "bytes": 36478,
+    "sha256": "36347b80422492a251791ea6edbc0c002c3b8c596a1d913a401ecc28db954ebb"
+  },
+  "60/Porto_estado.json": {
+    "bytes": 192,
+    "sha256": "9fac5b934242031a2dfa35feb4b77f5323f80f4c4ab0a003790026dc4440097d"
+  },
+  "60/Porto_recolha.json": {
+    "bytes": 1310,
+    "sha256": "4a93c2aca747fb2fecec59e8ca4163c029c94cd3b852a472355fab8b89e5fbf2"
+  },
+  "60/Porto_referencia.csv": {
+    "bytes": 876,
+    "sha256": "602923fbf54f540dc3e7c4c535221b9d00b62399b1f60674fb08771e122a22e1"
+  },
+  "60/Porto_resposta.json": {
+    "bytes": 53666,
+    "sha256": "ae3b0b2e1ad21f741e329cfe391299a579e43e1b32ef07b847b38defa277c209"
+  },
+  "60/Porto_resultado.json": {
+    "bytes": 2040,
+    "sha256": "c4448a4a99f07e3f5b4fc6b1728bc4606aab8e025959b348ab6d18a9a049c4fc"
+  },
+  "60/Santarém_amostra_inputs.csv": {
+    "bytes": 1025,
+    "sha256": "093a66885592007ffe93a4cc2f000251941e23775d1b9d9e0cd8176280b57a59"
+  },
+  "60/Santarém_api.json": {
+    "bytes": 1430,
+    "sha256": "0eaa36837f882eff9e36128e419f1f74c9e2fe33bc6420b6556773fff7c73a24"
+  },
+  "60/Santarém_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "d67fa8feb13ef1fc55229f6c6c2904bf89c000d1e42f4284fda4180107a013bf"
+  },
+  "60/Santarém_api_historico.json": {
+    "bytes": 95830,
+    "sha256": "2c0fe4674205511c0c29e73b52f2b2172e0b9ad4e73bf57310839922691caf3e"
+  },
+  "60/Santarém_comparacao.json": {
+    "bytes": 15427,
+    "sha256": "cea7fce264d2d7e47a7d13f7769b02b3193e2ec73eeb284e96994090ac35d437"
+  },
+  "60/Santarém_dias.json": {
+    "bytes": 829060,
+    "sha256": "e775b5505e3e443680fc8275276847a87df1ca5ead551af9d29535ff5f59aa64"
+  },
+  "60/Santarém_episodios.json": {
+    "bytes": 43914,
+    "sha256": "9e573f2d74fa716a9565c2ac6d3d424c0cdfdc6f759a58569684b54484a9c747"
+  },
+  "60/Santarém_estado.json": {
+    "bytes": 193,
+    "sha256": "da0e59a1e930a6d03d0bb3a6c23812c5254f17c714d5b82cfb6cd4a9c5d46331"
+  },
+  "60/Santarém_recolha.json": {
+    "bytes": 1318,
+    "sha256": "451908a5da96557194f051ae69b69a6e10d9acb6cfe623aab91fc46f22ab8fc1"
+  },
+  "60/Santarém_referencia.csv": {
+    "bytes": 1064,
+    "sha256": "4bc688e6eb382ab3f91405d5a0f425512e2e3e1d557290a13d8fafad893ed83b"
+  },
+  "60/Santarém_resposta.json": {
+    "bytes": 53653,
+    "sha256": "c0809601b8da8c2783513b26eac66bbb1433d4cb5f9fdcb82ee852c9f10cb573"
+  },
+  "60/Santarém_resultado.json": {
+    "bytes": 2018,
+    "sha256": "91220d24ba63266e6701b5c666c035719c92840870c066afac0aac579f3f148e"
+  },
+  "60/Setúbal_amostra_inputs.csv": {
+    "bytes": 1277,
+    "sha256": "de7a21c6a7de24f12f1becf6c0ac16946fead8271ec8c34b85c3a64fe843c3b2"
+  },
+  "60/Setúbal_api.json": {
+    "bytes": 1428,
+    "sha256": "94a419942ce432f6dc34ac9286d5d252815a50549b1952805691b19d5606f746"
+  },
+  "60/Setúbal_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "9680fba9a3400ba558d72f2574b7a6ccb115ef231935ee97f8ebf5a99c735355"
+  },
+  "60/Setúbal_api_historico.json": {
+    "bytes": 95942,
+    "sha256": "abf254e83c6e7a4009cc14d43ea311b2687b5710100c4f930dd103ceb6447e84"
+  },
+  "60/Setúbal_comparacao.json": {
+    "bytes": 18616,
+    "sha256": "775d7aa84eeeebfdc0baf09d0381971894c2b36906f743fddd596853308baa1f"
+  },
+  "60/Setúbal_dias.json": {
+    "bytes": 831198,
+    "sha256": "316e92c55b745734c7df9220058decd2f10db3eed175989ae3a97859eeedd185"
+  },
+  "60/Setúbal_episodios.json": {
+    "bytes": 49022,
+    "sha256": "d425dc06498bbc1fd40b746e49846095e365ddf693aca81698b48434ed9cf44d"
+  },
+  "60/Setúbal_estado.json": {
+    "bytes": 192,
+    "sha256": "55f87226d0e187bc70874026b3ddb92d1757ac91f3ca1b69dbbb039b8e023a61"
+  },
+  "60/Setúbal_recolha.json": {
+    "bytes": 1316,
+    "sha256": "a44d3a8a7369cd3b55ee143f8c85ad410d0ec5957a0740b900ba7bc0ee1cc101"
+  },
+  "60/Setúbal_referencia.csv": {
+    "bytes": 1263,
+    "sha256": "57c5c8b079822ec92287fd5ab386c3a1aa1e3b4440aaf8a0f56776f6e904e1f3"
+  },
+  "60/Setúbal_resposta.json": {
+    "bytes": 54076,
+    "sha256": "40e4c5184abdf075a9bae18783da2fb01d3c13f1662772ded7a1de0a97379cad"
+  },
+  "60/Setúbal_resultado.json": {
+    "bytes": 2028,
+    "sha256": "294a922098ff0c29681614ef3ec52c0e8087e15a5148b0026e98b0845744bd0a"
+  },
+  "60/Sintra_amostra_inputs.csv": {
+    "bytes": 1252,
+    "sha256": "05c1e25ae756b18833e0236992ad4212c2f497e93eee3b41d6d3f61cebaa80e9"
+  },
+  "60/Sintra_api.json": {
+    "bytes": 1427,
+    "sha256": "98be1df09c380dab4fe399b20176234b006135c709b5c65197b27f51d77c0cce"
+  },
+  "60/Sintra_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "43356ccf468af845a2302fee0f865cc88461c03d317cefd6796ca0820cd4117c"
+  },
+  "60/Sintra_api_historico.json": {
+    "bytes": 96097,
+    "sha256": "adcf4e52e782fe943279e5171185853d6fd461566de1aa03786776776ab1f163"
+  },
+  "60/Sintra_comparacao.json": {
+    "bytes": 18549,
+    "sha256": "09c425970c982ad179d23f68805027207ff659e48b76f509ce07069ab9460609"
+  },
+  "60/Sintra_dias.json": {
+    "bytes": 830121,
+    "sha256": "712c4ddcc2cdb26da83d9e1ee5d6be121bc29857fbc262ce5ad53b9fe153755c"
+  },
+  "60/Sintra_episodios.json": {
+    "bytes": 39806,
+    "sha256": "de07d331fa81a1dbe4e6e60114c98ba2a9c7a0200ce460f45f141190ddb78416"
+  },
+  "60/Sintra_estado.json": {
+    "bytes": 193,
+    "sha256": "e3461f3d54fae12472b3b35642604bf921911075091c3bc3ea64191322f9abec"
+  },
+  "60/Sintra_recolha.json": {
+    "bytes": 1313,
+    "sha256": "fc50a6276390387f00a713ccbab26abb76c4f91f3921b3b48806eac1ee4567dc"
+  },
+  "60/Sintra_referencia.csv": {
+    "bytes": 1262,
+    "sha256": "d0d9e6de9a39354e142d9663f87e0273b10c5092ee0dbd41b9456a77d329dc2c"
+  },
+  "60/Sintra_resposta.json": {
+    "bytes": 54224,
+    "sha256": "5bc10b14e69dab4e0f9a04e835f18a1e966f9d02990ae58ec2e2d3a030af5313"
+  },
+  "60/Sintra_resultado.json": {
+    "bytes": 2029,
+    "sha256": "f62c6dc85377ae56ed46a5ac79d003f02d8e7667f7bec4760512d4aaa1ec16c3"
+  },
+  "60/Viana do Castelo_amostra_inputs.csv": {
+    "bytes": 1269,
+    "sha256": "07f1a68371b124825245337cb1b43ca1aa1ac81f2921ca464a02247c26bef61f"
+  },
+  "60/Viana do Castelo_api.json": {
+    "bytes": 1432,
+    "sha256": "34cf6f834c2b98dc1d7a1424c834d02ef4fb8ebdda27a2d4beff4b9ae078fd33"
+  },
+  "60/Viana do Castelo_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "5198dc703d363252a2a070471930d8fcc3a377e07cd56725375181c3a7c82083"
+  },
+  "60/Viana do Castelo_api_historico.json": {
+    "bytes": 96053,
+    "sha256": "a58be6e9b838f6b0b8a39ec0e8454e48542f2a64b1ab682220c337bcc63d15df"
+  },
+  "60/Viana do Castelo_comparacao.json": {
+    "bytes": 18545,
+    "sha256": "248671290ebbb969b7b4f9d89f03679ed025b87cc31d73fbfc10eb72c9e71f9b"
+  },
+  "60/Viana do Castelo_dias.json": {
+    "bytes": 832685,
+    "sha256": "914c33dbf3f0d26514d820bd598c3687b72baae6077ddb5d1ba39036dc4365d4"
+  },
+  "60/Viana do Castelo_episodios.json": {
+    "bytes": 35568,
+    "sha256": "7c24c5c358c3da3c4e0540045f3a02958943295b633e746d56d229fbd1141ea3"
+  },
+  "60/Viana do Castelo_estado.json": {
+    "bytes": 193,
+    "sha256": "8ae5775f626a267bf34b948b9ee78aa58a327fedc73a364a1af1b332ca38912f"
+  },
+  "60/Viana do Castelo_recolha.json": {
+    "bytes": 1335,
+    "sha256": "7ceebf384cc2d35bff65163e8da2bd037b639d5a0eaa1961e368f360d4aa19d1"
+  },
+  "60/Viana do Castelo_referencia.csv": {
+    "bytes": 1293,
+    "sha256": "1ea4093d8d16d10aab4e8db91392d40c67dd7fe24ab68840fb1938521d869e83"
+  },
+  "60/Viana do Castelo_resposta.json": {
+    "bytes": 53992,
+    "sha256": "a15f9dff5596b7538eaf0275c399e82cb7448f2cb7e1ddf932bf0d5c1ad734d7"
+  },
+  "60/Viana do Castelo_resultado.json": {
+    "bytes": 2052,
+    "sha256": "9d06cc8520aff53420c02b218a4932a194a1a901b4f5bb70199a89c256c2c0ab"
+  },
+  "60/Vila Nova de Gaia_amostra_inputs.csv": {
+    "bytes": 857,
+    "sha256": "4a91e2020a5195df83dd3d8b9b372e96a95fa30ad2ad1c3d30894647ad18eb48"
+  },
+  "60/Vila Nova de Gaia_api.json": {
+    "bytes": 1435,
+    "sha256": "9119c5a3b3717357da86aa99781e794bbf32a5e0096c6c3250854cad53a27de6"
+  },
+  "60/Vila Nova de Gaia_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "572a5db3e863ae19eb4dcf2d5ea165cfccaacc10fffc0a510fc16f27b4481b53"
+  },
+  "60/Vila Nova de Gaia_api_historico.json": {
+    "bytes": 96190,
+    "sha256": "0eed40af66ed76d9b91aaf824ac98053b2da04890e9304f7beac1db688210c92"
+  },
+  "60/Vila Nova de Gaia_comparacao.json": {
+    "bytes": 12499,
+    "sha256": "43cf2dad596f1cc5f38e7e56f2711df29f28e6dede25ba4fd44368eca8fbc087"
+  },
+  "60/Vila Nova de Gaia_dias.json": {
+    "bytes": 831197,
+    "sha256": "a5ac79d7372a734df0d617f786c3b90e10b2d2f51ccee78a91e464ae54ac7c89"
+  },
+  "60/Vila Nova de Gaia_episodios.json": {
+    "bytes": 36523,
+    "sha256": "0250531aed3b2ed988d7c45986625170ad07abe090ad3a5cccd8f7f5d335a38d"
+  },
+  "60/Vila Nova de Gaia_estado.json": {
+    "bytes": 193,
+    "sha256": "a30598fe384331bc64271ba33d55a8df5c563b1ef9fc4e70adbb81d3beed5d41"
+  },
+  "60/Vila Nova de Gaia_recolha.json": {
+    "bytes": 1324,
+    "sha256": "0a1f792bd199becc5dd25baee5ff6c4df03d5b676999628b9e591c18366b2bb7"
+  },
+  "60/Vila Nova de Gaia_referencia.csv": {
+    "bytes": 876,
+    "sha256": "602923fbf54f540dc3e7c4c535221b9d00b62399b1f60674fb08771e122a22e1"
+  },
+  "60/Vila Nova de Gaia_resposta.json": {
+    "bytes": 53667,
+    "sha256": "14a7af2bc07cc7888cbe4628e718335eefc174e723551a7716ac29c1e58f8610"
+  },
+  "60/Vila Nova de Gaia_resultado.json": {
+    "bytes": 2044,
+    "sha256": "24d8d4596eca82713570fd77ccc3c8462f94efaee8d5d68707dda3a254b570b4"
+  },
+  "60/Viseu_amostra_inputs.csv": {
+    "bytes": 1360,
+    "sha256": "5c426f3aad2dc592bd2a1009b65c442b1917d5952017aac36b1a9957fa9ae1b6"
+  },
+  "60/Viseu_api.json": {
+    "bytes": 1428,
+    "sha256": "09fe11b3d1907e025eb5c2b793921a1401fd1009f55a57375e336d5d25369685"
+  },
+  "60/Viseu_api_antes.json": {
+    "bytes": 1060,
+    "sha256": "288f896b14111251027d0ad88b8344a31f8a5f4c4fc595948aeb24d7d4e7c1de"
+  },
+  "60/Viseu_api_historico.json": {
+    "bytes": 95833,
+    "sha256": "d133a274d4ebaa5f88ca2b31a08bd94eea3263d2daa3bd3010849a867fef8037"
+  },
+  "60/Viseu_comparacao.json": {
+    "bytes": 20114,
+    "sha256": "0cdc89a743730ea7139aa505bed4a1570c96749401caffa678db2b8de33ac0aa"
+  },
+  "60/Viseu_dias.json": {
+    "bytes": 831843,
+    "sha256": "f8c1f52d177eb9a4857ebaf96ee36447a80dc4e08a9f5dd0c333bb94c801c0e2"
+  },
+  "60/Viseu_episodios.json": {
+    "bytes": 38963,
+    "sha256": "5bb45c4eb8928d0244d3806a002fe69e745c75cf24e92cf691c7df61b5661c27"
+  },
+  "60/Viseu_estado.json": {
+    "bytes": 192,
+    "sha256": "69c5e54ea0be7e62d71d58b89ca2d00f783fa203ec57064683d6a6a001eb4928"
+  },
+  "60/Viseu_recolha.json": {
+    "bytes": 1312,
+    "sha256": "49b5c28263ea4aafc18f82d18b5ae2a995cd36202f5c625b4cbaf2b229a34efc"
+  },
+  "60/Viseu_referencia.csv": {
+    "bytes": 1387,
+    "sha256": "f0d2263175599c3374113f32bb31b4ca4f39cc3976fabdc8656fadbe285fe142"
+  },
+  "60/Viseu_resposta.json": {
+    "bytes": 53509,
+    "sha256": "86017a1640ce60f94feb92e386605d6486b6d43375f0d9fc580665bfb72020ea"
+  },
+  "60/Viseu_resultado.json": {
+    "bytes": 2039,
+    "sha256": "f740937adca7465723fddf2d4eb331ab03c29f9a446019ec419cd89aea4ab622"
+  },
+  "60/alertas.json": {
+    "bytes": 119705,
+    "sha256": "366f01c9a9428329a2de88125d04750ca3bde7d235931e0d88b25b61ba46ea6a"
+  },
+  "60/regioes.json": {
+    "bytes": 3915,
+    "sha256": "b0ceeff1d9d97059f2231c77993b5fb26c7395d76d0ab8fe053504fcb3c8292a"
+  },
+  "60/tempo_comparar.json": {
+    "bytes": 456,
+    "sha256": "c158d70ebc1ec7fef34c315e547745014295d8b5fb8c777d68b0850c4df52dc6"
+  },
+  "60/tempo_recolher.json": {
+    "bytes": 455,
+    "sha256": "a19714cb0ffb37183278b6166856e851b23e6f3282b785838ede8e51711d88d8"
+  },
+  "60/tempo_reconstruir.json": {
+    "bytes": 455,
+    "sha256": "5b617307419cc47c916b10d919110607c100862eebb13a5349826c17850fd186"
+  },
+  "60/Évora_amostra_inputs.csv": {
+    "bytes": 1246,
+    "sha256": "03d65675891fd3d00e38634f969703b95c9adcb9508001261921acf21c9cc881"
+  },
+  "60/Évora_api.json": {
+    "bytes": 1428,
+    "sha256": "0f06b0e329cbaff6f75b9d03aec77970f73c18f56376192e545a94465dab9b5b"
+  },
+  "60/Évora_api_antes.json": {
+    "bytes": 1061,
+    "sha256": "c3a1674ff989d2a5013626e56129246014fa623695efd0af9b31f813efdd211b"
+  },
+  "60/Évora_api_historico.json": {
+    "bytes": 95772,
+    "sha256": "a1c2a0d6e808175d442f718c253fcb33c6e624b0128881319343e705edb84c65"
+  },
+  "60/Évora_comparacao.json": {
+    "bytes": 18497,
+    "sha256": "61937818f2db1225491ee07a28f2e5bd32ad3df5ef201be35b5336ff8d29cb33"
+  },
+  "60/Évora_dias.json": {
+    "bytes": 832150,
+    "sha256": "95a0ee40c1b20478111e5b32bc1697f625d47c3d989fb91bddfdbeec9707f181"
+  },
+  "60/Évora_episodios.json": {
+    "bytes": 39745,
+    "sha256": "226706e8e19a13071ea212f57847def074442ad8095fb2a3ca9840ed14c50232"
+  },
+  "60/Évora_estado.json": {
+    "bytes": 192,
+    "sha256": "758a5faa454adec9feece7bc721b0e59c4c9c8d05358b1636415082139d2561d"
+  },
+  "60/Évora_recolha.json": {
+    "bytes": 1314,
+    "sha256": "2c1789193a451a7e3cbec841639931946bbcd2d09fc63a356f068e296cfd13e5"
+  },
+  "60/Évora_referencia.csv": {
+    "bytes": 1266,
+    "sha256": "bbaaa18727aa72438109c3e096e4fed157e8725a46dde1525ed8b4766e2e5985"
+  },
+  "60/Évora_resposta.json": {
+    "bytes": 53926,
+    "sha256": "3dab325b8a1cd2705f4ce25c5efaa230d50c212e53bb359926e1c987dbd9f76f"
+  },
+  "60/Évora_resultado.json": {
+    "bytes": 2027,
+    "sha256": "81b93c9c4616cfe7d3f4eda356af695d92918bb895c21d844f43e8009380f454"
+  },
+  "ampliar.json": {
+    "bytes": 353,
+    "sha256": "405cbf24e3266147b4db7314b9c1acaaad99b6e6d41b71614011b27fefeb43d9"
+  },
+  "contagens_bd_365.txt": {
+    "bytes": 199,
+    "sha256": "1e2c993e47d6c33fcd368b767f8df20352c7c08ce1210f86324e3640073fbdc3"
+  },
+  "contagens_bd_60.txt": {
+    "bytes": 196,
+    "sha256": "5d413867e7b86d74145a6953704a299062bba6296637d4a5b512368e0b4745a5"
+  },
+  "diagnostico_rh100.csv": {
+    "bytes": 1631,
+    "sha256": "b8544766f9fa48d181107dbe9c7a7881ef36f8700f62047c0c304406ad17be32"
+  },
+  "diagnostico_rh100.json": {
+    "bytes": 26629,
+    "sha256": "16d9d9718fb5096126fa2000a127a1128d6b4c3dd4605d45af94e52a6d0ba223"
+  },
+  "divergencias.json": {
+    "bytes": 74227,
+    "sha256": "c6032ed7cad45548e43652b0947504f4f99414096ceff9c324910215c5bec6e3"
+  },
+  "estatisticas_nacionais.csv": {
+    "bytes": 30624,
+    "sha256": "be1d2e9c8668dfae5503c9e996b7d7b0b92f084c24db157088f3d327571ab2e0"
+  },
+  "estatisticas_nacionais.md": {
+    "bytes": 23244,
+    "sha256": "ae972f4d07b8b89d9ef2d414b2f2df0802c26c0272be419210660b6ed86b393f"
+  },
+  "ilhas.json": {
+    "bytes": 590,
+    "sha256": "e4437e8c71c0bea26ea46545ded4459bf9b4e81f39772439d08954cd5df3bc1f"
+  },
+  "investigacao_alertas.json": {
+    "bytes": 1378191,
+    "sha256": "046a7b82deb7ad28fa874ce81b232db77f24798cd425d662bef6394909c41b7d"
+  },
+  "investigacao_alertas.md": {
+    "bytes": 111020,
+    "sha256": "912f5aee807ae606ae752cb6360a465f7f1d703e772f80cc065eb6f5904af96c"
+  },
+  "producao_antes.txt": {
+    "bytes": 757,
+    "sha256": "cd14465e8fcfd1d97072e9ed7a7687ecab9ccccd659071813763c2ee12cc9392"
+  },
+  "producao_depois.txt": {
+    "bytes": 757,
+    "sha256": "cd14465e8fcfd1d97072e9ed7a7687ecab9ccccd659071813763c2ee12cc9392"
+  },
+  "resumo.json": {
+    "bytes": 2196,
+    "sha256": "fff5c39a89fa5eff32a980dc06056e12b26e4e16d55730b4812bf40617b4513e"
+  },
+  "sensibilidade_janela.json": {
+    "bytes": 13254,
+    "sha256": "5fa18441e1d8a09c6d1f6c258342f0777796289ba91b22c1441fccacca929401"
+  }
+}

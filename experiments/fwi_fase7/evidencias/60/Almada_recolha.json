@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 24,
+    "nome": "Almada",
+    "distrito": "Setúbal",
+    "latitude": 38.6766,
+    "longitude": -9.1572
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2026-08-02",
+  "janela_dias": 60,
+  "inicio_utc": "2026-08-01 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:35:09.589051+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 38.6766,
+    "longitude": -9.1572,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2026-08-01",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "16ce0fd1b3eaa29ae034ae956b08ce7ae5c82b7356d4eada44c248d58c7fc138",
+  "bytes": 53827,
+  "estado": "validado",
+  "horas_utilizadas": 1440,
+  "latitude_grelha": 38.69947,
+  "longitude_grelha": -9.196167,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.319932364999886
+}

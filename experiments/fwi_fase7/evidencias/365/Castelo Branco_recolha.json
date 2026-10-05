@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 11,
+    "nome": "Castelo Branco",
+    "distrito": "Castelo Branco",
+    "latitude": 39.8194,
+    "longitude": -7.4906
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:09.258288+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 39.8194,
+    "longitude": -7.4906,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "2995ab120e9b4120afce47a008cd1cf52dc20ead93e47e32cccea760ddac0819",
+  "bytes": 318693,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 39.824253,
+  "longitude_grelha": -7.520874,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.6418890820000343
+}

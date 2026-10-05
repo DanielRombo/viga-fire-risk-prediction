@@ -1,0 +1,10 @@
+{
+  "estado": "reconstruido",
+  "revisao": 1,
+  "id_reconstrucao": 19,
+  "data_pendente": "2026-10-01",
+  "codigo_erro": null,
+  "causa": null,
+  "proxima_tentativa": null,
+  "calculados": 365
+}

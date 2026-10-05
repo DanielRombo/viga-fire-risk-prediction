@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 14,
+    "nome": "Portalegre",
+    "distrito": "Portalegre",
+    "latitude": 39.2967,
+    "longitude": -7.4286
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:18.530403+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 39.2967,
+    "longitude": -7.4286,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "4da33dcb26aa538207c0d8941e15fa3b309a37d12fdaf659c1af0a8784d4afc5",
+  "bytes": 320235,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 39.26186,
+  "longitude_grelha": -7.438019,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.6997263840000869
+}

@@ -1,0 +1,41 @@
+{
+  "regiao": {
+    "id_regiao": 5,
+    "nome": "Faro",
+    "distrito": "Faro",
+    "latitude": 37.0194,
+    "longitude": -7.9322
+  },
+  "data_operacional": "2026-10-01",
+  "inicio": "2025-10-01",
+  "janela_dias": 365,
+  "inicio_utc": "2025-09-30 13:00:00+00:00",
+  "fim_utc": "2026-09-30 12:00:00+00:00",
+  "chamadas_externas": 1,
+  "retries": 0,
+  "ingerido_em": "2026-10-05 09:38:10.750654+00:00",
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "parametros": {
+    "latitude": 37.0194,
+    "longitude": -7.9322,
+    "hourly": "temperature_2m,relative_humidity_2m,wind_speed_10m,precipitation",
+    "temperature_unit": "celsius",
+    "wind_speed_unit": "kmh",
+    "precipitation_unit": "mm",
+    "timezone": "GMT",
+    "timeformat": "iso8601",
+    "models": "ecmwf_ifs",
+    "start_date": "2025-09-30",
+    "end_date": "2026-09-30"
+  },
+  "http_status": 200,
+  "sha256": "0c08715d5893af5c66aabb765f7a1a08254c6c9c03172d61084fab012319bf7e",
+  "bytes": 321775,
+  "estado": "validado",
+  "horas_utilizadas": 8760,
+  "latitude_grelha": 37.012302,
+  "longitude_grelha": -7.955139,
+  "produto": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "produto_confirmacao": "Modelo explicitamente pedido; a resposta não contém identificação independente do modelo.",
+  "duracao_segundos": 0.6057581830000345
+}

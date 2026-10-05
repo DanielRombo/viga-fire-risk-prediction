@@ -1,0 +1,42 @@
+{
+  "id_regiao": 7,
+  "tipo": "fwi_diario_classico",
+  "estado": "em_inicializacao",
+  "mensagem": "A sequência FWI ainda não está estabelecida; os valores apresentados são apenas técnicos.",
+  "data_referencia": "2026-09-30",
+  "instante_referencia_utc": "2026-09-30T12:00:00Z",
+  "calculado_em": "2026-10-05T10:01:30.239545Z",
+  "ffmc": 76.63592528510391,
+  "dmc": 152.5610941448916,
+  "dc": 1060.2237050261779,
+  "isi": 1.0858098990530787,
+  "bui": 224.39778287302457,
+  "fwi": 7.465713905304491,
+  "origem": "open-meteo-archive-ecmwf-ifs-horario-v1",
+  "metodo": "Canadian Fire Weather Index diário — variante clássica adotada",
+  "versao": "xclim-0.62.0-cffdrs-1.8.17-classico-v1",
+  "versao_xclim": "0.62.0",
+  "variante": "classica_cffdrs_1.8.17",
+  "qualidade": "inicializacao_convencional",
+  "validade": "calculado",
+  "estado_inicializacao": "reconstruido",
+  "estabelecido": false,
+  "operacional": false,
+  "atualidade": "desatualizado",
+  "data_referencia_esperada": "2026-10-04",
+  "prazo_calculo_utc": "2026-10-05T13:00:00Z",
+  "atraso_permitido_minutos": 60,
+  "serie": "reconstrucao",
+  "revisao": 1,
+  "revisao_ativa": true,
+  "proveniencia": {
+    "id_registo": 8030,
+    "id_reconstrucao": 22,
+    "assinatura": "f600014d10cd043cbb4909bbac300db8a76d0a0935282c161444b91420dba9da"
+  },
+  "processamento": {
+    "codigo_erro": null,
+    "data_pendente": "2026-10-01",
+    "proxima_tentativa": null
+  }
+}

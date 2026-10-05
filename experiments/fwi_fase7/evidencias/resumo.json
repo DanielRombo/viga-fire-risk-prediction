@@ -1,0 +1,104 @@
+{
+  "regioes_60": 25,
+  "regioes_365": 26,
+  "intervalo_real_primeira_recolha_ultimo_calculo_segundos": 1641.531231,
+  "horas_recebidas_com_margens": 264984,
+  "bytes_respostas": 9667725,
+  "dias": 10990,
+  "horas": 263760,
+  "chamadas": 51,
+  "retries": 0,
+  "falhas_fonte": 0,
+  "tempos_execucao": {
+    "60": {
+      "recolher": 9.372883486000092,
+      "reconstruir": 64.68368183200005,
+      "comparar": 0.5453447499999129
+    },
+    "365": {
+      "recolher": 15.596692830999928,
+      "reconstruir": 349.2856564839999,
+      "comparar": 0.07154763000016828
+    }
+  },
+  "soma_segundos_recolha": 23.09909262199949,
+  "soma_segundos_calculo_persistencia": 352.4069489870003,
+  "pico_rss_mib": 456.50390625,
+  "alertas_por_janela": {
+    "60": 64,
+    "365": 484
+  },
+  "tipos_alerta": {
+    "salto": 399,
+    "fwi_extremo": 144,
+    "salto_e_extremo": 5
+  },
+  "comparacoes": 6018,
+  "dias_amostrados": 1003,
+  "comparacoes_reprovadas": 56,
+  "max_erro_absoluto": 0.00029191273074502533,
+  "max_erro_relativo": 1.0,
+  "grelhas_partilhadas": [
+    {
+      "latitude": 41.159927,
+      "longitude": -8.626617,
+      "regioes": [
+        "Matosinhos",
+        "Porto",
+        "Vila Nova de Gaia"
+      ]
+    }
+  ],
+  "maximos_fwi": [
+    {
+      "regiao": "Castelo Branco",
+      "janela": 365,
+      "maximo": 72.33496013196215
+    },
+    {
+      "regiao": "Guarda",
+      "janela": 365,
+      "maximo": 68.99151143053066
+    },
+    {
+      "regiao": "Beja",
+      "janela": 365,
+      "maximo": 67.48435935696828
+    },
+    {
+      "regiao": "Portalegre",
+      "janela": 365,
+      "maximo": 63.74211052263146
+    },
+    {
+      "regiao": "Évora",
+      "janela": 365,
+      "maximo": 63.52386416430023
+    },
+    {
+      "regiao": "Leiria",
+      "janela": 365,
+      "maximo": 63.23231800359836
+    },
+    {
+      "regiao": "Santarém",
+      "janela": 365,
+      "maximo": 62.12646803422076
+    },
+    {
+      "regiao": "Faro",
+      "janela": 365,
+      "maximo": 61.53081693985949
+    },
+    {
+      "regiao": "Coimbra",
+      "janela": 365,
+      "maximo": 60.77577012470477
+    },
+    {
+      "regiao": "Bragança",
+      "janela": 365,
+      "maximo": 60.19493153832516
+    }
+  ]
+}
