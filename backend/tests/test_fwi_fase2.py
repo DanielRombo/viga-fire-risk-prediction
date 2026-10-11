@@ -125,6 +125,8 @@ class RecuperacaoTests(unittest.TestCase):
             conn.execute(text('CREATE TABLE regioes (id_regiao INTEGER PRIMARY KEY)'))
             conn.execute(text('INSERT INTO regioes VALUES (1),(2)'))
         preparar_estrutura_fwi(self.engine)
+        from services.reconstrucao_fwi import preparar_estrutura_historica
+        preparar_estrutura_historica(self.engine)
         self.addCleanup(self.limpar)
         self.factory=sessionmaker(self.engine,autoflush=False)
         self.pedidos=[]
@@ -139,6 +141,9 @@ class RecuperacaoTests(unittest.TestCase):
         self.fonte=fonte
 
     def limpar(self):
+        from models.fwi_reconstrucao import FWIHistoricoDia, FWIReconstrucao
+        for m in (FWIHistoricoDia, FWIReconstrucao):
+            m.__table__.drop(self.engine)
         for m in (FWIProcessamento,FWIHorario,FWIDiario):
             m.__table__.drop(self.engine)
         with self.engine.begin() as conn:

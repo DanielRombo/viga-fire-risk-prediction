@@ -10,3 +10,6 @@ node_modules/
 !backend/ml_models/scaler_anpc.joblib
 !backend/ml_models/encoder_distrito_anpc.joblib
 .DS_Store
+# Backups de produção podem conter dados pessoais e credenciais cifradas.
+operations/fwi_producao/privado/
+operations/fwi_producao/evidencias/

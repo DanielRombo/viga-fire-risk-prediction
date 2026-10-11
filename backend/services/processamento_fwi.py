@@ -197,6 +197,22 @@ async def executar_ciclo_fwi(factory,*,agora=None,recolher=recolher_horas_fwi,re
                     resultados.append({'nome':entrada['nome'],'estado':'regiao_nao_preparada','calculados':0})
     for regiao in regioes:
         try:
+            from services.reconstrucao_fwi import atual, reconstruir
+            with factory() as db:
+                r = atual(db, regiao['id_regiao'])
+                estabelecido = db.query(FWIDiario.id_fwi).filter_by(
+                    id_regiao=regiao['id_regiao'], versao=VERSAO_FWI, estado='valido').first()
+                tecnica = r is not None and r.concluido_em is not None and not r.substituida and (
+                    r.estado in ('reconstruido', 'falha_reconstrucao')) and estabelecido is None
+                if tecnica and (r.configuracao['latitude'], r.configuracao['longitude']) != (
+                        regiao['latitude'], regiao['longitude']):
+                    raise DadosFWIInvalidos('As coordenadas da região diferem da sequência reconstruída.')
+            if tecnica:
+                # Mantém a série histórica e o produto Archive; nunca publica em fwi_diario.
+                resultado = await reconstruir(factory, regiao['id_regiao'], agora=agora,
+                    limite_dias=MAX_DIAS_POR_REGIAO, continuar=True)
+                resultados.append({'id_regiao': regiao['id_regiao'], **resultado})
+                continue
             resultados.append(await processar_regiao(factory,regiao,agora=agora,recolher=recolher))
         except Exception:
             # Inclui falha de commit: nunca anunciar avanço que não foi confirmado.

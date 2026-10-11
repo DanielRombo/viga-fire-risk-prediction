@@ -33,6 +33,9 @@ class ProductionStartupTests(unittest.TestCase):
         with patch.dict(os.environ, {"DATABASE_URL": "postgresql+psycopg2://test:test@127.0.0.1:1/viga_test"}):
             from config.database import Base
             from services import scheduler as jobs
+            # Carregar os modelos antes de patch.dict(sys.modules): a reposição
+            # desse dicionário não pode provocar uma segunda declaração ORM.
+            from services import processamento_fwi
 
         # Isolar exclusivamente as operações externas; usar o startup real de main.py.
         modelo = ModuleType("services.modelo_ml")

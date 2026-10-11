@@ -13,7 +13,7 @@ from services.fwi_diario import EstadoFWI, QualidadeEstado, VERSAO_FWI, calcular
 from services.meteorologia_fwi import (DadosFWIInvalidos, TerritorioFWI, AmostraHorariaFWI,
     UNIDADES_FWI, instante_referencia, preparar_observacao_diaria, numero, utc)
 from services.persistencia_fwi import restaurar_estado
-from services.processamento_fwi import preparar_estrutura_fwi, guardar_horas, data_db_utc
+from services.processamento_fwi import preparar_estrutura_fwi, guardar_horas, data_db_utc, MAX_DIAS_POR_REGIAO
 from services.open_meteo_fwi import ErroRecolhaFWI, HoraRecolhida
 from services.open_meteo_historico_fwi import PRODUTO, URL, MODELO, recolher_historico_fwi
 
@@ -200,7 +200,7 @@ async def corrigir_dia_historico(factory, id_regiao, data, *, motivo, agora=None
         if not bloquear(db, id_regiao):
             return {'estado': 'ocupada'}
         r = atual(db, id_regiao)
-        if r is None or type(data) is not date or not r.data_inicial <= data < r.data_operacional:
+        if r is None or type(data) is not date or not r.data_inicial <= data < max(r.data_operacional, r.data_pendente):
             raise DadosFWIInvalidos('A data corrigida deve pertencer à janela de uma reconstrução existente.')
         fim = instante_referencia(data, TerritorioFWI(r.configuracao['territorio']))
         horas = await recolher(r.configuracao['latitude'], r.configuracao['longitude'],
@@ -266,14 +266,17 @@ async def calcular_dia(db, r, agora, recolher):
     r.estado = 'em_reconstrucao'
     r.codigo_erro = r.causa = r.proxima_tentativa = None
     r.falhas_consecutivas = 0
-    if r.data_pendente == r.data_operacional:
+    if r.data_pendente >= r.data_operacional:
         r.estado = 'estabelecido' if semente.qualidade == QualidadeEstado.ESTABELECIDO else 'reconstruido'
-        r.concluido_em = agora
+        r.concluido_em = r.concluido_em or agora
 
 
-async def reconstruir(factory, id_regiao, *, limite_dias=3, agora=None, recolher=recolher_historico_fwi):
+async def reconstruir(factory, id_regiao, *, limite_dias=3, agora=None,
+                      recolher=recolher_historico_fwi, continuar=False):
     if type(limite_dias) is not int or not 1 <= limite_dias <= 366:
         raise DadosFWIInvalidos('Cada execução histórica deve processar entre 1 e 366 dias.')
+    if continuar and limite_dias > MAX_DIAS_POR_REGIAO:
+        raise DadosFWIInvalidos('A continuação técnica excede o limite de recuperação diária.')
     agora = utc(agora or datetime.now(timezone.utc))
     calculados = 0
     saida = {'estado': 'sem_estado'}
@@ -284,17 +287,35 @@ async def reconstruir(factory, id_regiao, *, limite_dias=3, agora=None, recolher
             r = atual(db, id_regiao)
             if r is None:
                 return {'estado': 'sem_estado', 'calculados': 0}
+            if continuar and (r.substituida or r.concluido_em is None or
+                    r.estado not in ('reconstruido', 'falha_reconstrucao') or
+                    estado_snapshot(r.configuracao['semente']).qualidade != QualidadeEstado.CONVENCIONAL):
+                return {**resumo(r), 'calculados': calculados}
             if indice == 0:
                 r = detetar_alteracoes(db, r, agora)
+                if continuar and r.concluido_em is None:
+                    # Uma revisão invalidada exige reconstrução explícita, não um salto.
+                    return {**resumo(r), 'calculados': calculados}
             if r.proxima_tentativa and data_db_utc(r.proxima_tentativa) > agora:
                 return {**resumo(r), 'calculados': calculados}
-            if r.data_pendente >= r.data_operacional:
+            if not continuar and r.data_pendente >= r.data_operacional:
+                return {**resumo(r), 'calculados': calculados}
+            if continuar and instante_referencia(r.data_pendente,
+                    TerritorioFWI(r.configuracao['territorio'])) >= agora:
                 return {**resumo(r), 'calculados': calculados}
             r.tentativas += 1
             r.ultima_tentativa = agora
             sucesso = False
             try:
                 with db.begin_nested():
+                    if continuar:
+                        dias = db.query(FWIHistoricoDia).filter(
+                            FWIHistoricoDia.id_reconstrucao == r.id_reconstrucao,
+                            FWIHistoricoDia.validade == 'calculado',
+                            FWIHistoricoDia.data_referencia >= r.data_inicial,
+                            FWIHistoricoDia.data_referencia < r.data_pendente).count()
+                        if dias != (r.data_pendente-r.data_inicial).days or dias == 0:
+                            raise DadosFWIInvalidos('A sequência reconstruída contém uma lacuna; é necessária revisão.')
                     await calcular_dia(db, r, agora, recolher)
                 sucesso = True
             except Exception as erro:

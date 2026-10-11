@@ -23,16 +23,15 @@ def existentes(db):
 
 def encontrar(regiao, registos):
     candidatos = [r for r in registos if normalizar(r.nome) == normalizar(regiao["nome"])]
-    correspondencias = [r for r in candidatos if normalizar(r.distrito) == normalizar(regiao["distrito"])]
-    if correspondencias:
-        # Não apagar duplicados históricos; reutilizar o identificador mais antigo.
-        return correspondencias[0]
-    desconhecidos = [r for r in candidatos if normalizar(r.distrito) in ("", "desconhecido")]
-    if len(desconhecidos) == 1:
-        return desconhecidos[0]
-    if desconhecidos:
+    # O catálogo identifica um ponto, não apenas uma localidade. Não escolher
+    # outro ponto nem o ID mais antigo; conservar esses registos históricos.
+    correspondencias = [r for r in candidatos
+                        if normalizar(r.distrito) == normalizar(regiao["distrito"])
+                        and r.latitude == regiao["latitude"]
+                        and r.longitude == regiao["longitude"]]
+    if len(correspondencias) > 1:
         raise ValueError(f"Região ambígua na base de dados: {regiao['nome']}.")
-    return None
+    return correspondencias[0] if correspondencias else None
 
 
 def inicializar_regioes(db):

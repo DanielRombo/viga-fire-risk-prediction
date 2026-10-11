@@ -104,11 +104,10 @@ class RegioesIniciaisTests(unittest.TestCase):
         ])
         self.db.commit()
         antes = self.db.execute(text("SELECT id_regiao, nome, distrito, latitude, longitude, area_km2 FROM regioes ORDER BY id_regiao")).all()
-        self.assertEqual(inicializar_regioes(self.db), 27)
+        self.assertEqual(inicializar_regioes(self.db), 30)
         resolvidas = {r["nome"]: r for r in resolver_regioes(self.db)}
-        self.assertEqual(resolvidas["Lisboa"]["id_regiao"], 7000)
-        self.assertEqual(resolvidas["Évora"]["id_regiao"], 9000)
-        self.assertEqual(resolvidas["Coimbra"]["id_regiao"], 9500)
+        for nome in ("Lisboa", "Évora", "Coimbra"):
+            self.assertNotIn(resolvidas[nome]["id_regiao"], (7000, 8000, 9000, 9500))
         depois = self.db.execute(text("SELECT id_regiao, nome, distrito, latitude, longitude, area_km2 FROM regioes WHERE id_regiao IN (7000,8000,9000,9500) ORDER BY id_regiao")).all()
         self.assertEqual(antes, depois)
         self.assertEqual(inicializar_regioes(self.db), 0)
@@ -140,7 +139,7 @@ class RegioesIniciaisTests(unittest.TestCase):
 
     def test_ambiguidade_nao_insere_parcialmente(self):
         for indice in range(2):
-            self.db.add(Regiao(nome="Porto", distrito="Desconhecido", latitude=41.15 + indice, longitude=-8.62))
+            self.db.add(Regiao(nome="Porto", distrito="Porto", latitude=41.1579, longitude=-8.6291))
         self.db.commit()
         with self.assertRaisesRegex(ValueError, "ambígua"):
             inicializar_regioes(self.db)
