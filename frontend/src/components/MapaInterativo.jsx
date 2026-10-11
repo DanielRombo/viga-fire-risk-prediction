@@ -3,7 +3,6 @@ import { MapContainer, TileLayer, Marker, Popup, useMap, CircleMarker, GeoJSON }
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import { getFocosIncendio, getRiscoRegiao } from '../services/api'
-import { legendaRisco, obterApresentacaoRisco } from '../utils/risco'
 import { numeroDisponivel, formatarValor, mensagemErro, mensagemEstado, formatarDataObservacao } from '../utils/disponibilidade'
 
 import { encontrarRegiaoMapa } from '../utils/regioesMapa'
@@ -22,7 +21,7 @@ const iconeRegiao = L.divIcon({ html: '<div style="font-size:18px;line-height:1"
 
 const camadas = [
     { id: 'focos', label: 'Focos ativos' },
-    { id: 'fwi', label: 'Risco legado' },
+    { id: 'fwi', label: 'Índice legado (experimental)' },
     { id: 'temperatura', label: 'Temperatura' },
     { id: 'vento', label: 'Vento' },
     { id: 'humidade', label: 'Humidade' },
@@ -65,7 +64,7 @@ const corHumidade = (hum) => {
 }
 
 const legendas = {
-    fwi: legendaRisco,
+    fwi: [{ cor: '#888888', label: 'Indicador heurístico, sem classes de risco' }],
     temperatura: [{ cor: '#3B6D11', label: '< 12°C' }, { cor: '#639922', label: '12-20°C' }, { cor: '#BA7517', label: '20-28°C' }, { cor: '#E24B4A', label: '28-35°C' }, { cor: '#791F1F', label: '> 35°C' }],
     vento: [{ cor: '#639922', label: '< 15 km/h' }, { cor: '#BA7517', label: '15-30 km/h' }, { cor: '#E24B4A', label: '30-50 km/h' }, { cor: '#791F1F', label: '> 50 km/h' }],
     humidade: [{ cor: '#791F1F', label: '< 20%' }, { cor: '#E24B4A', label: '20-35%' }, { cor: '#BA7517', label: '35-50%' }, { cor: '#639922', label: '> 50%' }],
@@ -133,7 +132,7 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
         let cor = '#cccccc'
         let opacidade = cidade ? 0.5 : 0.1
 
-        if (camada === 'fwi') cor = obterApresentacaoRisco(cidade?.risco?.fwi?.nivel_risco).color
+        if (camada === 'fwi') cor = '#888888'
         if (camada === 'temperatura') cor = corTemperatura(dados?.temperatura)
         if (camada === 'vento') cor = corVento(dados?.velocidade_vento)
         if (camada === 'humidade') cor = corHumidade(dados?.humidade)
@@ -146,7 +145,7 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
         const dados = cidade?.risco?.estado === 'ok' ? cidade.risco.dados_meteorologicos : null
         let conteudo = `<strong>${feature.properties.name === 'Azores' ? 'Açores' : feature.properties.name}</strong><br/>`
         if (cidade) conteudo += `Observação em ${cidade.nome}<br/>Última atualização: ${formatarDataObservacao(cidade.risco?.data_hora)}<br/>`
-        if (camada === 'fwi') conteudo += `Índice legado: ${cidade?.risco?.fwi?.fwi ?? '--'}<br/>Risco: ${obterApresentacaoRisco(cidade?.risco?.fwi?.nivel_risco).label}`
+        if (camada === 'fwi') conteudo += `Índice legado (experimental): ${formatarValor(cidade?.risco?.fwi?.fwi)}<br/>Indicador heurístico; não é o FWI diário.`
         if (camada === 'temperatura') conteudo += `Temperatura: ${formatarValor(dados?.temperatura)}${numeroDisponivel(dados?.temperatura) ? '°C' : ''}`
         if (camada === 'vento') conteudo += `Vento: ${formatarValor(dados?.velocidade_vento)}${numeroDisponivel(dados?.velocidade_vento) ? ' km/h' : ''}`
         if (camada === 'humidade') conteudo += `Humidade: ${formatarValor(dados?.humidade)}${numeroDisponivel(dados?.humidade) ? '%' : ''}`
@@ -169,7 +168,7 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
                 <CentrarMapa regiao={regiaoSelecionada} />
 
                 <Marker position={[38.72, -9.14]} icon={iconeRegiao}>
-                    <Popup><strong>Lisboa</strong><br />Risco monitorizado</Popup>
+                    <Popup><strong>Lisboa</strong><br />Ponto de referência</Popup>
                 </Marker>
 
                 {camadasAtivas.includes('focos') && focos.map((foco, i) => (
@@ -233,9 +232,9 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
                 borderRadius: '8px', padding: '8px 10px', zIndex: 1000
             }}>
                 <div style={{ fontSize: '10px', color: 'var(--texto-tertiary)', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '6px' }}>
-                    {legendaAtiva === 'temperatura' ? 'Temperatura' : legendaAtiva === 'vento' ? 'Vento' : legendaAtiva === 'humidade' ? 'Humidade' : 'Nível de risco'}
+                    {legendaAtiva === 'temperatura' ? 'Temperatura' : legendaAtiva === 'vento' ? 'Vento' : legendaAtiva === 'humidade' ? 'Humidade' : legendaAtiva === 'fwi' ? 'Índice legado (experimental)' : 'Sem camada meteorológica'}
                 </div>
-                {(legendas[legendaAtiva] || legendaRisco).map(item => (
+                {(legendas[legendaAtiva] || []).map(item => (
                     <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', color: 'var(--texto-secondary)', marginBottom: '4px' }}>
                         <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: item.cor, flexShrink: 0 }} />
                         {item.label}

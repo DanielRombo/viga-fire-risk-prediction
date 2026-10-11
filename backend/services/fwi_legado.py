@@ -6,8 +6,8 @@ logger = logging.getLogger(__name__)
 
 def calcular_fwi(temperatura: float, humidade: float, vento: float, precipitacao: float) -> dict:
     """
-    Calculo simplificado do Fire Weather Index (FWI)
-    baseado no sistema canadiano de risco de incendio.
+    Índice heurístico legado, sem equivalência com o Canadian FWI.
+    Nomes de funções e campos preservados para compatibilidade.
     """
 
     if any(valor_observado(valor) is None for valor in (temperatura, humidade, vento, precipitacao)):
@@ -22,7 +22,7 @@ def calcular_fwi(temperatura: float, humidade: float, vento: float, precipitacao
     # Vento forte propaga o fogo mais rapidamente
     isi = ffmc * (vento / 10)
 
-    # Indice final FWI
+    # Índice heurístico final
     fwi = (ffmc * 0.6) + (isi * 0.4)
 
     # Classificacao do risco
@@ -58,5 +58,5 @@ def calcular_risco_regiao(dados_meteorologicos: dict) -> dict:
     resultado = calcular_fwi(temperatura, humidade, vento, precipitacao)
     if resultado["fwi"] is not None:
         logger.info(
-            f"FWI calculado: {resultado['fwi']} - Risco: {resultado['nivel_risco']}")
+            f"Índice legado calculado: {resultado['fwi']} - Risco: {resultado['nivel_risco']}")
     return resultado

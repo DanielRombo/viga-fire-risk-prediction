@@ -12,7 +12,7 @@ function Dashboard({ darkMode, onToggleDark }) {
     const [risco, setRisco] = useState(null)
     const [fwiDiario, setFWIDiario] = useState(null)
     const [loading, setLoading] = useState(true)
-    const [camadasAtivas, setCamadasAtivas] = useState(['focos', 'fwi'])
+    const [camadasAtivas, setCamadasAtivas] = useState(['focos', 'temperatura'])
     const [regiaoSelecionada, setRegiaoSelecionada] = useState(null)
     const [erroDados, setErroDados] = useState('')
     const [dadosFocos, setDadosFocos] = useState({ estado: 'carregando', total: null })
@@ -78,7 +78,6 @@ function Dashboard({ darkMode, onToggleDark }) {
             <Navbar
                 dataObservacao={risco?.data_hora}
                 estado={loading ? 'carregando' : erroDados ? 'erro_fonte' : risco?.estado}
-                risco={risco?.fwi?.nivel_risco}
                 localidade={localidade}
                 darkMode={darkMode}
                 onToggleDark={onToggleDark}
@@ -86,7 +85,6 @@ function Dashboard({ darkMode, onToggleDark }) {
             {(loading || erroDados || mensagemEstado(risco?.estado)) && <div role="status">{loading ? 'A carregar dados...' : erroDados || mensagemEstado(risco?.estado)}</div>}
             <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
                 <Sidebar
-                    risco={risco}
                     dados={risco?.estado === 'ok' ? risco.dados_meteorologicos : null}
                     onRegiaoSelecionada={selecionarRegiao}
                     localidade={localidade}

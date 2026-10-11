@@ -1,11 +1,9 @@
 import { Sun, Moon } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { logout, getUtilizadorAtual } from '../services/auth'
-import { obterApresentacaoRisco } from '../utils/risco'
 import { formatarDataObservacao, estadoDados } from '../utils/disponibilidade'
 
-function Navbar({ risco, localidade, darkMode, onToggleDark, dataObservacao, estado }) {
-    const { bg, color, label } = obterApresentacaoRisco(risco)
+function Navbar({ localidade, darkMode, onToggleDark, dataObservacao, estado }) {
 
     const navigate = useNavigate()
     const utilizador = getUtilizadorAtual()
@@ -39,15 +37,7 @@ function Navbar({ risco, localidade, darkMode, onToggleDark, dataObservacao, est
             <div style={{ width: '0.5px', height: '24px', background: 'var(--cinza-borda)' }} />
 
             <span style={{ fontSize: '12px', color: 'var(--texto-secondary)' }}>
-                Última atualização: <strong style={{ color: 'var(--texto-primary)' }}>{formatarDataObservacao(dataObservacao)}</strong>
-            </span>
-
-            <span style={{
-                padding: '4px 10px', borderRadius: '99px',
-                fontSize: '11px', fontWeight: '500',
-                background: bg, color: color
-            }}>
-                Risco {label}
+                Meteorologia atualizada em: <strong style={{ color: 'var(--texto-primary)' }}>{formatarDataObservacao(dataObservacao)}</strong>
             </span>
 
             <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '12px' }}>

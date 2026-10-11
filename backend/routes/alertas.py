@@ -51,8 +51,8 @@ def gerar_alertas(dados, regiao_nome):
     if fwi["fwi"] is not None and fwi["fwi"] > 20:
         alertas.append({
             "id": f"fwi_{regiao_nome}",
-            "texto": f"Risco FWI elevado — {regiao_nome}",
-            "meta": f"{agora.strftime('%H:%M')} · FWI {fwi['fwi']}",
+            "texto": f"Índice legado (experimental) acima de 20 — {regiao_nome}",
+            "meta": f"{agora.strftime('%H:%M')} · Indicador heurístico {fwi['fwi']}; não é o FWI diário",
             "cor": "#BA7517",
             "severidade": "media"
         })

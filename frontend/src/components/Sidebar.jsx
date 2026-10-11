@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react'
 import { pesquisarRegioes, getDistritos } from '../services/api'
 import { useNavigate } from 'react-router-dom'
-import { obterApresentacaoRisco } from '../utils/risco'
-import { formatarValor, formatarProbabilidade, numeroDisponivel, mensagemEstado } from '../utils/disponibilidade'
+import { formatarValor, numeroDisponivel, mensagemEstado } from '../utils/disponibilidade'
 import PainelFWIDiario from './PainelFWIDiario'
 
-function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos, localidade, fwiDiario, idRegiao }) {
+function Sidebar({ dados, onRegiaoSelecionada, dadosFocos, localidade, fwiDiario, idRegiao }) {
     const navigate = useNavigate()
     const [pesquisa, setPesquisa] = useState('')
     const [resultados, setResultados] = useState([])
@@ -52,7 +51,6 @@ function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos, localidade, fw
         if (onRegiaoSelecionada) onRegiaoSelecionada(regiao)
     }
 
-    const cores = obterApresentacaoRisco(risco?.fwi?.nivel_risco)
 
     return (
         <aside style={{
@@ -66,24 +64,6 @@ function Sidebar({ risco, dados, onRegiaoSelecionada, dadosFocos, localidade, fw
             width: '260px',
             flexShrink: 0
         }}>
-            <div style={{
-                borderRadius: '12px',
-                background: cores.bg,
-                border: `0.5px solid ${cores.border}`,
-                padding: '14px',
-                textAlign: 'center'
-            }}>
-                <div style={{ fontSize: '10px', color: cores.color, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '4px' }}>
-                    Risco — {localidade}
-                </div>
-                <div style={{ fontSize: '20px', fontWeight: '500', color: cores.color }}>
-                    {cores.label}
-                </div>
-                <div style={{ fontSize: '11px', color: cores.color, marginTop: '2px' }}>
-                    Índice legado {formatarValor(risco?.fwi?.fwi)} — ML {formatarProbabilidade(risco?.ml?.probabilidade_incendio)}
-                </div>
-            </div>
-
             <PainelFWIDiario estado={fwiDiario} idRegiao={idRegiao} localidade={localidade} compacto />
 
             <div style={{ fontSize: '11px', fontWeight: '500', color: 'var(--texto-tertiary)', textTransform: 'uppercase', letterSpacing: '0.06em', marginTop: '4px' }}>

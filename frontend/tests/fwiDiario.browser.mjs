@@ -28,7 +28,7 @@ test('FWI diário no dashboard: operacional, zero, null e estados técnicos neut
         assert.doesNotMatch(await painel(page).innerText(), /Baixo|Elevado|Extremo/)
         if (estado !== 'ok') assert.match(await painel(page).innerText(), /Não operacional — valor técnico/)
     }
-    assert.match(await page.locator('aside').innerText(), /Índice legado 10/)
+    assert.match(await page.locator('body').innerText(), /Índice legado \(experimental\): 10/)
 })
 
 test('FWI diário: mudança de região, resposta atrasada, erro HTTP e um refresh por minuto', async t => {
@@ -55,7 +55,7 @@ test('FWI diário: mudança de região, resposta atrasada, erro HTTP e um refres
     await selecionar(page, regioes[1])
     await painel(page).getByText('Não foi possível obter o FWI diário.', { exact: true }).waitFor()
     assert.equal(await valor(page).innerText(), 'Indisponível')
-    assert.match(await page.locator('aside').innerText(), /Índice legado 11/)
+    assert.match(await page.locator('body').innerText(), /Índice legado \(experimental\): 11/)
 })
 
 test('detalhes: Continente, Madeira e Açores, seis índices, timestamps e histórico', async t => {
@@ -136,4 +136,20 @@ test('detalhes sem reload: troca de região descarta resposta atrasada e mantém
     await page.clock.fastForward(61000)
     await refresh
     assert.equal(pedidosPorto, antes + 1)
+})
+
+
+test('FWI principal independente do legado e sem classes heurísticas no cabeçalho', async t => {
+    const { page, controlo } = await preparar(t)
+    assert.equal(await page.locator('aside > :first-child').getAttribute('aria-label'), 'FWI diário — Lisboa')
+    assert.doesNotMatch(await page.locator('nav').innerText(), /Risco|Baixo|Elevado|Extremo/)
+    assert.equal(await page.locator('aside').getByText('Índice legado', { exact: true }).count(), 0)
+    controlo.resposta = async (_id, route) => {
+        await route.fulfill({ status: 503, json: { detail: 'Legado indisponível' } })
+        return true
+    }
+    await selecionar(page, regioes[1])
+    await page.waitForFunction(() => document.querySelector('[data-testid="valor-fwi-diario"]')?.textContent === '31')
+    await page.getByText('Índice legado (experimental): Indisponível', { exact: true }).waitFor()
+    assert.match(await page.locator('body').innerText(), /Não representa a probabilidade de um incêndio futuro/)
 })

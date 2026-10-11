@@ -86,7 +86,7 @@ export async function preparar(t) {
         throw new Error(`Pedido inesperado: ${url.pathname}`)
     })
     await page.goto(process.env.VIGA_TEST_URL || 'http://127.0.0.1:5174')
-    await page.waitForFunction(() => document.querySelector('aside')?.textContent.includes('Índice legado 10 — ML 31%'))
+    await page.waitForFunction(() => document.body.textContent.includes('Índice legado (experimental): 10'))
     await page.evaluate(() => {
         window.elementoMapaInicial = document.querySelector('.leaflet-container')
     })
@@ -109,7 +109,7 @@ test('ML parcial e indisponível são comunicados sem perder FWI', async t => {
     }
     await selecionar(page, regioes[1])
     await page.getByRole('status').filter({ hasText: 'Previsão ML parcial:' }).waitFor()
-    assert.match(await page.locator('aside').innerText(), /Índice legado 11 — ML 80%/)
+    assert.match(await page.locator('body').innerText(), /Índice legado \(experimental\): 11/)
     await page.getByPlaceholder('Pesquisar localidade...').fill('')
     await page.getByPlaceholder('Pesquisar localidade...').fill('Coimbra')
     await page.locator('aside').getByText('Detalhes', { exact: true }).click()
@@ -118,7 +118,7 @@ test('ML parcial e indisponível são comunicados sem perder FWI', async t => {
         mensagem: 'Previsão ML indisponível: nenhum modelo tem uma avaliação válida.' }
     await page.reload()
     await page.getByRole('status').filter({ hasText: 'Previsão ML indisponível:' }).waitFor()
-    assert.match(await page.locator('body').innerText(), /Probabilidade\s+Indisponível/)
+    assert.match(await page.locator('body').innerText(), /Pontuação ML\s+Indisponível/)
 })
 
 test('zeros reais e null no dashboard, painel ML e detalhes', async t => {
@@ -133,11 +133,11 @@ test('zeros reais e null no dashboard, painel ML e detalhes', async t => {
         return true
     }
     await selecionar(page, regioes[1])
-    await page.waitForFunction(() => document.querySelector('aside')?.textContent.includes('Índice legado 0 — ML 0%'))
+    await page.waitForFunction(() => document.body.textContent.includes('Índice legado (experimental): 0'))
     const sidebar = await page.locator('aside').innerText()
     for (const label of ['Temperatura', 'Humidade', 'Vento']) assert.match(sidebar, new RegExp(`${label}\\s+0`))
-    const painel = page.getByText('Previsão ML + índice legado', { exact: true }).locator('..')
-    assert.match(await painel.innerText(), /Probabilidade\s+0%/)
+    const painel = page.getByText('Indicadores ML (experimentais)', { exact: true }).locator('..')
+    assert.match(await painel.innerText(), /Pontuação ML\s+0%/)
     assert.doesNotMatch(await painel.innerText(), /Indisponível/)
     controlo.detalhe = { regiao: regioes[1], estado: 'ok', historico: [],
         atual: { ...zeros.dados_meteorologicos, ...zeros.fwi } }
@@ -146,11 +146,11 @@ test('zeros reais e null no dashboard, painel ML e detalhes', async t => {
     await page.locator('aside').getByText('Detalhes', { exact: true }).click()
     await page.getByRole('heading', { name: 'Coimbra', exact: true }).waitFor()
     assert.match(await page.locator('body').innerText(), /Temperatura\s+0/)
-    assert.match(await page.locator('body').innerText(), /Probabilidade\s+0%/)
+    assert.match(await page.locator('body').innerText(), /Pontuação ML\s+0%/)
     // Uma resposta incompleta nunca deve originar o fator "baixa humidade" por coerção de null.
     controlo.detalhe.atual.humidade = null
     await page.reload()
-    await page.getByText('Sem dados suficientes para análise.', { exact: true }).waitFor()
+    await page.getByRole('heading', { name: 'Coimbra', exact: true }).waitFor()
     assert.match(await page.locator('body').innerText(), /Humidade\s+Indisponível/)
     assert.doesNotMatch(await page.locator('body').innerText(), /devido a baixa humidade/)
 })
@@ -204,8 +204,8 @@ test('ilhas: dados reais, timestamp, dados antigos e ausência explícita', asyn
 async function confirmarIndicadores(page, regiao) {
     const dados = respostas[regiao.id_regiao]
     await page.waitForFunction(({ nome, fwi, ml }) => {
-        const texto = document.querySelector('aside')?.textContent || ''
-        return texto.includes(`Risco — ${nome}`) && texto.includes(`Índice legado ${fwi} — ML ${ml}%`)
+        const texto = document.body.textContent || ''
+        return texto.includes(`FWI diário — ${nome}`) && texto.includes(`Índice legado (experimental): ${fwi}`) && texto.includes(`${ml}%`)
     }, { nome: regiao.nome, fwi: dados.fwi.fwi, ml: Math.round(dados.ml.probabilidade_incendio * 100) })
     const texto = await page.locator('aside').innerText()
     for (const [nome, valor] of [['Temperatura', dados.dados_meteorologicos.temperatura],
@@ -213,7 +213,7 @@ async function confirmarIndicadores(page, regiao) {
         assert.match(texto, new RegExp(`${nome}\\s+${valor}`))
     }
     assert.match(await page.locator('nav').innerText(), new RegExp(regiao.nome))
-    const painel = page.getByText('Previsão ML + índice legado', { exact: true }).locator('..')
+    const painel = page.getByText('Indicadores ML (experimentais)', { exact: true }).locator('..')
     assert.match(await painel.innerText(), new RegExp(`${Math.round(dados.ml.probabilidade_incendio * 100)}%`))
     assert.doesNotMatch(await page.locator('body').innerText(), /Risco nacional/i)
 }
@@ -257,7 +257,7 @@ test('respostas atrasadas, erros e dados ausentes não apresentam valores de out
     }
     await selecionar(page, regioes[1])
     await page.getByRole('status').filter({ hasText: 'A carregar dados...' }).waitFor()
-    assert.doesNotMatch(await page.locator('aside').innerText(), /Índice legado 10 — ML 31%/)
+    assert.doesNotMatch(await page.locator('aside').innerText(), /Índice legado \(experimental\): 10/)
     assert.match(await page.locator('aside').innerText(), /Indisponível/)
     await selecionar(page, regioes[2])
     await confirmarIndicadores(page, regioes[2])
@@ -271,7 +271,7 @@ test('respostas atrasadas, erros e dados ausentes não apresentam valores de out
     }
     await selecionar(page, regioes[1])
     await page.getByRole('status').filter({ hasText: 'Falha ao obter dados.' }).waitFor()
-    assert.doesNotMatch(await page.locator('aside').innerText(), /Índice legado 12 — ML 33%/)
+    assert.doesNotMatch(await page.locator('aside').innerText(), /Índice legado \(experimental\): 12/)
     controlo.resposta = async (id, route) => {
         if (id !== 1) return false
         await route.fulfill({ json: { estado: 'sem_dados' } })
@@ -279,6 +279,6 @@ test('respostas atrasadas, erros e dados ausentes não apresentam valores de out
     }
     await selecionar(page, regioes[0])
     await page.getByRole('status').filter({ hasText: 'Sem dados disponíveis.' }).waitFor()
-    assert.match(await page.locator('aside').innerText(), /Risco — Lisboa/i)
-    assert.match(await page.locator('aside').innerText(), /Índice legado Indisponível — ML Indisponível/)
+    assert.match(await page.locator('aside').innerText(), /FWI diário — Lisboa/i)
+    assert.match(await page.locator('body').innerText(), /Índice legado \(experimental\): Indisponível/)
 })
