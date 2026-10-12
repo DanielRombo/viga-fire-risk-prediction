@@ -1,0 +1,103 @@
+{
+  "fase": "ML 5B.1",
+  "ficheiros": [
+    {
+      "ficheiro": "experiments/ml_5b/auditar_5b1.py",
+      "bytes": 7580,
+      "sha256": "d644382e84b1118b1fe6071d68a93d116464ebd760a1ee6062f8eb31ef92c768"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/fase1/auditoria.json",
+      "bytes": 68424,
+      "sha256": "8a08877899b29fa2927e86e9258f38cac70d179b31400117afb532d9ac5acd81"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/fase1/cobertura_diaria.csv",
+      "bytes": 1547160,
+      "sha256": "81c0dc0fb8da23aa785a5861c092d56ad018f90bfc60fe65c569f9e113da978a"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/fase1/ocorrencias_piloto.json",
+      "bytes": 5436,
+      "sha256": "6c73bca1ab2a9db0b861d7bcce653677aa5ed33d24f8472acd4114658c4b88d2"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1/linhas_retrospetivas.csv",
+      "bytes": 20351,
+      "sha256": "81659668102a42b0f75d15c2fe27a6e5d45efe4c94af4ae0f6e57491beaa0057"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1/Lisboa_archive.json",
+      "bytes": 27746,
+      "sha256": "c1d466efdcf5559c5f04250bbf1f878ca5747ba3212aae44dc2ebdf31781d532"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1/Lisboa_falha.json",
+      "bytes": 542,
+      "sha256": "5ac0175026ee0474e057f698bf438c493fe134a0cf15645c28c001a1b883516b"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1/Lisboa_pedido.json",
+      "bytes": 1245,
+      "sha256": "8cd43e445f6f818946a1c6c85dcc75a68995dabc31febaaf3ca797714a2f2989"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1/Lisboa_sequencia.json",
+      "bytes": 60697,
+      "sha256": "8dbb96d6cced8cf0f8709223f17e0a56ff3e18c49434a42562f13bc5248c4edf"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1/resumo.json",
+      "bytes": 2686,
+      "sha256": "7562d58df2ff7a40195d41984286855e627634e1d2d68d3987ad2681c4e27ead"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1/Vila Real_archive.json",
+      "bytes": 27384,
+      "sha256": "f975e3919e320881d3823f8f2159d544b0343459d4afd2ae54980058bde9237d"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1/Vila Real_pedido.json",
+      "bytes": 1252,
+      "sha256": "0932aed7dd9f4ebd4df3fd843334b4e40f11474bd57b876bbd3fc537b3ad48a3"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1/Vila Real_sequencia.json",
+      "bytes": 61019,
+      "sha256": "b5c88fb38a05acfcdc4d8f0d785db56837c3cdcd37309eb7184322ac908cd108"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/prova_5b1.py",
+      "bytes": 7974,
+      "sha256": "9295cbd861bde2153e4a8fa4d33ab1ebae7beb98d9cbeb67d4c3a37091659cbb"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/RELATORIO_5B1.md",
+      "bytes": 15390,
+      "sha256": "eb3f60fe34e4b76087bc394e84e419c5b1ea62e918e816fab422f71ead56080b"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/territorios_5b1.md",
+      "bytes": 3109,
+      "sha256": "63735c124d5791f786dfdf2d7e598a0cb129863dc6782af0165a23d5e58b2fd9"
+    },
+    {
+      "ficheiro": "experiments/ml_5b/test_5b1.py",
+      "bytes": 3309,
+      "sha256": "ba5c859e92c0216cdc82fb72e538eb51bb3c7a510f50ead596062c2e77d67961"
+    }
+  ],
+  "testes": {
+    "executados": 4,
+    "aprovados": 4
+  },
+  "pedidos_archive_com_sucesso": 2,
+  "regioes": [
+    "Lisboa",
+    "Vila Real"
+  ],
+  "linhas_retrospetivas": 60,
+  "labels_certificados": 0,
+  "modelo_treinado": false,
+  "producao_contactada": false
+}

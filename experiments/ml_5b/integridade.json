@@ -1,0 +1,15 @@
+{
+  "ficheiros_originais_verificados": 80,
+  "sha256_todos_coincidem": true,
+  "csv": 42,
+  "artefactos_preservados": 17,
+  "pontos_ativos": 28,
+  "horas_fase8": 306768,
+  "dias_fase8": 12782,
+  "sobreposicao_anpc_fwi_validado_dias": 0,
+  "dataset_elegivel_criado": false,
+  "labels_positivos": null,
+  "labels_negativos": null,
+  "modelo_treinado": false,
+  "producao_contactada": false
+}

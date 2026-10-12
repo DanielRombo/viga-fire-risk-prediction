@@ -1,0 +1,172 @@
+fonte,dimensao,grupo,eventos_candidatos_nao_labels,cobertura_certificada
+ml/notebooks/anpc-2016.csv,mes,2016-03,79,nao
+ml/notebooks/anpc-2016.csv,mes,2016-04,184,nao
+ml/notebooks/anpc-2016.csv,mes,2016-05,805,nao
+ml/notebooks/anpc-2016.csv,mes,2016-06,1394,nao
+ml/notebooks/anpc-2016.csv,mes,2016-07,2993,nao
+ml/notebooks/anpc-2016.csv,mes,2016-08,4347,nao
+ml/notebooks/anpc-2016.csv,mes,2016-09,2758,nao
+ml/notebooks/anpc-2016.csv,mes,2016-10,1936,nao
+ml/notebooks/anpc-2016.csv,mes,2016-11,1258,nao
+ml/notebooks/anpc-2016.csv,mes,2016-12,1473,nao
+ml/notebooks/anpc-2016.csv,distrito,AVEIRO,1268,nao
+ml/notebooks/anpc-2016.csv,distrito,BEJA,331,nao
+ml/notebooks/anpc-2016.csv,distrito,BRAGA,1374,nao
+ml/notebooks/anpc-2016.csv,distrito,BRAGANÇA,353,nao
+ml/notebooks/anpc-2016.csv,distrito,CASTELO BRANCO,465,nao
+ml/notebooks/anpc-2016.csv,distrito,COIMBRA,537,nao
+ml/notebooks/anpc-2016.csv,distrito,FARO,721,nao
+ml/notebooks/anpc-2016.csv,distrito,GUARDA,485,nao
+ml/notebooks/anpc-2016.csv,distrito,LEIRIA,796,nao
+ml/notebooks/anpc-2016.csv,distrito,LISBOA,2214,nao
+ml/notebooks/anpc-2016.csv,distrito,PORTALEGRE,271,nao
+ml/notebooks/anpc-2016.csv,distrito,PORTO,3462,nao
+ml/notebooks/anpc-2016.csv,distrito,SANTARÉM,1039,nao
+ml/notebooks/anpc-2016.csv,distrito,SETÚBAL,1111,nao
+ml/notebooks/anpc-2016.csv,distrito,VIANA DO CASTELO,744,nao
+ml/notebooks/anpc-2016.csv,distrito,VILA REAL,682,nao
+ml/notebooks/anpc-2016.csv,distrito,VISEU,1050,nao
+ml/notebooks/anpc-2016.csv,distrito,ÉVORA,324,nao
+ml/notebooks/anpc-2017.csv,mes,2017-01,2435,nao
+ml/notebooks/anpc-2017.csv,mes,2017-02,1518,nao
+ml/notebooks/anpc-2017.csv,mes,2017-03,2629,nao
+ml/notebooks/anpc-2017.csv,mes,2017-04,3737,nao
+ml/notebooks/anpc-2017.csv,mes,2017-05,1814,nao
+ml/notebooks/anpc-2017.csv,mes,2017-06,2984,nao
+ml/notebooks/anpc-2017.csv,mes,2017-07,3662,nao
+ml/notebooks/anpc-2017.csv,mes,2017-08,5528,nao
+ml/notebooks/anpc-2017.csv,mes,2017-09,3580,nao
+ml/notebooks/anpc-2017.csv,mes,2017-10,5043,nao
+ml/notebooks/anpc-2017.csv,mes,2017-11,2741,nao
+ml/notebooks/anpc-2017.csv,mes,2017-12,2654,nao
+ml/notebooks/anpc-2017.csv,distrito,AVEIRO,3032,nao
+ml/notebooks/anpc-2017.csv,distrito,BEJA,816,nao
+ml/notebooks/anpc-2017.csv,distrito,BRAGA,2970,nao
+ml/notebooks/anpc-2017.csv,distrito,BRAGANÇA,1035,nao
+ml/notebooks/anpc-2017.csv,distrito,CASTELO BRANCO,1050,nao
+ml/notebooks/anpc-2017.csv,distrito,COIMBRA,1481,nao
+ml/notebooks/anpc-2017.csv,distrito,FARO,1672,nao
+ml/notebooks/anpc-2017.csv,distrito,GUARDA,1283,nao
+ml/notebooks/anpc-2017.csv,distrito,LEIRIA,2028,nao
+ml/notebooks/anpc-2017.csv,distrito,LISBOA,4671,nao
+ml/notebooks/anpc-2017.csv,distrito,PORTALEGRE,647,nao
+ml/notebooks/anpc-2017.csv,distrito,PORTO,6476,nao
+ml/notebooks/anpc-2017.csv,distrito,SANTARÉM,2098,nao
+ml/notebooks/anpc-2017.csv,distrito,SETÚBAL,2189,nao
+ml/notebooks/anpc-2017.csv,distrito,VIANA DO CASTELO,1578,nao
+ml/notebooks/anpc-2017.csv,distrito,VILA REAL,1841,nao
+ml/notebooks/anpc-2017.csv,distrito,VISEU,2696,nao
+ml/notebooks/anpc-2017.csv,distrito,ÉVORA,762,nao
+ml/notebooks/anpc-2018.csv,mes,2018-01,1877,nao
+ml/notebooks/anpc-2018.csv,mes,2018-02,3800,nao
+ml/notebooks/anpc-2018.csv,mes,2018-03,1807,nao
+ml/notebooks/anpc-2018.csv,mes,2018-04,2889,nao
+ml/notebooks/anpc-2018.csv,mes,2018-05,4191,nao
+ml/notebooks/anpc-2018.csv,mes,2018-06,2083,nao
+ml/notebooks/anpc-2018.csv,mes,2018-07,2195,nao
+ml/notebooks/anpc-2018.csv,mes,2018-08,4282,nao
+ml/notebooks/anpc-2018.csv,mes,2018-09,3227,nao
+ml/notebooks/anpc-2018.csv,mes,2018-10,3759,nao
+ml/notebooks/anpc-2018.csv,mes,2018-11,1490,nao
+ml/notebooks/anpc-2018.csv,mes,2018-12,1907,nao
+ml/notebooks/anpc-2018.csv,distrito,AVEIRO,2733,nao
+ml/notebooks/anpc-2018.csv,distrito,BEJA,726,nao
+ml/notebooks/anpc-2018.csv,distrito,BRAGA,2600,nao
+ml/notebooks/anpc-2018.csv,distrito,BRAGANÇA,823,nao
+ml/notebooks/anpc-2018.csv,distrito,CASTELO BRANCO,869,nao
+ml/notebooks/anpc-2018.csv,distrito,COIMBRA,1230,nao
+ml/notebooks/anpc-2018.csv,distrito,FARO,1903,nao
+ml/notebooks/anpc-2018.csv,distrito,GUARDA,1143,nao
+ml/notebooks/anpc-2018.csv,distrito,LEIRIA,1491,nao
+ml/notebooks/anpc-2018.csv,distrito,LISBOA,4676,nao
+ml/notebooks/anpc-2018.csv,distrito,PORTALEGRE,605,nao
+ml/notebooks/anpc-2018.csv,distrito,PORTO,5509,nao
+ml/notebooks/anpc-2018.csv,distrito,SANTARÉM,1707,nao
+ml/notebooks/anpc-2018.csv,distrito,SETÚBAL,2178,nao
+ml/notebooks/anpc-2018.csv,distrito,VIANA DO CASTELO,1441,nao
+ml/notebooks/anpc-2018.csv,distrito,VILA REAL,1426,nao
+ml/notebooks/anpc-2018.csv,distrito,VISEU,1819,nao
+ml/notebooks/anpc-2018.csv,distrito,ÉVORA,628,nao
+ml/notebooks/anpc-2019.csv,mes,2019-01,2576,nao
+ml/notebooks/anpc-2019.csv,mes,2019-02,2323,nao
+ml/notebooks/anpc-2019.csv,mes,2019-03,3407,nao
+ml/notebooks/anpc-2019.csv,mes,2019-04,1563,nao
+ml/notebooks/anpc-2019.csv,mes,2019-05,2838,nao
+ml/notebooks/anpc-2019.csv,mes,2019-06,2771,nao
+ml/notebooks/anpc-2019.csv,mes,2019-07,2995,nao
+ml/notebooks/anpc-2019.csv,mes,2019-08,3260,nao
+ml/notebooks/anpc-2019.csv,mes,2019-09,3824,nao
+ml/notebooks/anpc-2019.csv,mes,2019-10,2223,nao
+ml/notebooks/anpc-2019.csv,mes,2019-11,1411,nao
+ml/notebooks/anpc-2019.csv,mes,2019-12,1769,nao
+ml/notebooks/anpc-2019.csv,distrito,AVEIRO,2311,nao
+ml/notebooks/anpc-2019.csv,distrito,BEJA,855,nao
+ml/notebooks/anpc-2019.csv,distrito,BRAGA,2069,nao
+ml/notebooks/anpc-2019.csv,distrito,BRAGANÇA,663,nao
+ml/notebooks/anpc-2019.csv,distrito,CASTELO BRANCO,899,nao
+ml/notebooks/anpc-2019.csv,distrito,COIMBRA,1240,nao
+ml/notebooks/anpc-2019.csv,distrito,FARO,1918,nao
+ml/notebooks/anpc-2019.csv,distrito,GUARDA,648,nao
+ml/notebooks/anpc-2019.csv,distrito,LEIRIA,1567,nao
+ml/notebooks/anpc-2019.csv,distrito,LISBOA,4709,nao
+ml/notebooks/anpc-2019.csv,distrito,PORTALEGRE,567,nao
+ml/notebooks/anpc-2019.csv,distrito,PORTO,4992,nao
+ml/notebooks/anpc-2019.csv,distrito,SANTARÉM,1700,nao
+ml/notebooks/anpc-2019.csv,distrito,SETÚBAL,2264,nao
+ml/notebooks/anpc-2019.csv,distrito,VIANA DO CASTELO,1120,nao
+ml/notebooks/anpc-2019.csv,distrito,VILA REAL,1143,nao
+ml/notebooks/anpc-2019.csv,distrito,VISEU,1538,nao
+ml/notebooks/anpc-2019.csv,distrito,ÉVORA,757,nao
+ml/notebooks/anpc-2020.csv,mes,2020-01,1762,nao
+ml/notebooks/anpc-2020.csv,mes,2020-02,1495,nao
+ml/notebooks/anpc-2020.csv,mes,2020-03,1409,nao
+ml/notebooks/anpc-2020.csv,mes,2020-04,924,nao
+ml/notebooks/anpc-2020.csv,mes,2020-05,1877,nao
+ml/notebooks/anpc-2020.csv,mes,2020-06,2400,nao
+ml/notebooks/anpc-2020.csv,mes,2020-07,697,nao
+ml/notebooks/anpc-2020.csv,distrito,AVEIRO,750,nao
+ml/notebooks/anpc-2020.csv,distrito,BEJA,235,nao
+ml/notebooks/anpc-2020.csv,distrito,BRAGA,689,nao
+ml/notebooks/anpc-2020.csv,distrito,BRAGANÇA,167,nao
+ml/notebooks/anpc-2020.csv,distrito,CASTELO BRANCO,252,nao
+ml/notebooks/anpc-2020.csv,distrito,COIMBRA,385,nao
+ml/notebooks/anpc-2020.csv,distrito,FARO,682,nao
+ml/notebooks/anpc-2020.csv,distrito,GUARDA,224,nao
+ml/notebooks/anpc-2020.csv,distrito,LEIRIA,523,nao
+ml/notebooks/anpc-2020.csv,distrito,LISBOA,1904,nao
+ml/notebooks/anpc-2020.csv,distrito,PORTALEGRE,178,nao
+ml/notebooks/anpc-2020.csv,distrito,PORTO,1881,nao
+ml/notebooks/anpc-2020.csv,distrito,SANTARÉM,564,nao
+ml/notebooks/anpc-2020.csv,distrito,SETÚBAL,934,nao
+ml/notebooks/anpc-2020.csv,distrito,VIANA DO CASTELO,267,nao
+ml/notebooks/anpc-2020.csv,distrito,VILA REAL,245,nao
+ml/notebooks/anpc-2020.csv,distrito,VISEU,469,nao
+ml/notebooks/anpc-2020.csv,distrito,ÉVORA,218,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Lisboa,916,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Porto,1695,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Braga,1331,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Coimbra,1392,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Faro,824,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Aveiro,1061,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Setúbal,1112,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Viseu,1315,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Leiria,1478,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Évora,804,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Castelo Branco,911,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Guarda,937,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Beja,746,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Portalegre,283,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Santarém,1054,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Bragança,605,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Vila Real,944,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Viana do Castelo,1101,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Funchal,0,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Ponta Delgada,0,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Sintra,3877,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Cascais,1812,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Loures,2102,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Almada,1587,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Amadora,1202,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Vila Nova de Gaia,3707,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Matosinhos,1385,nao
+ANPC 2016-2020,nome_concelho_sem_validacao_territorial,Guimarães,1413,nao
