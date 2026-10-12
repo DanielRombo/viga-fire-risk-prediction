@@ -1,8 +1,15 @@
 version: '3.8'
 
+x-logging: &logging-limitado
+  driver: local
+  options:
+    max-size: "10m"
+    max-file: "3"
+
 # Produção: docker compose --env-file .env.prod -f docker-compose.prod.yml up -d --build
 services:
   db:
+    logging: *logging-limitado
     image: postgis/postgis:15-3.3
     container_name: viga_db_prod
     restart: always
@@ -21,6 +28,7 @@ services:
       retries: 5
 
   backend:
+    logging: *logging-limitado
     build:
       context: .
       dockerfile: docker/backend/Dockerfile.prod
@@ -28,15 +36,24 @@ services:
     restart: always
     environment:
       DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:?Defina POSTGRES_USER em .env.prod e use --env-file .env.prod}:${POSTGRES_PASSWORD:?Defina POSTGRES_PASSWORD em .env.prod e use --env-file .env.prod}@db:5432/${POSTGRES_DB:?Defina POSTGRES_DB em .env.prod e use --env-file .env.prod}
+      APP_ENV: production
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
       SECRET_KEY: ${SECRET_KEY:?Defina SECRET_KEY em .env.prod e use --env-file .env.prod}
       NASA_FIRMS_KEY: ${NASA_FIRMS_KEY}
     depends_on:
       db:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health/ready', timeout=8)"]
+      interval: 30s
+      timeout: 10s
+      start_period: 90s
+      retries: 3
     networks:
       - viga_network
 
   frontend:
+    logging: *logging-limitado
     build:
       context: .
       dockerfile: docker/frontend/Dockerfile.prod
@@ -46,6 +63,7 @@ services:
       - viga_network
 
   nginx:
+    logging: *logging-limitado
     image: nginx:alpine
     container_name: viga_nginx_prod
     restart: always

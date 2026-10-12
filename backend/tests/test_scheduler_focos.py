@@ -42,7 +42,11 @@ class SchedulerFocosTests(unittest.TestCase):
                 patch.object(self.db, "commit", wraps=self.db.commit) as commit, \
                 patch.object(self.db, "rollback", wraps=self.db.rollback) as rollback, \
                 patch.object(self.db, "close", wraps=self.db.close) as close:
-            asyncio.run(scheduler._atualizar_focos())
+            if falha:
+                with self.assertRaises(Exception):
+                    asyncio.run(scheduler._atualizar_focos())
+            else:
+                asyncio.run(scheduler._atualizar_focos())
             close.assert_called_once()
             if falha:
                 rollback.assert_called_once()

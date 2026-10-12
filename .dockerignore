@@ -1,0 +1,14 @@
+.git
+.env
+.env.*
+**/.env
+**/.env.*
+**/__pycache__
+**/.venv
+**/node_modules
+**/dist
+operations
+experiments
+ml
+*.dump
+*.backup

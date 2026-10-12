@@ -4,3 +4,17 @@
 !backend/ml_models/modelo_anpc.joblib
 !backend/ml_models/scaler_anpc.joblib
 !backend/ml_models/encoder_distrito_anpc.joblib
+.git
+.env
+.env.*
+**/.env
+**/.env.*
+**/__pycache__
+**/.venv
+**/node_modules
+**/dist
+operations
+experiments
+ml
+*.dump
+*.backup

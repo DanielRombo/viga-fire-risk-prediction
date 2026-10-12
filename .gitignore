@@ -2,6 +2,11 @@ __pycache__/
 *.pyc
 .env
 .env.prod
+.env.*
+!.env.example
+!.env.prod.example
+*.dump
+*.backup
 node_modules/
 *.joblib
 !backend/ml_models/modelo_kaggle.joblib

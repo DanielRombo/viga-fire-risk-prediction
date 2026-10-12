@@ -6,6 +6,7 @@ import { getFocosIncendio, getRiscoRegiao } from '../services/api'
 import { numeroDisponivel, formatarValor, mensagemErro, mensagemEstado, formatarDataObservacao } from '../utils/disponibilidade'
 
 import { encontrarRegiaoMapa } from '../utils/regioesMapa'
+import { escaparHTML } from '../utils/html'
 
 delete L.Icon.Default.prototype._getIconUrl
 L.Icon.Default.mergeOptions({
@@ -143,13 +144,13 @@ function MapaInterativo({ camadasAtivas, onToggleCamada, regiaoSelecionada, onDa
     const popupGeoJSON = (camada) => (feature, layer) => {
         const cidade = encontrarCidade(feature.properties.name)
         const dados = cidade?.risco?.estado === 'ok' ? cidade.risco.dados_meteorologicos : null
-        let conteudo = `<strong>${feature.properties.name === 'Azores' ? 'Açores' : feature.properties.name}</strong><br/>`
-        if (cidade) conteudo += `Observação em ${cidade.nome}<br/>Última atualização: ${formatarDataObservacao(cidade.risco?.data_hora)}<br/>`
+        let conteudo = `<strong>${escaparHTML(feature.properties.name === 'Azores' ? 'Açores' : feature.properties.name)}</strong><br/>`
+        if (cidade) conteudo += `Observação em ${escaparHTML(cidade.nome)}<br/>Última atualização: ${formatarDataObservacao(cidade.risco?.data_hora)}<br/>`
         if (camada === 'fwi') conteudo += `Índice legado (experimental): ${formatarValor(cidade?.risco?.fwi?.fwi)}<br/>Indicador heurístico; não é o FWI diário.`
         if (camada === 'temperatura') conteudo += `Temperatura: ${formatarValor(dados?.temperatura)}${numeroDisponivel(dados?.temperatura) ? '°C' : ''}`
         if (camada === 'vento') conteudo += `Vento: ${formatarValor(dados?.velocidade_vento)}${numeroDisponivel(dados?.velocidade_vento) ? ' km/h' : ''}`
         if (camada === 'humidade') conteudo += `Humidade: ${formatarValor(dados?.humidade)}${numeroDisponivel(dados?.humidade) ? '%' : ''}`
-        conteudo += `<br/>${cidade?.erro || mensagemEstado(cidade?.risco?.estado || 'sem_dados')}`
+        conteudo += `<br/>${escaparHTML(cidade?.erro || mensagemEstado(cidade?.risco?.estado || 'sem_dados'))}`
         layer.bindPopup(conteudo)
         if (cidade) layer.on('click', () => onRegiaoSelecionada?.(cidade))
     }

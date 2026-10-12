@@ -85,8 +85,9 @@ async def _atualizar_focos():
     try:
         resultado = await guardar_focos_incendio(db)
         logger.info(f"  ✓ {resultado['focos_guardados']} focos guardados")
-    except Exception as e:
-        logger.error(f"Erro focos: {e}")
+    except Exception:
+        logger.error("Falha na recolha de focos; transação revertida.")
+        raise
     finally:
         db.close()
 

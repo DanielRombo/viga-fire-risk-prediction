@@ -7,6 +7,8 @@ from config.database import engine, Base
 from routes import meteorologia, incendios, regioes, risco, alertas, ipma, fwi_diario
 from routes.auth import router as auth_router
 from models import utilizador
+from config.seguranca import origens_cors
+from routes.health import router as health_router
 
 # Modo temporário de instalação: também impede DDL e preparação de dados.
 _modo_temporario = os.getenv("DISABLE_AUTOMATIC_TASKS", "false").strip().lower()
@@ -21,8 +23,8 @@ app = FastAPI(title="VIGA API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
+    allow_origins=origens_cors(),
+    allow_credentials=False,  # Autenticação por Bearer; não usa cookies.
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -35,6 +37,7 @@ app.include_router(fwi_diario.router, prefix="/api")
 app.include_router(alertas.router, prefix="/api")
 app.include_router(ipma.router, prefix="/api")
 app.include_router(auth_router, prefix="/api")
+app.include_router(health_router, prefix="/api")
 
 
 @app.on_event("startup")

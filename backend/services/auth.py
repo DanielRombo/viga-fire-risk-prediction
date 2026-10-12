@@ -4,9 +4,9 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 from models.utilizador import Utilizador
-import os
+from config.seguranca import chave_jwt
 
-SECRET_KEY = os.getenv("SECRET_KEY", "viga-secret-key-2024")
+SECRET_KEY = chave_jwt()
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24
 
@@ -14,7 +14,10 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
 def verificar_senha(senha_plain: str, senha_hash: str) -> bool:
-    return pwd_context.verify(senha_plain, senha_hash)
+    try:
+        return pwd_context.verify(senha_plain, senha_hash)
+    except (ValueError, TypeError):
+        return False
 
 
 def hash_senha(senha: str) -> str:
@@ -38,7 +41,7 @@ def verificar_token(token: str) -> Optional[dict]:
 
 def autenticar_utilizador(db: Session, email: str, senha: str) -> Optional[Utilizador]:
     user = db.query(Utilizador).filter(Utilizador.email == email).first()
-    if not user or not verificar_senha(senha, user.senha_hash):
+    if not user or not user.ativo or not verificar_senha(senha, user.senha_hash):
         return None
     return user
 
