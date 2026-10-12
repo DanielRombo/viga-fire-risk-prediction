@@ -1,3 +1,4 @@
+from services.http_externo import get_com_retry
 import httpx
 import csv
 import io
@@ -18,12 +19,12 @@ async def obter_focos_incendio(dias: int = 1):
     map_key = os.getenv("NASA_FIRMS_KEY")
     areas = areas_consulta()
     with validar_fonte("NASA FIRMS"):
-        async with httpx.AsyncClient() as client:
+        async with httpx.AsyncClient(timeout=httpx.Timeout(20, connect=5)) as client:
             focos = []
             vistas = set()
             for area in areas.values():
                 url = f"{NASA_FIRMS_URL}/{map_key}/{PRODUTO_NASA}/{area}/{dias}"
-                resposta = await client.get(url)
+                resposta = await get_com_retry(client, url)
                 resposta.raise_for_status()
                 leitor = csv.DictReader(io.StringIO(resposta.text))
                 if not {"latitude", "longitude", "acq_date", "acq_time"}.issubset(leitor.fieldnames or []):

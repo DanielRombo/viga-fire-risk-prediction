@@ -1,3 +1,4 @@
+from services.http_externo import get_com_retry
 import httpx
 import logging
 from services.fontes import validar_fonte, numero
@@ -10,7 +11,7 @@ IPMA_URL = "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/hp-d
 async def obter_previsao_ipma():
     with validar_fonte("IPMA"):
         async with httpx.AsyncClient(timeout=30) as client:
-            resposta = await client.get(IPMA_URL)
+            resposta = await get_com_retry(client, IPMA_URL)
             resposta.raise_for_status()
             dados = resposta.json()
 

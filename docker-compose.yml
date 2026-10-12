@@ -2,21 +2,21 @@ services:
   db:
     image: postgis/postgis:15-3.3
     ports:
-      - "5432:5432"
+      - "127.0.0.1:5432:5432"
     environment:
       POSTGRES_DB: viga
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: VIGAdmin
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Defina DB_PASSWORD no ficheiro .env}
     volumes:
       - pgdata:/var/lib/postgresql/data
 
   pgadmin:
     image: dpage/pgadmin4
     ports:
-      - "8080:80"
+      - "127.0.0.1:8080:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@viga.pt
-      PGADMIN_DEFAULT_PASSWORD: VIGAdmin
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:?Defina PGADMIN_DEFAULT_PASSWORD no ficheiro .env}
     depends_on:
       - db
     volumes:
@@ -27,7 +27,7 @@ services:
       context: .
       dockerfile: docker/backend/Dockerfile
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     depends_on:
       - db
     volumes:

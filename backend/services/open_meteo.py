@@ -1,3 +1,4 @@
+from services.http_externo import get_com_retry
 import httpx
 from datetime import datetime, timezone
 from services.disponibilidade import data_utc, MAX_IDADE_DADOS
@@ -28,8 +29,8 @@ async def obter_dados_meteorologicos(latitude: float, longitude: float):
     }
 
     with validar_fonte("Open-Meteo"):
-        async with httpx.AsyncClient() as client:
-            resposta = await client.get(OPEN_METEO_URL, params=params)
+        async with httpx.AsyncClient(timeout=httpx.Timeout(20, connect=5)) as client:
+            resposta = await get_com_retry(client, OPEN_METEO_URL, params=params)
             resposta.raise_for_status()
             dados = resposta.json()
             current = dados["current"]
