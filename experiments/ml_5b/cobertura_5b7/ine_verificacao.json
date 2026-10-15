@@ -1,0 +1,47 @@
+{
+  "dados_iguais_cache": true,
+  "atualizado_em": "2026-05-30",
+  "totais": {
+    "Lisboa": {
+      "geocod": "1A01106",
+      "geodsg": "Lisboa",
+      "dim_3": "T",
+      "dim_3_t": "Total",
+      "sinal_conv": "&",
+      "sinal_conv_desc": "Dado provisório",
+      "ind_string": "1 &",
+      "valor": "1"
+    },
+    "Faro": {
+      "geocod": "1500805",
+      "geodsg": "Faro",
+      "dim_3": "T",
+      "dim_3_t": "Total",
+      "sinal_conv": "&",
+      "sinal_conv_desc": "Dado provisório",
+      "ind_string": "32 &",
+      "valor": "32"
+    },
+    "Vila Real": {
+      "geocod": "11D1714",
+      "geodsg": "Vila Real",
+      "dim_3": "T",
+      "dim_3_t": "Total",
+      "sinal_conv": "&",
+      "sinal_conv_desc": "Dado provisório",
+      "ind_string": "68 &",
+      "valor": "68"
+    },
+    "Continente": {
+      "geocod": "1",
+      "geodsg": "Continente",
+      "dim_3": "T",
+      "dim_3_t": "Total",
+      "sinal_conv": "&",
+      "sinal_conv_desc": "Dado provisório",
+      "ind_string": "8 245 &",
+      "valor": "8245"
+    }
+  },
+  "nota": "SHA do JSON muda com DataExtracao; comparar conteúdo estatístico, não só hash."
+}

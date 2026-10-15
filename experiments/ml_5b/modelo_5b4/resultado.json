@@ -1,0 +1,8 @@
+{
+  "modelo_congelado": "hist_gradient_boosting",
+  "threshold": 0.28,
+  "supera_baseline_ap_vila_real": true,
+  "ap_teste": 0.16300125972537383,
+  "ap_baseline": 0.09146341463414634,
+  "nota": "Decisão científica final no relatório. Não escolher outro modelo depois de consultar o teste."
+}

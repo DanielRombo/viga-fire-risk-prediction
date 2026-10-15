@@ -1,0 +1,2398 @@
+{
+  "completo": {
+    "linhas": 3288,
+    "positivos": 177,
+    "negativos_condicionais": 2644,
+    "null": 467,
+    "prevalencia": 0.06274370790499822
+  },
+  "elegivel": {
+    "linhas": 1693,
+    "positivos": 132,
+    "negativos_condicionais": 1561,
+    "null": 0,
+    "prevalencia": 0.07796810395747195
+  },
+  "excluidos": {
+    "linhas": 1595,
+    "positivos": 45,
+    "negativos_condicionais": 1083,
+    "null": 467,
+    "prevalencia": 0.0398936170212766
+  },
+  "motivos": {
+    "sensibilidade_semente": 1174,
+    "target_null": 467,
+    "cobertura_nao_aceitavel": 431,
+    "horizonte_atravessa_split": 9
+  },
+  "grupos": [
+    {
+      "dim": "ano",
+      "valor": "2022",
+      "completo": {
+        "linhas": 1095,
+        "positivos": 76,
+        "negativos_condicionais": 978,
+        "null": 41,
+        "prevalencia": 0.07210626185958255
+      },
+      "elegivel": {
+        "linhas": 373,
+        "positivos": 51,
+        "negativos_condicionais": 322,
+        "null": 0,
+        "prevalencia": 0.13672922252010725
+      }
+    },
+    {
+      "dim": "ano",
+      "valor": "2023",
+      "completo": {
+        "linhas": 1095,
+        "positivos": 59,
+        "negativos_condicionais": 1020,
+        "null": 16,
+        "prevalencia": 0.05468025949953661
+      },
+      "elegivel": {
+        "linhas": 722,
+        "positivos": 40,
+        "negativos_condicionais": 682,
+        "null": 0,
+        "prevalencia": 0.055401662049861494
+      }
+    },
+    {
+      "dim": "ano",
+      "valor": "2024",
+      "completo": {
+        "linhas": 1098,
+        "positivos": 42,
+        "negativos_condicionais": 646,
+        "null": 410,
+        "prevalencia": 0.061046511627906974
+      },
+      "elegivel": {
+        "linhas": 598,
+        "positivos": 41,
+        "negativos_condicionais": 557,
+        "null": 0,
+        "prevalencia": 0.06856187290969899
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "1",
+      "completo": {
+        "linhas": 279,
+        "positivos": 5,
+        "negativos_condicionais": 242,
+        "null": 32,
+        "prevalencia": 0.020242914979757085
+      },
+      "elegivel": {
+        "linhas": 114,
+        "positivos": 5,
+        "negativos_condicionais": 109,
+        "null": 0,
+        "prevalencia": 0.043859649122807015
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "10",
+      "completo": {
+        "linhas": 279,
+        "positivos": 3,
+        "negativos_condicionais": 243,
+        "null": 33,
+        "prevalencia": 0.012195121951219513
+      },
+      "elegivel": {
+        "linhas": 155,
+        "positivos": 3,
+        "negativos_condicionais": 152,
+        "null": 0,
+        "prevalencia": 0.01935483870967742
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "11",
+      "completo": {
+        "linhas": 270,
+        "positivos": 0,
+        "negativos_condicionais": 240,
+        "null": 30,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 150,
+        "positivos": 0,
+        "negativos_condicionais": 150,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "12",
+      "completo": {
+        "linhas": 279,
+        "positivos": 1,
+        "negativos_condicionais": 244,
+        "null": 34,
+        "prevalencia": 0.004081632653061225
+      },
+      "elegivel": {
+        "linhas": 169,
+        "positivos": 1,
+        "negativos_condicionais": 168,
+        "null": 0,
+        "prevalencia": 0.005917159763313609
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "2",
+      "completo": {
+        "linhas": 255,
+        "positivos": 15,
+        "negativos_condicionais": 182,
+        "null": 58,
+        "prevalencia": 0.07614213197969544
+      },
+      "elegivel": {
+        "linhas": 84,
+        "positivos": 12,
+        "negativos_condicionais": 72,
+        "null": 0,
+        "prevalencia": 0.14285714285714285
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "3",
+      "completo": {
+        "linhas": 279,
+        "positivos": 9,
+        "negativos_condicionais": 237,
+        "null": 33,
+        "prevalencia": 0.036585365853658534
+      },
+      "elegivel": {
+        "linhas": 123,
+        "positivos": 6,
+        "negativos_condicionais": 117,
+        "null": 0,
+        "prevalencia": 0.04878048780487805
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "4",
+      "completo": {
+        "linhas": 270,
+        "positivos": 12,
+        "negativos_condicionais": 226,
+        "null": 32,
+        "prevalencia": 0.05042016806722689
+      },
+      "elegivel": {
+        "linhas": 148,
+        "positivos": 11,
+        "negativos_condicionais": 137,
+        "null": 0,
+        "prevalencia": 0.07432432432432433
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "5",
+      "completo": {
+        "linhas": 279,
+        "positivos": 22,
+        "negativos_condicionais": 219,
+        "null": 38,
+        "prevalencia": 0.0912863070539419
+      },
+      "elegivel": {
+        "linhas": 153,
+        "positivos": 15,
+        "negativos_condicionais": 138,
+        "null": 0,
+        "prevalencia": 0.09803921568627451
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "6",
+      "completo": {
+        "linhas": 270,
+        "positivos": 19,
+        "negativos_condicionais": 217,
+        "null": 34,
+        "prevalencia": 0.08050847457627118
+      },
+      "elegivel": {
+        "linhas": 148,
+        "positivos": 8,
+        "negativos_condicionais": 140,
+        "null": 0,
+        "prevalencia": 0.05405405405405406
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "7",
+      "completo": {
+        "linhas": 279,
+        "positivos": 36,
+        "negativos_condicionais": 205,
+        "null": 38,
+        "prevalencia": 0.14937759336099585
+      },
+      "elegivel": {
+        "linhas": 151,
+        "positivos": 25,
+        "negativos_condicionais": 126,
+        "null": 0,
+        "prevalencia": 0.16556291390728478
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "8",
+      "completo": {
+        "linhas": 279,
+        "positivos": 40,
+        "negativos_condicionais": 170,
+        "null": 69,
+        "prevalencia": 0.19047619047619047
+      },
+      "elegivel": {
+        "linhas": 152,
+        "positivos": 36,
+        "negativos_condicionais": 116,
+        "null": 0,
+        "prevalencia": 0.23684210526315788
+      }
+    },
+    {
+      "dim": "mes",
+      "valor": "9",
+      "completo": {
+        "linhas": 270,
+        "positivos": 15,
+        "negativos_condicionais": 219,
+        "null": 36,
+        "prevalencia": 0.0641025641025641
+      },
+      "elegivel": {
+        "linhas": 146,
+        "positivos": 10,
+        "negativos_condicionais": 136,
+        "null": 0,
+        "prevalencia": 0.0684931506849315
+      }
+    },
+    {
+      "dim": "municipio",
+      "valor": "0805",
+      "completo": {
+        "linhas": 1096,
+        "positivos": 50,
+        "negativos_condicionais": 995,
+        "null": 51,
+        "prevalencia": 0.04784688995215311
+      },
+      "elegivel": {
+        "linhas": 270,
+        "positivos": 11,
+        "negativos_condicionais": 259,
+        "null": 0,
+        "prevalencia": 0.040740740740740744
+      }
+    },
+    {
+      "dim": "municipio",
+      "valor": "1106",
+      "completo": {
+        "linhas": 1096,
+        "positivos": 12,
+        "negativos_condicionais": 711,
+        "null": 373,
+        "prevalencia": 0.016597510373443983
+      },
+      "elegivel": {
+        "linhas": 381,
+        "positivos": 6,
+        "negativos_condicionais": 375,
+        "null": 0,
+        "prevalencia": 0.015748031496062992
+      }
+    },
+    {
+      "dim": "municipio",
+      "valor": "1714",
+      "completo": {
+        "linhas": 1096,
+        "positivos": 115,
+        "negativos_condicionais": 938,
+        "null": 43,
+        "prevalencia": 0.10921177587844255
+      },
+      "elegivel": {
+        "linhas": 1042,
+        "positivos": 115,
+        "negativos_condicionais": 927,
+        "null": 0,
+        "prevalencia": 0.11036468330134357
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/01",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/02",
+      "completo": {
+        "linhas": 28,
+        "positivos": 3,
+        "negativos_condicionais": 25,
+        "null": 0,
+        "prevalencia": 0.10714285714285714
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/03",
+      "completo": {
+        "linhas": 31,
+        "positivos": 2,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.06451612903225806
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/04",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/05",
+      "completo": {
+        "linhas": 31,
+        "positivos": 2,
+        "negativos_condicionais": 27,
+        "null": 2,
+        "prevalencia": 0.06896551724137931
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/06",
+      "completo": {
+        "linhas": 30,
+        "positivos": 5,
+        "negativos_condicionais": 23,
+        "null": 2,
+        "prevalencia": 0.17857142857142858
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/07",
+      "completo": {
+        "linhas": 31,
+        "positivos": 5,
+        "negativos_condicionais": 25,
+        "null": 1,
+        "prevalencia": 0.16666666666666666
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/08",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 31,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/09",
+      "completo": {
+        "linhas": 30,
+        "positivos": 2,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.06666666666666667
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/10",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/11",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2022/12",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/01",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/02",
+      "completo": {
+        "linhas": 28,
+        "positivos": 0,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/03",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/04",
+      "completo": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/05",
+      "completo": {
+        "linhas": 31,
+        "positivos": 4,
+        "negativos_condicionais": 24,
+        "null": 3,
+        "prevalencia": 0.14285714285714285
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/06",
+      "completo": {
+        "linhas": 30,
+        "positivos": 5,
+        "negativos_condicionais": 25,
+        "null": 0,
+        "prevalencia": 0.16666666666666666
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/07",
+      "completo": {
+        "linhas": 31,
+        "positivos": 3,
+        "negativos_condicionais": 26,
+        "null": 2,
+        "prevalencia": 0.10344827586206896
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/08",
+      "completo": {
+        "linhas": 31,
+        "positivos": 3,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.0967741935483871
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/09",
+      "completo": {
+        "linhas": 30,
+        "positivos": 3,
+        "negativos_condicionais": 25,
+        "null": 2,
+        "prevalencia": 0.10714285714285714
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/10",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 29,
+        "null": 2,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/11",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2023/12",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/01",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/02",
+      "completo": {
+        "linhas": 29,
+        "positivos": 0,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/03",
+      "completo": {
+        "linhas": 31,
+        "positivos": 1,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.03225806451612903
+      },
+      "elegivel": {
+        "linhas": 1,
+        "positivos": 0,
+        "negativos_condicionais": 1,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/04",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/05",
+      "completo": {
+        "linhas": 31,
+        "positivos": 1,
+        "negativos_condicionais": 28,
+        "null": 2,
+        "prevalencia": 0.034482758620689655
+      },
+      "elegivel": {
+        "linhas": 29,
+        "positivos": 1,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.034482758620689655
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/06",
+      "completo": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/07",
+      "completo": {
+        "linhas": 31,
+        "positivos": 4,
+        "negativos_condicionais": 27,
+        "null": 0,
+        "prevalencia": 0.12903225806451613
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 4,
+        "negativos_condicionais": 27,
+        "null": 0,
+        "prevalencia": 0.12903225806451613
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/08",
+      "completo": {
+        "linhas": 31,
+        "positivos": 4,
+        "negativos_condicionais": 26,
+        "null": 1,
+        "prevalencia": 0.13333333333333333
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 4,
+        "negativos_condicionais": 26,
+        "null": 0,
+        "prevalencia": 0.13333333333333333
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/09",
+      "completo": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 27,
+        "null": 2,
+        "prevalencia": 0.03571428571428571
+      },
+      "elegivel": {
+        "linhas": 28,
+        "positivos": 1,
+        "negativos_condicionais": 27,
+        "null": 0,
+        "prevalencia": 0.03571428571428571
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/10",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/11",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "0805/2024/12",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 1,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/01",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/02",
+      "completo": {
+        "linhas": 28,
+        "positivos": 0,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/03",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/04",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/05",
+      "completo": {
+        "linhas": 31,
+        "positivos": 1,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.03225806451612903
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/06",
+      "completo": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/07",
+      "completo": {
+        "linhas": 31,
+        "positivos": 3,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.0967741935483871
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/08",
+      "completo": {
+        "linhas": 31,
+        "positivos": 1,
+        "negativos_condicionais": 26,
+        "null": 4,
+        "prevalencia": 0.037037037037037035
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/09",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/10",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/11",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2022/12",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 19,
+        "positivos": 0,
+        "negativos_condicionais": 19,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/01",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/02",
+      "completo": {
+        "linhas": 28,
+        "positivos": 0,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 28,
+        "positivos": 0,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/03",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/04",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/05",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/06",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/07",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 29,
+        "null": 2,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 29,
+        "positivos": 0,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/08",
+      "completo": {
+        "linhas": 31,
+        "positivos": 5,
+        "negativos_condicionais": 26,
+        "null": 0,
+        "prevalencia": 0.16129032258064516
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 5,
+        "negativos_condicionais": 26,
+        "null": 0,
+        "prevalencia": 0.16129032258064516
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/09",
+      "completo": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/10",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/11",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2023/12",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 1,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/01",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 31,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/02",
+      "completo": {
+        "linhas": 29,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 29,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/03",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 31,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/04",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 30,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/05",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 31,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/06",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 30,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/07",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 31,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/08",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 31,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/09",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 30,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/10",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 31,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/11",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 30,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1106/2024/12",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 31,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/01",
+      "completo": {
+        "linhas": 31,
+        "positivos": 5,
+        "negativos_condicionais": 26,
+        "null": 0,
+        "prevalencia": 0.16129032258064516
+      },
+      "elegivel": {
+        "linhas": 22,
+        "positivos": 5,
+        "negativos_condicionais": 17,
+        "null": 0,
+        "prevalencia": 0.22727272727272727
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/02",
+      "completo": {
+        "linhas": 28,
+        "positivos": 6,
+        "negativos_condicionais": 22,
+        "null": 0,
+        "prevalencia": 0.21428571428571427
+      },
+      "elegivel": {
+        "linhas": 28,
+        "positivos": 6,
+        "negativos_condicionais": 22,
+        "null": 0,
+        "prevalencia": 0.21428571428571427
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/03",
+      "completo": {
+        "linhas": 31,
+        "positivos": 2,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.06451612903225806
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 2,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.06451612903225806
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/04",
+      "completo": {
+        "linhas": 30,
+        "positivos": 5,
+        "negativos_condicionais": 25,
+        "null": 0,
+        "prevalencia": 0.16666666666666666
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 5,
+        "negativos_condicionais": 25,
+        "null": 0,
+        "prevalencia": 0.16666666666666666
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/05",
+      "completo": {
+        "linhas": 31,
+        "positivos": 5,
+        "negativos_condicionais": 26,
+        "null": 0,
+        "prevalencia": 0.16129032258064516
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 5,
+        "negativos_condicionais": 26,
+        "null": 0,
+        "prevalencia": 0.16129032258064516
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/06",
+      "completo": {
+        "linhas": 30,
+        "positivos": 4,
+        "negativos_condicionais": 26,
+        "null": 0,
+        "prevalencia": 0.13333333333333333
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 4,
+        "negativos_condicionais": 26,
+        "null": 0,
+        "prevalencia": 0.13333333333333333
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/07",
+      "completo": {
+        "linhas": 31,
+        "positivos": 12,
+        "negativos_condicionais": 19,
+        "null": 0,
+        "prevalencia": 0.3870967741935484
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 12,
+        "negativos_condicionais": 19,
+        "null": 0,
+        "prevalencia": 0.3870967741935484
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/08",
+      "completo": {
+        "linhas": 31,
+        "positivos": 9,
+        "negativos_condicionais": 21,
+        "null": 1,
+        "prevalencia": 0.3
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 9,
+        "negativos_condicionais": 21,
+        "null": 0,
+        "prevalencia": 0.3
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/09",
+      "completo": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/10",
+      "completo": {
+        "linhas": 31,
+        "positivos": 2,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.06451612903225806
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 2,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.06451612903225806
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/11",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2022/12",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/01",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/02",
+      "completo": {
+        "linhas": 28,
+        "positivos": 6,
+        "negativos_condicionais": 22,
+        "null": 0,
+        "prevalencia": 0.21428571428571427
+      },
+      "elegivel": {
+        "linhas": 28,
+        "positivos": 6,
+        "negativos_condicionais": 22,
+        "null": 0,
+        "prevalencia": 0.21428571428571427
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/03",
+      "completo": {
+        "linhas": 31,
+        "positivos": 2,
+        "negativos_condicionais": 27,
+        "null": 2,
+        "prevalencia": 0.06896551724137931
+      },
+      "elegivel": {
+        "linhas": 29,
+        "positivos": 2,
+        "negativos_condicionais": 27,
+        "null": 0,
+        "prevalencia": 0.06896551724137931
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/04",
+      "completo": {
+        "linhas": 30,
+        "positivos": 4,
+        "negativos_condicionais": 24,
+        "null": 2,
+        "prevalencia": 0.14285714285714285
+      },
+      "elegivel": {
+        "linhas": 28,
+        "positivos": 4,
+        "negativos_condicionais": 24,
+        "null": 0,
+        "prevalencia": 0.14285714285714285
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/05",
+      "completo": {
+        "linhas": 31,
+        "positivos": 6,
+        "negativos_condicionais": 25,
+        "null": 0,
+        "prevalencia": 0.1935483870967742
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 6,
+        "negativos_condicionais": 25,
+        "null": 0,
+        "prevalencia": 0.1935483870967742
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/06",
+      "completo": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/07",
+      "completo": {
+        "linhas": 31,
+        "positivos": 4,
+        "negativos_condicionais": 27,
+        "null": 0,
+        "prevalencia": 0.12903225806451613
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 4,
+        "negativos_condicionais": 27,
+        "null": 0,
+        "prevalencia": 0.12903225806451613
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/08",
+      "completo": {
+        "linhas": 31,
+        "positivos": 8,
+        "negativos_condicionais": 23,
+        "null": 0,
+        "prevalencia": 0.25806451612903225
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 8,
+        "negativos_condicionais": 23,
+        "null": 0,
+        "prevalencia": 0.25806451612903225
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/09",
+      "completo": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/10",
+      "completo": {
+        "linhas": 31,
+        "positivos": 1,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.03225806451612903
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 1,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.03225806451612903
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/11",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2023/12",
+      "completo": {
+        "linhas": 31,
+        "positivos": 1,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.03225806451612903
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 1,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.03333333333333333
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/01",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 1,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/02",
+      "completo": {
+        "linhas": 29,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 29,
+        "prevalencia": null
+      },
+      "elegivel": {
+        "linhas": 0,
+        "positivos": 0,
+        "negativos_condicionais": 0,
+        "null": 0,
+        "prevalencia": null
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/03",
+      "completo": {
+        "linhas": 31,
+        "positivos": 2,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.06451612903225806
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 2,
+        "negativos_condicionais": 29,
+        "null": 0,
+        "prevalencia": 0.06451612903225806
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/04",
+      "completo": {
+        "linhas": 30,
+        "positivos": 2,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.06666666666666667
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 2,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.06666666666666667
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/05",
+      "completo": {
+        "linhas": 31,
+        "positivos": 3,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.0967741935483871
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 3,
+        "negativos_condicionais": 28,
+        "null": 0,
+        "prevalencia": 0.0967741935483871
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/06",
+      "completo": {
+        "linhas": 30,
+        "positivos": 2,
+        "negativos_condicionais": 26,
+        "null": 2,
+        "prevalencia": 0.07142857142857142
+      },
+      "elegivel": {
+        "linhas": 28,
+        "positivos": 2,
+        "negativos_condicionais": 26,
+        "null": 0,
+        "prevalencia": 0.07142857142857142
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/07",
+      "completo": {
+        "linhas": 31,
+        "positivos": 5,
+        "negativos_condicionais": 24,
+        "null": 2,
+        "prevalencia": 0.1724137931034483
+      },
+      "elegivel": {
+        "linhas": 29,
+        "positivos": 5,
+        "negativos_condicionais": 24,
+        "null": 0,
+        "prevalencia": 0.1724137931034483
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/08",
+      "completo": {
+        "linhas": 31,
+        "positivos": 10,
+        "negativos_condicionais": 20,
+        "null": 1,
+        "prevalencia": 0.3333333333333333
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 10,
+        "negativos_condicionais": 20,
+        "null": 0,
+        "prevalencia": 0.3333333333333333
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/09",
+      "completo": {
+        "linhas": 30,
+        "positivos": 6,
+        "negativos_condicionais": 22,
+        "null": 2,
+        "prevalencia": 0.21428571428571427
+      },
+      "elegivel": {
+        "linhas": 28,
+        "positivos": 6,
+        "negativos_condicionais": 22,
+        "null": 0,
+        "prevalencia": 0.21428571428571427
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/10",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 31,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/11",
+      "completo": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "municipio_ano_mes",
+      "valor": "1714/2024/12",
+      "completo": {
+        "linhas": 31,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 1,
+        "prevalencia": 0.0
+      },
+      "elegivel": {
+        "linhas": 30,
+        "positivos": 0,
+        "negativos_condicionais": 30,
+        "null": 0,
+        "prevalencia": 0.0
+      }
+    },
+    {
+      "dim": "split_proposto",
+      "valor": "teste",
+      "completo": {
+        "linhas": 1098,
+        "positivos": 42,
+        "negativos_condicionais": 646,
+        "null": 410,
+        "prevalencia": 0.061046511627906974
+      },
+      "elegivel": {
+        "linhas": 598,
+        "positivos": 41,
+        "negativos_condicionais": 557,
+        "null": 0,
+        "prevalencia": 0.06856187290969899
+      }
+    },
+    {
+      "dim": "split_proposto",
+      "valor": "treino",
+      "completo": {
+        "linhas": 1095,
+        "positivos": 76,
+        "negativos_condicionais": 978,
+        "null": 41,
+        "prevalencia": 0.07210626185958255
+      },
+      "elegivel": {
+        "linhas": 373,
+        "positivos": 51,
+        "negativos_condicionais": 322,
+        "null": 0,
+        "prevalencia": 0.13672922252010725
+      }
+    },
+    {
+      "dim": "split_proposto",
+      "valor": "validacao",
+      "completo": {
+        "linhas": 1095,
+        "positivos": 59,
+        "negativos_condicionais": 1020,
+        "null": 16,
+        "prevalencia": 0.05468025949953661
+      },
+      "elegivel": {
+        "linhas": 722,
+        "positivos": 40,
+        "negativos_condicionais": 682,
+        "null": 0,
+        "prevalencia": 0.055401662049861494
+      }
+    }
+  ],
+  "gaps": 0,
+  "duplicados": 0,
+  "features_invalidas": 0,
+  "meteorologia": [
+    {
+      "municipio": "1106",
+      "nome": "Lisboa",
+      "latitude": 38.7169,
+      "longitude": -9.1399,
+      "latitude_grelha": 38.69947,
+      "longitude_grelha": -9.196167,
+      "horas_verificadas": 28512,
+      "dias_calculados": 1188,
+      "primeiro_dia": "2021-10-01",
+      "ultimo_dia": "2024-12-31",
+      "erro_prefixo": 0.0
+    },
+    {
+      "municipio": "0805",
+      "nome": "Faro",
+      "latitude": 37.0194,
+      "longitude": -7.9322,
+      "latitude_grelha": 37.012302,
+      "longitude_grelha": -7.955139,
+      "horas_verificadas": 28512,
+      "dias_calculados": 1188,
+      "primeiro_dia": "2021-10-01",
+      "ultimo_dia": "2024-12-31",
+      "erro_prefixo": 0.0
+    },
+    {
+      "municipio": "1714",
+      "nome": "Vila Real",
+      "latitude": 41.3006,
+      "longitude": -7.7457,
+      "latitude_grelha": 41.300526,
+      "longitude_grelha": -7.7474976,
+      "horas_verificadas": 28512,
+      "dias_calculados": 1188,
+      "primeiro_dia": "2021-10-01",
+      "ultimo_dia": "2024-12-31",
+      "erro_prefixo": 0.0
+    }
+  ],
+  "chamadas_externas": 0
+}

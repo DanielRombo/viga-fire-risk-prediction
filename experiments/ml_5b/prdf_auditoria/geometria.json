@@ -1,0 +1,87 @@
+{
+  "Fogos": {
+    "contagens": {
+      "total": 824875,
+      "vazia": 760793,
+      "invalida": 0
+    },
+    "tipos": {
+      "GeometryCollection": 760793,
+      "Polygon": 60877,
+      "MultiPolygon": 3205
+    }
+  },
+  "PBA": {
+    "contagens": {
+      "total": 68435,
+      "vazia": 0,
+      "invalida": 0
+    },
+    "tipos": {
+      "Polygon": 65112,
+      "MultiPolygon": 3323
+    },
+    "geometrias_identicas_grupos": 22,
+    "sobreposicao2025": {
+      "pares_area_sobreposta": 145,
+      "sobreposicao_maior_10pct_menor": 33
+    },
+    "amostras": [
+      {
+        "fid1": 66352,
+        "fid2": 68050,
+        "area_m2": 5394.56537749832
+      },
+      {
+        "fid1": 66353,
+        "fid2": 66638,
+        "area_m2": 132928.7588952554
+      },
+      {
+        "fid1": 66353,
+        "fid2": 67518,
+        "area_m2": 12520.390206265867
+      },
+      {
+        "fid1": 66353,
+        "fid2": 67540,
+        "area_m2": 10686.337923891213
+      },
+      {
+        "fid1": 66364,
+        "fid2": 66989,
+        "area_m2": 21646.916217000282
+      },
+      {
+        "fid1": 66366,
+        "fid2": 66962,
+        "area_m2": 38937.93056406882
+      },
+      {
+        "fid1": 66373,
+        "fid2": 66966,
+        "area_m2": 38350.61196447088
+      },
+      {
+        "fid1": 66388,
+        "fid2": 67731,
+        "area_m2": 1169.1332275513519
+      },
+      {
+        "fid1": 66391,
+        "fid2": 67925,
+        "area_m2": 5267.539037023197
+      },
+      {
+        "fid1": 66397,
+        "fid2": 66561,
+        "area_m2": 25243.59057839316
+      }
+    ]
+  },
+  "territorio2025": {
+    "coerentes": 101,
+    "conflitos": 0,
+    "nota": "DGT CAOP2025 apenas três municípios; não associação exata nacional."
+  }
+}

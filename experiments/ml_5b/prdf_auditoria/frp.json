@@ -1,0 +1,80 @@
+{
+  "schema": [
+    "ID",
+    "lon",
+    "lat",
+    "FRP",
+    "FIRE_CONFIDENCE",
+    "FRP_UNCERTAINTY",
+    "ACQTIME",
+    "ano",
+    "mes",
+    "dia",
+    "hora",
+    "minuto",
+    "segundo"
+  ],
+  "contagens": {
+    "n": 566502,
+    "segundo_assumido_zero": 82716,
+    "acqtime_data_diverge": 478666,
+    "coordenada_invalida": 0,
+    "frp_negativo_ou_nao_finito": 0
+  },
+  "nulls": {
+    "ID": 0,
+    "lon": 0,
+    "lat": 0,
+    "FRP": 0,
+    "FIRE_CONFIDENCE": 0,
+    "FRP_UNCERTAINTY": 0,
+    "ACQTIME": 395950,
+    "ano": 0,
+    "mes": 0,
+    "dia": 0,
+    "hora": 0,
+    "minuto": 0,
+    "segundo": 82716
+  },
+  "anos": {
+    "2004": 26238,
+    "2005": 56478,
+    "2024": 32476,
+    "2025": 55360,
+    "2009": 24742,
+    "2007": 9153,
+    "2010": 33802,
+    "2006": 22499,
+    "2008": 4651,
+    "2013": 46611,
+    "2011": 19655,
+    "2012": 26616,
+    "2014": 5165,
+    "2016": 44754,
+    "2017": 57306,
+    "2015": 18381,
+    "2021": 5461,
+    "2019": 10357,
+    "2022": 30098,
+    "2018": 9809,
+    "2020": 17361,
+    "2023": 9529
+  },
+  "periodo": [
+    "2004-01-19 15:30:00",
+    "2025-11-28 00:25:55"
+  ],
+  "ids_duplicados": 0,
+  "numeros_invalidos": 0,
+  "cruzamento_2025": "Requer cruzamento espacial",
+  "tolerancias": [
+    {
+      "metros": 2000,
+      "horas": 24
+    },
+    {
+      "metros": 5000,
+      "horas": 48
+    }
+  ]
+}

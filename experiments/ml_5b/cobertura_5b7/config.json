@@ -1,0 +1,14 @@
+{
+  "data_auditoria": "2026-10-14",
+  "ano": 2025,
+  "municipios": {"1106": "Lisboa", "0805": "Faro", "1714": "Vila Real"},
+  "target": "Existência de uma nova ocorrência rural registada no município durante (T,T+24h], usando como referência temporal o timestamp operacional de alerta.",
+  "T": "15:00 UTC",
+  "timezone": "Preservar dupla convenção Europe/Lisbon e UTC; ambiguidades permanecem null.",
+  "FORTE": "Universo operacional, âmbito territorial, completude do período e ausência de interrupções demonstrados; export rastreável, taxonomia compatível, reconciliação não exclusivamente circular; qualidade temporal/territorial aprovada.",
+  "ACEITAVEL": "Mesmas condições mínimas de significado do zero, com limitações pequenas documentadas e reconciliadas; provisoriedade isolada não basta para recusar nem aceitar.",
+  "DUVIDOSO": "Há registos e agregados, mas não foi demonstrada completude do export/período ou subsistem conflitos relevantes.",
+  "SEM_EVIDENCIA": "Sem evidência pública aplicável ao universo territorial e temporal.",
+  "condicoes_zero": ["universo_operacional", "inclui_rurais", "periodo_completo", "municipio_coberto", "ausencia_significativa", "reconciliacao_nao_circular", "sem_falhas_relevantes", "taxonomia_compativel", "qualidade_temporal_territorial"],
+  "nao_fazer": ["carregar_modelo", "prever", "treinar", "recalibrar", "alterar_threshold", "selecionar_em_2024", "gerar_dataset_final", "alterar_producao"]
+}

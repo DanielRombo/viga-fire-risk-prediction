@@ -1,0 +1,12 @@
+{
+  "data": "2026-10-14",
+  "testes_5b7": {"executados": 9, "aprovados": 9},
+  "regressao_prdf": {"executados": 12, "aprovados": 12},
+  "git_diff_check": "exit 0; aviso LF/CRLF preexistente em .gitignore",
+  "git_status": "Nova pasta cobertura_5b7 não versionada; alterações anteriores preservadas",
+  "binarios_dependencia_extracao_ignorados": true,
+  "modelo_carregado": false,
+  "previsoes_geradas": false,
+  "producao_alterada": false,
+  "staging_commit_deploy": false
+}

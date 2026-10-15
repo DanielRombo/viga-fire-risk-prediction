@@ -1,0 +1,25 @@
+{
+  "fonte": "https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0013512&lang=PT",
+  "fonte_sha256": "f51186b6299a60d7fdb23ac46e5dd556b3ccc8d45c948bbebefb67c66b86ab3d",
+  "consultado_em": "2026-10-12T17:58:26.154018+00:00",
+  "atualizacao": "2026-05-30",
+  "municipios": [
+    {
+      "municipio": "1106",
+      "estado": "Dado provisório",
+      "marcador": "&"
+    },
+    {
+      "municipio": "0805",
+      "estado": "Dado provisório",
+      "marcador": "&"
+    },
+    {
+      "municipio": "1714",
+      "estado": "Dado provisório",
+      "marcador": "&"
+    }
+  ],
+  "estado": "2025 ainda não certificado; apenas metadados já guardados, sem previsões ou labels novos",
+  "limite": "Metadados de 2025 já tinham sido consultados nas fases anteriores. Não é um período totalmente desconhecido; ainda pode ser holdout de previsões se for congelado e certificado por auditoria separada."
+}

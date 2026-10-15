@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "treino": 2022,
+  "validacao": 2023,
+  "teste": 2024,
+  "selecao": "maior average precision em Vila Real na validação; desempate por Brier menor",
+  "threshold": "maior F1 de Vila Real na validação, grelha 0.01 a 0.99; desempate pelo maior threshold",
+  "calibracao": "avaliar apenas; sem recalibração pós-hoc, para não reutilizar a pequena validação em mais ajustes",
+  "class_weight": null,
+  "nota": "Sem ponderação: medir primeiro calibração natural e ajustar decisão através de threshold. Sem SMOTE, random split ou pesquisa de hiperparâmetros."
+}

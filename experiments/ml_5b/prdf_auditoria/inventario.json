@@ -1,0 +1,4157 @@
+{
+  "fase": "auditoria integral; estimativas agregadas, sem dataset final ou modelos",
+  "python": "3.13.13",
+  "sqlite": "3.50.4",
+  "ficheiros": {
+    "fogos.gpkg": {
+      "bytes": 942682112,
+      "sha256": "76a69b75df28aa9a676160ccd07122eb235d9849a982e07615afe20c87b98aae",
+      "mtime_ns": 1791919393226067100,
+      "layers": [
+        {
+          "table": "Fogos",
+          "type": "features",
+          "identifier": "Fogos",
+          "srs_id": 3763,
+          "schema": [
+            {
+              "cid": 0,
+              "name": "fid",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "geom",
+              "type": "GEOMETRY",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "Codigo",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 3,
+              "name": "CodigoSado",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 4,
+              "name": "Ano",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 5,
+              "name": "Dia",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 6,
+              "name": "Mes",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 7,
+              "name": "Hora",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 8,
+              "name": "Tipo",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 9,
+              "name": "DHInicio",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 10,
+              "name": "DH1Intervencao",
+              "type": "DATE",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 11,
+              "name": "DHResolucao",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 12,
+              "name": "DHConclusao",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 13,
+              "name": "DHFim",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 14,
+              "name": "DHFimEstimado",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 15,
+              "name": "DuracaoHoras",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 16,
+              "name": "DuracaoHorasEstimado",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 17,
+              "name": "Tempo1Intervencao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 18,
+              "name": "TempoResolucao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 19,
+              "name": "TempoRescaldo",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 20,
+              "name": "NUTS2",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 21,
+              "name": "NUTS3",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 22,
+              "name": "Distrito",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 23,
+              "name": "Concelho",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 24,
+              "name": "Freguesia",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 25,
+              "name": "Freguesia2014",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 26,
+              "name": "Local",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 27,
+              "name": "INE",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 28,
+              "name": "DDCCFF2014",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 29,
+              "name": "QO",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 30,
+              "name": "x_20790",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 31,
+              "name": "y_20790",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 32,
+              "name": "x_3763",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 33,
+              "name": "y_3763",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 34,
+              "name": "Lat_4326",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 35,
+              "name": "Lon_4326",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 36,
+              "name": "AreaPov",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 37,
+              "name": "AreaMato",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 38,
+              "name": "AreaAgric",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 39,
+              "name": "AreaTotal",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 40,
+              "name": "AreaTotalEstimado",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 41,
+              "name": "HaHora",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 42,
+              "name": "haHoraEstimado",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 43,
+              "name": "ClasseArea",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 44,
+              "name": "CodCausa",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 45,
+              "name": "TipoCausa",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 46,
+              "name": "GrupoCausa",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 47,
+              "name": "DescricaoCausa",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 48,
+              "name": "Reacendimento_IncendioPai",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 49,
+              "name": "FonteAlerta",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 50,
+              "name": "AltitudeMedia",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 51,
+              "name": "DecliveMedio",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 52,
+              "name": "HorasExposicaoMedia",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 53,
+              "name": "Rugosidade",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 54,
+              "name": "Perimetro",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 55,
+              "name": "APS",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 56,
+              "name": "ModFarsite",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 57,
+              "name": "AreaManchaModFarsite",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 58,
+              "name": "RCM",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 59,
+              "name": "DendidadeRV",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 60,
+              "name": "CosN5Variedade",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 61,
+              "name": "Perigosidade",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 62,
+              "name": "Dist_CBS_m",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 63,
+              "name": "CBS",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 64,
+              "name": "DensidadeResidentes",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 65,
+              "name": "DensidadeEdificios",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 66,
+              "name": "AreaTotalIncSimul5000",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 67,
+              "name": "NIncSimulDistrito",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 68,
+              "name": "NIncSimulConcelho",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 69,
+              "name": "NIncSimulDistrito90",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 70,
+              "name": "NIncSimulConcelho90",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 71,
+              "name": "NIncSimul500090",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 72,
+              "name": "AreaTotalIncSimul500090",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 73,
+              "name": "Temperatura",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 74,
+              "name": "HumidadeRelativa",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 75,
+              "name": "VentoIntensidade",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 76,
+              "name": "VentoIntensidade_vetor",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 77,
+              "name": "VentoDirecao_vetor",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 78,
+              "name": "Precepitacao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 79,
+              "name": "VentoDirecao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 80,
+              "name": "fwi",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 81,
+              "name": "dsr",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 82,
+              "name": "isi",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 83,
+              "name": "dc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 84,
+              "name": "dmc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 85,
+              "name": "ffmc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 86,
+              "name": "bui",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 87,
+              "name": "hFWI",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 88,
+              "name": "hFFMC",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 89,
+              "name": "hISI",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 90,
+              "name": "MaxFWIh_48h_PosExtincao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 91,
+              "name": "MaxFFMCh_48h_PosExtincao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 92,
+              "name": "MaxISIh_48h_PosExtincao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 93,
+              "name": "MaxDC_48h_DiaPosExtincao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 94,
+              "name": "MaxDMC_48h_PosExtincao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 95,
+              "name": "MaxBUI_48h_PosExtincao",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 96,
+              "name": "NIncSimul5000",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 97,
+              "name": "Observacoes",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 98,
+              "name": "NIncSimul5000_Estimado",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 99,
+              "name": "NIncSimulConcelho_Estimado",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 100,
+              "name": "NIncSimulDistrito_Estimado",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 101,
+              "name": "NIncSimul500090_Estimado",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 102,
+              "name": "NIncSimulConcelho90_Estimado",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 103,
+              "name": "NIncSimulDistrito90_Estimado",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 104,
+              "name": "BACodAssociacao",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 105,
+              "name": "BACodEstimado",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 106,
+              "name": "BAMetodo",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 107,
+              "name": "BAScore",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 108,
+              "name": "BAMetodoManual",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 109,
+              "name": "IDPT-FireSprd",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 110,
+              "name": "Total_Ha_Modis",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 111,
+              "name": "Modis_Muito_Baixa",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 112,
+              "name": "Modis_Baixa",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 113,
+              "name": "Modis_Média",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 114,
+              "name": "Modis_Alta",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 115,
+              "name": "Modis_Muito_Alta",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 116,
+              "name": "Modis_Muito_Baixa_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 117,
+              "name": "Modis_Baixa_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 118,
+              "name": "Modis_Média_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 119,
+              "name": "Modis_Alta_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 120,
+              "name": "Modis_Muito_Alta_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 121,
+              "name": "Effis_Muito_Baixa",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 122,
+              "name": "Effis_Baixa",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 123,
+              "name": "Effis_Média",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 124,
+              "name": "Effis_Alta",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 125,
+              "name": "Effis_Muito_Alta",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 126,
+              "name": "Total_Ha_Effis",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 127,
+              "name": "Effis_Muito_Baixa_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 128,
+              "name": "Effis_Baixa_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 129,
+              "name": "Effis_Média_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 130,
+              "name": "Effis_Alta_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 131,
+              "name": "Effis_Muito_Alta_perc",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 132,
+              "name": "Funcao",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 133,
+              "name": "FRE",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 134,
+              "name": "Num_Pontos_FRP",
+              "type": "MEDIUMINT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        }
+      ],
+      "geometry_columns": [
+        [
+          "Fogos",
+          "geom",
+          "GEOMETRY",
+          3763,
+          0,
+          0
+        ]
+      ],
+      "auditoria": {
+        "n": 824875,
+        "periodo": [
+          "1980-01-30 19:55:00",
+          "2026-03-24 09:38:00"
+        ],
+        "schemas": [
+          {
+            "cid": 0,
+            "name": "fid",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "geom",
+            "type": "GEOMETRY",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "Codigo",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "CodigoSado",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "Ano",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "Dia",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "Mes",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "Hora",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "Tipo",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "DHInicio",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "DH1Intervencao",
+            "type": "DATE",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "DHResolucao",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "DHConclusao",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "DHFim",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "DHFimEstimado",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "DuracaoHoras",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "DuracaoHorasEstimado",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "Tempo1Intervencao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "TempoResolucao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "TempoRescaldo",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "NUTS2",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "NUTS3",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "Distrito",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "Concelho",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 24,
+            "name": "Freguesia",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 25,
+            "name": "Freguesia2014",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 26,
+            "name": "Local",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 27,
+            "name": "INE",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 28,
+            "name": "DDCCFF2014",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 29,
+            "name": "QO",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 30,
+            "name": "x_20790",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 31,
+            "name": "y_20790",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 32,
+            "name": "x_3763",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 33,
+            "name": "y_3763",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 34,
+            "name": "Lat_4326",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 35,
+            "name": "Lon_4326",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 36,
+            "name": "AreaPov",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 37,
+            "name": "AreaMato",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 38,
+            "name": "AreaAgric",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 39,
+            "name": "AreaTotal",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 40,
+            "name": "AreaTotalEstimado",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 41,
+            "name": "HaHora",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 42,
+            "name": "haHoraEstimado",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 43,
+            "name": "ClasseArea",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 44,
+            "name": "CodCausa",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 45,
+            "name": "TipoCausa",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 46,
+            "name": "GrupoCausa",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 47,
+            "name": "DescricaoCausa",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 48,
+            "name": "Reacendimento_IncendioPai",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 49,
+            "name": "FonteAlerta",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 50,
+            "name": "AltitudeMedia",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 51,
+            "name": "DecliveMedio",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 52,
+            "name": "HorasExposicaoMedia",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 53,
+            "name": "Rugosidade",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 54,
+            "name": "Perimetro",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 55,
+            "name": "APS",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 56,
+            "name": "ModFarsite",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 57,
+            "name": "AreaManchaModFarsite",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 58,
+            "name": "RCM",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 59,
+            "name": "DendidadeRV",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 60,
+            "name": "CosN5Variedade",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 61,
+            "name": "Perigosidade",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 62,
+            "name": "Dist_CBS_m",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 63,
+            "name": "CBS",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 64,
+            "name": "DensidadeResidentes",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 65,
+            "name": "DensidadeEdificios",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 66,
+            "name": "AreaTotalIncSimul5000",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 67,
+            "name": "NIncSimulDistrito",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 68,
+            "name": "NIncSimulConcelho",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 69,
+            "name": "NIncSimulDistrito90",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 70,
+            "name": "NIncSimulConcelho90",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 71,
+            "name": "NIncSimul500090",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 72,
+            "name": "AreaTotalIncSimul500090",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 73,
+            "name": "Temperatura",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 74,
+            "name": "HumidadeRelativa",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 75,
+            "name": "VentoIntensidade",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 76,
+            "name": "VentoIntensidade_vetor",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 77,
+            "name": "VentoDirecao_vetor",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 78,
+            "name": "Precepitacao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 79,
+            "name": "VentoDirecao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 80,
+            "name": "fwi",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 81,
+            "name": "dsr",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 82,
+            "name": "isi",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 83,
+            "name": "dc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 84,
+            "name": "dmc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 85,
+            "name": "ffmc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 86,
+            "name": "bui",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 87,
+            "name": "hFWI",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 88,
+            "name": "hFFMC",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 89,
+            "name": "hISI",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 90,
+            "name": "MaxFWIh_48h_PosExtincao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 91,
+            "name": "MaxFFMCh_48h_PosExtincao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 92,
+            "name": "MaxISIh_48h_PosExtincao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 93,
+            "name": "MaxDC_48h_DiaPosExtincao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 94,
+            "name": "MaxDMC_48h_PosExtincao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 95,
+            "name": "MaxBUI_48h_PosExtincao",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 96,
+            "name": "NIncSimul5000",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 97,
+            "name": "Observacoes",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 98,
+            "name": "NIncSimul5000_Estimado",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 99,
+            "name": "NIncSimulConcelho_Estimado",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 100,
+            "name": "NIncSimulDistrito_Estimado",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 101,
+            "name": "NIncSimul500090_Estimado",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 102,
+            "name": "NIncSimulConcelho90_Estimado",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 103,
+            "name": "NIncSimulDistrito90_Estimado",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 104,
+            "name": "BACodAssociacao",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 105,
+            "name": "BACodEstimado",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 106,
+            "name": "BAMetodo",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 107,
+            "name": "BAScore",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 108,
+            "name": "BAMetodoManual",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 109,
+            "name": "IDPT-FireSprd",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 110,
+            "name": "Total_Ha_Modis",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 111,
+            "name": "Modis_Muito_Baixa",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 112,
+            "name": "Modis_Baixa",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 113,
+            "name": "Modis_Média",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 114,
+            "name": "Modis_Alta",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 115,
+            "name": "Modis_Muito_Alta",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 116,
+            "name": "Modis_Muito_Baixa_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 117,
+            "name": "Modis_Baixa_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 118,
+            "name": "Modis_Média_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 119,
+            "name": "Modis_Alta_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 120,
+            "name": "Modis_Muito_Alta_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 121,
+            "name": "Effis_Muito_Baixa",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 122,
+            "name": "Effis_Baixa",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 123,
+            "name": "Effis_Média",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 124,
+            "name": "Effis_Alta",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 125,
+            "name": "Effis_Muito_Alta",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 126,
+            "name": "Total_Ha_Effis",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 127,
+            "name": "Effis_Muito_Baixa_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 128,
+            "name": "Effis_Baixa_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 129,
+            "name": "Effis_Média_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 130,
+            "name": "Effis_Alta_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 131,
+            "name": "Effis_Muito_Alta_perc",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 132,
+            "name": "Funcao",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 133,
+            "name": "FRE",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 134,
+            "name": "Num_Pontos_FRP",
+            "type": "MEDIUMINT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "anos": {
+          "1980": 2345,
+          "1981": 6714,
+          "1982": 3623,
+          "1983": 4529,
+          "1984": 7344,
+          "1985": 8436,
+          "1986": 5029,
+          "1987": 7694,
+          "1988": 6125,
+          "1989": 21817,
+          "1990": 10671,
+          "1991": 14290,
+          "1992": 14893,
+          "1993": 16048,
+          "1994": 19918,
+          "1995": 34050,
+          "1996": 28593,
+          "1997": 23434,
+          "1998": 34669,
+          "1999": 25457,
+          "2000": 34097,
+          "2001": 28913,
+          "2002": 28977,
+          "2003": 25446,
+          "2004": 27770,
+          "2005": 41638,
+          "2006": 24243,
+          "2007": 25131,
+          "2008": 18959,
+          "2009": 29783,
+          "2010": 26114,
+          "2011": 29782,
+          "2012": 25352,
+          "2013": 23128,
+          "2014": 9388,
+          "2015": 19643,
+          "2016": 16104,
+          "2017": 21006,
+          "2018": 12274,
+          "2019": 10831,
+          "2020": 9619,
+          "2021": 8186,
+          "2022": 10390,
+          "2023": 7525,
+          "2024": 6255,
+          "2025": 8252,
+          "2026": 390
+        },
+        "nulls": {
+          "Codigo": 0,
+          "CodigoSado": 329965,
+          "Ano": 0,
+          "Tipo": 0,
+          "DHInicio": 0,
+          "DH1Intervencao": 533938,
+          "DHResolucao": 676465,
+          "DHConclusao": 561321,
+          "DHFim": 1154,
+          "Concelho": 0,
+          "Distrito": 0,
+          "INE": 0,
+          "Lat_4326": 0,
+          "Lon_4326": 0,
+          "CodCausa": 247460,
+          "TipoCausa": 382565,
+          "Reacendimento_IncendioPai": 796091
+        },
+        "temporal": {
+          "ano_diverge": 0,
+          "inicio_com_Z": 824875,
+          "DH1Intervencao_parse_invalido": 0,
+          "DHResolucao_parse_invalido": 0,
+          "DHConclusao_parse_invalido": 0,
+          "DHFim_parse_invalido": 0,
+          "DHFim_anterior_inicio": 3173,
+          "DHFim_dia_anterior_inicio": 36,
+          "intervencao_so_data": 290937,
+          "DH1Intervencao_anterior_inicio": 288145,
+          "DH1Intervencao_dia_anterior_inicio": 0,
+          "DHResolucao_anterior_inicio": 164,
+          "DHResolucao_dia_anterior_inicio": 5,
+          "DHConclusao_anterior_inicio": 1048,
+          "DHConclusao_dia_anterior_inicio": 101
+        },
+        "territorio": {
+          "coordenadas_invalidas_ou_fora_envelope": 2,
+          "codigo_municipal_ausente": 0
+        },
+        "duplicados": {
+          "Codigo": [
+            0,
+            0
+          ],
+          "CodigoSado": [
+            62963,
+            202836
+          ]
+        },
+        "ano2025": {
+          "n": 8252,
+          "min": "2025-01-01T00:04:00Z",
+          "max": "2025-12-31T18:10:00Z",
+          "meses": {
+            "1": 95,
+            "2": 32,
+            "3": 330,
+            "4": 253,
+            "5": 439,
+            "6": 1156,
+            "7": 2067,
+            "8": 2102,
+            "9": 883,
+            "10": 812,
+            "11": 63,
+            "12": 20
+          },
+          "tipos": {
+            "Florestal": 6203,
+            "Agrícola": 2044,
+            "Queima": 5
+          },
+          "causas": {
+            "Negligente": 3142,
+            "Desconhecida": 2399,
+            "Intencional": 1965,
+            "null": 15,
+            "Reacendimento": 661,
+            "Natural": 70
+          },
+          "taxonomia": {
+            "potencial_nova_ocorrencia": 7579,
+            "tipo_nao_rural": 5,
+            "reacendimento": 668
+          },
+          "distritos": {
+            "Lisboa": 325,
+            "Aveiro": 527,
+            "Viana do Castelo": 668,
+            "Setúbal": 252,
+            "Faro": 242,
+            "Porto": 1908,
+            "Beja": 270,
+            "Viseu": 526,
+            "Braga": 816,
+            "Leiria": 250,
+            "Castelo Branco": 268,
+            "Coimbra": 229,
+            "Vila Real": 573,
+            "Bragança": 245,
+            "Santarém": 486,
+            "Portalegre": 221,
+            "Évora": 224,
+            "Guarda": 222
+          },
+          "municipios": 277,
+          "dias_sem_registo": [
+            "2025-01-06",
+            "2025-01-07",
+            "2025-01-08",
+            "2025-01-09",
+            "2025-01-10",
+            "2025-01-11",
+            "2025-01-12",
+            "2025-01-13",
+            "2025-01-20",
+            "2025-01-21",
+            "2025-01-22",
+            "2025-01-23",
+            "2025-01-24",
+            "2025-01-25",
+            "2025-01-26",
+            "2025-01-27",
+            "2025-01-28",
+            "2025-01-29",
+            "2025-01-30",
+            "2025-01-31",
+            "2025-02-02",
+            "2025-02-04",
+            "2025-02-07",
+            "2025-02-10",
+            "2025-02-11",
+            "2025-02-13",
+            "2025-02-14",
+            "2025-02-15",
+            "2025-02-17",
+            "2025-02-21",
+            "2025-02-22",
+            "2025-02-23",
+            "2025-02-25",
+            "2025-03-05",
+            "2025-03-06",
+            "2025-03-07",
+            "2025-03-08",
+            "2025-03-09",
+            "2025-03-10",
+            "2025-03-11",
+            "2025-03-12",
+            "2025-03-13",
+            "2025-03-21",
+            "2025-03-22",
+            "2025-04-04",
+            "2025-04-05",
+            "2025-04-14",
+            "2025-04-16",
+            "2025-04-17",
+            "2025-04-18",
+            "2025-04-21",
+            "2025-04-22",
+            "2025-05-03",
+            "2025-05-04",
+            "2025-11-13",
+            "2025-11-14",
+            "2025-11-15",
+            "2025-11-16",
+            "2025-11-17",
+            "2025-11-18",
+            "2025-11-20",
+            "2025-11-25",
+            "2025-12-03",
+            "2025-12-04",
+            "2025-12-05",
+            "2025-12-07",
+            "2025-12-09",
+            "2025-12-10",
+            "2025-12-11",
+            "2025-12-12",
+            "2025-12-13",
+            "2025-12-14",
+            "2025-12-15",
+            "2025-12-16",
+            "2025-12-17",
+            "2025-12-18",
+            "2025-12-19",
+            "2025-12-20",
+            "2025-12-21",
+            "2025-12-22",
+            "2025-12-23",
+            "2025-12-24",
+            "2025-12-25",
+            "2025-12-29"
+          ],
+          "grupos_espaco_tempo_duplicados": 1,
+          "near": {
+            "pares_mesma_celula_10min": 14
+          }
+        }
+      }
+    },
+    "fogos-metadata.csv": {
+      "bytes": 5521,
+      "sha256": "8b265407ed5c72c5816a8e8aaab6b0879ffe73d7e7e26151e504567916b6ef28",
+      "mtime_ns": 1791918721466949200,
+      "header": [
+        "VARIABLE",
+        "              DESCRIPTION"
+      ],
+      "metadata": [
+        [
+          "CODIGO",
+          "SGIF code for the fire – Forest Service code"
+        ],
+        [
+          "CODIGOSADO",
+          "SADO code for the fire – Civil protection Code"
+        ],
+        [
+          "ANO",
+          "Year of the alert date"
+        ],
+        [
+          "TIPO",
+          "Forestal or Agricultural"
+        ],
+        [
+          "DHINICIO",
+          "Date/Time of the alert"
+        ],
+        [
+          "DH1INTERVENCAO",
+          "Date/Time of the first intervention"
+        ],
+        [
+          "DHRESOLUCAO",
+          "Date/Time of the resolution"
+        ],
+        [
+          "DHCONCLUSAO",
+          "Date/Time of the conclusion"
+        ],
+        [
+          "DHFIM",
+          "Date/Time of extinction"
+        ],
+        [
+          "DURACAOHORAS",
+          "Duration in number of hours"
+        ],
+        [
+          "AREAPOV",
+          "Burned area of forest stands (ha)"
+        ],
+        [
+          "AREAMATO",
+          "Burned area of shrublands (ha)"
+        ],
+        [
+          "AREAAGRIC",
+          "Burned area of agricultural lands (ha)"
+        ],
+        [
+          "AREATOTAL",
+          "Total burned area (ha)"
+        ],
+        [
+          "NUTS2",
+          "NUTS II region of the fire's point of origin"
+        ],
+        [
+          "NUTS3",
+          "NUTS III region of the fire's point of origin"
+        ],
+        [
+          "DISTRITO",
+          "District of the fire's point of origin"
+        ],
+        [
+          "CONCELHO",
+          "Municipality of the fire's point of origin"
+        ],
+        [
+          "FREGUESIA",
+          "Parish of the fire's point of origin"
+        ],
+        [
+          "LOCAL",
+          "Nearest location to the fire's point of origin"
+        ],
+        [
+          "INE",
+          "INE code of the parish at the fire's point of origin"
+        ],
+        [
+          "PERIMETRO",
+          "National forest or forest perimeter at the point of origin"
+        ],
+        [
+          "APS",
+          "Protected area (RNAP) at the point of origin"
+        ],
+        [
+          "X_20790",
+          "X coordinate in EPSG:20790 Lisbon (Lisbon) / Portuguese National Grid"
+        ],
+        [
+          "Y_20790",
+          "X coordinate in EPSG:20790 Lisbon (Lisbon) / Portuguese National Grid"
+        ],
+        [
+          "LAT_4326",
+          "Latitude in EPSG:4326 WGS 84 -- WGS84 - World Geodetic System 1984"
+        ],
+        [
+          "LON_4326",
+          "Longitude in EPSG:4326 WGS 84 -- WGS84 - World Geodetic System 1984"
+        ],
+        [
+          "X_3763",
+          "X coordinate in EPSG:3763 ETRS89 / Portugal TM06"
+        ],
+        [
+          "Y_3763",
+          "Y coordinate in ETRS89 (PT-TM06)"
+        ],
+        [
+          "MODFARSITE",
+          "Farsite model of the burn area at the point of origin"
+        ],
+        [
+          "AREAMANCHAMODFARSITE",
+          "Burn area of the Farsite model at the point of origin (ha)"
+        ],
+        [
+          "ALTITUDEMEDIA",
+          "Average altitude of the 1x1 km grid at the point of origin"
+        ],
+        [
+          "DECLIVEMEDIO",
+          "Average slope of the 1x1 km grid at the point of origin (%)"
+        ],
+        [
+          "DENSIDADERV",
+          "Road density in the 1x1 km grid (m/ha)"
+        ],
+        [
+          "COSN5VARIEDADE",
+          "Number of different COS N5 classes in the 1x1 km grid"
+        ],
+        [
+          "PERIGOSIDADE",
+          "Structural hazard"
+        ],
+        [
+          "FWI",
+          "Meteorological index"
+        ],
+        [
+          "DSR",
+          "Meteorological index"
+        ],
+        [
+          "ISI",
+          "Meteorological index"
+        ],
+        [
+          "DC",
+          "Meteorological index"
+        ],
+        [
+          "DMC",
+          "Meteorological index"
+        ],
+        [
+          "FFMC",
+          "Meteorological index"
+        ],
+        [
+          "BUI",
+          "Meteorological index"
+        ],
+        [
+          "THC",
+          "Meteorological index"
+        ],
+        [
+          "DIST_CBS_M",
+          "Straight-line distance to the nearest fire station (m)"
+        ],
+        [
+          "CBS",
+          "Nearest fire station in a straight line"
+        ],
+        [
+          "NINCSIMULDISTRITO",
+          "Number of fires that were simultaneously active (fully or partially) with the recorded fire and had their point of origin in the same district as the recorded fire"
+        ],
+        [
+          "NINCSIMULCONCELHO",
+          "Number of fires that were simultaneously active (fully or partially) with the recorded fire and had their point of origin in the same municipality as the recorded fire"
+        ],
+        [
+          "NINCSIMULDISTRITO90",
+          "Number of fires that were simultaneously active (fully or partially) during the first 90 minutes of the recorded fire (after the alert date/time) and had their point of origin in the same district as the recorded fire"
+        ],
+        [
+          "NINCSIMULCONCELHO90",
+          "Number of fires that were simultaneously active (fully or partially) during the first 90 minutes of the recorded fire (after the alert date/time) and had their point of origin in the same municipality as the recorded fire"
+        ],
+        [
+          "NINCSIMUL500090",
+          "Number of fires that were simultaneously active (fully or partially) during the first 90 minutes of the recorded fire (after the alert date/time) and had their point of origin within a 5000-meter radius around the recorded fire's point of origin"
+        ],
+        [
+          "DISTINCSIMUL500090",
+          "Number of fires that were simultaneously active (fully or partially) during the first 90 minutes of the recorded fire (after the alert date/time) and had their point of origin in the same district and within a 5000-meter radius around the recorded fire's point of origin"
+        ],
+        [
+          "AREATOTALINCSIMUL500090",
+          "Sum of the burned areas of all fires that were simultaneously active (fully or partially) during the first 90 minutes of the recorded fire (after the alert date/time) and had their point of origin in the same district and within a 5000-meter radius around the recorded fire's point of origin"
+        ],
+        [
+          "CAUSA",
+          "Numerical code for the fire's cause"
+        ],
+        [
+          "TIPOCAUSA",
+          "Type of cause"
+        ],
+        [
+          "GRUPOCAUSA",
+          "Cause group"
+        ],
+        [
+          "DESCRICAO",
+          "Description of the cause"
+        ],
+        [
+          "REACENDIMENTO_INCENDIOPAI",
+          "If reignited, code of the parent fire"
+        ],
+        [
+          "ORIGINOUREACENDIMENTO",
+          "If it caused reignition (0 or 1)"
+        ],
+        [
+          "FONTEALERTA",
+          "Source of the alert"
+        ],
+        [
+          "CLASSEAREA",
+          "Burned area class"
+        ],
+        [
+          "QO",
+          "Operational grid identification (1 x 1 km)"
+        ],
+        [
+          "TEMPO1INTERVENCAO",
+          "Time between the alert and the first intervention (minutes)"
+        ],
+        [
+          "TEMPORESOLUCAO",
+          "Time between the first intervention and resolution (minutes)"
+        ],
+        [
+          "TEMPORESCALDO",
+          "Time between resolution and conclusion (minutes)"
+        ],
+        [
+          "VELOCIDADEPROPAGACAO",
+          "Average rate of fire spread (ha/hour)"
+        ],
+        [
+          "RCM",
+          "RCM or PIR"
+        ],
+        [
+          "TEMPERATURA",
+          "Temperature"
+        ],
+        [
+          "HUMIDADERELATIVA",
+          "Relative Humidity"
+        ],
+        [
+          "VENTOINTENSIDADE",
+          "Wind intensity (Km/h)"
+        ],
+        [
+          "VENTOINTENSIDADE_VETOR",
+          "Wind intensity vector (Km/h)"
+        ],
+        [
+          "VENTODIRECAO_VETOR",
+          "Wind direction vector (Degrees)"
+        ],
+        [
+          "PRECIPITACAO",
+          "Precipitation"
+        ],
+        [
+          "VENTODIRECAO",
+          "Wind direction (Degrees)"
+        ],
+        [
+          "HFFMC",
+          "FFMC index at the time of the alert"
+        ],
+        [
+          "HISI",
+          "ISI index at the time of the alert"
+        ],
+        [
+          "HFWI",
+          "FWI index at the time of the alert"
+        ],
+        [
+          "MAXFWIH_48H_POSEXTINCAO",
+          "Maximum FWI index in the 48 hours after extinction"
+        ],
+        [
+          "MAXFFMCH_48H_POSEXTINCAO",
+          "Maximum FFMC index in the 48 hours after extinction"
+        ],
+        [
+          "MAXISIH_48H_POSEXTINCAO",
+          "Maximum ISI index in the 48 hours after extinction"
+        ],
+        [
+          "MAXDC_48H_DIAPOSEXTINCAO",
+          "Maximum DC index in the 48 hours after extinction"
+        ],
+        [
+          "MAXBUI_48H_POSEXTINCAO",
+          "Maximum BUI index in the 48 hours after extinction"
+        ],
+        [
+          "MAXDMC_48H_POSEXTINCAO",
+          "Maximum DMC index in the 48 hours after extinction"
+        ]
+      ]
+    },
+    "METEO.csv": {
+      "bytes": 1233004870,
+      "sha256": "4e88771a50e4a5b4ee2c30ed50c66285ec761649ba14510f5fde97079d133b73",
+      "mtime_ns": 1791918976895289300,
+      "header": [
+        "ID",
+        "codigo",
+        "DHMeteo",
+        "IDGrelha",
+        "IDECMWF_ERA5",
+        "u10",
+        "v10",
+        "T",
+        "HR",
+        "V",
+        "Dir",
+        "Prec",
+        "Pacum",
+        "FWI",
+        "FFMC",
+        "DMC",
+        "DC",
+        "ISI",
+        "BUI",
+        "DSR",
+        "hFFMC",
+        "hISI",
+        "hFWI"
+      ],
+      "amostra_inicial": [
+        "1911233",
+        "1980-2",
+        "1980-01-30 19:00:00",
+        "140",
+        "11374308",
+        "0.921016752719879",
+        "3.83374738693237",
+        "14.1742029190063",
+        "91.5203323364258",
+        "14.1941804885864",
+        "193.508697509766",
+        "0.0141104189679027",
+        "0.101429015398026",
+        "2.47901368141174",
+        "81.3752517700195",
+        "5.3209662437439",
+        "29.3067169189453",
+        "2.97292685508728",
+        "7.31956005096436",
+        "0.135657116770744",
+        "54.5519027709961",
+        "0.546618938446045",
+        "0.280572503805161"
+      ],
+      "auditoria": {
+        "n": 3568731,
+        "schema": [
+          "ID",
+          "codigo",
+          "DHMeteo",
+          "IDGrelha",
+          "IDECMWF_ERA5",
+          "u10",
+          "v10",
+          "T",
+          "HR",
+          "V",
+          "Dir",
+          "Prec",
+          "Pacum",
+          "FWI",
+          "FFMC",
+          "DMC",
+          "DC",
+          "ISI",
+          "BUI",
+          "DSR",
+          "hFFMC",
+          "hISI",
+          "hFWI"
+        ],
+        "tipos": "CSV textual; timestamps ISO e medidas numéricas conforme inspeção",
+        "nulls": {
+          "ID": 0,
+          "codigo": 0,
+          "DHMeteo": 0,
+          "IDGrelha": 2,
+          "IDECMWF_ERA5": 4,
+          "u10": 4,
+          "v10": 4,
+          "T": 4,
+          "HR": 4,
+          "V": 4,
+          "Dir": 4,
+          "Prec": 4,
+          "Pacum": 4,
+          "FWI": 4,
+          "FFMC": 4,
+          "DMC": 4,
+          "DC": 4,
+          "ISI": 4,
+          "BUI": 4,
+          "DSR": 4,
+          "hFFMC": 5,
+          "hISI": 5,
+          "hFWI": 5
+        },
+        "anos": {
+          "1980": 14679,
+          "1981": 39188,
+          "1982": 19025,
+          "1983": 20462,
+          "1984": 41736,
+          "1985": 44458,
+          "1986": 30341,
+          "1987": 35302,
+          "1988": 26337,
+          "1989": 93945,
+          "1990": 54652,
+          "1991": 66974,
+          "1992": 58719,
+          "1993": 47061,
+          "1994": 278165,
+          "1995": 546985,
+          "1996": 97732,
+          "1997": 67102,
+          "1998": 126167,
+          "1999": 90408,
+          "2000": 128749,
+          "2001": 87369,
+          "2002": 92654,
+          "2003": 90839,
+          "2004": 86158,
+          "2005": 147250,
+          "2006": 77905,
+          "2007": 71023,
+          "2008": 64915,
+          "2009": 117100,
+          "2010": 111655,
+          "2011": 126662,
+          "2012": 63120,
+          "2013": 63591,
+          "2014": 20897,
+          "2015": 46271,
+          "2016": 56908,
+          "2017": 63831,
+          "2018": 38106,
+          "2019": 32543,
+          "2020": 30832,
+          "2021": 27429,
+          "2022": 38759,
+          "2023": 24596,
+          "2024": 27797,
+          "2025": 32334
+        },
+        "periodo": [
+          "1980-01-30 19:00:00+00:00",
+          "2025-12-31 23:00:00+00:00"
+        ],
+        "codigos": 988981,
+        "fogos_com_meteo": 494708,
+        "fogos_sem_meteo": 330167,
+        "codigos_meteo_sem_fogo": 494273,
+        "chaves_fogo_ambiguas": 0,
+        "match": {
+          "linhas_sem_fogo_ou_inicio": 2098024,
+          "linhas_com_fogo": 1470707
+        },
+        "duplicados": {
+          "id": [
+            0,
+            0
+          ],
+          "code,t": [
+            0,
+            0
+          ]
+        },
+        "delta_horas": {
+          "contagens": {
+            "no_alerta": 20958,
+            "depois_24h": 93061,
+            "depois_48h": 52547,
+            "apos_extincao": 4062,
+            "antes": 473749,
+            "depois": 976000
+          },
+          "minmax": [
+            -0.9833333333333333,
+            2473.483333333333
+          ]
+        },
+        "ano2025": {
+          "fogos": 8252,
+          "com_meteo": 8252,
+          "sem_meteo": 0,
+          "linhas": 26140,
+          "linhas_por_fogo_minmax": [
+            1,
+            2058
+          ],
+          "duracao_horas_minmax": [
+            0.0,
+            2057.0
+          ]
+        },
+        "leitura": "csv.DictReader incremental; lotes SQLite temporários 25000; comparação de relógios sem inferir fuso"
+      }
+    },
+    "FRP.csv": {
+      "bytes": 31946725,
+      "sha256": "104fd63e1f7118a95c0b47dfb912c445e0e599402f426644e058720707f8c378",
+      "mtime_ns": 1791918675502307900,
+      "header": [
+        "ID",
+        "lon",
+        "lat",
+        "FRP",
+        "FIRE_CONFIDENCE",
+        "FRP_UNCERTAINTY",
+        "ACQTIME",
+        "ano",
+        "mes",
+        "dia",
+        "hora",
+        "minuto",
+        "segundo"
+      ],
+      "amostra_inicial": [
+        "12",
+        "-8.18",
+        "40.92",
+        "587",
+        "79",
+        "1693",
+        "1904-03-21",
+        "2004",
+        "1",
+        "19",
+        "15",
+        "30",
+        "NA"
+      ],
+      "auditoria": {
+        "schema": [
+          "ID",
+          "lon",
+          "lat",
+          "FRP",
+          "FIRE_CONFIDENCE",
+          "FRP_UNCERTAINTY",
+          "ACQTIME",
+          "ano",
+          "mes",
+          "dia",
+          "hora",
+          "minuto",
+          "segundo"
+        ],
+        "contagens": {
+          "n": 566502,
+          "segundo_assumido_zero": 82716,
+          "acqtime_data_diverge": 478666,
+          "coordenada_invalida": 0,
+          "frp_negativo_ou_nao_finito": 0
+        },
+        "nulls": {
+          "ID": 0,
+          "lon": 0,
+          "lat": 0,
+          "FRP": 0,
+          "FIRE_CONFIDENCE": 0,
+          "FRP_UNCERTAINTY": 0,
+          "ACQTIME": 395950,
+          "ano": 0,
+          "mes": 0,
+          "dia": 0,
+          "hora": 0,
+          "minuto": 0,
+          "segundo": 82716
+        },
+        "anos": {
+          "2004": 26238,
+          "2005": 56478,
+          "2024": 32476,
+          "2025": 55360,
+          "2009": 24742,
+          "2007": 9153,
+          "2010": 33802,
+          "2006": 22499,
+          "2008": 4651,
+          "2013": 46611,
+          "2011": 19655,
+          "2012": 26616,
+          "2014": 5165,
+          "2016": 44754,
+          "2017": 57306,
+          "2015": 18381,
+          "2021": 5461,
+          "2019": 10357,
+          "2022": 30098,
+          "2018": 9809,
+          "2020": 17361,
+          "2023": 9529
+        },
+        "periodo": [
+          "2004-01-19 15:30:00",
+          "2025-11-28 00:25:55"
+        ],
+        "ids_duplicados": 0,
+        "numeros_invalidos": 0,
+        "cruzamento_2025": "Requer cruzamento espacial",
+        "tolerancias": [
+          {
+            "metros": 2000,
+            "horas": 24
+          },
+          {
+            "metros": 5000,
+            "horas": 48
+          }
+        ]
+      }
+    },
+    "PBA.gpkg": {
+      "bytes": 251170816,
+      "sha256": "eebcc9a327526053f1e3fe51ab5e21f053eb7aa68284193e07d66bf1bd3b0ddf",
+      "mtime_ns": 1791918956103160300,
+      "layers": [
+        {
+          "table": "PBA",
+          "type": "features",
+          "identifier": "PBA",
+          "srs_id": 3763,
+          "schema": [
+            {
+              "cid": 0,
+              "name": "fid",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "geom",
+              "type": "GEOMETRY",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "OBJECTID",
+              "type": "MEDIUMINT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 3,
+              "name": "Ano",
+              "type": "MEDIUMINT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 4,
+              "name": "Cod_SGIF",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 5,
+              "name": "Cod_ANEPC",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 6,
+              "name": "AreaHaPoly",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 7,
+              "name": "AreaHaSGIF",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 8,
+              "name": "AreaHaPov",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 9,
+              "name": "AreaHaMato",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 10,
+              "name": "AreaHaAgri",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 11,
+              "name": "DH_Inicio",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 12,
+              "name": "DH_1Interv",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 13,
+              "name": "DH_Fim",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 14,
+              "name": "Duracao_m",
+              "type": "MEDIUMINT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 15,
+              "name": "PI_X",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 16,
+              "name": "PI_Y",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 17,
+              "name": "PI_DICOFRE",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 18,
+              "name": "PI_NUTS3",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 19,
+              "name": "PI_Distrit",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 20,
+              "name": "PI_Conc",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 21,
+              "name": "PI_Freg",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 22,
+              "name": "PI_Local",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 23,
+              "name": "PI_RNAP",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 24,
+              "name": "PI_ReFLOA",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 25,
+              "name": "ID_REE",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 26,
+              "name": "Causa_Cod",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 27,
+              "name": "Causa_Tipo",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 28,
+              "name": "Causa_Desc",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 29,
+              "name": "Alerta",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 30,
+              "name": "Poly_Fonte",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 31,
+              "name": "Poly_User",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 32,
+              "name": "Publicacao",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 33,
+              "name": "Edit_Poly",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 34,
+              "name": "Edit_SGIF",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 35,
+              "name": "Edit_Desc",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 36,
+              "name": "Observ",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 37,
+              "name": "Sincro_SGIF",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 38,
+              "name": "Estado",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 39,
+              "name": "Status_Area",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 40,
+              "name": "CX",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 41,
+              "name": "CY",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 42,
+              "name": "temp_id",
+              "type": "MEDIUMINT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 43,
+              "name": "d_pafa_min",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 44,
+              "name": "d_pafa_max",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 45,
+              "name": "d_frp_min",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 46,
+              "name": "d_frp_max",
+              "type": "DATETIME",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 47,
+              "name": "CODIGOSGIF_ESTIMADO",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 48,
+              "name": "METODO_ESTIMATIVA",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 49,
+              "name": "SCORE_ESTIMADO",
+              "type": "REAL",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 50,
+              "name": "BEST_Codigo",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        }
+      ],
+      "geometry_columns": [
+        [
+          "PBA",
+          "geom",
+          "GEOMETRY",
+          3763,
+          0,
+          0
+        ]
+      ],
+      "auditoria": {
+        "n": 68435,
+        "anos": {
+          "1975": 280,
+          "1976": 190,
+          "1977": 100,
+          "1978": 529,
+          "1979": 141,
+          "1980": 258,
+          "1981": 399,
+          "1982": 151,
+          "1983": 173,
+          "1984": 1836,
+          "1985": 2613,
+          "1986": 1533,
+          "1987": 1553,
+          "1988": 656,
+          "1989": 2242,
+          "1990": 1416,
+          "1991": 880,
+          "1992": 230,
+          "1993": 141,
+          "1994": 623,
+          "1995": 1749,
+          "1996": 1477,
+          "1997": 755,
+          "1998": 1831,
+          "1999": 1462,
+          "2000": 1731,
+          "2001": 1861,
+          "2002": 1851,
+          "2003": 1186,
+          "2004": 722,
+          "2005": 1459,
+          "2006": 715,
+          "2007": 737,
+          "2008": 719,
+          "2009": 1441,
+          "2010": 2513,
+          "2011": 3686,
+          "2012": 2971,
+          "2013": 3150,
+          "2014": 1100,
+          "2015": 1651,
+          "2016": 2838,
+          "2017": 2765,
+          "2018": 537,
+          "2019": 1725,
+          "2020": 1777,
+          "2021": 918,
+          "2022": 1786,
+          "2023": 1736,
+          "2024": 1558,
+          "2025": 2084
+        },
+        "schema": [
+          {
+            "cid": 0,
+            "name": "fid",
+            "type": "INTEGER",
+            "notnull": 1,
+            "dflt_value": null,
+            "pk": 1
+          },
+          {
+            "cid": 1,
+            "name": "geom",
+            "type": "GEOMETRY",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 2,
+            "name": "OBJECTID",
+            "type": "MEDIUMINT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 3,
+            "name": "Ano",
+            "type": "MEDIUMINT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 4,
+            "name": "Cod_SGIF",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 5,
+            "name": "Cod_ANEPC",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 6,
+            "name": "AreaHaPoly",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 7,
+            "name": "AreaHaSGIF",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 8,
+            "name": "AreaHaPov",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 9,
+            "name": "AreaHaMato",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 10,
+            "name": "AreaHaAgri",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 11,
+            "name": "DH_Inicio",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 12,
+            "name": "DH_1Interv",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 13,
+            "name": "DH_Fim",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 14,
+            "name": "Duracao_m",
+            "type": "MEDIUMINT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 15,
+            "name": "PI_X",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 16,
+            "name": "PI_Y",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 17,
+            "name": "PI_DICOFRE",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 18,
+            "name": "PI_NUTS3",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 19,
+            "name": "PI_Distrit",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 20,
+            "name": "PI_Conc",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 21,
+            "name": "PI_Freg",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 22,
+            "name": "PI_Local",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 23,
+            "name": "PI_RNAP",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 24,
+            "name": "PI_ReFLOA",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 25,
+            "name": "ID_REE",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 26,
+            "name": "Causa_Cod",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 27,
+            "name": "Causa_Tipo",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 28,
+            "name": "Causa_Desc",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 29,
+            "name": "Alerta",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 30,
+            "name": "Poly_Fonte",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 31,
+            "name": "Poly_User",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 32,
+            "name": "Publicacao",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 33,
+            "name": "Edit_Poly",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 34,
+            "name": "Edit_SGIF",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 35,
+            "name": "Edit_Desc",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 36,
+            "name": "Observ",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 37,
+            "name": "Sincro_SGIF",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 38,
+            "name": "Estado",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 39,
+            "name": "Status_Area",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 40,
+            "name": "CX",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 41,
+            "name": "CY",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 42,
+            "name": "temp_id",
+            "type": "MEDIUMINT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 43,
+            "name": "d_pafa_min",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 44,
+            "name": "d_pafa_max",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 45,
+            "name": "d_frp_min",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 46,
+            "name": "d_frp_max",
+            "type": "DATETIME",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 47,
+            "name": "CODIGOSGIF_ESTIMADO",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 48,
+            "name": "METODO_ESTIMATIVA",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 49,
+            "name": "SCORE_ESTIMADO",
+            "type": "REAL",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          },
+          {
+            "cid": 50,
+            "name": "BEST_Codigo",
+            "type": "TEXT",
+            "notnull": 0,
+            "dflt_value": null,
+            "pk": 0
+          }
+        ],
+        "estados": {
+          "Versão final": 66701,
+          "Versão provisória": 1728,
+          "null": 6
+        },
+        "fontes": {
+          "ISA": 13540,
+          "null": 23426,
+          "EFFIS": 3018,
+          "CM/GNR": 17028,
+          "ICNF": 3423,
+          "CM": 1787,
+          "Copernicus": 26,
+          "GNR": 2977,
+          "GNR/ICNF": 483,
+          "CM/ICNF": 1,
+          "GTF": 2540,
+          " ": 18,
+          "Câmara Municipal": 168
+        },
+        "nulls": {
+          "fid": 0,
+          "Ano": 0,
+          "Cod_SGIF": 46940,
+          "Cod_ANEPC": 42796,
+          "DH_Inicio": 45721,
+          "DH_Fim": 45927,
+          "PI_DICOFRE": 46966,
+          "PI_Conc": 46966,
+          "AreaHaPoly": 0,
+          "Estado": 6,
+          "Poly_Fonte": 23426,
+          "BEST_Codigo": 3927,
+          "CODIGOSGIF_ESTIMADO": 3928
+        },
+        "cruzamento": {
+          "perimetros_sem_match_sgif": 47218,
+          "perimetros_match_sgif": 21217,
+          "perimetros_match_fogos2025": 2083
+        },
+        "conflitos": {
+          "area_negativa": 0,
+          "inicio_diverge": 16,
+          "municipio_diverge": 60,
+          "fim_antes_inicio": 5
+        },
+        "fogos_match_exato": 21217,
+        "fogos_sem_perimetro": 803658,
+        "ids_com_varios_perimetros": 0,
+        "fogos2025_com_perimetro": 2083,
+        "nota": "Cod_SGIF primário; BEST_Codigo/estimados não promovidos a matches exatos. Ausência de perímetro não exclui fogo."
+      }
+    }
+  },
+  "geometria": {
+    "Fogos": {
+      "contagens": {
+        "total": 824875,
+        "vazia": 760793,
+        "invalida": 0
+      },
+      "tipos": {
+        "GeometryCollection": 760793,
+        "Polygon": 60877,
+        "MultiPolygon": 3205
+      }
+    },
+    "PBA": {
+      "contagens": {
+        "total": 68435,
+        "vazia": 0,
+        "invalida": 0
+      },
+      "tipos": {
+        "Polygon": 65112,
+        "MultiPolygon": 3323
+      },
+      "geometrias_identicas_grupos": 22,
+      "sobreposicao2025": {
+        "pares_area_sobreposta": 145,
+        "sobreposicao_maior_10pct_menor": 33
+      },
+      "amostras": [
+        {
+          "fid1": 66352,
+          "fid2": 68050,
+          "area_m2": 5394.56537749832
+        },
+        {
+          "fid1": 66353,
+          "fid2": 66638,
+          "area_m2": 132928.7588952554
+        },
+        {
+          "fid1": 66353,
+          "fid2": 67518,
+          "area_m2": 12520.390206265867
+        },
+        {
+          "fid1": 66353,
+          "fid2": 67540,
+          "area_m2": 10686.337923891213
+        },
+        {
+          "fid1": 66364,
+          "fid2": 66989,
+          "area_m2": 21646.916217000282
+        },
+        {
+          "fid1": 66366,
+          "fid2": 66962,
+          "area_m2": 38937.93056406882
+        },
+        {
+          "fid1": 66373,
+          "fid2": 66966,
+          "area_m2": 38350.61196447088
+        },
+        {
+          "fid1": 66388,
+          "fid2": 67731,
+          "area_m2": 1169.1332275513519
+        },
+        {
+          "fid1": 66391,
+          "fid2": 67925,
+          "area_m2": 5267.539037023197
+        },
+        {
+          "fid1": 66397,
+          "fid2": 66561,
+          "area_m2": 25243.59057839316
+        }
+      ]
+    },
+    "territorio2025": {
+      "coerentes": 101,
+      "conflitos": 0,
+      "nota": "DGT CAOP2025 apenas três municípios; não associação exata nacional."
+    }
+  },
+  "taxonomia_leakage": {
+    "DUVIDOSO": 31,
+    "PROIBIDO": 193,
+    "SAFE_EM_T": 6
+  }
+}

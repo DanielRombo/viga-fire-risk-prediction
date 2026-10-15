@@ -1,0 +1,7 @@
+{
+  "segundos": 58.60922149999533,
+  "python": "3.13.13",
+  "sqlite": "3.50.4",
+  "modo": "read-only originais",
+  "comando": "python -B experiments/ml_5b/prdf_auditoria/auditar_prdf.py meteo"
+}

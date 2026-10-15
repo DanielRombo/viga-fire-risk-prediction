@@ -1,0 +1,20 @@
+id,entidade,fonte_primaria,independencia,frequencia,estado,url,acesso_em
+SADO_NORMA,ANEPC,SADO,primária normativa,Contínua prevista; execução não auditada,Não é export,https://prociv.gov.pt/media/d3rjmgs3/don_02_2025.pdf,2026-10-14
+PROCIV_ABERTAS,ANEPC / dados.gov,SADO,republicação operacional,Dinâmica,Metadados 2021; 2025 completo não demonstrado,https://dados.gov.pt/datasets/prociv-ocorrencias-em-aberto,2026-10-14
+PROCIV_HIST,ANEPC,SADO,endpoint antigo,Não demonstrada,HTTP 200 HTML redirecionado para home,http://www.prociv.pt/_vti_bin/ARM.ANPC.UI/ANPC_SituacaoOperacional.svc/GetHistoryOccurrencesByLocation,2026-10-14
+SGIF_EXPORT,ICNF,SGIF,primária exportada,Não garantida; datas de ficheiro,Sem selo público de completude no diretório,https://fogos.icnf.pt/download/ExportarDadosSGIF/,2026-10-14
+SGIF_DAILY,ICNF,SGIF,agregação da mesma fonte,Diária no schema,Amostra 32 KiB; não auditado integralmente,https://fogos.icnf.pt/download/ExportarDadosSGIF/daily_fires_summary.csv,2026-10-14
+SGIFR_2025,AGIF / SGIFR,SGIF e entidades SGIFR/ANEPC,agregação parcialmente relacionada,Anual,Relatório publicado; não certificado municipal,https://www.sgifr.gov.pt/relatorios-anuais,2026-10-14
+ICNF_RP7,ICNF,SGIF,agregação da mesma fonte,Relatório periódico,Provisório em 01/10/2025,https://www.icnf.pt/api/file/doc/2ddb8ceae473db04,2026-10-14
+INE_13512,INE,ICNF Estatísticas florestais,republicação estatística,Anual municipal,2025 provisório; atualização 30/05/2026,https://www.ine.pt/ine/json_indicador/pindica.jsp?op=2&varcd=0013512&lang=PT,2026-10-14
+INE_META,INE,ICNF Estatísticas florestais,metadados,Anual,Metadados consultados,https://www.ine.pt/bddXplorer/htdocs/minfo.jsp?var_cd=0013512&lingua=PT,2026-10-14
+EFFIS,Comissão Europeia JRC,MODIS/Sentinel-2/VIIRS e auxiliares,parcialmente independente,Diária/quase tempo real,"Produto de área, não censo de alertas",https://forest-fire.emergency.copernicus.eu/about-effis/technical-background/rapid-damage-assessment,2026-10-14
+FIRMS,NASA,MODIS/VIIRS,"instrumental, partilhada com EFFIS",Passagens de satélite,Não é cadastro de ocorrências,https://forum.earthdata.nasa.gov/viewtopic.php?t=5178,2026-10-14
+PRDF,ICNF / autores PRDF,SGIF/ICNF,harmonização,Snapshot V2025.1,Auditado anteriormente,https://zenodo.org/records/21427772,2026-10-14
+LISBOA_RSB,Município de Lisboa,RSB,potencial registo municipal relacionado,Anual,Sem série rural diária 2025 obtida,https://www.lisboa.pt/municipio/organizacao-municipal/gestao-e-avaliacao,2026-10-14
+FARO_MAPA,Município de Faro,Planeamento municipal,cartografia,Não aplicável,Não é diário de ocorrências,https://mapas.cm-faro.pt/geoportal/mapa/floresta,2026-10-14
+VREAL_PORTAL,Município de Vila Real,Município / proteção civil,relato municipal,Episódica,Não é censo,https://www.cm-vilareal.pt/,2026-10-14
+NA_MINHA_RUA,Município de Lisboa,Aplicação municipal,primária outro universo,Trimestral indicada,Outro target,https://dados.gov.pt/en/datasets/ocorrencias-na-minha-rua/,2026-10-14
+ICNF_2026,ICNF,SGIF,mesma fonte corrente,Corrente,Provisório,https://www.icnf.pt/,2026-10-14
+UK_DAILY,Governo britânico / FRS,IRS/FaRDaP,independente de Portugal,Registo diário; publicação periódica,"Capacidade documental candidata, não certificada aqui",https://www.gov.uk/government/statistics/fire-statistics-incident-level-datasets/daily-incident-dataset-guidance,2026-10-14
+UK_OUTDOOR,Governo britânico / FRS,IRS/FaRDaP,mesma fonte que UK_DAILY,Anual,Plano B,https://www.gov.uk/government/statistics/fire-statistics-incident-level-datasets/outdoor-fires-dataset-guidance,2026-10-14

@@ -1,0 +1,1178 @@
+{
+  "prevalencia": {
+    "global": {
+      "n": 598,
+      "positivos": 41,
+      "prevalencia": 0.06856187290969899,
+      "threshold": 0.13,
+      "roc_auc": 0.5,
+      "pr_auc_ap": 0.06856187290969899,
+      "precision": 0.06856187290969899,
+      "recall": 1.0,
+      "f1": 0.12832550860719874,
+      "balanced_accuracy": 0.5,
+      "brier": 0.06850793004572091,
+      "matriz": [
+        [
+          0,
+          557
+        ],
+        [
+          0,
+          41
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 598,
+          "score_medio": 0.13672922252010727,
+          "frequencia": 0.06856187290969899
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    },
+    "1106": {
+      "n": 0,
+      "nota": "Sem linhas elegíveis neste split."
+    },
+    "0805": {
+      "n": 270,
+      "positivos": 11,
+      "prevalencia": 0.040740740740740744,
+      "threshold": 0.13,
+      "roc_auc": 0.5,
+      "pr_auc_ap": 0.040740740740740744,
+      "precision": 0.040740740740740744,
+      "recall": 1.0,
+      "f1": 0.07829181494661921,
+      "balanced_accuracy": 0.5,
+      "brier": 0.04829472141894426,
+      "matriz": [
+        [
+          0,
+          259
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 270,
+          "score_medio": 0.13672922252010727,
+          "frequencia": 0.040740740740740744
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    },
+    "1714": {
+      "n": 328,
+      "positivos": 30,
+      "prevalencia": 0.09146341463414634,
+      "threshold": 0.13,
+      "roc_auc": 0.5,
+      "pr_auc_ap": 0.09146341463414634,
+      "precision": 0.09146341463414634,
+      "recall": 1.0,
+      "f1": 0.16759776536312848,
+      "balanced_accuracy": 0.5,
+      "brier": 0.08514685178117729,
+      "matriz": [
+        [
+          0,
+          298
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 328,
+          "score_medio": 0.13672922252010725,
+          "frequencia": 0.09146341463414634
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    }
+  },
+  "logistica": {
+    "global": {
+      "n": 598,
+      "positivos": 41,
+      "prevalencia": 0.06856187290969899,
+      "threshold": 0.2,
+      "roc_auc": 0.7336340149756972,
+      "pr_auc_ap": 0.14586300236088984,
+      "precision": 0.12077294685990338,
+      "recall": 0.6097560975609756,
+      "f1": 0.20161290322580644,
+      "balanced_accuracy": 0.6415028243639708,
+      "brier": 0.08265247010119127,
+      "matriz": [
+        [
+          375,
+          182
+        ],
+        [
+          16,
+          25
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 284,
+          "score_medio": 0.03062361589199534,
+          "frequencia": 0.02464788732394366
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 107,
+          "score_medio": 0.14947774986719867,
+          "frequencia": 0.08411214953271028
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 105,
+          "score_medio": 0.25079139197454553,
+          "frequencia": 0.09523809523809523
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 42,
+          "score_medio": 0.3473636519786994,
+          "frequencia": 0.16666666666666666
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 24,
+          "score_medio": 0.44712329151152,
+          "frequencia": 0.125
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 30,
+          "score_medio": 0.5435770260753491,
+          "frequencia": 0.1
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 6,
+          "score_medio": 0.6310115751943633,
+          "frequencia": 0.3333333333333333
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    },
+    "1106": {
+      "n": 0,
+      "nota": "Sem linhas elegíveis neste split."
+    },
+    "0805": {
+      "n": 270,
+      "positivos": 11,
+      "prevalencia": 0.040740740740740744,
+      "threshold": 0.2,
+      "roc_auc": 0.8259038259038258,
+      "pr_auc_ap": 0.1723889909041646,
+      "precision": 0.07407407407407407,
+      "recall": 0.9090909090909091,
+      "f1": 0.136986301369863,
+      "balanced_accuracy": 0.7132327132327132,
+      "brier": 0.09073851597052665,
+      "matriz": [
+        [
+          134,
+          125
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 91,
+          "score_medio": 0.03702867400042741,
+          "frequencia": 0.0
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 44,
+          "score_medio": 0.14818476341079825,
+          "frequencia": 0.022727272727272728
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 53,
+          "score_medio": 0.2511092782304043,
+          "frequencia": 0.018867924528301886
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 22,
+          "score_medio": 0.34819569995016697,
+          "frequencia": 0.045454545454545456
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 24,
+          "score_medio": 0.44712329151152,
+          "frequencia": 0.125
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 30,
+          "score_medio": 0.5435770260753491,
+          "frequencia": 0.1
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 6,
+          "score_medio": 0.6310115751943633,
+          "frequencia": 0.3333333333333333
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    },
+    "1714": {
+      "n": 328,
+      "positivos": 30,
+      "prevalencia": 0.09146341463414634,
+      "threshold": 0.2,
+      "roc_auc": 0.7914988814317673,
+      "pr_auc_ap": 0.29187053921784645,
+      "precision": 0.20833333333333334,
+      "recall": 0.5,
+      "f1": 0.29411764705882354,
+      "balanced_accuracy": 0.6543624161073825,
+      "brier": 0.07599627380631152,
+      "matriz": [
+        [
+          241,
+          57
+        ],
+        [
+          15,
+          15
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 193,
+          "score_medio": 0.027603614400454834,
+          "frequencia": 0.03626943005181347
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 63,
+          "score_medio": 0.15038078802722438,
+          "frequencia": 0.12698412698412698
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 52,
+          "score_medio": 0.2504673925214588,
+          "frequencia": 0.17307692307692307
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 20,
+          "score_medio": 0.34644839921008497,
+          "frequencia": 0.3
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    }
+  },
+  "hist_gradient_boosting": {
+    "global": {
+      "n": 598,
+      "positivos": 41,
+      "prevalencia": 0.06856187290969899,
+      "threshold": 0.28,
+      "roc_auc": 0.653544686254762,
+      "pr_auc_ap": 0.10745563530940501,
+      "precision": 0.1262135922330097,
+      "recall": 0.3170731707317073,
+      "f1": 0.18055555555555555,
+      "balanced_accuracy": 0.5777466392258177,
+      "brier": 0.08498441121878424,
+      "matriz": [
+        [
+          467,
+          90
+        ],
+        [
+          28,
+          13
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 375,
+          "score_medio": 0.026583581587715448,
+          "frequencia": 0.048
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 95,
+          "score_medio": 0.13965851765861126,
+          "frequencia": 0.09473684210526316
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 33,
+          "score_medio": 0.25038696121585524,
+          "frequencia": 0.030303030303030304
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 37,
+          "score_medio": 0.34943343399741567,
+          "frequencia": 0.16216216216216217
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 30,
+          "score_medio": 0.4421050229891196,
+          "frequencia": 0.13333333333333333
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 13,
+          "score_medio": 0.5300631187266464,
+          "frequencia": 0.23076923076923078
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 11,
+          "score_medio": 0.6335144161563089,
+          "frequencia": 0.0
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 4,
+          "score_medio": 0.7346091638228993,
+          "frequencia": 0.0
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    },
+    "1106": {
+      "n": 0,
+      "nota": "Sem linhas elegíveis neste split."
+    },
+    "0805": {
+      "n": 270,
+      "positivos": 11,
+      "prevalencia": 0.040740740740740744,
+      "threshold": 0.28,
+      "roc_auc": 0.6840996840996841,
+      "pr_auc_ap": 0.09708975930945732,
+      "precision": 0.08955223880597014,
+      "recall": 0.5454545454545454,
+      "f1": 0.15384615384615385,
+      "balanced_accuracy": 0.654966654966655,
+      "brier": 0.07507569918546902,
+      "matriz": [
+        [
+          198,
+          61
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 136,
+          "score_medio": 0.03652360689254499,
+          "frequencia": 0.022058823529411766
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 54,
+          "score_medio": 0.14125069787093922,
+          "frequencia": 0.037037037037037035
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 20,
+          "score_medio": 0.2484897847729747,
+          "frequencia": 0.0
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 23,
+          "score_medio": 0.3534035374527041,
+          "frequencia": 0.08695652173913043
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 21,
+          "score_medio": 0.4404903414759436,
+          "frequencia": 0.09523809523809523
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 8,
+          "score_medio": 0.5382909578175064,
+          "frequencia": 0.25
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 6,
+          "score_medio": 0.6342842692136084,
+          "frequencia": 0.0
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 2,
+          "score_medio": 0.7380940352443297,
+          "frequencia": 0.0
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    },
+    "1714": {
+      "n": 328,
+      "positivos": 30,
+      "prevalencia": 0.09146341463414634,
+      "threshold": 0.28,
+      "roc_auc": 0.7153243847874721,
+      "pr_auc_ap": 0.16300125972537383,
+      "precision": 0.19444444444444445,
+      "recall": 0.23333333333333334,
+      "f1": 0.21212121212121213,
+      "balanced_accuracy": 0.5680089485458613,
+      "brier": 0.09314097295352543,
+      "matriz": [
+        [
+          269,
+          29
+        ],
+        [
+          23,
+          7
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 239,
+          "score_medio": 0.02092733287869111,
+          "frequencia": 0.06276150627615062
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 41,
+          "score_medio": 0.13756149981798424,
+          "frequencia": 0.17073170731707318
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 13,
+          "score_medio": 0.25330569420490234,
+          "frequencia": 0.07692307692307693
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 14,
+          "score_medio": 0.3429111211780133,
+          "frequencia": 0.2857142857142857
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 9,
+          "score_medio": 0.4458726131865301,
+          "frequencia": 0.2222222222222222
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 5,
+          "score_medio": 0.5168985761812703,
+          "frequencia": 0.2
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 5,
+          "score_medio": 0.6325905924875495,
+          "frequencia": 0.0
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 2,
+          "score_medio": 0.7311242924014688,
+          "frequencia": 0.0
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    }
+  },
+  "random_forest": {
+    "global": {
+      "n": 598,
+      "positivos": 41,
+      "prevalencia": 0.06856187290969899,
+      "threshold": 0.24,
+      "roc_auc": 0.7375311993694442,
+      "pr_auc_ap": 0.17857214931207904,
+      "precision": 0.13414634146341464,
+      "recall": 0.5365853658536586,
+      "f1": 0.2146341463414634,
+      "balanced_accuracy": 0.6408241012392171,
+      "brier": 0.07161646184585961,
+      "matriz": [
+        [
+          415,
+          142
+        ],
+        [
+          19,
+          22
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 237,
+          "score_medio": 0.033158531712689156,
+          "frequencia": 0.016877637130801686
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 142,
+          "score_medio": 0.15060036479185793,
+          "frequencia": 0.07746478873239436
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 144,
+          "score_medio": 0.25343225306347994,
+          "frequencia": 0.0763888888888889
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 74,
+          "score_medio": 0.3282418427455511,
+          "frequencia": 0.1891891891891892
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 1,
+          "score_medio": 0.4030949820995897,
+          "frequencia": 1.0
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    },
+    "1106": {
+      "n": 0,
+      "nota": "Sem linhas elegíveis neste split."
+    },
+    "0805": {
+      "n": 270,
+      "positivos": 11,
+      "prevalencia": 0.040740740740740744,
+      "threshold": 0.24,
+      "roc_auc": 0.7718497718497719,
+      "pr_auc_ap": 0.11500952485867147,
+      "precision": 0.07339449541284404,
+      "recall": 0.7272727272727273,
+      "f1": 0.13333333333333333,
+      "balanced_accuracy": 0.6686556686556686,
+      "brier": 0.06751242725574425,
+      "matriz": [
+        [
+          158,
+          101
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 53,
+          "score_medio": 0.05243444658642128,
+          "frequencia": 0.0
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 72,
+          "score_medio": 0.14859375573646696,
+          "frequencia": 0.013888888888888888
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 93,
+          "score_medio": 0.2549925456108997,
+          "frequencia": 0.043010752688172046
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 52,
+          "score_medio": 0.3250519083467362,
+          "frequencia": 0.11538461538461539
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    },
+    "1714": {
+      "n": 328,
+      "positivos": 30,
+      "prevalencia": 0.09146341463414634,
+      "threshold": 0.24,
+      "roc_auc": 0.802013422818792,
+      "pr_auc_ap": 0.28569452917423893,
+      "precision": 0.2545454545454545,
+      "recall": 0.4666666666666667,
+      "f1": 0.32941176470588235,
+      "balanced_accuracy": 0.6645413870246085,
+      "brier": 0.074994783002357,
+      "matriz": [
+        [
+          257,
+          41
+        ],
+        [
+          16,
+          14
+        ]
+      ],
+      "reliability_bins": [
+        {
+          "inferior": 0.0,
+          "superior": 0.1,
+          "n": 184,
+          "score_medio": 0.02760623014579892,
+          "frequencia": 0.021739130434782608
+        },
+        {
+          "inferior": 0.1,
+          "superior": 0.2,
+          "n": 70,
+          "score_medio": 0.15266430553454582,
+          "frequencia": 0.14285714285714285
+        },
+        {
+          "inferior": 0.2,
+          "superior": 0.3,
+          "n": 51,
+          "score_medio": 0.25058701371230285,
+          "frequencia": 0.13725490196078433
+        },
+        {
+          "inferior": 0.3,
+          "superior": 0.4,
+          "n": 22,
+          "score_medio": 0.3357816876882045,
+          "frequencia": 0.36363636363636365
+        },
+        {
+          "inferior": 0.4,
+          "superior": 0.5,
+          "n": 1,
+          "score_medio": 0.4030949820995897,
+          "frequencia": 1.0
+        },
+        {
+          "inferior": 0.5,
+          "superior": 0.6,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.6,
+          "superior": 0.7,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.7,
+          "superior": 0.8,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.8,
+          "superior": 0.9,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        },
+        {
+          "inferior": 0.9,
+          "superior": 1.0,
+          "n": 0,
+          "score_medio": null,
+          "frequencia": null
+        }
+      ],
+      "nota": null
+    }
+  }
+}

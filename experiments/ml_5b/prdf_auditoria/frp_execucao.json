@@ -1,0 +1,7 @@
+{
+  "segundos": 4.730269800056703,
+  "python": "3.13.13",
+  "sqlite": "3.50.4",
+  "modo": "read-only originais",
+  "comando": "python -B experiments/ml_5b/prdf_auditoria/auditar_prdf.py frp"
+}

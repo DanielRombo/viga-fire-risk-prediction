@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "folds": [
+    ["F1", "2022-07-01", "2022-10-01", "2023-01-01"],
+    ["F2", "2022-10-01", "2023-04-01", "2023-07-01"],
+    ["F3", "2023-04-01", "2023-07-01", "2023-10-01"],
+    ["F4", "2023-07-01", "2023-10-01", "2024-01-01"]
+  ],
+  "descricao_folds": "[id, fim_fit_exclusivo, fim_calibracao_threshold_exclusivo, fim_avaliacao_exclusivo]; fit expansivo desde 2022; purga horizontes nas duas fronteiras",
+  "features": {
+    "A_meteo": ["temperatura", "humidade", "vento", "precipitacao_24h"],
+    "B_fwi": ["ffmc", "dmc", "dc", "isi", "bui", "fwi"],
+    "C_meteo_fwi": ["temperatura", "humidade", "vento", "precipitacao_24h", "ffmc", "dmc", "dc", "isi", "bui", "fwi"],
+    "D_calendario": ["temperatura", "humidade", "vento", "precipitacao_24h", "ffmc", "dmc", "dc", "isi", "bui", "fwi", "mes", "dia_do_ano", "dia_da_semana", "epoca_ano"],
+    "E_municipio": ["temperatura", "humidade", "vento", "precipitacao_24h", "ffmc", "dmc", "dc", "isi", "bui", "fwi", "mes", "dia_do_ano", "dia_da_semana", "epoca_ano", "municipio"]
+  },
+  "threshold": "maximizar F1 em Vila Real no bloco de calibração/threshold; grelha 0.01..0.99; desempate maior threshold",
+  "calibracao": ["sem", "sigmoid"],
+  "isotonic": "não executar: janelas pequenas e poucos positivos; não há amostra para ajustar degraus de forma fiável",
+  "criterio": "Elegível se AP acima do baseline em TODOS os quatro folds de Vila Real e mediana do ganho de Brier positiva. Ordenar pelo pior ganho AP, depois mediana AP e ganho Brier. Caso contrário NO-GO. Não são limiares de significância.",
+  "final_fit_end": "2023-07-01",
+  "final_cal_end": "2024-01-01",
+  "nota": "2024 nunca avaliado. Último semestre de 2023 reservado à calibração/threshold do artefacto final; modelo ajustado até junho. Não calibrar e refit depois."
+}

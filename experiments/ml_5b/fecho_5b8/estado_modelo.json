@@ -1,0 +1,51 @@
+{
+  "data_fecho": "2026-10-14",
+  "target": "Existência de uma nova ocorrência rural registada no município durante (T,T+24h], usando como referência temporal o timestamp operacional de alerta.",
+  "estado": "CANDIDATO EXPERIMENTAL CONGELADO",
+  "candidato": "hgb|E_municipio|False|sigmoid",
+  "threshold": 0.15,
+  "sha256_candidato": "7c358a2b32fe0360e4250c6240633f418de16a98e7d9d12d3d3d6c21a0b2bd04",
+  "desenvolvimento": [
+    2022,
+    2023
+  ],
+  "teste_consumido": 2024,
+  "holdout_2025": "NO-GO; não avaliado",
+  "validado": false,
+  "operacional": false,
+  "designacao_saida": "score experimental de ocorrência rural registada nas próximas 24h",
+  "recalcular_metricas": false,
+  "carregar_modelo": false,
+  "modelo": "HistGradientBoosting",
+  "features": [
+    "temperatura",
+    "humidade",
+    "vento",
+    "precipitacao_24h",
+    "ffmc",
+    "dmc",
+    "dc",
+    "isi",
+    "bui",
+    "fwi",
+    "mes",
+    "dia_do_ano",
+    "dia_da_semana",
+    "epoca_ano",
+    "municipio"
+  ],
+  "calibracao": "sigmoid",
+  "class_weight": null,
+  "seed": 42,
+  "fit_end_exclusivo": "2023-07-01",
+  "cal_end_exclusivo": "2024-01-01",
+  "versoes": {
+    "python": "3.11.17",
+    "numpy": "2.4.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "scipy": "1.17.1"
+  },
+  "artefacto": "../modelo_5b5/candidato.joblib"
+}

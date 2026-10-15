@@ -1,0 +1,11 @@
+fase,objetivo,resultado,decisao,limitacao,relatorio
+5B,Auditar viabilidade inicial,ANPC sem cobertura/overlap adequados,NO-GO,Negativos não demonstrados,RELATORIO.md
+5B.1,Prova de junção espaciotemporal,Junção retrospetiva tecnicamente viável,GO técnico / NO-GO dataset,Disponibilidade em T e cobertura não certificadas,RELATORIO_5B1.md
+5B.2,Encontrar fonte oficial,Export SGIF individual identificado,NO-GO certificado,Dicionário/completude por demonstrar,RELATORIO_5B2.md
+5B.2B,Reconciliação empírica e labels,Três municípios; 177/2644/467,GO condicionado retrospetivo,Negativos condicionais; Lisboa2024 null,RELATORIO_5B2B.md
+5B.3,Dataset reproduzível,1693 elegíveis;132 positivos;1561 negativos condicionais,GO treino experimental,Exclusões seletivas; fonte retrospetiva,dataset_5b3/RELATORIO.md
+5B.4,Benchmark temporal 2024,Sinal; degradação HGB escolhido em 2023,Sinal experimental / sem validação operacional,2024 consumido; Brier/recall insuficientes,modelo_5b4/RELATORIO.md
+5B.5,Robustez temporal e congelamento,HGB E sigmoid threshold0.15,GO apenas para preparar validação externa,Seleção em61 variantes; poucos positivos,modelo_5b5/RELATORIO.md
+PRDF,Auditar holdout2025 e compatibilidade,73 positivos potenciais/0 negativos/1022 null,NO-GO holdout,Cobertura insuficiente para zeros; mesma linhagem SGIF,prdf_auditoria/RELATORIO.md
+5B.7,Certificar cobertura adicional2025,36 blocos DUVIDOSO; redução null0,NO-GO holdout,Divergência reacendimentos; sem histórico público verificável,cobertura_5b7/RELATORIO.md
+5B.8,Fecho científico,Candidato preservado e resultados consolidados,ENCERRADO EXPERIMENTAL,Sem validação externa/operacional,fecho_5b8/RELATORIO_FINAL.md

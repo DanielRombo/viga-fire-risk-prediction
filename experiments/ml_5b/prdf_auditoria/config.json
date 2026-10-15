@@ -1,0 +1,11 @@
+{
+  "ano_alvo": 2025,
+  "target": "Existência de uma nova ocorrência rural registada no município durante (T,T+24h], usando como referência temporal o timestamp operacional de alerta.",
+  "T": "15:00 UTC",
+  "timezone": "Europe/Lisbon versus UTC; manter null quando discordantes ou ambíguos",
+  "chunk_csv": 25000,
+  "frp_tolerancias": [[2000,24],[5000,48]],
+  "frp_nota": "metros e horas simétricas em torno do alerta; apoio diagnóstico, nunca negativos",
+  "near_duplicates": "mesma célula de 0.01 grau, até 10 minutos: triagem aproximada, não identidade de evento",
+  "cobertura": "FORTE requer evidência de completude; ACEITÁVEL exige reconciliação oficial não provisória e ausência de anomalias; DUVIDOSO se provisório/conflito; SEM_EVIDÊNCIA se sem universo documentado. Não usar ausência de linha como zero."
+}

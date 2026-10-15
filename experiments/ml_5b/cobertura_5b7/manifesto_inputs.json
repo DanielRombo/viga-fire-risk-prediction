@@ -1,0 +1,22 @@
+[
+  {
+    "ficheiro": "prdf_auditoria\\cobertura_2025.csv",
+    "bytes": 403620,
+    "sha256": "6982512ccb47c44680be1c894c7bafceb60a4194e136a428b350661ba4718bbd"
+  },
+  {
+    "ficheiro": "prdf_auditoria\\fogos.json",
+    "bytes": 25756,
+    "sha256": "7a68db8c0aca09244a56c8af0507f419fcd70123baa2d0062996082617209be3"
+  },
+  {
+    "ficheiro": "cobertura_5b7\\config.json",
+    "bytes": 1475,
+    "sha256": "48a731a62a9e4772d1f9883b723b3206f66435338085d6811d8dbf85b1eaaaea"
+  },
+  {
+    "ficheiro": "cobertura_5b7\\evidencias\\ine_atual.bin",
+    "bytes": 1642963,
+    "sha256": "abe0736b3e20f70ba481cd4a8d2e53ce0dcd4f109144f51c200c4e8862b485ed"
+  }
+]

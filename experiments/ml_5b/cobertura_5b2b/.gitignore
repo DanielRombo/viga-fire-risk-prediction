@@ -1,0 +1,4 @@
+# Originais volumosos e base analítica local; manifestos/resultados podem ser revistos.
+*.csv
+*.part
+*.sqlite

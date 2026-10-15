@@ -1,0 +1,263 @@
+{
+  "periodo": "2022–2024; 2025 excluído",
+  "sgif_registos": 24170,
+  "prdf_registos": 24170,
+  "ids_sgif_duplicados": 0,
+  "ids_prdf_duplicados": 0,
+  "comuns": 24170,
+  "sgif_sem_prdf": 0,
+  "prdf_sem_sgif": 0,
+  "invalidos": [],
+  "relogio": {
+    "global_": {
+      "n": 24170,
+      "unidade": "minutos",
+      "media": 0.0,
+      "mediana": 0.0,
+      "p25": 0.0,
+      "p75": 0.0,
+      "p90": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "percentagem_abs_ate": {
+        "5": 100.0,
+        "15": 100.0,
+        "30": 100.0,
+        "60": 100.0
+      }
+    },
+    "por_ano": {
+      "2022": {
+        "n": 10390,
+        "unidade": "minutos",
+        "media": 0.0,
+        "mediana": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "percentagem_abs_ate": {
+          "5": 100.0,
+          "15": 100.0,
+          "30": 100.0,
+          "60": 100.0
+        }
+      },
+      "2023": {
+        "n": 7525,
+        "unidade": "minutos",
+        "media": 0.0,
+        "mediana": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "percentagem_abs_ate": {
+          "5": 100.0,
+          "15": 100.0,
+          "30": 100.0,
+          "60": 100.0
+        }
+      },
+      "2024": {
+        "n": 6255,
+        "unidade": "minutos",
+        "media": 0.0,
+        "mediana": 0.0,
+        "p25": 0.0,
+        "p75": 0.0,
+        "p90": 0.0,
+        "p95": 0.0,
+        "min": 0.0,
+        "max": 0.0,
+        "percentagem_abs_ate": {
+          "5": 100.0,
+          "15": 100.0,
+          "30": 100.0,
+          "60": 100.0
+        }
+      }
+    }
+  },
+  "utc_literal_vs_convencao_lisboa": {
+    "global_": {
+      "n": 24170,
+      "unidade": "minutos",
+      "media": 50.159702110053786,
+      "mediana": 60.0,
+      "p25": 60.0,
+      "p75": 60.0,
+      "p90": 60.0,
+      "p95": 60.0,
+      "min": 0.0,
+      "max": 60.0,
+      "percentagem_abs_ate": {
+        "5": 16.40049648324369,
+        "15": 16.40049648324369,
+        "30": 16.40049648324369,
+        "60": 100.0
+      }
+    },
+    "por_ano": {
+      "2022": {
+        "n": 10390,
+        "unidade": "minutos",
+        "media": 48.74494706448508,
+        "mediana": 60.0,
+        "p25": 60.0,
+        "p75": 60.0,
+        "p90": 60.0,
+        "p95": 60.0,
+        "min": 0.0,
+        "max": 60.0,
+        "percentagem_abs_ate": {
+          "5": 18.75842155919153,
+          "15": 18.75842155919153,
+          "30": 18.75842155919153,
+          "60": 100.0
+        }
+      },
+      "2023": {
+        "n": 7525,
+        "unidade": "minutos",
+        "media": 48.61395348837209,
+        "mediana": 60.0,
+        "p25": 60.0,
+        "p75": 60.0,
+        "p90": 60.0,
+        "p95": 60.0,
+        "min": 0.0,
+        "max": 60.0,
+        "percentagem_abs_ate": {
+          "5": 18.976744186046513,
+          "15": 18.976744186046513,
+          "30": 18.976744186046513,
+          "60": 100.0
+        }
+      },
+      "2024": {
+        "n": 6255,
+        "unidade": "minutos",
+        "media": 54.36930455635492,
+        "mediana": 60.0,
+        "p25": 60.0,
+        "p75": 60.0,
+        "p90": 60.0,
+        "p95": 60.0,
+        "min": 0.0,
+        "max": 60.0,
+        "percentagem_abs_ate": {
+          "5": 9.38449240607514,
+          "15": 9.38449240607514,
+          "30": 9.38449240607514,
+          "60": 100.0
+        }
+      }
+    }
+  },
+  "offsets_prdf": {
+    "0:00:00": 24170
+  },
+  "eventos_mudam_janela_literal": {
+    "2022": 836,
+    "2023": 641,
+    "2024": 548
+  },
+  "rastreio": {
+    "timestamps_inalterados": 24170
+  },
+  "candidatos_por_municipio_ano": {
+    "0805/2022": 21,
+    "1106/2022": 8,
+    "1714/2022": 66,
+    "1714/2023": 40,
+    "0805/2023": 27,
+    "1106/2023": 7,
+    "1714/2024": 37,
+    "0805/2024": 15
+  },
+  "candidatos_mudam_janela_literal": {
+    "0805/2022": 2,
+    "1106/2022": 2,
+    "1714/2022": 2,
+    "1714/2023": 2,
+    "0805/2023": 4,
+    "1106/2023": 1,
+    "1714/2024": 4,
+    "0805/2024": 3
+  },
+  "janelas_por_municipio_ano": {
+    "0805/2022": {
+      "janelas": 365,
+      "presenca_diferente_local_vs_utc": 4,
+      "ja_null": 4,
+      "classificado": 0
+    },
+    "0805/2023": {
+      "janelas": 365,
+      "presenca_diferente_local_vs_utc": 5,
+      "ja_null": 5,
+      "classificado": 0
+    },
+    "0805/2024": {
+      "janelas": 366,
+      "presenca_diferente_local_vs_utc": 5,
+      "ja_null": 5,
+      "classificado": 0
+    },
+    "1106/2022": {
+      "janelas": 365,
+      "presenca_diferente_local_vs_utc": 4,
+      "ja_null": 4,
+      "classificado": 0
+    },
+    "1106/2023": {
+      "janelas": 365,
+      "presenca_diferente_local_vs_utc": 2,
+      "ja_null": 2,
+      "classificado": 0
+    },
+    "1106/2024": {
+      "janelas": 366
+    },
+    "1714/2022": {
+      "janelas": 365,
+      "presenca_diferente_local_vs_utc": 1,
+      "ja_null": 1,
+      "classificado": 0
+    },
+    "1714/2023": {
+      "janelas": 365,
+      "presenca_diferente_local_vs_utc": 4,
+      "ja_null": 4,
+      "classificado": 0
+    },
+    "1714/2024": {
+      "janelas": 366,
+      "presenca_diferente_local_vs_utc": 7,
+      "ja_null": 7,
+      "classificado": 0
+    }
+  },
+  "timestamp_columns": [
+    "DHInicio",
+    "DH1Intervencao",
+    "DHResolucao",
+    "DHConclusao",
+    "DHFim",
+    "DHFimEstimado"
+  ],
+  "campos_alerta_explicito": [],
+  "fontes": {
+    "experiments\\ml_5b\\cobertura_5b2b\\Data2001_now.csv": "dc2df96256a5f85c8b1e0d39628b78ccc50862241cfe817dcefe9c147bf3ef8f",
+    "data\\prdf\\fogos.gpkg": "76a69b75df28aa9a676160ccd07122eb235d9849a982e07615afe20c87b98aae",
+    "data\\prdf\\fogos-metadata.csv": "8b265407ed5c72c5816a8e8aaab6b0879ffe73d7e7e26151e504567916b6ef28",
+    "experiments\\ml_5b\\labels_5b2b.py": "024490aa21d74ccc97265beab0ce29ad598e37e1049981b5f5b4deab09a65c00",
+    "experiments\\ml_5b\\dataset_5b3\\dataset_completo.csv": "0d399b393a63aa3fc7078d85831cf63d82b3be33b34c379d42e708864d67130b"
+  }
+}

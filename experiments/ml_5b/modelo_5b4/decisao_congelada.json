@@ -1,0 +1,57 @@
+{
+  "modelo": "hist_gradient_boosting",
+  "thresholds": {
+    "prevalencia": 0.13,
+    "logistica": 0.2,
+    "hist_gradient_boosting": 0.28,
+    "random_forest": 0.24
+  },
+  "config_sha256": "8ca1d59ac458a1efd76bbb1953386cf3ced1275cf9f07674290d3a081e4247ee",
+  "dataset_sha256": "0ea9fe99d84a9a2c810750c030361ea0f737d454e0c06f1f043b3b4a00742e19",
+  "criterio": "maior average precision em Vila Real na validação; desempate por Brier menor",
+  "modelos": {
+    "prevalencia": "3e806e28320011918a8e0e772c32a79e248c3f0ca5d225c96036f26a9cbcba87",
+    "logistica": "665ba3ccc433d8b9994f97f173b3b9df0d76789a347d61ee1260a4c0da4ff7a7",
+    "hist_gradient_boosting": "7f1e2f31c707de24c053df165eac65bd2acb80a53f864950759231ca79a67528",
+    "random_forest": "801f51607b2f8c71f75116d2a83146d88751f72c80b41e92c75e2d61940b1ff0"
+  },
+  "n_treino": 373,
+  "n_validacao": 722,
+  "prevalencia_treino": 0.13672922252010725,
+  "verificacoes": {
+    "anos_fit": [
+      2022
+    ],
+    "anos_selecao": [
+      2023
+    ],
+    "teste_nao_carregado": true,
+    "scaler_so_treino": true,
+    "encoder_so_treino": true,
+    "calibracao_teste": false,
+    "features": [
+      "temperatura",
+      "humidade",
+      "vento",
+      "precipitacao_24h",
+      "ffmc",
+      "dmc",
+      "dc",
+      "isi",
+      "bui",
+      "fwi",
+      "mes",
+      "dia_do_ano",
+      "dia_da_semana",
+      "municipio",
+      "epoca_ano"
+    ],
+    "smote": false,
+    "random_split": false
+  },
+  "scripts": {
+    "treinar.py": "e5366d6c5f4e3e3b315468a06dd42bd3724ee4b57c44ebbb3594c0442fa165ad",
+    "avaliar.py": "161466dbe0b3ce084afa58fd219b7285cba3bba9119362ee4e11cefbb7bc7bb4",
+    "comum.py": "bae2fcff62bd3334f3e312ccd98f9af331c99e0a383c62232f1a6dcc2e4942e9"
+  }
+}

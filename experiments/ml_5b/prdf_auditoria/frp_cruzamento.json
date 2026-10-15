@@ -1,0 +1,112 @@
+{
+  "deteccoes2025": 55360,
+  "resultados": [
+    {
+      "raio_m": 2000,
+      "janela_horas_simetrica": 24,
+      "contagens": {
+        "potenciais_fogos": 7579,
+        "com_frp": 291,
+        "sem_frp": 7288,
+        "multiplos_frp": 202,
+        "pares": 3976
+      },
+      "amostras": [
+        {
+          "codigo": "20250065447",
+          "deteccoes": 2
+        },
+        {
+          "codigo": "20250284402",
+          "deteccoes": 1
+        },
+        {
+          "codigo": "20250409185",
+          "deteccoes": 5
+        },
+        {
+          "codigo": "20250411961",
+          "deteccoes": 6
+        },
+        {
+          "codigo": "20250412040",
+          "deteccoes": 5
+        },
+        {
+          "codigo": "20250413379",
+          "deteccoes": 1
+        },
+        {
+          "codigo": "20250415845",
+          "deteccoes": 9
+        },
+        {
+          "codigo": "20250415974",
+          "deteccoes": 1
+        },
+        {
+          "codigo": "20250418349",
+          "deteccoes": 15
+        },
+        {
+          "codigo": "20250419260",
+          "deteccoes": 1
+        }
+      ]
+    },
+    {
+      "raio_m": 5000,
+      "janela_horas_simetrica": 48,
+      "contagens": {
+        "potenciais_fogos": 7579,
+        "com_frp": 850,
+        "sem_frp": 6729,
+        "multiplos_frp": 701,
+        "pares": 29858
+      },
+      "amostras": [
+        {
+          "codigo": "20250065447",
+          "deteccoes": 2
+        },
+        {
+          "codigo": "20250071172",
+          "deteccoes": 1
+        },
+        {
+          "codigo": "20250284402",
+          "deteccoes": 2
+        },
+        {
+          "codigo": "20250354936",
+          "deteccoes": 1
+        },
+        {
+          "codigo": "20250405354",
+          "deteccoes": 3
+        },
+        {
+          "codigo": "20250406485",
+          "deteccoes": 2
+        },
+        {
+          "codigo": "20250406721",
+          "deteccoes": 3
+        },
+        {
+          "codigo": "20250409185",
+          "deteccoes": 8
+        },
+        {
+          "codigo": "20250410200",
+          "deteccoes": 1
+        },
+        {
+          "codigo": "20250410259",
+          "deteccoes": 3
+        }
+      ]
+    }
+  ],
+  "nota": "Distância haversine; relógios comparados sem prova independente de fuso; associação auxiliar não confirma identidade/ignição, ausência nunca negativo."
+}

@@ -1,0 +1,154 @@
+{
+  "n": 3568731,
+  "schema": [
+    "ID",
+    "codigo",
+    "DHMeteo",
+    "IDGrelha",
+    "IDECMWF_ERA5",
+    "u10",
+    "v10",
+    "T",
+    "HR",
+    "V",
+    "Dir",
+    "Prec",
+    "Pacum",
+    "FWI",
+    "FFMC",
+    "DMC",
+    "DC",
+    "ISI",
+    "BUI",
+    "DSR",
+    "hFFMC",
+    "hISI",
+    "hFWI"
+  ],
+  "tipos": "CSV textual; timestamps ISO e medidas numéricas conforme inspeção",
+  "nulls": {
+    "ID": 0,
+    "codigo": 0,
+    "DHMeteo": 0,
+    "IDGrelha": 2,
+    "IDECMWF_ERA5": 4,
+    "u10": 4,
+    "v10": 4,
+    "T": 4,
+    "HR": 4,
+    "V": 4,
+    "Dir": 4,
+    "Prec": 4,
+    "Pacum": 4,
+    "FWI": 4,
+    "FFMC": 4,
+    "DMC": 4,
+    "DC": 4,
+    "ISI": 4,
+    "BUI": 4,
+    "DSR": 4,
+    "hFFMC": 5,
+    "hISI": 5,
+    "hFWI": 5
+  },
+  "anos": {
+    "1980": 14679,
+    "1981": 39188,
+    "1982": 19025,
+    "1983": 20462,
+    "1984": 41736,
+    "1985": 44458,
+    "1986": 30341,
+    "1987": 35302,
+    "1988": 26337,
+    "1989": 93945,
+    "1990": 54652,
+    "1991": 66974,
+    "1992": 58719,
+    "1993": 47061,
+    "1994": 278165,
+    "1995": 546985,
+    "1996": 97732,
+    "1997": 67102,
+    "1998": 126167,
+    "1999": 90408,
+    "2000": 128749,
+    "2001": 87369,
+    "2002": 92654,
+    "2003": 90839,
+    "2004": 86158,
+    "2005": 147250,
+    "2006": 77905,
+    "2007": 71023,
+    "2008": 64915,
+    "2009": 117100,
+    "2010": 111655,
+    "2011": 126662,
+    "2012": 63120,
+    "2013": 63591,
+    "2014": 20897,
+    "2015": 46271,
+    "2016": 56908,
+    "2017": 63831,
+    "2018": 38106,
+    "2019": 32543,
+    "2020": 30832,
+    "2021": 27429,
+    "2022": 38759,
+    "2023": 24596,
+    "2024": 27797,
+    "2025": 32334
+  },
+  "periodo": [
+    "1980-01-30 19:00:00+00:00",
+    "2025-12-31 23:00:00+00:00"
+  ],
+  "codigos": 988981,
+  "fogos_com_meteo": 494708,
+  "fogos_sem_meteo": 330167,
+  "codigos_meteo_sem_fogo": 494273,
+  "chaves_fogo_ambiguas": 0,
+  "match": {
+    "linhas_sem_fogo_ou_inicio": 2098024,
+    "linhas_com_fogo": 1470707
+  },
+  "duplicados": {
+    "id": [
+      0,
+      0
+    ],
+    "code,t": [
+      0,
+      0
+    ]
+  },
+  "delta_horas": {
+    "contagens": {
+      "no_alerta": 20958,
+      "depois_24h": 93061,
+      "depois_48h": 52547,
+      "apos_extincao": 4062,
+      "antes": 473749,
+      "depois": 976000
+    },
+    "minmax": [
+      -0.9833333333333333,
+      2473.483333333333
+    ]
+  },
+  "ano2025": {
+    "fogos": 8252,
+    "com_meteo": 8252,
+    "sem_meteo": 0,
+    "linhas": 26140,
+    "linhas_por_fogo_minmax": [
+      1,
+      2058
+    ],
+    "duracao_horas_minmax": [
+      0.0,
+      2057.0
+    ]
+  },
+  "leitura": "csv.DictReader incremental; lotes SQLite temporários 25000; comparação de relógios sem inferir fuso"
+}

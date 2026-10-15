@@ -1,0 +1,16 @@
+{
+  "data_fecho": "2026-10-14",
+  "target": "Existência de uma nova ocorrência rural registada no município durante (T,T+24h], usando como referência temporal o timestamp operacional de alerta.",
+  "estado": "CANDIDATO EXPERIMENTAL CONGELADO",
+  "candidato": "hgb|E_municipio|False|sigmoid",
+  "threshold": 0.15,
+  "sha256_candidato": "7c358a2b32fe0360e4250c6240633f418de16a98e7d9d12d3d3d6c21a0b2bd04",
+  "desenvolvimento": [2022, 2023],
+  "teste_consumido": 2024,
+  "holdout_2025": "NO-GO; não avaliado",
+  "validado": false,
+  "operacional": false,
+  "designacao_saida": "score experimental de ocorrência rural registada nas próximas 24h",
+  "recalcular_metricas": false,
+  "carregar_modelo": false
+}

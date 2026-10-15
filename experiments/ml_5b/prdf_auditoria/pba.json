@@ -1,0 +1,517 @@
+{
+  "n": 68435,
+  "anos": {
+    "1975": 280,
+    "1976": 190,
+    "1977": 100,
+    "1978": 529,
+    "1979": 141,
+    "1980": 258,
+    "1981": 399,
+    "1982": 151,
+    "1983": 173,
+    "1984": 1836,
+    "1985": 2613,
+    "1986": 1533,
+    "1987": 1553,
+    "1988": 656,
+    "1989": 2242,
+    "1990": 1416,
+    "1991": 880,
+    "1992": 230,
+    "1993": 141,
+    "1994": 623,
+    "1995": 1749,
+    "1996": 1477,
+    "1997": 755,
+    "1998": 1831,
+    "1999": 1462,
+    "2000": 1731,
+    "2001": 1861,
+    "2002": 1851,
+    "2003": 1186,
+    "2004": 722,
+    "2005": 1459,
+    "2006": 715,
+    "2007": 737,
+    "2008": 719,
+    "2009": 1441,
+    "2010": 2513,
+    "2011": 3686,
+    "2012": 2971,
+    "2013": 3150,
+    "2014": 1100,
+    "2015": 1651,
+    "2016": 2838,
+    "2017": 2765,
+    "2018": 537,
+    "2019": 1725,
+    "2020": 1777,
+    "2021": 918,
+    "2022": 1786,
+    "2023": 1736,
+    "2024": 1558,
+    "2025": 2084
+  },
+  "schema": [
+    {
+      "cid": 0,
+      "name": "fid",
+      "type": "INTEGER",
+      "notnull": 1,
+      "dflt_value": null,
+      "pk": 1
+    },
+    {
+      "cid": 1,
+      "name": "geom",
+      "type": "GEOMETRY",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 2,
+      "name": "OBJECTID",
+      "type": "MEDIUMINT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 3,
+      "name": "Ano",
+      "type": "MEDIUMINT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 4,
+      "name": "Cod_SGIF",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 5,
+      "name": "Cod_ANEPC",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 6,
+      "name": "AreaHaPoly",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 7,
+      "name": "AreaHaSGIF",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 8,
+      "name": "AreaHaPov",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 9,
+      "name": "AreaHaMato",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 10,
+      "name": "AreaHaAgri",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 11,
+      "name": "DH_Inicio",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 12,
+      "name": "DH_1Interv",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 13,
+      "name": "DH_Fim",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 14,
+      "name": "Duracao_m",
+      "type": "MEDIUMINT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 15,
+      "name": "PI_X",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 16,
+      "name": "PI_Y",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 17,
+      "name": "PI_DICOFRE",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 18,
+      "name": "PI_NUTS3",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 19,
+      "name": "PI_Distrit",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 20,
+      "name": "PI_Conc",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 21,
+      "name": "PI_Freg",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 22,
+      "name": "PI_Local",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 23,
+      "name": "PI_RNAP",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 24,
+      "name": "PI_ReFLOA",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 25,
+      "name": "ID_REE",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 26,
+      "name": "Causa_Cod",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 27,
+      "name": "Causa_Tipo",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 28,
+      "name": "Causa_Desc",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 29,
+      "name": "Alerta",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 30,
+      "name": "Poly_Fonte",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 31,
+      "name": "Poly_User",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 32,
+      "name": "Publicacao",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 33,
+      "name": "Edit_Poly",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 34,
+      "name": "Edit_SGIF",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 35,
+      "name": "Edit_Desc",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 36,
+      "name": "Observ",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 37,
+      "name": "Sincro_SGIF",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 38,
+      "name": "Estado",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 39,
+      "name": "Status_Area",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 40,
+      "name": "CX",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 41,
+      "name": "CY",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 42,
+      "name": "temp_id",
+      "type": "MEDIUMINT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 43,
+      "name": "d_pafa_min",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 44,
+      "name": "d_pafa_max",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 45,
+      "name": "d_frp_min",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 46,
+      "name": "d_frp_max",
+      "type": "DATETIME",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 47,
+      "name": "CODIGOSGIF_ESTIMADO",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 48,
+      "name": "METODO_ESTIMATIVA",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 49,
+      "name": "SCORE_ESTIMADO",
+      "type": "REAL",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    },
+    {
+      "cid": 50,
+      "name": "BEST_Codigo",
+      "type": "TEXT",
+      "notnull": 0,
+      "dflt_value": null,
+      "pk": 0
+    }
+  ],
+  "estados": {
+    "Versão final": 66701,
+    "Versão provisória": 1728,
+    "null": 6
+  },
+  "fontes": {
+    "ISA": 13540,
+    "null": 23426,
+    "EFFIS": 3018,
+    "CM/GNR": 17028,
+    "ICNF": 3423,
+    "CM": 1787,
+    "Copernicus": 26,
+    "GNR": 2977,
+    "GNR/ICNF": 483,
+    "CM/ICNF": 1,
+    "GTF": 2540,
+    " ": 18,
+    "Câmara Municipal": 168
+  },
+  "nulls": {
+    "fid": 0,
+    "Ano": 0,
+    "Cod_SGIF": 46940,
+    "Cod_ANEPC": 42796,
+    "DH_Inicio": 45721,
+    "DH_Fim": 45927,
+    "PI_DICOFRE": 46966,
+    "PI_Conc": 46966,
+    "AreaHaPoly": 0,
+    "Estado": 6,
+    "Poly_Fonte": 23426,
+    "BEST_Codigo": 3927,
+    "CODIGOSGIF_ESTIMADO": 3928
+  },
+  "cruzamento": {
+    "perimetros_sem_match_sgif": 47218,
+    "perimetros_match_sgif": 21217,
+    "perimetros_match_fogos2025": 2083
+  },
+  "conflitos": {
+    "area_negativa": 0,
+    "inicio_diverge": 16,
+    "municipio_diverge": 60,
+    "fim_antes_inicio": 5
+  },
+  "fogos_match_exato": 21217,
+  "fogos_sem_perimetro": 803658,
+  "ids_com_varios_perimetros": 0,
+  "fogos2025_com_perimetro": 2083,
+  "nota": "Cod_SGIF primário; BEST_Codigo/estimados não promovidos a matches exatos. Ausência de perímetro não exclui fogo."
+}

@@ -1,0 +1,11 @@
+{
+  "ficheiros": 260,
+  "bytes": 592153926,
+  "diretorios_omitidos": [
+    "cobertura_5b7\\_deps",
+    "cobertura_5b7\\__pycache__",
+    "prdf_auditoria\\__pycache__"
+  ],
+  "duplicados_codigo_docs": [],
+  "nota": "Não inclui saídas autorreferentes de fecho_5b8; raw apenas stat, sem scan/conteúdo."
+}

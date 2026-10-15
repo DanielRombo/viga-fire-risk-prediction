@@ -1,0 +1,298 @@
+[
+  {
+    "ano": 2022,
+    "municipio": "1106",
+    "mes": 12,
+    "n": 19,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 1,
+    "n": 22,
+    "positivos": 5,
+    "prevalencia": 0.22727272727272727
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 2,
+    "n": 28,
+    "positivos": 6,
+    "prevalencia": 0.21428571428571427
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 3,
+    "n": 31,
+    "positivos": 2,
+    "prevalencia": 0.06451612903225806
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 4,
+    "n": 30,
+    "positivos": 5,
+    "prevalencia": 0.16666666666666666
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 5,
+    "n": 31,
+    "positivos": 5,
+    "prevalencia": 0.16129032258064516
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 6,
+    "n": 30,
+    "positivos": 4,
+    "prevalencia": 0.13333333333333333
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 7,
+    "n": 31,
+    "positivos": 12,
+    "prevalencia": 0.3870967741935484
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 8,
+    "n": 30,
+    "positivos": 9,
+    "prevalencia": 0.3
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 9,
+    "n": 30,
+    "positivos": 1,
+    "prevalencia": 0.03333333333333333
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 10,
+    "n": 31,
+    "positivos": 2,
+    "prevalencia": 0.06451612903225806
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 11,
+    "n": 30,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2022,
+    "municipio": "1714",
+    "mes": 12,
+    "n": 30,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 1,
+    "n": 31,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 2,
+    "n": 28,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 3,
+    "n": 31,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 4,
+    "n": 30,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 5,
+    "n": 31,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 6,
+    "n": 30,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 7,
+    "n": 29,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 8,
+    "n": 31,
+    "positivos": 5,
+    "prevalencia": 0.16129032258064516
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 9,
+    "n": 30,
+    "positivos": 1,
+    "prevalencia": 0.03333333333333333
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 10,
+    "n": 31,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 11,
+    "n": 30,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1106",
+    "mes": 12,
+    "n": 30,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 1,
+    "n": 31,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 2,
+    "n": 28,
+    "positivos": 6,
+    "prevalencia": 0.21428571428571427
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 3,
+    "n": 29,
+    "positivos": 2,
+    "prevalencia": 0.06896551724137931
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 4,
+    "n": 28,
+    "positivos": 4,
+    "prevalencia": 0.14285714285714285
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 5,
+    "n": 31,
+    "positivos": 6,
+    "prevalencia": 0.1935483870967742
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 6,
+    "n": 30,
+    "positivos": 1,
+    "prevalencia": 0.03333333333333333
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 7,
+    "n": 31,
+    "positivos": 4,
+    "prevalencia": 0.12903225806451613
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 8,
+    "n": 31,
+    "positivos": 8,
+    "prevalencia": 0.25806451612903225
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 9,
+    "n": 30,
+    "positivos": 1,
+    "prevalencia": 0.03333333333333333
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 10,
+    "n": 31,
+    "positivos": 1,
+    "prevalencia": 0.03225806451612903
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 11,
+    "n": 30,
+    "positivos": 0,
+    "prevalencia": 0.0
+  },
+  {
+    "ano": 2023,
+    "municipio": "1714",
+    "mes": 12,
+    "n": 30,
+    "positivos": 1,
+    "prevalencia": 0.03333333333333333
+  }
+]

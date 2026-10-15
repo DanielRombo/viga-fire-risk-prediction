@@ -1,0 +1,316 @@
+{
+  "versao": "5b3-v1",
+  "fontes": {
+    "experiments/ml_5b/cobertura_5b2b/labels.csv": {
+      "bytes": 8508626,
+      "sha256": "74078c10a071188988f9be71027a6872c86a6b92b3d8f25ddf9203fc24c3c067"
+    },
+    "experiments/ml_5b/cobertura_5b2b/consolidado.csv": {
+      "bytes": 65419465,
+      "sha256": "9d2406661f7f32e1feeb2960e0a92ccb5f0a6ba175516bd80ca5f15e8fe03818"
+    },
+    "experiments/ml_5b/cobertura_5b2b/matriz_mensal.csv": {
+      "bytes": 1810352,
+      "sha256": "8c65b6532a85c0474791b7e7c8c5137854b7dc89cf789486244a7ef4d84ed829"
+    },
+    "experiments/ml_5b/cobertura_5b2b/territorio_piloto.csv": {
+      "bytes": 146841,
+      "sha256": "e15fd88475f24ed10cff444f7c525057e9d2a8cb582a3ba6c399a09fc01effb7"
+    },
+    "experiments/ml_5b/cobertura_5b2b/Data2001_now.csv": {
+      "bytes": 479541125,
+      "sha256": "dc2df96256a5f85c8b1e0d39628b78ccc50862241cfe817dcefe9c147bf3ef8f"
+    },
+    "experiments/ml_5b/cobertura_5b2b/Data2001_noweliminados.csv": {
+      "bytes": 2533108,
+      "sha256": "e06eb5f9cd7410f3803ed6a6a40761925116217b61589ed5983224d19c0df6a2"
+    },
+    "experiments/ml_5b/cobertura_5b2b/amostra_contraprova.json": {
+      "bytes": 40951,
+      "sha256": "47974dbd89079314d16f6e2042b1351cd3e779f918be0a72cca9f5a2faa56a96"
+    },
+    "experiments/ml_5b/fontes_5b2/sgif_administracao.bin": {
+      "bytes": 1167736,
+      "sha256": "24580e64a3b7ccdb946d7737ae6a4e6ce1ddaf3f231152c5396c220f2d700ff6"
+    },
+    "experiments/ml_5b/fontes_5b2/ine_2018_2024.bin": {
+      "bytes": 818293,
+      "sha256": "09742b29153fe5e83ca0d3e8e6c06c2614fc535affbf563437cb8ea9a99aae17"
+    },
+    "experiments/ml_5b/fontes_5b2/dgt_1106.bin": {
+      "bytes": 164111,
+      "sha256": "8debecc2d71637ad325484c42d581b0c063616253dcd3a5285e3fa72f6b52f2b"
+    },
+    "experiments/ml_5b/fontes_5b2/dgt_0805.bin": {
+      "bytes": 677804,
+      "sha256": "4f76abb35b8cf6941c678c64d12a45d7757dd2a30e24a28a736882442e6fdf2a"
+    },
+    "experiments/ml_5b/fontes_5b2/dgt_1714.bin": {
+      "bytes": 839084,
+      "sha256": "5b341c7a4bc41f19cb41a15cd790552b103ab02b3186ada4e5a49d36f8205984"
+    },
+    "experiments/fwi_fase8/evidencias/Lisboa_extensao_resposta.json": {
+      "bytes": 1283257,
+      "sha256": "de5091fc4a7ed5a81d28f915f85b932ffefadd07aa2b3b901b35c55e58980ea7"
+    },
+    "experiments/fwi_fase8/evidencias/Lisboa_recolha.json": {
+      "bytes": 1204,
+      "sha256": "0bdc5eaeec29f232f8ad96555a4479eafdcdac226d58eb6f155d84354ddc3ffe"
+    },
+    "experiments/fwi_fase8/evidencias/Lisboa_horas.json": {
+      "bytes": 19920265,
+      "sha256": "d6eef69010fd5cf91b1ef25096c5f156b735ccbc8d46d367b81bf3df56850b3a"
+    },
+    "experiments/fwi_fase8/evidencias/Lisboa_5anos.npz": {
+      "bytes": 140992,
+      "sha256": "583a92782a33dd40f7dedcbc91dd0929ca6279fc8e1a8b8c4707f76875ed0064"
+    },
+    "experiments/fwi_fase8/evidencias/Faro_extensao_resposta.json": {
+      "bytes": 1284051,
+      "sha256": "8583b4f60298d656c71b95f06e512b16945c300b6a8170a44529a7d14e8e52e3"
+    },
+    "experiments/fwi_fase8/evidencias/Faro_recolha.json": {
+      "bytes": 1203,
+      "sha256": "e18d09b73f980091b19a5ae820984aace2a98fbe41b14230d7675edc96e7b726"
+    },
+    "experiments/fwi_fase8/evidencias/Faro_horas.json": {
+      "bytes": 19965535,
+      "sha256": "69a01245d7ae9b14c076e3381a7180bab5d08ed536b9982f85b0f8951f738846"
+    },
+    "experiments/fwi_fase8/evidencias/Faro_5anos.npz": {
+      "bytes": 172849,
+      "sha256": "afe7244296d75b1e0737945f4e8fab8cedb8bc9a167511d5e57787b7ca40c1a5"
+    },
+    "experiments/fwi_fase8/evidencias/Vila Real_extensao_resposta.json": {
+      "bytes": 1526279,
+      "sha256": "f534c1830603b3394e4856f216671f9a27abdcba2dc88d9e527a01682b33bcdd"
+    },
+    "experiments/fwi_fase8/evidencias/Vila Real_recolha.json": {
+      "bytes": 1210,
+      "sha256": "d1fe5d471ea326ea28811339d266061247ce687a400b9b44e34494b9f36074f0"
+    },
+    "experiments/fwi_fase8/evidencias/Vila Real_horas.json": {
+      "bytes": 19983181,
+      "sha256": "f274ef35fad32130c5bb5bb2c43775ca24e050d792c87d90ef4ba21a67bc93c5"
+    },
+    "experiments/fwi_fase8/evidencias/Vila Real_5anos.npz": {
+      "bytes": 112866,
+      "sha256": "6ea0a4e761220e8611dec7dcf50976e8f3f45260a000fd2a594be5628239e7c3"
+    },
+    "experiments/ml_5b/construir_5b3.py": {
+      "bytes": 11538,
+      "sha256": "d0befb781ea75b7d291cb31d9d4fe3f8ad74e73b32db03369f2212eec0399e3e"
+    },
+    "experiments/ml_5b/validar_5b3.py": {
+      "bytes": 7363,
+      "sha256": "5b4f330e1a39582cd337db5cee2fa4178069d11cfde539b1b808ecee3e9c6e0a"
+    },
+    "experiments/ml_5b/labels_5b2b.py": {
+      "bytes": 5266,
+      "sha256": "024490aa21d74ccc97265beab0ce29ad598e37e1049981b5f5b4deab09a65c00"
+    },
+    "experiments/ml_5b/auditar_5b2b.py": {
+      "bytes": 6014,
+      "sha256": "4bd270a41e83f0106468ef376e186a98499fb02522d4b968301ef416a167b52c"
+    },
+    "experiments/fwi_fase8/convergencia.py": {
+      "bytes": 5967,
+      "sha256": "f3ed22b6d8eccc75e66d6388ca3e8e5a97a5fa043d49ab212123d568a1ffc41d"
+    },
+    "backend/services/meteorologia_fwi.py": {
+      "bytes": 4715,
+      "sha256": "c05fc83a8678dd838c9f112fc8981897952da613c22004e28c7b863829d4f2de"
+    }
+  },
+  "municipios": [
+    {
+      "municipio": "1106",
+      "nome": "Lisboa",
+      "latitude": 38.7169,
+      "longitude": -9.1399,
+      "latitude_grelha": 38.69947,
+      "longitude_grelha": -9.196167,
+      "horas_verificadas": 28512,
+      "dias_calculados": 1188,
+      "primeiro_dia": "2021-10-01",
+      "ultimo_dia": "2024-12-31",
+      "erro_prefixo": 0.0
+    },
+    {
+      "municipio": "0805",
+      "nome": "Faro",
+      "latitude": 37.0194,
+      "longitude": -7.9322,
+      "latitude_grelha": 37.012302,
+      "longitude_grelha": -7.955139,
+      "horas_verificadas": 28512,
+      "dias_calculados": 1188,
+      "primeiro_dia": "2021-10-01",
+      "ultimo_dia": "2024-12-31",
+      "erro_prefixo": 0.0
+    },
+    {
+      "municipio": "1714",
+      "nome": "Vila Real",
+      "latitude": 41.3006,
+      "longitude": -7.7457,
+      "latitude_grelha": 41.300526,
+      "longitude_grelha": -7.7474976,
+      "horas_verificadas": 28512,
+      "dias_calculados": 1188,
+      "primeiro_dia": "2021-10-01",
+      "ultimo_dia": "2024-12-31",
+      "erro_prefixo": 0.0
+    }
+  ],
+  "semente": [
+    85,
+    6,
+    15
+  ],
+  "sementes_sensibilidade": [
+    [
+      60.0,
+      2.0,
+      5.0
+    ],
+    [
+      60.0,
+      2.0,
+      15.0
+    ],
+    [
+      60.0,
+      2.0,
+      1000.0
+    ],
+    [
+      60.0,
+      6.0,
+      5.0
+    ],
+    [
+      60.0,
+      6.0,
+      15.0
+    ],
+    [
+      60.0,
+      6.0,
+      1000.0
+    ],
+    [
+      60.0,
+      150.0,
+      5.0
+    ],
+    [
+      60.0,
+      150.0,
+      15.0
+    ],
+    [
+      60.0,
+      150.0,
+      1000.0
+    ],
+    [
+      85.0,
+      2.0,
+      5.0
+    ],
+    [
+      85.0,
+      2.0,
+      15.0
+    ],
+    [
+      85.0,
+      2.0,
+      1000.0
+    ],
+    [
+      85.0,
+      6.0,
+      5.0
+    ],
+    [
+      85.0,
+      6.0,
+      15.0
+    ],
+    [
+      85.0,
+      6.0,
+      1000.0
+    ],
+    [
+      85.0,
+      150.0,
+      5.0
+    ],
+    [
+      85.0,
+      150.0,
+      15.0
+    ],
+    [
+      85.0,
+      150.0,
+      1000.0
+    ],
+    [
+      95.0,
+      2.0,
+      5.0
+    ],
+    [
+      95.0,
+      2.0,
+      15.0
+    ],
+    [
+      95.0,
+      2.0,
+      1000.0
+    ],
+    [
+      95.0,
+      6.0,
+      5.0
+    ],
+    [
+      95.0,
+      6.0,
+      15.0
+    ],
+    [
+      95.0,
+      6.0,
+      1000.0
+    ],
+    [
+      95.0,
+      150.0,
+      5.0
+    ],
+    [
+      95.0,
+      150.0,
+      15.0
+    ],
+    [
+      95.0,
+      150.0,
+      1000.0
+    ]
+  ],
+  "atol": 1e-08,
+  "rtol": 1e-10,
+  "criterio": "Concordância numérica das 27 trajetórias no próprio T, não estabelecimento científico nem prova universal.",
+  "estudo": "retrospetivo; disponibilidade em T não demonstrada",
+  "periodo": [
+    "2022-01-01",
+    "2024-12-31"
+  ]
+}

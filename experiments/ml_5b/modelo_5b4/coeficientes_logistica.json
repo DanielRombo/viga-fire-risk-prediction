@@ -1,0 +1,78 @@
+[
+  {
+    "feature": "numericas__temperatura",
+    "coeficiente": 0.553990128763623
+  },
+  {
+    "feature": "numericas__humidade",
+    "coeficiente": -0.4853935832682034
+  },
+  {
+    "feature": "numericas__vento",
+    "coeficiente": 0.2623870649132841
+  },
+  {
+    "feature": "numericas__precipitacao_24h",
+    "coeficiente": 0.29065720314243915
+  },
+  {
+    "feature": "numericas__ffmc",
+    "coeficiente": 1.1236790036612383
+  },
+  {
+    "feature": "numericas__dmc",
+    "coeficiente": 0.16253352558263937
+  },
+  {
+    "feature": "numericas__dc",
+    "coeficiente": -0.013510283958626482
+  },
+  {
+    "feature": "numericas__isi",
+    "coeficiente": 0.11109350176118898
+  },
+  {
+    "feature": "numericas__bui",
+    "coeficiente": 0.3354869806379213
+  },
+  {
+    "feature": "numericas__fwi",
+    "coeficiente": -0.7984050472702766
+  },
+  {
+    "feature": "numericas__mes",
+    "coeficiente": -0.4641649223373605
+  },
+  {
+    "feature": "numericas__dia_do_ano",
+    "coeficiente": -0.3250704353382123
+  },
+  {
+    "feature": "numericas__dia_da_semana",
+    "coeficiente": -0.10472597380686108
+  },
+  {
+    "feature": "categoricas__municipio_1106",
+    "coeficiente": -0.19971494195117626
+  },
+  {
+    "feature": "categoricas__municipio_1714",
+    "coeficiente": 0.19637679661069463
+  },
+  {
+    "feature": "categoricas__epoca_ano_inverno",
+    "coeficiente": 0.32886872882941337
+  },
+  {
+    "feature": "categoricas__epoca_ano_outono",
+    "coeficiente": -0.29982599085478595
+  },
+  {
+    "feature": "categoricas__epoca_ano_primavera",
+    "coeficiente": -0.2028832007335639
+  },
+  {
+    "feature": "categoricas__epoca_ano_verao",
+    "coeficiente": 0.1705023174184559
+  }
+]

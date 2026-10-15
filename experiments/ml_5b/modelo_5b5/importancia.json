@@ -1,0 +1,367 @@
+{
+  "configuracao": "hgb|E_municipio|False|sigmoid",
+  "apenas_diagnostico": false,
+  "nota": "AP do pipeline base antes da sigmoid; não causal.",
+  "folds": [
+    {
+      "fold": "F1",
+      "feature": "temperatura",
+      "media": -0.2397079302573693,
+      "desvio": 0.11479311374903052
+    },
+    {
+      "fold": "F1",
+      "feature": "humidade",
+      "media": -0.028627354103696812,
+      "desvio": 0.01860997048110252
+    },
+    {
+      "fold": "F1",
+      "feature": "vento",
+      "media": 0.021272750378307965,
+      "desvio": 0.02568632202139415
+    },
+    {
+      "fold": "F1",
+      "feature": "precipitacao_24h",
+      "media": -0.00477999229648173,
+      "desvio": 0.004626460072912188
+    },
+    {
+      "fold": "F1",
+      "feature": "ffmc",
+      "media": 0.0017778781320980763,
+      "desvio": 0.0076856079445337
+    },
+    {
+      "fold": "F1",
+      "feature": "dmc",
+      "media": -0.034384786815463884,
+      "desvio": 0.03368089996863045
+    },
+    {
+      "fold": "F1",
+      "feature": "dc",
+      "media": -0.014231344340039986,
+      "desvio": 0.020243673101644565
+    },
+    {
+      "fold": "F1",
+      "feature": "isi",
+      "media": 0.02941620144112648,
+      "desvio": 0.04838171892115748
+    },
+    {
+      "fold": "F1",
+      "feature": "bui",
+      "media": 0.011028567861048676,
+      "desvio": 0.003281080796003659
+    },
+    {
+      "fold": "F1",
+      "feature": "fwi",
+      "media": 0.022127909530083444,
+      "desvio": 0.024520138637711845
+    },
+    {
+      "fold": "F1",
+      "feature": "mes",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F1",
+      "feature": "dia_do_ano",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F1",
+      "feature": "dia_da_semana",
+      "media": -0.0009257673937041689,
+      "desvio": 0.029871312768492725
+    },
+    {
+      "fold": "F1",
+      "feature": "epoca_ano",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F1",
+      "feature": "municipio",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F2",
+      "feature": "temperatura",
+      "media": -0.004027171600568769,
+      "desvio": 0.042393131578977394
+    },
+    {
+      "fold": "F2",
+      "feature": "humidade",
+      "media": 0.010562786711837979,
+      "desvio": 0.05477764239939739
+    },
+    {
+      "fold": "F2",
+      "feature": "vento",
+      "media": 0.026623574893532627,
+      "desvio": 0.035910174687252966
+    },
+    {
+      "fold": "F2",
+      "feature": "precipitacao_24h",
+      "media": 0.019097656272241883,
+      "desvio": 0.030248028198266174
+    },
+    {
+      "fold": "F2",
+      "feature": "ffmc",
+      "media": 0.030970261750529117,
+      "desvio": 0.032076925031793935
+    },
+    {
+      "fold": "F2",
+      "feature": "dmc",
+      "media": 0.005903352900797493,
+      "desvio": 0.02982407443814247
+    },
+    {
+      "fold": "F2",
+      "feature": "dc",
+      "media": 0.023659526353690313,
+      "desvio": 0.023139985968285193
+    },
+    {
+      "fold": "F2",
+      "feature": "isi",
+      "media": 0.005257355444328457,
+      "desvio": 0.060896056579115856
+    },
+    {
+      "fold": "F2",
+      "feature": "bui",
+      "media": 0.036657369181766694,
+      "desvio": 0.030312443099331638
+    },
+    {
+      "fold": "F2",
+      "feature": "fwi",
+      "media": 0.04791199499533465,
+      "desvio": 0.09118339886886456
+    },
+    {
+      "fold": "F2",
+      "feature": "mes",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F2",
+      "feature": "dia_do_ano",
+      "media": 3.3594119647484266e-05,
+      "desvio": 0.00016099129703085857
+    },
+    {
+      "fold": "F2",
+      "feature": "dia_da_semana",
+      "media": 0.020712922276618827,
+      "desvio": 0.04309581473839581
+    },
+    {
+      "fold": "F2",
+      "feature": "epoca_ano",
+      "media": -0.001521047033357348,
+      "desvio": 0.0014843787164526628
+    },
+    {
+      "fold": "F2",
+      "feature": "municipio",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F3",
+      "feature": "temperatura",
+      "media": 0.05029942603014916,
+      "desvio": 0.015924321560293535
+    },
+    {
+      "fold": "F3",
+      "feature": "humidade",
+      "media": -0.04382262246349531,
+      "desvio": 0.04774250054723857
+    },
+    {
+      "fold": "F3",
+      "feature": "vento",
+      "media": -0.05375511879633971,
+      "desvio": 0.0683437574214953
+    },
+    {
+      "fold": "F3",
+      "feature": "precipitacao_24h",
+      "media": -0.003457876512266783,
+      "desvio": 0.020641889456046964
+    },
+    {
+      "fold": "F3",
+      "feature": "ffmc",
+      "media": -0.03223465784365552,
+      "desvio": 0.059654891447469674
+    },
+    {
+      "fold": "F3",
+      "feature": "dmc",
+      "media": -0.021592318118523683,
+      "desvio": 0.03141000315086856
+    },
+    {
+      "fold": "F3",
+      "feature": "dc",
+      "media": -0.004394766750816742,
+      "desvio": 0.03898739834543329
+    },
+    {
+      "fold": "F3",
+      "feature": "isi",
+      "media": -0.010971583272160709,
+      "desvio": 0.07580241298817918
+    },
+    {
+      "fold": "F3",
+      "feature": "bui",
+      "media": -0.00012429774858011,
+      "desvio": 0.020833902391111103
+    },
+    {
+      "fold": "F3",
+      "feature": "fwi",
+      "media": -0.026070684930159398,
+      "desvio": 0.033182884679562465
+    },
+    {
+      "fold": "F3",
+      "feature": "mes",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F3",
+      "feature": "dia_do_ano",
+      "media": 0.030287042488727066,
+      "desvio": 0.04335030550314183
+    },
+    {
+      "fold": "F3",
+      "feature": "dia_da_semana",
+      "media": -0.002322635425321351,
+      "desvio": 0.017313796349354222
+    },
+    {
+      "fold": "F3",
+      "feature": "epoca_ano",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F3",
+      "feature": "municipio",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F4",
+      "feature": "temperatura",
+      "media": -0.03820928584086481,
+      "desvio": 0.15307195285603276
+    },
+    {
+      "fold": "F4",
+      "feature": "humidade",
+      "media": -0.023250669529868644,
+      "desvio": 0.1525641711078984
+    },
+    {
+      "fold": "F4",
+      "feature": "vento",
+      "media": 0.13294344217599052,
+      "desvio": 0.05924676558061121
+    },
+    {
+      "fold": "F4",
+      "feature": "precipitacao_24h",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F4",
+      "feature": "ffmc",
+      "media": -0.0034437852736701247,
+      "desvio": 0.15825347377701265
+    },
+    {
+      "fold": "F4",
+      "feature": "dmc",
+      "media": 0.04731497590012769,
+      "desvio": 0.15197356372482318
+    },
+    {
+      "fold": "F4",
+      "feature": "dc",
+      "media": -0.030152911805835347,
+      "desvio": 0.1836900104606659
+    },
+    {
+      "fold": "F4",
+      "feature": "isi",
+      "media": 0.11120380669880112,
+      "desvio": 0.12802856066654247
+    },
+    {
+      "fold": "F4",
+      "feature": "bui",
+      "media": 0.005697981859506341,
+      "desvio": 0.16104266272270337
+    },
+    {
+      "fold": "F4",
+      "feature": "fwi",
+      "media": -0.1156953601953602,
+      "desvio": 0.1341049948856469
+    },
+    {
+      "fold": "F4",
+      "feature": "mes",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F4",
+      "feature": "dia_do_ano",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F4",
+      "feature": "dia_da_semana",
+      "media": 0.012843226516613612,
+      "desvio": 0.026644609986737948
+    },
+    {
+      "fold": "F4",
+      "feature": "epoca_ano",
+      "media": 0.0,
+      "desvio": 0.0
+    },
+    {
+      "fold": "F4",
+      "feature": "municipio",
+      "media": 0.0,
+      "desvio": 0.0
+    }
+  ]
+}

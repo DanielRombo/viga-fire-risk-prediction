@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "fogos.gpkg": "76a69b75df28aa9a676160ccd07122eb235d9849a982e07615afe20c87b98aae",
+    "fogos-metadata.csv": "8b265407ed5c72c5816a8e8aaab6b0879ffe73d7e7e26151e504567916b6ef28",
+    "METEO.csv": "4e88771a50e4a5b4ee2c30ed50c66285ec761649ba14510f5fde97079d133b73",
+    "FRP.csv": "104fd63e1f7118a95c0b47dfb912c445e0e599402f426644e058720707f8c378",
+    "PBA.gpkg": "eebcc9a327526053f1e3fe51ab5e21f053eb7aa68284193e07d66bf1bd3b0ddf"
+  },
+  "originais_inalterados": true
+}

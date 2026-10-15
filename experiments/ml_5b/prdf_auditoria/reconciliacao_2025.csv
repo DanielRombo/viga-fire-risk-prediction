@@ -1,0 +1,309 @@
+municipio,nome,prdf,ine,diferenca,marcador,coverage_status
+0101,Águeda,18,18,0,&,DUVIDOSO
+0102,Albergaria-a-Velha,18,18,0,&,DUVIDOSO
+0103,Anadia,16,16,0,&,DUVIDOSO
+0104,Arouca,46,46,0,&,DUVIDOSO
+0105,Aveiro,45,45,0,&,DUVIDOSO
+0106,Castelo de Paiva,51,51,0,&,DUVIDOSO
+0107,Espinho,2,2,0,&,DUVIDOSO
+0108,Estarreja,29,29,0,&,DUVIDOSO
+0109,Santa Maria da Feira,116,116,0,&,DUVIDOSO
+0110,Ílhavo,18,18,0,&,DUVIDOSO
+0111,Mealhada,7,7,0,&,DUVIDOSO
+0112,Murtosa,6,6,0,&,DUVIDOSO
+0113,Oliveira de Azeméis,63,63,0,&,DUVIDOSO
+0114,Oliveira do Bairro,7,7,0,&,DUVIDOSO
+0115,Ovar,29,29,0,&,DUVIDOSO
+0116,São João da Madeira,2,2,0,&,DUVIDOSO
+0117,Sever do Vouga,11,11,0,&,DUVIDOSO
+0118,Vagos,24,24,0,&,DUVIDOSO
+0119,Vale de Cambra,19,19,0,&,DUVIDOSO
+0201,Aljustrel,12,12,0,&,DUVIDOSO
+0202,Almodôvar,7,7,0,&,DUVIDOSO
+0203,Alvito,4,4,0,&,DUVIDOSO
+0204,Barrancos,0,0,0,&,DUVIDOSO
+0205,Beja,44,44,0,&,DUVIDOSO
+0206,Castro Verde,14,14,0,&,DUVIDOSO
+0207,Cuba,5,5,0,&,DUVIDOSO
+0208,Ferreira do Alentejo,28,28,0,&,DUVIDOSO
+0209,Mértola,21,21,0,&,DUVIDOSO
+0210,Moura,21,21,0,&,DUVIDOSO
+0211,Odemira,22,22,0,&,DUVIDOSO
+0212,Ourique,26,26,0,&,DUVIDOSO
+0213,Serpa,40,40,0,&,DUVIDOSO
+0214,Vidigueira,26,26,0,&,DUVIDOSO
+0301,Amares,15,15,0,&,DUVIDOSO
+0302,Barcelos,42,42,0,&,DUVIDOSO
+0303,Braga,57,57,0,&,DUVIDOSO
+0304,Cabeceiras de Basto,54,54,0,&,DUVIDOSO
+0305,Celorico de Basto,83,83,0,&,DUVIDOSO
+0306,Esposende,14,14,0,&,DUVIDOSO
+0307,Fafe,158,158,0,&,DUVIDOSO
+0308,Guimarães,58,57,1,&,DUVIDOSO
+0309,Póvoa de Lanhoso,42,42,0,&,DUVIDOSO
+0310,Terras de Bouro,42,42,0,&,DUVIDOSO
+0311,Vieira do Minho,66,66,0,&,DUVIDOSO
+0312,Vila Nova de Famalicão,52,50,2,&,DUVIDOSO
+0313,Vila Verde,117,117,0,&,DUVIDOSO
+0314,Vizela,16,16,0,&,DUVIDOSO
+0401,Alfândega da Fé,12,12,0,&,DUVIDOSO
+0402,Bragança,40,40,0,&,DUVIDOSO
+0403,Carrazeda de Ansiães,13,13,0,&,DUVIDOSO
+0404,Freixo de Espada à Cinta,7,7,0,&,DUVIDOSO
+0405,Macedo de Cavaleiros,16,16,0,&,DUVIDOSO
+0406,Miranda do Douro,15,15,0,&,DUVIDOSO
+0407,Mirandela,22,22,0,&,DUVIDOSO
+0408,Mogadouro,14,14,0,&,DUVIDOSO
+0409,Torre de Moncorvo,17,17,0,&,DUVIDOSO
+0410,Vila Flor,13,13,0,&,DUVIDOSO
+0411,Vimioso,12,12,0,&,DUVIDOSO
+0412,Vinhais,64,64,0,&,DUVIDOSO
+0501,Belmonte,17,17,0,&,DUVIDOSO
+0502,Castelo Branco,60,60,0,&,DUVIDOSO
+0503,Covilhã,33,32,1,&,DUVIDOSO
+0504,Fundão,37,37,0,&,DUVIDOSO
+0505,Idanha-a-Nova,36,36,0,&,DUVIDOSO
+0506,Oleiros,14,14,0,&,DUVIDOSO
+0507,Penamacor,17,17,0,&,DUVIDOSO
+0508,Proença-a-Nova,13,13,0,&,DUVIDOSO
+0509,Sertã,23,22,1,&,DUVIDOSO
+0510,Vila de Rei,2,2,0,&,DUVIDOSO
+0511,Vila Velha de Ródão,16,16,0,&,DUVIDOSO
+0601,Arganil,12,12,0,&,DUVIDOSO
+0602,Cantanhede,17,17,0,&,DUVIDOSO
+0603,Coimbra,32,32,0,&,DUVIDOSO
+0604,Condeixa-a-Nova,3,3,0,&,DUVIDOSO
+0605,Figueira da Foz,44,44,0,&,DUVIDOSO
+0606,Góis,8,8,0,&,DUVIDOSO
+0607,Lousã,10,10,0,&,DUVIDOSO
+0608,Mira,7,7,0,&,DUVIDOSO
+0609,Miranda do Corvo,6,6,0,&,DUVIDOSO
+0610,Montemor-o-Velho,24,24,0,&,DUVIDOSO
+0611,Oliveira do Hospital,23,23,0,&,DUVIDOSO
+0612,Pampilhosa da Serra,4,4,0,&,DUVIDOSO
+0613,Penacova,9,9,0,&,DUVIDOSO
+0614,Penela,4,4,0,&,DUVIDOSO
+0615,Soure,7,7,0,&,DUVIDOSO
+0616,Tábua,11,11,0,&,DUVIDOSO
+0617,Vila Nova de Poiares,8,8,0,&,DUVIDOSO
+0701,Alandroal,12,12,0,&,DUVIDOSO
+0702,Arraiolos,16,16,0,&,DUVIDOSO
+0703,Borba,11,11,0,&,DUVIDOSO
+0704,Estremoz,24,24,0,&,DUVIDOSO
+0705,Évora,66,66,0,&,DUVIDOSO
+0706,Montemor-o-Novo,26,26,0,&,DUVIDOSO
+0707,Mora,7,7,0,&,DUVIDOSO
+0708,Mourão,12,12,0,&,DUVIDOSO
+0709,Portel,13,13,0,&,DUVIDOSO
+0710,Redondo,4,4,0,&,DUVIDOSO
+0711,Reguengos de Monsaraz,16,16,0,&,DUVIDOSO
+0712,Vendas Novas,6,6,0,&,DUVIDOSO
+0713,Viana do Alentejo,7,7,0,&,DUVIDOSO
+0714,Vila Viçosa,4,4,0,&,DUVIDOSO
+0801,Albufeira,23,23,0,&,DUVIDOSO
+0802,Alcoutim,3,3,0,&,DUVIDOSO
+0803,Aljezur,9,9,0,&,DUVIDOSO
+0804,Castro Marim,5,5,0,&,DUVIDOSO
+0805,Faro,32,32,0,&,DUVIDOSO
+0806,Lagoa,6,6,0,&,DUVIDOSO
+0807,Lagos,14,14,0,&,DUVIDOSO
+0808,Loulé,44,44,0,&,DUVIDOSO
+0809,Monchique,8,8,0,&,DUVIDOSO
+0810,Olhão,14,14,0,&,DUVIDOSO
+0811,Portimão,13,13,0,&,DUVIDOSO
+0812,São Brás de Alportel,1,1,0,&,DUVIDOSO
+0813,Silves,41,41,0,&,DUVIDOSO
+0814,Tavira,17,17,0,&,DUVIDOSO
+0815,Vila do Bispo,3,3,0,&,DUVIDOSO
+0816,Vila Real de Santo António,9,9,0,&,DUVIDOSO
+0901,Aguiar da Beira,11,11,0,&,DUVIDOSO
+0902,Almeida,12,12,0,&,DUVIDOSO
+0903,Celorico da Beira,11,11,0,&,DUVIDOSO
+0904,Figueira de Castelo Rodrigo,21,21,0,&,DUVIDOSO
+0905,Fornos de Algodres,7,7,0,&,DUVIDOSO
+0906,Gouveia,10,10,0,&,DUVIDOSO
+0907,Guarda,47,47,0,&,DUVIDOSO
+0908,Manteigas,1,1,0,&,DUVIDOSO
+0909,Mêda,4,4,0,&,DUVIDOSO
+0910,Pinhel,19,19,0,&,DUVIDOSO
+0911,Sabugal,24,24,0,&,DUVIDOSO
+0912,Seia,26,26,0,&,DUVIDOSO
+0913,Trancoso,11,11,0,&,DUVIDOSO
+0914,Vila Nova de Foz Côa,18,18,0,&,DUVIDOSO
+1001,Alcobaça,27,27,0,&,DUVIDOSO
+1002,Alvaiázere,12,12,0,&,DUVIDOSO
+1003,Ansião,10,10,0,&,DUVIDOSO
+1004,Batalha,6,6,0,&,DUVIDOSO
+1005,Bombarral,15,15,0,&,DUVIDOSO
+1006,Caldas da Rainha,32,32,0,&,DUVIDOSO
+1007,Castanheira de Pêra,3,3,0,&,DUVIDOSO
+1008,Figueiró dos Vinhos,8,8,0,&,DUVIDOSO
+1009,Leiria,55,55,0,&,DUVIDOSO
+1010,Marinha Grande,8,8,0,&,DUVIDOSO
+1011,Nazaré,4,4,0,&,DUVIDOSO
+1012,Óbidos,8,8,0,&,DUVIDOSO
+1013,Pedrógão Grande,21,21,0,&,DUVIDOSO
+1014,Peniche,2,2,0,&,DUVIDOSO
+1015,Pombal,27,27,0,&,DUVIDOSO
+1016,Porto de Mós,12,12,0,&,DUVIDOSO
+1101,Alenquer,45,45,0,&,DUVIDOSO
+1102,Arruda dos Vinhos,5,5,0,&,DUVIDOSO
+1103,Azambuja,36,36,0,&,DUVIDOSO
+1104,Cadaval,15,15,0,&,DUVIDOSO
+1105,Cascais,17,17,0,&,DUVIDOSO
+1106,Lisboa,1,1,0,&,DUVIDOSO
+1107,Loures,13,13,0,&,DUVIDOSO
+1108,Lourinhã,8,8,0,&,DUVIDOSO
+1109,Mafra,36,36,0,&,DUVIDOSO
+1110,Oeiras,8,8,0,&,DUVIDOSO
+1111,Sintra,68,67,1,&,DUVIDOSO
+1112,Sobral de Monte Agraço,6,6,0,&,DUVIDOSO
+1113,Torres Vedras,40,40,0,&,DUVIDOSO
+1114,Vila Franca de Xira,14,13,1,&,DUVIDOSO
+1115,Amadora,5,5,0,&,DUVIDOSO
+1116,Odivelas,8,8,0,&,DUVIDOSO
+1201,Alter do Chão,13,13,0,&,DUVIDOSO
+1202,Arronches,11,11,0,&,DUVIDOSO
+1203,Avis,15,15,0,&,DUVIDOSO
+1204,Campo Maior,53,53,0,&,DUVIDOSO
+1205,Castelo de Vide,2,2,0,&,DUVIDOSO
+1206,Crato,12,12,0,&,DUVIDOSO
+1207,Elvas,32,32,0,&,DUVIDOSO
+1208,Fronteira,6,6,0,&,DUVIDOSO
+1209,Gavião,3,3,0,&,DUVIDOSO
+1210,Marvão,5,5,0,&,DUVIDOSO
+1211,Monforte,10,10,0,&,DUVIDOSO
+1212,Nisa,20,20,0,&,DUVIDOSO
+1213,Ponte de Sor,17,17,0,&,DUVIDOSO
+1214,Portalegre,15,15,0,&,DUVIDOSO
+1215,Sousel,7,7,0,&,DUVIDOSO
+1301,Amarante,115,115,0,&,DUVIDOSO
+1302,Baião,57,57,0,&,DUVIDOSO
+1303,Felgueiras,144,144,0,&,DUVIDOSO
+1304,Gondomar,129,129,0,&,DUVIDOSO
+1305,Lousada,164,164,0,&,DUVIDOSO
+1306,Maia,64,64,0,&,DUVIDOSO
+1307,Marco de Canaveses,147,147,0,&,DUVIDOSO
+1308,Matosinhos,16,16,0,&,DUVIDOSO
+1309,Paços de Ferreira,71,71,0,&,DUVIDOSO
+1310,Paredes,246,246,0,&,DUVIDOSO
+1311,Penafiel,269,269,0,&,DUVIDOSO
+1312,Porto,5,5,0,&,DUVIDOSO
+1313,Póvoa de Varzim,21,21,0,&,DUVIDOSO
+1314,Santo Tirso,108,108,0,&,DUVIDOSO
+1315,Valongo,52,52,0,&,DUVIDOSO
+1316,Vila do Conde,70,70,0,&,DUVIDOSO
+1317,Vila Nova de Gaia,202,202,0,&,DUVIDOSO
+1318,Trofa,28,28,0,&,DUVIDOSO
+1401,Abrantes,61,61,0,&,DUVIDOSO
+1402,Alcanena,8,8,0,&,DUVIDOSO
+1403,Almeirim,25,25,0,&,DUVIDOSO
+1404,Alpiarça,15,15,0,&,DUVIDOSO
+1405,Benavente,52,52,0,&,DUVIDOSO
+1406,Cartaxo,18,18,0,&,DUVIDOSO
+1407,Chamusca,12,12,0,&,DUVIDOSO
+1408,Constância,12,12,0,&,DUVIDOSO
+1409,Coruche,38,38,0,&,DUVIDOSO
+1410,Entroncamento,5,5,0,&,DUVIDOSO
+1411,Ferreira do Zêzere,8,8,0,&,DUVIDOSO
+1412,Golegã,6,6,0,&,DUVIDOSO
+1413,Mação,5,5,0,&,DUVIDOSO
+1414,Rio Maior,16,16,0,&,DUVIDOSO
+1415,Salvaterra de Magos,32,32,0,&,DUVIDOSO
+1416,Santarém,49,49,0,&,DUVIDOSO
+1417,Sardoal,6,6,0,&,DUVIDOSO
+1418,Tomar,21,21,0,&,DUVIDOSO
+1419,Torres Novas,17,17,0,&,DUVIDOSO
+1420,Vila Nova da Barquinha,6,6,0,&,DUVIDOSO
+1421,Ourém,74,74,0,&,DUVIDOSO
+1501,Alcácer do Sal,24,24,0,&,DUVIDOSO
+1502,Alcochete,10,10,0,&,DUVIDOSO
+1503,Almada,14,14,0,&,DUVIDOSO
+1504,Barreiro,8,8,0,&,DUVIDOSO
+1505,Grândola,15,15,0,&,DUVIDOSO
+1506,Moita,24,24,0,&,DUVIDOSO
+1507,Montijo,30,30,0,&,DUVIDOSO
+1508,Palmela,63,63,0,&,DUVIDOSO
+1509,Santiago do Cacém,33,33,0,&,DUVIDOSO
+1510,Seixal,2,2,0,&,DUVIDOSO
+1511,Sesimbra,14,14,0,&,DUVIDOSO
+1512,Setúbal,12,12,0,&,DUVIDOSO
+1513,Sines,3,3,0,&,DUVIDOSO
+1601,Arcos de Valdevez,222,222,0,&,DUVIDOSO
+1602,Caminha,22,22,0,&,DUVIDOSO
+1603,Melgaço,30,30,0,&,DUVIDOSO
+1604,Monção,43,43,0,&,DUVIDOSO
+1605,Paredes de Coura,31,31,0,&,DUVIDOSO
+1606,Ponte da Barca,106,106,0,&,DUVIDOSO
+1607,Ponte de Lima,65,65,0,&,DUVIDOSO
+1608,Valença,45,45,0,&,DUVIDOSO
+1609,Viana do Castelo,76,76,0,&,DUVIDOSO
+1610,Vila Nova de Cerveira,28,28,0,&,DUVIDOSO
+1701,Alijó,18,18,0,&,DUVIDOSO
+1702,Boticas,36,36,0,&,DUVIDOSO
+1703,Chaves,94,94,0,&,DUVIDOSO
+1704,Mesão Frio,9,9,0,&,DUVIDOSO
+1705,Mondim de Basto,24,24,0,&,DUVIDOSO
+1706,Montalegre,131,131,0,&,DUVIDOSO
+1707,Murça,20,20,0,&,DUVIDOSO
+1708,Peso da Régua,25,25,0,&,DUVIDOSO
+1709,Ribeira de Pena,29,29,0,&,DUVIDOSO
+1710,Sabrosa,13,13,0,&,DUVIDOSO
+1711,Santa Marta de Penaguião,6,6,0,&,DUVIDOSO
+1712,Valpaços,59,59,0,&,DUVIDOSO
+1713,Vila Pouca de Aguiar,41,41,0,&,DUVIDOSO
+1714,Vila Real,68,68,0,&,DUVIDOSO
+1801,Armamar,9,9,0,&,DUVIDOSO
+1802,Carregal do Sal,5,5,0,&,DUVIDOSO
+1803,Castro Daire,52,52,0,&,DUVIDOSO
+1804,Cinfães,103,103,0,&,DUVIDOSO
+1805,Lamego,12,12,0,&,DUVIDOSO
+1806,Mangualde,27,27,0,&,DUVIDOSO
+1807,Moimenta da Beira,27,27,0,&,DUVIDOSO
+1808,Mortágua,4,4,0,&,DUVIDOSO
+1809,Nelas,7,7,0,&,DUVIDOSO
+1810,Oliveira de Frades,13,13,0,&,DUVIDOSO
+1811,Penalva do Castelo,4,4,0,&,DUVIDOSO
+1812,Penedono,8,8,0,&,DUVIDOSO
+1813,Resende,41,41,0,&,DUVIDOSO
+1814,Santa Comba Dão,12,12,0,&,DUVIDOSO
+1815,São João da Pesqueira,9,9,0,&,DUVIDOSO
+1816,São Pedro do Sul,19,19,0,&,DUVIDOSO
+1817,Sátão,28,28,0,&,DUVIDOSO
+1818,Sernancelhe,5,5,0,&,DUVIDOSO
+1819,Tabuaço,12,12,0,&,DUVIDOSO
+1820,Tarouca,10,10,0,&,DUVIDOSO
+1821,Tondela,26,26,0,&,DUVIDOSO
+1822,Vila Nova de Paiva,12,12,0,&,DUVIDOSO
+1823,Viseu,77,77,0,&,DUVIDOSO
+1824,Vouzela,4,4,0,&,DUVIDOSO
+3101,Calheta (R.A.M.),0,10,-10,&,SEM_EVIDÊNCIA
+3102,Câmara de Lobos,0,1,-1,&,SEM_EVIDÊNCIA
+3103,Funchal,0,0,0,&,SEM_EVIDÊNCIA
+3104,Machico,0,5,-5,&,SEM_EVIDÊNCIA
+3105,Ponta do Sol,0,3,-3,&,SEM_EVIDÊNCIA
+3106,Porto Moniz,0,0,0,&,SEM_EVIDÊNCIA
+3107,Ribeira Brava,0,4,-4,&,SEM_EVIDÊNCIA
+3108,Santa Cruz,0,1,-1,&,SEM_EVIDÊNCIA
+3109,Santana,0,1,-1,&,SEM_EVIDÊNCIA
+3110,São Vicente,0,0,0,&,SEM_EVIDÊNCIA
+3201,Porto Santo,0,0,0,&,SEM_EVIDÊNCIA
+4101,Vila do Porto,0,0,0,&,SEM_EVIDÊNCIA
+4201,Lagoa (R.A.A.),0,0,0,&,SEM_EVIDÊNCIA
+4202,Nordeste,0,0,0,&,SEM_EVIDÊNCIA
+4203,Ponta Delgada,0,0,0,&,SEM_EVIDÊNCIA
+4204,Povoação,0,0,0,&,SEM_EVIDÊNCIA
+4205,Ribeira Grande,0,0,0,&,SEM_EVIDÊNCIA
+4206,Vila Franca do Campo,0,0,0,&,SEM_EVIDÊNCIA
+4301,Angra do Heroísmo,0,0,0,&,SEM_EVIDÊNCIA
+4302,Vila da Praia da Vitória,0,0,0,&,SEM_EVIDÊNCIA
+4401,Santa Cruz da Graciosa,0,0,0,&,SEM_EVIDÊNCIA
+4501,Calheta (R.A.A.),0,0,0,&,SEM_EVIDÊNCIA
+4502,Velas,0,0,0,&,SEM_EVIDÊNCIA
+4601,Lajes do Pico,0,0,0,&,SEM_EVIDÊNCIA
+4602,Madalena,0,0,0,&,SEM_EVIDÊNCIA
+4603,São Roque do Pico,0,0,0,&,SEM_EVIDÊNCIA
+4701,Horta,0,0,0,&,SEM_EVIDÊNCIA
+4801,Lajes das Flores,0,0,0,&,SEM_EVIDÊNCIA
+4802,Santa Cruz das Flores,0,0,0,&,SEM_EVIDÊNCIA
+4901,Corvo,0,0,0,&,SEM_EVIDÊNCIA

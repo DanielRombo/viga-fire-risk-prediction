@@ -1,0 +1,15 @@
+{
+  "decisao": "NO-GO",
+  "regra": "Não converter null sem prova de cobertura e compatibilidade",
+  "estados": {
+    "DUVIDOSO": 36
+  },
+  "totais": {
+    "positivos_potenciais": 73,
+    "negativos_condicionais_potenciais": 0,
+    "null": 1022,
+    "janelas": 1095
+  },
+  "reducao_null": 0,
+  "periodos_elegiveis": []
+}

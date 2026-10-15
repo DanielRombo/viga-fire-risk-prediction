@@ -1,0 +1,5 @@
+_deps/
+__pycache__/
+evidencias/*.bin
+evidencias/*.pdf
+evidencias/sgifr_paginas.json

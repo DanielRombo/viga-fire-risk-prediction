@@ -1,0 +1,65 @@
+{
+  "n_municipios": 308,
+  "estados": {
+    "DUVIDOSO": 3336,
+    "SEM_EVIDÊNCIA": 360
+  },
+  "totais": {
+    "positivos_potenciais": 5458,
+    "negativos_condicionais_potenciais": 0,
+    "null": 106962,
+    "janelas": 112420
+  },
+  "municipios_piloto": {
+    "1106": {
+      "nome": "Lisboa",
+      "ocorrencias": 1,
+      "positivos_potenciais": 1,
+      "negativos_condicionais_potenciais": 0,
+      "null": 364,
+      "janelas": 365
+    },
+    "0805": {
+      "nome": "Faro",
+      "ocorrencias": 32,
+      "positivos_potenciais": 27,
+      "negativos_condicionais_potenciais": 0,
+      "null": 338,
+      "janelas": 365
+    },
+    "1714": {
+      "nome": "Vila Real",
+      "ocorrencias": 68,
+      "positivos_potenciais": 45,
+      "negativos_condicionais_potenciais": 0,
+      "null": 320,
+      "janelas": 365
+    }
+  },
+  "qualidade2025": {
+    "codigo_nome_incompativel": 3,
+    "DH1Intervencao_null": 153,
+    "DH1Intervencao_dia_anterior_alerta": 0,
+    "DHResolucao_null": 997,
+    "DHResolucao_dia_anterior_alerta": 0,
+    "DHConclusao_null": 8252,
+    "DHFim_null": 2,
+    "DHFim_dia_anterior_alerta": 0
+  },
+  "taxonomia2025": {
+    "potencial_nova_ocorrencia": 7579,
+    "tipo_nao_rural": 5,
+    "reacendimento": 668
+  },
+  "comparacao_sgif_global": {
+    "sgif2025": 8252,
+    "prdf2025": 8252,
+    "nota": "Total previamente auditado; não recarregado export nem demonstrada identidade linha a linha de 2025."
+  },
+  "reconciliacao": {
+    "iguais": 295,
+    "divergentes": 13
+  },
+  "decisao": "NO-GO: sem blocos com cobertura não provisória demonstrada para negativos",
+  "nota": "Apenas estimativas agregadas; não guarda labels diários. Existência positiva não certifica completude."
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="540" viewBox="0 0 780 540">
+<rect width="780" height="540" fill="white"/>
+<text x="50" y="24">Fiabilidade — teste 2024, Vila Real (bins de 0,1)</text>
+<path d="M50 450 L450 50 M50 50 V450 H450" stroke="#aaa" fill="none"/>
+<text x="130" y="495">Score médio (0–1)</text>
+<text x="5" y="40">Frequência observada (0–1)</text>
+<polyline points="104.6916890080429,413.4146341463415" fill="none" stroke="#555"/>
+<circle cx="104.6916890080429" cy="413.4146341463415" r="4" fill="#555"><title>n=328</title></circle>
+<text x="470" y="80" fill="#555">prevalencia</text>
+<polyline points="61.04144576018193,435.4922279792746 110.15231521088975,399.2063492063492 150.1869570085835,380.7692307692308 188.579359684034,330.0" fill="none" stroke="#0072b2"/>
+<circle cx="61.04144576018193" cy="435.4922279792746" r="4" fill="#0072b2"><title>n=193</title></circle>
+<circle cx="110.15231521088975" cy="399.2063492063492" r="4" fill="#0072b2"><title>n=63</title></circle>
+<circle cx="150.1869570085835" cy="380.7692307692308" r="4" fill="#0072b2"><title>n=52</title></circle>
+<circle cx="188.579359684034" cy="330.0" r="4" fill="#0072b2"><title>n=20</title></circle>
+<text x="470" y="110" fill="#0072b2">logistica</text>
+<polyline points="58.37093315147644,424.89539748953973 105.02459992719369,381.7073170731707 151.32227768196094,419.2307692307692 187.16444847120533,335.7142857142857 228.34904527461205,361.1111111111111 256.75943047250814,370.0 303.03623699501975,450.0 342.4497169605875,450.0" fill="none" stroke="#d55e00"/>
+<circle cx="58.37093315147644" cy="424.89539748953973" r="4" fill="#d55e00"><title>n=239</title></circle>
+<circle cx="105.02459992719369" cy="381.7073170731707" r="4" fill="#d55e00"><title>n=41</title></circle>
+<circle cx="151.32227768196094" cy="419.2307692307692" r="4" fill="#d55e00"><title>n=13</title></circle>
+<circle cx="187.16444847120533" cy="335.7142857142857" r="4" fill="#d55e00"><title>n=14</title></circle>
+<circle cx="228.34904527461205" cy="361.1111111111111" r="4" fill="#d55e00"><title>n=9</title></circle>
+<circle cx="256.75943047250814" cy="370.0" r="4" fill="#d55e00"><title>n=5</title></circle>
+<circle cx="303.03623699501975" cy="450.0" r="4" fill="#d55e00"><title>n=5</title></circle>
+<circle cx="342.4497169605875" cy="450.0" r="4" fill="#d55e00"><title>n=2</title></circle>
+<text x="470" y="140" fill="#d55e00">hist_gradient_boosting</text>
+<polyline points="61.04249205831957,441.30434782608694 111.06572221381833,392.8571428571429 150.23480548492114,395.0980392156863 184.3126750752818,304.5454545454545 211.2379928398359,50.0" fill="none" stroke="#009e73"/>
+<circle cx="61.04249205831957" cy="441.30434782608694" r="4" fill="#009e73"><title>n=184</title></circle>
+<circle cx="111.06572221381833" cy="392.8571428571429" r="4" fill="#009e73"><title>n=70</title></circle>
+<circle cx="150.23480548492114" cy="395.0980392156863" r="4" fill="#009e73"><title>n=51</title></circle>
+<circle cx="184.3126750752818" cy="304.5454545454545" r="4" fill="#009e73"><title>n=22</title></circle>
+<circle cx="211.2379928398359" cy="50.0" r="4" fill="#009e73"><title>n=1</title></circle>
+<text x="470" y="170" fill="#009e73">random_forest</text>
+</svg>

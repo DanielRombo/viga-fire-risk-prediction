@@ -1,0 +1,33 @@
+{
+  "url": "https://zenodo.org/records/21427772",
+  "versao": "V2025.1",
+  "consultado_em": "2026-10-14",
+  "ficheiros": {
+    "fogos.gpkg": {
+      "md5_local": "90fac651e493d25851120af45c545753",
+      "md5_zenodo": "90fac651e493d25851120af45c545753",
+      "coincide": true
+    },
+    "fogos-metadata.csv": {
+      "md5_local": "adf169288e26391b5ccaf9423f014099",
+      "md5_zenodo": "adf169288e26391b5ccaf9423f014099",
+      "coincide": true
+    },
+    "FRP.csv": {
+      "md5_local": "1392752cbca857ef745235a58b8c0280",
+      "md5_zenodo": "1392752cbca857ef745235a58b8c0280",
+      "coincide": true
+    },
+    "METEO.csv": {
+      "md5_local": "47329a882a96a7e0e7866015e56ba401",
+      "md5_zenodo": "47329a882a96a7e0e7866015e56ba401",
+      "coincide": true
+    },
+    "PBA.gpkg": {
+      "md5_local": "759a574fb8da1e2ba1d47ca97e2c3369",
+      "md5_zenodo": "759a574fb8da1e2ba1d47ca97e2c3369",
+      "coincide": true
+    }
+  },
+  "nota": "Harmonização de fontes ICNF/proteção civil, não captura independente de ocorrências."
+}
